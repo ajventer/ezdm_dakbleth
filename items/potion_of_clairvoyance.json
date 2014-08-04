@@ -1,0 +1,28 @@
+{
+    "core": {
+        "current_rounds_performed": 0,
+        "name": "Potion of clairvoyance",
+        "weight": 0,
+        "in_use": false,
+        "charges": 1,
+        "price": {
+            "copper": 0,
+            "silver": 0,
+            "gold": 500
+        },
+        "description": "This sickly green potion will grant the drinker temporary clairvoyance fully revealing the map he is currently on. One use only.",
+        "identified": "",
+        "rounds_per_charge": 1,
+        "size": "",
+        "type": "",
+        "icon": "icons/emerald.png"
+    },
+    "events": {
+        "ondrop": "",
+        "onround": "",
+        "onequip": "",
+        "onpickup": "",
+        "onuse": "campaign.error('%s uses a %s' % (player.displayname(), item.displayname())\r\ncurrentmap = player.location()['map']\r\nfrom ezdm_libs.GameMap import gamemap\r\nfrom ezdm_libs.util import load_json\r\nc = GameMap(load_json('maps',currentmap))\r\nfor y in range(0, c.get('/max_y',0)):\r\n  for x in range(0,c.get('/max_x',0)):\r\n      c.tile(x,y).put('/core/revealed',True)\r\nc.save()",
+        "onfinish": ""
+    }
+}

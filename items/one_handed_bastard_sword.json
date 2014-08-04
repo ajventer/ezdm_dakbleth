@@ -1,0 +1,37 @@
+{
+    "core": {
+        "current_rounds_performed": 0,
+        "name": "One Handed Bastard Sword",
+        "weight": 0,
+        "in_use": false,
+        "charges": 0,
+        "price": {
+            "copper": 0,
+            "silver": 0,
+            "gold": 25
+        },
+        "description": "To use: \\r\\nHold by blunt end.\\r\\nAim pointy end at person of unpleasant persona.\\r\\nAttempt to thrust pointy end into person of unpleasant persona by means of a vigorous arm movement.",
+        "identified": "",
+        "rounds_per_charge": 0,
+        "icon": "icons/sword.png",
+        "type": "weapon",
+        "size": "medium"
+    },
+    "conditional": {
+        "slot": "lefthand",
+        "to_hit": "",
+        "dmg": 6,
+        "range": "short",
+        "damage_type": "slice",
+        "weapon_type": "melee",
+        "save_against": "none"
+    },
+    "events": {
+        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+        "onround": "",
+        "onequip": "",
+        "onpickup": "",
+        "onuse": "",
+        "onfinish": ""
+    }
+}

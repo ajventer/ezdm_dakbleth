@@ -2,7 +2,8 @@
     "core": {
         "name": "dak_bleth",
         "maps": [
-            "secret_cellar.json"
+            "secret_cellar.json",
+            "town_center.json"
         ],
         "players": [
             "bardic_rogue.json"
@@ -11,6 +12,6 @@
         "incombat": false,
         "combat_chars": [],
         "starting_map": "secret_cellar.json",
-        "current_char": 1
+        "current_char": 0
     }
 }

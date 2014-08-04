@@ -1,0 +1,8 @@
+{
+    "core": {
+        "type": "wall",
+        "revealed": true,
+        "name": "cellar_wall",
+        "icon": "backgrounds/brick_brown1.png"
+    }
+}

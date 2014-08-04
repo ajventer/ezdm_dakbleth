@@ -1,0 +1,16 @@
+{
+    "core": {
+        "revealed": true,
+        "type": "link",
+        "name": "cellar_entrance",
+        "icon": "backgrounds/stone_stairs_down.png"
+    },
+    "conditional": {
+        "canenter": true,
+        "newmap": {
+            "y": 0,
+            "x": 0,
+            "mapname": ""
+        }
+    }
+}

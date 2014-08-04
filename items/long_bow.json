@@ -1,0 +1,37 @@
+{
+    "core": {
+        "current_rounds_performed": 0,
+        "name": "Long bow",
+        "weight": "",
+        "in_use": false,
+        "charges": 0,
+        "price": {
+            "copper": "",
+            "silver": "",
+            "gold": 75
+        },
+        "description": "A powerful but simple longbow used for firing projectile weapons (arrows) at high velocity through spring-power.",
+        "identified": false,
+        "rounds_per_charge": 0,
+        "icon": "icons/longbow.png",
+        "type": "weapon",
+        "size": "large"
+    },
+    "conditional": {
+        "slot": "twohand",
+        "to_hit": 0,
+        "dmg": 8,
+        "range": "long",
+        "damage_type": "stab",
+        "weapon_type": "misile",
+        "save_against": "none"
+    },
+    "events": {
+        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+        "onround": "",
+        "onequip": "",
+        "onpickup": "",
+        "onuse": "",
+        "onfinish": ""
+    }
+}

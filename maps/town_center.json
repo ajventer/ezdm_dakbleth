@@ -1,0 +1,4087 @@
+{
+    "name": "town_center",
+    "tiles": [
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_left.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_right.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_l.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_r.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_l.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_r.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_l.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_r.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_l.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_r.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_l.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_r.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_l.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_r.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_l.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_r.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_l.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_r.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_l.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_r.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_l.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_r.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_l.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_r.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_l.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_r.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_l.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "floor",
+                    "name": "cobbles",
+                    "icon": "backgrounds/cobble_blood3.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "silver": 0
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "link",
+                    "name": "cellar_entrance",
+                    "icon": "backgrounds/stone_stairs_down.png"
+                },
+                "conditional": {
+                    "players": [],
+                    "canenter": true,
+                    "newmap": {
+                        "mapname": "secret_cellar.json",
+                        "x": 0,
+                        "y": 3
+                    }
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle_r.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_right_bottom.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_middle.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "town_wall",
+                    "icon": "backgrounds/gate_closed_left_bottom.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            }
+        ]
+    ],
+    "lightradius": 1,
+    "max_x": 15,
+    "max_y": 15
+}
