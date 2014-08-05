@@ -1,5 +1,4 @@
 {
-    "name": "town_center",
     "tiles": [
         [
             {
@@ -887,41 +886,25 @@
             {
                 "core": {
                     "revealed": true,
-                    "type": "floor",
-                    "name": "cobbles",
-                    "icon": "backgrounds/cobble_blood3.png"
+                    "type": "shop",
+                    "name": "simple_shop",
+                    "icon": "backgrounds/dngn_enter_shop.png"
                 },
                 "conditional": {
-                    "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
-                    "events": {
-                        "onenter": ""
-                    },
-                    "npcs": [],
-                    "players": [],
-                    "silver": 0
+                    "canenter": "True"
                 }
             },
             {
                 "core": {
+                    "type": "signpost",
                     "revealed": true,
-                    "type": "floor",
-                    "name": "cobbles",
-                    "icon": "backgrounds/cobble_blood3.png"
+                    "name": "simple_signpost",
+                    "icon": "backgrounds/signpost.png"
                 },
                 "conditional": {
-                    "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
-                    "items": [],
-                    "events": {
-                        "onenter": ""
-                    },
-                    "npcs": [],
-                    "players": [],
-                    "silver": 0
+                    "message": "Scheherazade's curio shop",
+                    "canenter": false
                 }
             },
             {
@@ -1382,7 +1365,28 @@
                     "icon": "backgrounds/dngn_enter_shop.png"
                 },
                 "conditional": {
-                    "items": [],
+                    "items": [
+                        "cloth_boots.json",
+                        "cloth_cap.json",
+                        "cloth_gloves.json",
+                        "cloth_robes.json",
+                        "cloth_leggings.json",
+                        "bronze_plate_boots.json",
+                        "bronze_plate_chest.json",
+                        "bronze_plate_gloves.json",
+                        "bronze_plate_helm.json",
+                        "bronze_plate_legs.json",
+                        "leather_boots.json",
+                        "leather_chest.json",
+                        "leather_gloves.json",
+                        "leather_helm.json",
+                        "leather_leggings.json",
+                        "ringmail_boots.json",
+                        "ringmail_chest.json",
+                        "ringmail_coif.json",
+                        "ringmail_gloves.json",
+                        "ringmail_legs.json"
+                    ],
                     "canenter": "True"
                 }
             },
@@ -2322,7 +2326,9 @@
                         "onenter": ""
                     },
                     "npcs": [],
-                    "players": [],
+                    "players": [
+                        "forrest_ranger.json"
+                    ],
                     "silver": 0
                 }
             },
@@ -3814,9 +3820,7 @@
                     "icon": "backgrounds/stone_stairs_down.png"
                 },
                 "conditional": {
-                    "players": [
-                        "forrest_ranger.json"
-                    ],
+                    "players": [],
                     "canenter": true,
                     "newmap": {
                         "mapname": "secret_cellar.json",
@@ -4022,6 +4026,7 @@
         ]
     ],
     "lightradius": 1,
+    "name": "town_center",
     "max_x": 15,
     "max_y": 15
 }

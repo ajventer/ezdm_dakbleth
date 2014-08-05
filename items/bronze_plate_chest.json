@@ -1,0 +1,33 @@
+{
+    "core": {
+        "current_rounds_performed": 0,
+        "name": "Bronze Plate Chest",
+        "weight": 23,
+        "in_use": false,
+        "charges": 0,
+        "price": {
+            "copper": 0,
+            "silver": 0,
+            "gold": 130
+        },
+        "description": "",
+        "identified": "",
+        "rounds_per_charge": 0,
+        "icon": "icons/plate_armor.png",
+        "type": "armor",
+        "size": "medium"
+    },
+    "conditional": {
+        "slot": "chest",
+        "ac": 3.0,
+        "material": "plate"
+    },
+    "events": {
+        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+        "onround": "",
+        "onequip": "",
+        "onpickup": "",
+        "onuse": "",
+        "onfinish": ""
+    }
+}

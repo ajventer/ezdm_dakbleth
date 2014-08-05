@@ -1,0 +1,33 @@
+{
+    "core": {
+        "current_rounds_performed": 0,
+        "name": "Ringmail Coif",
+        "weight": 5,
+        "in_use": false,
+        "charges": 0,
+        "price": {
+            "copper": 0,
+            "silver": 0,
+            "gold": 10
+        },
+        "description": "",
+        "identified": false,
+        "rounds_per_charge": 0,
+        "icon": "icons/chain_mail_helm.png",
+        "type": "armor",
+        "size": "small"
+    },
+    "conditional": {
+        "slot": "head",
+        "ac": 5,
+        "material": "mail"
+    },
+    "events": {
+        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+        "onround": "",
+        "onequip": "",
+        "onpickup": "",
+        "onuse": "",
+        "onfinish": ""
+    }
+}

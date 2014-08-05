@@ -1,0 +1,33 @@
+{
+    "core": {
+        "current_rounds_performed": 0,
+        "name": "Cloth Cap",
+        "weight": 3,
+        "in_use": false,
+        "charges": 0,
+        "price": {
+            "copper": 0,
+            "silver": 0,
+            "gold": 4
+        },
+        "description": "A simple cloth cap",
+        "identified": false,
+        "rounds_per_charge": 0,
+        "icon": "icons/leather_helm.png",
+        "type": "armor",
+        "size": "small"
+    },
+    "conditional": {
+        "slot": "head",
+        "ac": 6,
+        "material": "cloth"
+    },
+    "events": {
+        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+        "onround": "",
+        "onequip": "",
+        "onpickup": "",
+        "onuse": "",
+        "onfinish": ""
+    }
+}
