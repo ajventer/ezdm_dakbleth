@@ -1,0 +1,28 @@
+{
+    "core": {
+        "current_rounds_performed": 0,
+        "name": "Simple Lute",
+        "weight": 5,
+        "in_use": false,
+        "charges": 0,
+        "price": {
+            "copper": 12,
+            "silver": 58,
+            "gold": 10
+        },
+        "description": "A simple four-string lute beloved of Bards for playing folk music.",
+        "identified": true,
+        "rounds_per_charge": 0,
+        "size": "medium",
+        "type": "other",
+        "icon": "icons/lute.png"
+    },
+    "events": {
+        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+        "onround": "",
+        "onequip": "",
+        "onpickup": "",
+        "onuse": "",
+        "onfinish": ""
+    }
+}
