@@ -1,0 +1,29 @@
+{
+    "core": {
+        "lightradius": 1,
+        "current_rounds_performed": 0,
+        "name": "Candle",
+        "weight": 0,
+        "in_use": false,
+        "charges": 50,
+        "price": {
+            "copper": 25,
+            "silver": 15,
+            "gold": 0
+        },
+        "description": "This dribbled pillar of pigfat with a piece of twine in the middle will allow you to see further in the dark and is not subject to loadshedding. However it doesn't last for very long.",
+        "identified": true,
+        "rounds_per_charge": 1,
+        "size": "",
+        "type": "other",
+        "icon": "icons/misc_lamp.png"
+    },
+    "events": {
+        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+        "onround": "",
+        "onequip": "",
+        "onpickup": "",
+        "onuse": "",
+        "onfinish": ""
+    }
+}
