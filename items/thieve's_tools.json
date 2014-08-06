@@ -1,0 +1,29 @@
+{
+    "core": {
+        "lightradius": 0,
+        "current_rounds_performed": 0,
+        "name": "Thieve's tools",
+        "weight": 0,
+        "in_use": false,
+        "charges": 0,
+        "price": {
+            "copper": 9,
+            "silver": 9,
+            "gold": 5
+        },
+        "description": "This leather pouch contains the tools of the thief's illicite trade including an assortment of lockpicks and, for some reason, a slice of lemon.",
+        "identified": true,
+        "rounds_per_charge": 0,
+        "size": "small",
+        "type": "other",
+        "icon": "icons/thieves_tools.png"
+    },
+    "events": {
+        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+        "onround": "",
+        "onequip": "",
+        "onpickup": "",
+        "onuse": "",
+        "onfinish": ""
+    }
+}
