@@ -2090,14 +2090,14 @@
             },
             {
                 "core": {
-                    "revealed": false,
                     "type": "door",
+                    "revealed": true,
                     "name": "door_locked",
                     "icon": "backgrounds/dngn_closed_door.png"
                 },
                 "conditional": {
-                    "canenter": false,
                     "locked": "True",
+                    "canenter": false,
                     "events": {
                         "ontryunlock": "",
                         "onunlock": "tile.put('/conditional/canenter, True)\r\ntile.put('/core/background', tile.get('/conditional/background',tile.get('/core/background','')))",
@@ -2108,8 +2108,8 @@
             },
             {
                 "core": {
+                    "revealed": true,
                     "type": "signpost",
-                    "revealed": false,
                     "name": "simple_signpost",
                     "icon": "backgrounds/signpost.png"
                 },
