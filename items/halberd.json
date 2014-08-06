@@ -2,26 +2,26 @@
     "core": {
         "lightradius": 0,
         "current_rounds_performed": 0,
-        "name": "Simple Wooden Staff",
-        "weight": 0,
+        "name": "Halberd",
+        "weight": "",
         "in_use": false,
         "charges": 0,
         "price": {
-            "copper": 0,
-            "silver": 0,
-            "gold": 15
+            "copper": "",
+            "silver": "",
+            "gold": 10
         },
-        "description": "This thick length of heavy Birchwood can generate significant force through centripetal force when swung into contact with an opponents body. Wizards often use them as an aid when casting\r\nspells - everybody else uses them as an aid when building a fire.",
+        "description": "A heavy halberd for significant damage at medium range.",
         "identified": false,
         "rounds_per_charge": 0,
-        "icon": "icons/quarterstaff.png",
+        "icon": "icons/bardiche1.png",
         "type": "weapon",
         "size": "large"
     },
     "conditional": {
         "slot": "twohand",
-        "to_hit": "",
-        "dmg": 6,
+        "to_hit": 0,
+        "dmg": 10,
         "range": "medium",
         "damage_type": "hack",
         "weapon_type": "melee",

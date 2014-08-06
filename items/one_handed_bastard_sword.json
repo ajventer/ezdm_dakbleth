@@ -1,5 +1,6 @@
 {
     "core": {
+        "lightradius": 0,
         "current_rounds_performed": 0,
         "name": "One Handed Bastard Sword",
         "weight": 0,
@@ -20,7 +21,7 @@
     "conditional": {
         "slot": "lefthand",
         "to_hit": "",
-        "dmg": 6,
+        "dmg": 8,
         "range": "short",
         "damage_type": "slice",
         "weapon_type": "melee",
