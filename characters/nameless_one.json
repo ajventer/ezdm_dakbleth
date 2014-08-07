@@ -29,9 +29,9 @@
             }
         },
         "location": {
-            "y": "",
-            "x": "",
-            "map": ""
+            "y": 11,
+            "x": 11,
+            "map": "town_center.json"
         },
         "icon": "avatars/human_paladin.png",
         "type": "player",

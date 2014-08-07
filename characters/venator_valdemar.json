@@ -29,9 +29,9 @@
             }
         },
         "location": {
-            "y": 1,
-            "x": 13,
-            "map": "secret_cellar.json"
+            "y": 11,
+            "x": 9,
+            "map": "town_center.json"
         },
         "icon": "avatars/ven_valdis.png",
         "type": "player",

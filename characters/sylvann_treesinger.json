@@ -29,9 +29,9 @@
             }
         },
         "location": {
-            "y": "",
-            "x": "",
-            "map": ""
+            "y": 11,
+            "x": 10,
+            "map": "town_center.json"
         },
         "icon": "avatars/sylvann.png",
         "type": "player",
