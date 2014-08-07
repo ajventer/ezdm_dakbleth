@@ -1,0 +1,33 @@
+{
+    "core": {
+        "current_rounds_performed": 0,
+        "name": "Magic Armor",
+        "weight": 0,
+        "in_use": false,
+        "charges": 0,
+        "price": {
+            "copper": 0,
+            "silver": 0,
+            "gold": 0
+        },
+        "description": "This magical armor offers the same protection as a full suit of chainmail but is weightless.<br>Once the wizard sustains damage of 8 + his level the armor is destroyed.",
+        "identified": true,
+        "rounds_per_charge": 0,
+        "icon": "icons/chain_mail_armor.png",
+        "type": "armor",
+        "size": "medium"
+    },
+    "conditional": {
+        "slot": "chest",
+        "ac": 6,
+        "material": "cloth"
+    },
+    "events": {
+        "ondrop": "",
+        "onround": "",
+        "onequip": "",
+        "onpickup": "",
+        "onuse": "",
+        "onfinish": ""
+    }
+}

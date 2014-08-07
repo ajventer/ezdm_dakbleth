@@ -896,6 +896,7 @@
                         "scroll_of_identify.json",
                         "candle.json",
                         "thieve's_tools.json",
+			"spell_armor.json",
                         "magic_misile.json"
                     ],
                     "canenter": "True"

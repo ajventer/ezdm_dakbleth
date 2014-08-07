@@ -1,0 +1,33 @@
+{
+    "core": {
+        "lightradius": 0,
+        "current_rounds_performed": 0,
+        "name": "Spell Armor",
+        "weight": 0,
+        "in_use": false,
+        "charges": -1,
+        "price": {
+            "copper": 25,
+            "silver": 50,
+            "gold": 200
+        },
+        "description": "Grants the wizard magical armor equivalent to chainmail but with weight or encumbrance",
+        "identified": true,
+        "rounds_per_charge": 0,
+        "icon": "icons/magic_misile.png",
+        "type": "spell",
+        "size": "small"
+    },
+    "conditional": {
+        "spell_school": "Conjuration",
+        "spell_level": 1
+    },
+    "events": {
+        "ondrop": "",
+        "onround": "",
+        "onequip": "",
+        "onpickup": "",
+        "onuse": "from ezdm_libs.item import Item\r\nfrom ezdm_libs.util import load_json\r\ni = Item(load_json('items','magic_armor.json'))\r\nplayer.acquire_item(i)\r\nplayer.equip_item(0)"
+        "onfinish": ""
+    }
+}
