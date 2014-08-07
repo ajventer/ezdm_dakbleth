@@ -28,26 +28,52 @@
                 "social": "good"
             }
         },
-        "location": {
-            "y": 11,
-            "x": 11,
-            "map": "town_center.json"
-        },
-        "icon": "avatars/human_paladin.png",
-        "type": "player",
-        "class": {
-            "class": "paladin",
-            "parent": "warrior"
-        },
         "inventory": {
             "equiped": {
                 "head": {},
-                "righthand": {},
+                "righthand": {
+                    "core": {
+                        "size": "medium",
+                        "current_rounds_performed": 0,
+                        "lightradius": 0,
+                        "weight": 0,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 25
+                        },
+                        "identified": true,
+                        "name": "One Handed Bastard Sword",
+                        "rounds_per_charge": 0,
+                        "icon": "icons/sword.png",
+                        "type": "weapon",
+                        "description": "To use:<br>Hold by blunt end.<br>Aim pointy end at person of unpleasant persona.<br>Attempt to thrust pointy end into person of unpleasant persona by means of a vigorous arm movement."
+                    },
+                    "conditional": {
+                        "slot": "righthand",
+                        "dmg": 8,
+                        "to_hit": "",
+                        "range": "short",
+                        "damage_type": "slice",
+                        "weapon_type": "melee",
+                        "save_against": "none"
+                    },
+                    "events": {
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
                 "neck": {},
                 "wrists": {},
                 "rightfinger": {},
-                "chest": {},
                 "feet": {},
+                "chest": {},
                 "leftfinger": {},
                 "gloves": {},
                 "legs": {},
@@ -60,15 +86,26 @@
             },
             "pack": [],
             "spells": []
+        },
+        "icon": "avatars/human_paladin.png",
+        "type": "player",
+        "class": {
+            "class": "paladin",
+            "parent": "warrior"
+        },
+        "location": {
+            "y": 11,
+            "x": 11,
+            "map": "town_center.json"
         }
     },
     "conditional": {
         "armor_types": 4,
         "abilities": {
             "sense evil intent(must end turn)": 100,
-            "lay on hands (daily)": 100,
             "Turn undead (level 3+)": 100,
-            "cure disease(weekly)": 100
+            "cure disease(weekly)": 100,
+            "lay on hands (daily)": 100
         },
         "shields": true
     }
