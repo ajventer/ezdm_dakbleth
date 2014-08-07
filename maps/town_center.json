@@ -895,7 +895,8 @@
                         "simple_lute.json",
                         "scroll_of_identify.json",
                         "candle.json",
-                        "thieve's_tools.json"
+                        "thieve's_tools.json",
+                        "magic_misile.json"
                     ],
                     "canenter": "True"
                 }
@@ -1390,7 +1391,8 @@
                         "ringmail_chest.json",
                         "ringmail_coif.json",
                         "ringmail_gloves.json",
-                        "ringmail_legs.json"
+                        "ringmail_legs.json",
+                        "small_bronze_shield.json"
                     ],
                     "canenter": "True"
                 }
@@ -4021,7 +4023,7 @@
         ]
     ],
     "max_y": 15,
-    "lightradius": 1,
+    "name": "town_center",
     "max_x": 15,
-    "name": "town_center"
+    "lightradius": 1
 }

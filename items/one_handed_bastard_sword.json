@@ -11,7 +11,7 @@
             "silver": 0,
             "gold": 25
         },
-        "description": "To use: \\r\\nHold by blunt end.\\r\\nAim pointy end at person of unpleasant persona.\\r\\nAttempt to thrust pointy end into person of unpleasant persona by means of a vigorous arm movement.",
+        "description": "To use:<br>Hold by blunt end.<br>Aim pointy end at person of unpleasant persona.<br>Attempt to thrust pointy end into person of unpleasant persona by means of a vigorous arm movement.",
         "identified": "",
         "rounds_per_charge": 0,
         "icon": "icons/sword.png",
@@ -19,7 +19,7 @@
         "size": "medium"
     },
     "conditional": {
-        "slot": "lefthand",
+        "slot": "righthand",
         "to_hit": "",
         "dmg": 8,
         "range": "short",
