@@ -1,0 +1,75 @@
+{
+    "core": {
+        "abilities": {
+            "dex": 14,
+            "cha": 17,
+            "int": 10,
+            "wis": 13,
+            "str": 12,
+            "con": 15
+        },
+        "lightradius": 0,
+        "combat": {
+            "level-hitdice": 1,
+            "hitpoints": 7,
+            "max_hp": 7
+        },
+        "personal": {
+            "name": {
+                "last": "One",
+                "first": "Nameless"
+            },
+            "backstory": "",
+            "sex": "male",
+            "race": "human",
+            "xp": 0,
+            "alignment": {
+                "law": "lawful",
+                "social": "good"
+            }
+        },
+        "location": {
+            "y": "",
+            "x": "",
+            "map": ""
+        },
+        "icon": "avatars/human_paladin.png",
+        "type": "player",
+        "class": {
+            "class": "paladin",
+            "parent": "warrior"
+        },
+        "inventory": {
+            "equiped": {
+                "head": {},
+                "righthand": {},
+                "neck": {},
+                "wrists": {},
+                "rightfinger": {},
+                "chest": {},
+                "feet": {},
+                "leftfinger": {},
+                "gloves": {},
+                "legs": {},
+                "lefthand": {}
+            },
+            "money": {
+                "copper": 0,
+                "silver": 0,
+                "gold": 300
+            },
+            "pack": [],
+            "spells": []
+        }
+    },
+    "conditional": {
+        "armor_types": 4,
+        "abilities": {
+            "sense evil intent(must end turn)": 100,
+            "lay on hands (daily)": 100,
+            "Turn undead (level 3+)": 100,
+            "cure disease(weekly)": 100
+        },
+        "shields": true
+    }
+}

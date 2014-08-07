@@ -1,0 +1,78 @@
+{
+    "core": {
+        "abilities": {
+            "dex": 14,
+            "cha": 15,
+            "int": 13,
+            "wis": 13,
+            "str": 15,
+            "con": 14
+        },
+        "lightradius": 1,
+        "combat": {
+            "level-hitdice": 1,
+            "hitpoints": 5,
+            "max_hp": 5
+        },
+        "personal": {
+            "name": {
+                "last": "El'Andearre",
+                "first": "Kenia"
+            },
+            "backstory": "",
+            "sex": "female",
+            "race": "half-elf",
+            "xp": 0,
+            "alignment": {
+                "law": "chaotic",
+                "social": "neutral"
+            }
+        },
+        "location": {
+            "y": "",
+            "x": "",
+            "map": ""
+        },
+        "icon": "avatars/48x48_Faces_4th_Sheet_Update_CharlesGabriel_OGA_0-0-2.png",
+        "type": "player",
+        "class": {
+            "class": "bard",
+            "parent": "rogue"
+        },
+        "inventory": {
+            "equiped": {
+                "head": {},
+                "righthand": {},
+                "neck": {},
+                "wrists": {},
+                "rightfinger": {},
+                "chest": {},
+                "feet": {},
+                "leftfinger": {},
+                "gloves": {},
+                "legs": {},
+                "lefthand": {}
+            },
+            "money": {
+                "copper": 0,
+                "silver": 0,
+                "gold": 300
+            },
+            "pack": [],
+            "spells": []
+        }
+    },
+    "conditional": {
+        "armor_types": 3,
+        "abilities": {
+            "climb walls": 50,
+            "read languages": 20,
+            "pick pockets": 10,
+            "detect noise": 35,
+            "move silently": 10,
+            "open locks": 25,
+            "find-remove traps": 20
+        },
+        "shields": true
+    }
+}

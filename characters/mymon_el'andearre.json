@@ -1,0 +1,69 @@
+{
+    "core": {
+        "abilities": {
+            "dex": 11,
+            "cha": 14,
+            "int": 13,
+            "wis": 13,
+            "str": 15,
+            "con": 13
+        },
+        "lightradius": 1,
+        "combat": {
+            "level-hitdice": 1,
+            "hitpoints": 4,
+            "max_hp": 4
+        },
+        "personal": {
+            "name": {
+                "last": "El'Andearre",
+                "first": "Mymon"
+            },
+            "backstory": "",
+            "sex": "female",
+            "race": "half-elf",
+            "xp": 0,
+            "alignment": {
+                "law": "chaotic",
+                "social": "neutral"
+            }
+        },
+        "location": {
+            "y": "",
+            "x": "",
+            "map": ""
+        },
+        "icon": "avatars/48x48_Faces_4th_Sheet_Update_CharlesGabriel_OGA_0-0-3.png",
+        "type": "player",
+        "class": {
+            "class": "mage",
+            "parent": "wizard"
+        },
+        "inventory": {
+            "equiped": {
+                "head": {},
+                "righthand": {},
+                "neck": {},
+                "wrists": {},
+                "rightfinger": {},
+                "chest": {},
+                "feet": {},
+                "leftfinger": {},
+                "gloves": {},
+                "legs": {},
+                "lefthand": {}
+            },
+            "money": {
+                "copper": 0,
+                "silver": 0,
+                "gold": 300
+            },
+            "pack": [],
+            "spells": []
+        }
+    },
+    "conditional": {
+        "armor_types": 1,
+        "shields": false
+    }
+}

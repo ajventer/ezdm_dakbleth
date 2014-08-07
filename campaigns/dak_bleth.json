@@ -6,7 +6,12 @@
             "town_center.json"
         ],
         "players": [
-            "forrest_ranger.json"
+		"tiny_tim.json",
+		"kenia_el'andearre.json",
+		"mymon_el'andearre.json",
+		"nameless_one.json",
+		"sylvann_treesinger.json",
+		"venator_valdemar.json"
         ],
         "initiative": [],
         "incombat": false,
