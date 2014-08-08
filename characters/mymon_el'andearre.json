@@ -1,74 +1,67 @@
 {
     "core": {
         "abilities": {
-            "dex": 25,
-            "cha": 25,
-            "int": 25,
-            "wis": 25,
-            "str": 25,
-            "con": 25
+            "dex": 11,
+            "cha": 14,
+            "int": 13,
+            "wis": 13,
+            "str": 15,
+            "con": 13
         },
+        "lightradius": 1,
         "combat": {
-            "hitpoints": 72,
-            "thac0": 8,
-            "level-hitdice": 19,
-            "saving_throws": {
-                "breath": 8,
-                "pp": 5,
-                "spell": 7,
-                "rod": 6,
-                "ppd": 6
-            },
-            "max_hp": 152
+            "level-hitdice": 1,
+            "hitpoints": 4,
+            "max_hp": 4
         },
         "personal": {
             "name": {
-                "last": "Quicksilver",
-                "first": "Ydderf"
+                "last": "El'Andearre",
+                "first": "Mymon"
             },
-            "backstory": "Her Royal Majesty Queen Quicksilver of Cinobubia.\\r\\nForced to marry the evil queen Dak Bleth against her will under duress as Dak Bleth held her people hostage with the plague.\\r\\n\\r\\nSecret leader of the resistance, she has asked your help in the war to end Dak Bleth's reign, there is very little love lost in her marriage.",
+            "backstory": "",
             "sex": "female",
-            "race": "human",
-            "xp": "",
+            "race": "half-elf",
+            "xp": 0,
             "alignment": {
-                "law": "lawful",
-                "social": "good"
+                "law": "chaotic",
+                "social": "neutral"
             }
         },
-        "tileindex": 1,
         "inventory": {
             "equiped": {
                 "head": {},
                 "righthand": {
                     "core": {
                         "current_rounds_performed": 0,
-                        "name": "Fist",
+                        "description": "This thick length of heavy Birchwood can generate significant force through centripetal force when swung into contact with an opponents body. Wizards often use them as an aid when casting\r\nspells - everybody else uses them as an aid when building a fire.",
                         "weight": 0,
                         "in_use": false,
                         "charges": 0,
                         "price": {
                             "copper": 0,
                             "silver": 0,
-                            "gold": 0
+                            "gold": 15
                         },
                         "identified": true,
+                        "name": "Simple Wooden Staff",
                         "rounds_per_charge": 0,
-                        "icon": "",
-                        "size": "small",
+                        "icon": "icons/quarterstaff.png",
+                        "size": "large",
                         "type": "weapon",
-                        "description": "Throw a barehanded punch with fist."
+                        "lightradius": 0
                     },
                     "conditional": {
                         "slot": "twohand",
-                        "to_hit": 0,
-                        "dmg": 2,
-                        "range": "short",
-                        "damage_type": "stab",
+                        "dmg": 6,
+                        "to_hit": "",
+                        "range": "medium",
+                        "damage_type": "hack",
                         "weapon_type": "melee",
                         "save_against": "none"
                     },
                     "events": {
-                        "ondrop": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
                         "onround": "",
                         "onequip": "",
                         "onpickup": "",
@@ -85,34 +78,35 @@
                 "legs": {},
                 "lefthand": {
                     "core": {
+                        "lightradius": 0,
                         "current_rounds_performed": 0,
-                        "description": "Throw a barehanded punch with fist.",
+                        "description": "This thick length of heavy Birchwood can generate significant force through centripetal force when swung into contact with an opponents body. Wizards often use them as an aid when casting\r\nspells - everybody else uses them as an aid when building a fire.",
                         "weight": 0,
                         "in_use": false,
                         "charges": 0,
                         "price": {
                             "copper": 0,
                             "silver": 0,
-                            "gold": 0
+                            "gold": 15
                         },
                         "identified": true,
-                        "name": "Fist",
+                        "name": "Simple Wooden Staff",
                         "rounds_per_charge": 0,
-                        "size": "small",
+                        "size": "large",
                         "type": "weapon",
-                        "icon": ""
+                        "icon": "icons/quarterstaff.png"
                     },
                     "conditional": {
                         "slot": "twohand",
-                        "dmg": 2,
-                        "to_hit": 0,
-                        "range": "short",
-                        "damage_type": "stab",
+                        "dmg": 6,
+                        "to_hit": "",
+                        "range": "medium",
+                        "damage_type": "hack",
                         "weapon_type": "melee",
                         "save_against": "none"
                     },
                     "events": {
-                        "ondrop": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
                         "onround": "",
                         "onequip": "",
                         "onpickup": "",
@@ -125,37 +119,25 @@
             "money": {
                 "copper": 0,
                 "silver": 0,
-                "gold": 0
+                "gold": 300
             },
             "pack": [],
             "spells": []
         },
-        "icon": "avatars/48x48_Faces_4th_Sheet_Update_CharlesGabriel_OGA_0-4-2.png",
-        "type": "npc",
+        "icon": "avatars/48x48_Faces_4th_Sheet_Update_CharlesGabriel_OGA_0-0-3.png",
+        "type": "player",
         "class": {
-            "class": "cleric",
-            "parent": "priest"
+            "class": "mage",
+            "parent": "wizard"
         },
         "location": {
-            "y": 1,
-            "x": 7,
-            "map": "secret_cellar.json"
+            "y": 11,
+            "x": 12,
+            "map": "town_center.json"
         }
     },
     "conditional": {
-        "armor_types": 0,
-	"shields": false,
-        "loot": {
-            "copper": "",
-            "items_possible": [],
-            "max_items": 1,
-            "gold": "",
-            "silver": ""
-        },
-        "events": {
-            "oninspect": "",
-            "oninteract": ""
-        },
-        "orientation": "friendly"
+        "armor_types": 1,
+        "shields": false
     }
 }
