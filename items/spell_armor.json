@@ -14,7 +14,7 @@
         "description": "Grants the wizard magical armor equivalent to chainmail but with weight or encumbrance",
         "identified": true,
         "rounds_per_charge": 0,
-        "icon": "icons/magic_misile.png",
+        "icon": "icons/magic_armor_spell.png",
         "type": "spell",
         "size": "small"
     },
@@ -27,7 +27,7 @@
         "onround": "",
         "onequip": "",
         "onpickup": "",
-        "onuse": "from ezdm_libs.item import Item\r\nfrom ezdm_libs.util import load_json\r\ni = Item(load_json('items','magic_armor.json'))\r\nplayer.acquire_item(i)\r\nplayer.equip_item(0)",
+        "onuse": "from ezdm_libs.item import Item\r\nfrom ezdm_libs.util import load_json\r\ni = Item(load_json('items','magic_armor.json'))\r\nplayer.acquire_item(i)\r\nplayer.equip_item(0)\r\ncampaign.error('%s is now wearing magic armor' % player.displayname())\r\nplayer.autosave()",
         "onfinish": ""
     }
 }
