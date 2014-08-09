@@ -22,7 +22,7 @@
             "backstory": "",
             "sex": "male",
             "race": "human",
-            "xp": 0,
+            "xp": 10,
             "alignment": {
                 "law": "lawful",
                 "social": "neutral"
