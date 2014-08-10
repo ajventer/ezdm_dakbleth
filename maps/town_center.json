@@ -898,7 +898,8 @@
                         "candle.json",
                         "thieve's_tools.json",
                         "spell_armor.json",
-                        "magic_misile.json"
+                        "magic_misile.json",
+                        "scroll_of_resurrection.json"
                     ],
                     "canenter": "True"
                 }
@@ -3177,8 +3178,8 @@
             },
             {
                 "core": {
-                    "revealed": true,
                     "type": "floor",
+                    "revealed": true,
                     "name": "cobbles",
                     "icon": "backgrounds/cobble_blood3.png"
                 },
@@ -3187,14 +3188,14 @@
                     "canenter": true,
                     "gold": 0,
                     "items": [],
-                    "events": {
-                        "onenter": ""
-                    },
+                    "silver": 0,
                     "npcs": [],
                     "players": [
                         "mymon_el'andearre.json"
                     ],
-                    "silver": 0
+                    "events": {
+                        "onenter": ""
+                    }
                 }
             },
             {
@@ -3257,9 +3258,7 @@
                         "onenter": ""
                     },
                     "npcs": [],
-                    "players": [
-                        "venator_valdemar.json"
-                    ],
+                    "players": [],
                     "silver": 0
                 }
             },

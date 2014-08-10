@@ -3,7 +3,11 @@
         "name": "dak_bleth",
         "maps": [
             "secret_cellar.json",
-            "town_center.json"
+            "town_center.json",
+	    "sewers_1.json",
+            "sewers_2.json",
+            "sewers_3.json",
+	    "moes_tavern.json"
         ],
         "players": [
 		"kenia_el'andearre.json",

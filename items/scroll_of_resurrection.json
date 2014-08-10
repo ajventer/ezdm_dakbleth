@@ -1,0 +1,30 @@
+{
+    "core": {
+        "lightradius": 0,
+        "current_rounds_performed": 0,
+        "name": "Scroll of Resurrection",
+        "weight": 0,
+        "in_use": false,
+        "charges": 1,
+        "price": {
+            "copper": 25,
+            "silver": 50,
+            "gold": 1000
+        },
+        "description": "Ressurrects a dead ally with 1 hitpoint. Takes ten rounds to read.",
+        "identified": true,
+        "rounds_per_charge": 10,
+        "icon": "icons/scrolloflove.png",
+        "type": "other",
+        "size": "small"
+    },
+    "events": {
+        "ondrop": "",
+        "onround": "campaign.error('%s continues to cast Scroll of Ressurection at %s' % (player.displayname(), target.displayname()))",
+        "onunequip": "",
+        "onequip": "",
+        "onpickup": "",
+        "onuse": "hitpoints = target.get('/core/combat/hitpoints',1)\r\nif hitpoints > 0:\r\n   campaign.error('%s is not dead ! What a waste of a scroll !')\r\ncampaign.error('%s is casting Scroll of Ressurection at %s' % (player.displayname(), target.displayname()))",
+        "onfinish": "campaign.warning('%s has finished casting Scroll of Resurrection at %s'  % (player.displayname(), target.displayname()))\r\ntarget.put('/core/combat/hitpoints',1)"
+    }
+}

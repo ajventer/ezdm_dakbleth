@@ -1,0 +1,39 @@
+{
+    "core": {
+        "lightradius": 0,
+        "current_rounds_performed": 0,
+        "name": "The Grimm Squeakers Scythe",
+        "weight": 0,
+        "in_use": false,
+        "charges": 0,
+        "price": {
+            "copper": 0,
+            "silver": 0,
+            "gold": 10000
+        },
+        "description": "The indestructable blade of this scythe is so thin that it glows slightly blue as air molecules are cut into their component parts when they bounce against it.",
+        "identified": true,
+        "rounds_per_charge": 0,
+        "icon": "icons/scythe2.png",
+        "type": "weapon",
+        "size": "large"
+    },
+    "conditional": {
+        "slot": "twohand",
+        "to_hit": "+1",
+        "dmg": 10,
+        "range": "medium",
+        "damage_type": "slice",
+        "weapon_type": "melee",
+        "save_against": "none"
+    },
+    "events": {
+        "ondrop": "",
+        "onround": "",
+        "onunequip": "",
+        "onequip": "",
+        "onpickup": "",
+        "onuse": "",
+        "onfinish": ""
+    }
+}
