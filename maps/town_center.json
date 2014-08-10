@@ -3258,7 +3258,9 @@
                         "onenter": ""
                     },
                     "npcs": [],
-                    "players": [],
+                    "players": [
+                        "venator_valdemar.json"
+                    ],
                     "silver": 0
                 }
             },
