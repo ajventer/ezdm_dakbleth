@@ -1,28 +1,28 @@
 {
     "core": {
         "abilities": {
-            "dex": 13,
-            "cha": 12,
-            "int": 12,
-            "wis": 14,
-            "str": 16,
+            "dex": 10,
+            "cha": 5,
+            "int": 9,
+            "wis": 8,
+            "str": 13,
             "con": 14
         },
         "lightradius": 0,
         "combat": {
             "level-hitdice": 1,
-            "hitpoints": 7,
-            "max_hp": 7
+            "hitpoints": 5,
+            "max_hp": 8
         },
         "personal": {
             "name": {
-                "last": "Valdemar",
-                "first": "Venator"
+                "last": "Bartfast",
+                "first": "Slarti"
             },
-            "backstory": "",
+            "backstory": "The town janitor and keeper of the keys to the sewers. The old man can apparently hold his drink rather better than the other townsfolk.",
             "sex": "male",
             "race": "human",
-            "xp": 10,
+            "xp": 0,
             "alignment": {
                 "law": "lawful",
                 "social": "neutral"
@@ -33,7 +33,7 @@
                 "head": {},
                 "righthand": {
                     "core": {
-                        "size": "medium",
+                        "size": "small",
                         "current_rounds_performed": 0,
                         "lightradius": 0,
                         "weight": 0,
@@ -42,27 +42,28 @@
                         "price": {
                             "copper": 0,
                             "silver": 0,
-                            "gold": 25
+                            "gold": 0
                         },
                         "identified": true,
-                        "name": "One Handed Bastard Sword",
+                        "name": "Broken Bottle",
                         "rounds_per_charge": 0,
-                        "icon": "icons/sword.png",
+                        "icon": "icons/silver.png",
                         "type": "weapon",
-                        "description": "To use:<br>Hold by blunt end.<br>Aim pointy end at person of unpleasant persona.<br>Attempt to thrust pointy end into person of unpleasant persona by means of a vigorous arm movement."
+                        "description": ""
                     },
                     "conditional": {
                         "slot": "righthand",
-                        "dmg": 8,
-                        "to_hit": "",
+                        "dmg": "1d4",
+                        "to_hit": 0,
                         "range": "short",
                         "damage_type": "slice",
                         "weapon_type": "melee",
                         "save_against": "none"
                     },
                     "events": {
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "ondrop": "",
                         "onround": "",
+                        "onunequip": "",
                         "onequip": "",
                         "onpickup": "",
                         "onuse": "",
@@ -82,26 +83,41 @@
             "money": {
                 "copper": 0,
                 "silver": 0,
-                "gold": 300
+                "gold": 0
             },
+            "spells_memorized": [],
             "pack": [],
             "spells": []
         },
-        "icon": "avatars/ven_valdis.png",
-        "type": "player",
+        "icon": "avatars/48x48_Faces_4th_Sheet_Update_CharlesGabriel_OGA_0-4-1.png",
+        "type": "npc",
         "class": {
-            "class": "ranger",
+            "class": "fighter",
             "parent": "warrior"
         },
         "location": {
-            "y": 11,
-            "x": 9,
-            "map": "town_center.json"
+            "y": 4,
+            "x": 7,
+            "map": "moes_tavern.json"
         }
     },
     "conditional": {
+        "orientation": "",
         "armor_types": 4,
-        "shields": true
+        "loot": {
+            "copper": 99,
+            "items_possible": [],
+            "gold": 10,
+            "max_items": 1,
+            "always_drops": [],
+            "silver": 99
+        },
+        "shields": true,
+        "events": {
+            "oninspect": "",
+            "oninteract": ""
+        }
     },
-    "index": 4
+    "hash": "0833688937c6028d1913c891201d04d728d69085b8d1e5688ebae91285bdd2b510d452bbb42f4e9f9dfcfc84ab7be8dc538d6efad2741c32a33f4bc164a21595",
+    "index": 9
 }

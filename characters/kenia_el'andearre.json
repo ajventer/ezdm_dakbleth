@@ -110,5 +110,6 @@
             "find-remove traps": 20
         },
         "shields": true
-    }
+    },
+    "index": 0
 }

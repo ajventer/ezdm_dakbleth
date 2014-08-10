@@ -95,7 +95,7 @@
         },
         "location": {
             "y": 11,
-            "x": 11,
+            "x": 10,
             "map": "town_center.json"
         }
     },
@@ -108,5 +108,6 @@
             "lay on hands (daily)": 100
         },
         "shields": true
-    }
+    },
+    "index": 2
 }

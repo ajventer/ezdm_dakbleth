@@ -94,7 +94,7 @@
         },
         "location": {
             "y": 11,
-            "x": 10,
+            "x": 11,
             "map": "town_center.json"
         }
     },
@@ -110,5 +110,6 @@
             "find-remove traps": 25
         },
         "shields": false
-    }
+    },
+    "index": 3
 }

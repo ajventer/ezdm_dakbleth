@@ -1,0 +1,39 @@
+{
+    "core": {
+        "lightradius": 0,
+        "current_rounds_performed": 0,
+        "name": "Broken Bottle",
+        "weight": 0,
+        "in_use": false,
+        "charges": 0,
+        "price": {
+            "copper": 0,
+            "silver": 0,
+            "gold": 0
+        },
+        "description": "",
+        "identified": true,
+        "rounds_per_charge": 0,
+        "icon": "icons/silver.png",
+        "type": "weapon",
+        "size": "small"
+    },
+    "conditional": {
+        "slot": "righthand",
+        "to_hit": 0,
+        "dmg": "1d4",
+        "range": "short",
+        "damage_type": "slice",
+        "weapon_type": "melee",
+        "save_against": "none"
+    },
+    "events": {
+        "ondrop": "",
+        "onround": "",
+        "onunequip": "",
+        "onequip": "",
+        "onpickup": "",
+        "onuse": "",
+        "onfinish": ""
+    }
+}

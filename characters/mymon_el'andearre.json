@@ -132,12 +132,13 @@
         },
         "location": {
             "y": 11,
-            "x": 12,
+            "x": 9,
             "map": "town_center.json"
         }
     },
     "conditional": {
         "armor_types": 1,
         "shields": false
-    }
+    },
+    "index": 1
 }

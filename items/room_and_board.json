@@ -1,0 +1,30 @@
+{
+    "core": {
+        "lightradius": 0,
+        "current_rounds_performed": 0,
+        "name": "Room and Board",
+        "weight": 0,
+        "in_use": false,
+        "charges": 0,
+        "price": {
+            "copper": 5,
+            "silver": 10,
+            "gold": 0
+        },
+        "description": "Pay for one night's stay in the inn.",
+        "identified": true,
+        "rounds_per_charge": 0,
+        "icon": "icons/bed.png",
+        "type": "other",
+        "size": ""
+    },
+    "events": {
+        "ondrop": "",
+        "onround": "",
+        "onunequip": "",
+        "onequip": "",
+        "onpickup": "",
+        "onuse": "",
+        "onfinish": ""
+    }
+}

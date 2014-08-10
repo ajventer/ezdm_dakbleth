@@ -1,0 +1,12 @@
+{
+    "core": {
+        "revealed": true,
+        "type": "wall",
+        "name": "tavern_wall",
+        "icon": "backgrounds/brick_brown0.png"
+    },
+    "conditional": {
+        "canenter": false,
+        "events": ""
+    }
+}
