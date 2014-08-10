@@ -1,0 +1,12 @@
+{
+    "core": {
+        "revealed": false,
+        "type": "wall",
+        "name": "sewer_wall",
+        "icon": "backgrounds/brick_dark0.png"
+    },
+    "conditional": {
+        "canenter": false,
+        "events": ""
+    }
+}

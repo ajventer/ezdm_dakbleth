@@ -1,0 +1,3245 @@
+{
+    "tiles": [
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "link",
+                    "revealed": true,
+                    "name": "cellar_entrance",
+                    "icon": "backgrounds/stone_stairs_down.png"
+                },
+                "conditional": {
+                    "canenter": true,
+                    "newmap": {
+                        "y": 0,
+                        "x": 0,
+                        "mapname": ""
+                    }
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": true,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "link",
+                    "name": "cellar_exit",
+                    "icon": "backgrounds/stone_stairs_up.png"
+                },
+                "conditional": {
+                    "players": [
+                        "venator_valdemar.json"
+                    ],
+                    "canenter": true,
+                    "newmap": {
+                        "mapname": "town_center.json",
+                        "x": 1,
+                        "y": 13
+                    }
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "wall",
+                    "revealed": false,
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            }
+        ]
+    ],
+    "lightradius": 1,
+    "name": "Sewers_1",
+    "max_x": 20,
+    "max_y": 15
+}

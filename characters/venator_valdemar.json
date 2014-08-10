@@ -95,7 +95,7 @@
         },
         "location": {
             "y": 11,
-            "x": 9,
+            "x": 12,
             "map": "town_center.json"
         }
     },
