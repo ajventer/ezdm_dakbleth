@@ -1815,7 +1815,10 @@
                             },
                             "conditional": {
                                 "armor_types": 4,
-                                "shields": true,
+                                "events": {
+                                    "oninspect": "",
+                                    "oninteract": ""
+                                },
                                 "loot": {
                                     "copper": 99,
                                     "items_possible": [
@@ -1826,11 +1829,8 @@
                                     "always_drops": [],
                                     "silver": 99
                                 },
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                },
-                                "orientation": " aggressive"
+                                "orientation": " aggressive",
+                                "shields": true
                             },
                             "hash": "8a8b58a508b725e2d5e327261d5263fabcfdb17ffea96acfe56c079277a707efd056c96404be99d54c85047e6ab6f9c1cd85a61f18737a74ef36bd31c98ca89e",
                             "index": 20
@@ -2873,10 +2873,7 @@
                             },
                             "conditional": {
                                 "armor_types": 4,
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                },
+                                "shields": true,
                                 "loot": {
                                     "copper": 99,
                                     "items_possible": [
@@ -2887,8 +2884,11 @@
                                     "always_drops": [],
                                     "silver": 99
                                 },
-                                "orientation": " aggressive",
-                                "shields": true
+                                "events": {
+                                    "oninspect": "",
+                                    "oninteract": ""
+                                },
+                                "orientation": " aggressive"
                             },
                             "hash": "1bf7f8b718f80b798fcc1f960c4ebd9b01e477e3fd14b13ae1e81c3fd096e088a264d759ba7a72b4479961e41ca05fb72c9dcf433216f8a22244005802b211ac",
                             "index": 24
@@ -4639,7 +4639,28 @@
                                 },
                                 "orientation": " aggressive"
                             }
-                        },
+                        }
+                    ],
+                    "players": [],
+                    "events": {
+                        "onenter": ""
+                    }
+                }
+            },
+            {
+                "core": {
+                    "type": "floor",
+                    "revealed": false,
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "silver": 0,
+                    "npcs": [
                         {
                             "core": {
                                 "abilities": {
@@ -4653,7 +4674,7 @@
                                 "lightradius": 0,
                                 "combat": {
                                     "level-hitdice": 1,
-                                    "hitpoints": 3,
+                                    "hitpoints": 5,
                                     "max_hp": 8
                                 },
                                 "personal": {
@@ -4717,7 +4738,7 @@
                                                     "silver": 0,
                                                     "gold": 10000
                                                 },
-                                                "description": "The indestructable blade of this scythe is so thin that it glows slightly blue as air molecules are cut into their component parts when they bounce against it.",
+                                                "description": "The indestructable blade of this scythe is so thin that it glows slightly blue as air molecules are cut into their component parts when they bounce against it.<br>\r\nSuccessfull strikes do an additional 1d4 shadow damage.",
                                                 "identified": true,
                                                 "name": "The Grimm Squeakers Scythe",
                                                 "rounds_per_charge": 0,
@@ -4732,6 +4753,9 @@
                                                 "range": "medium",
                                                 "damage_type": "slice",
                                                 "weapon_type": "melee",
+                                                "events": {
+                                                    "onstrike": "from ezdm_libs.util import rolldice\r\nshadow = rolldice (numdice=1, numsides=4, modifier=0)\r\ncampaign.message('%s does additional shadow damage to %s' % (item.displayname(), target.displayname()))\r\ncampaign.message(shadow[1])\r\nresult = target.take_damage(shadow[0])\r\ncampaign.message(result[1])"
+                                                },
                                                 "save_against": "none"
                                             },
                                             "events": {
@@ -4893,7 +4917,7 @@
                                                     "silver": 0,
                                                     "gold": 10000
                                                 },
-                                                "description": "The indestructable blade of this scythe is so thin that it glows slightly blue as air molecules are cut into their component parts when they bounce against it.",
+                                                "description": "The indestructable blade of this scythe is so thin that it glows slightly blue as air molecules are cut into their component parts when they bounce against it.<br>\r\nSuccessfull strikes do an additional 1d4 shadow damage.",
                                                 "identified": true,
                                                 "name": "The Grimm Squeakers Scythe",
                                                 "rounds_per_charge": 0,
@@ -4903,11 +4927,14 @@
                                             },
                                             "conditional": {
                                                 "slot": "twohand",
-                                                "to_hit": "+1",
                                                 "dmg": 10,
+                                                "to_hit": "+1",
                                                 "range": "medium",
                                                 "damage_type": "slice",
                                                 "weapon_type": "melee",
+                                                "events": {
+                                                    "onstrike": "from ezdm_libs.util import rolldice\r\nshadow = rolldice (numdice=1, numsides=4, modifier=0)\r\ncampaign.message('%s does additional shadow damage to %s' % (item.displayname(), target.displayname()))\r\ncampaign.message(shadow[1])\r\nresult = target.take_damage(shadow[0])\r\ncampaign.message(result[1])"
+                                                },
                                                 "save_against": "none"
                                             },
                                             "events": {
@@ -4933,7 +4960,7 @@
                                 "location": {
                                     "y": 9,
                                     "map": "sewers_1.json",
-                                    "x": 13
+                                    "x": 14
                                 },
                                 "type": "npc",
                                 "class": {
@@ -4965,30 +4992,10 @@
                                     "oninteract": ""
                                 }
                             },
-                            "hash": "3668b8332b21b3474fc02ce49d99debaa590f215426b091c06cde8c09ab56bab8955ee2875385489d976a54b0433e2b52c281f2bad0ca48b1620be8ce262e567",
+                            "hash": "ea10d79038bdd3f3acb70bafa7088f4b6b38b6dfed5c65f8bd7bbdc290d562b0860cf6787fde25b3688c5e73a146aee63f01b47814d11410d381a9a10f95622b",
                             "index": 29
                         }
                     ],
-                    "players": [],
-                    "events": {
-                        "onenter": ""
-                    }
-                }
-            },
-            {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
-                "conditional": {
-                    "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
-                    "items": [],
-                    "silver": 0,
-                    "npcs": [],
                     "players": [],
                     "events": {
                         "onenter": ""
@@ -5190,6 +5197,10 @@
                             },
                             "conditional": {
                                 "armor_types": 4,
+                                "events": {
+                                    "oninspect": "",
+                                    "oninteract": ""
+                                },
                                 "loot": {
                                     "copper": 99,
                                     "items_possible": [
@@ -5201,11 +5212,7 @@
                                     "silver": 99
                                 },
                                 "orientation": " aggressive",
-                                "shields": true,
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                }
+                                "shields": true
                             },
                             "hash": "beccd206d237880f4b6d76f892fde69821d0cca82805c8822dc42b5b081e48575a212be47320cb756c135482f857fab6fbb6466f9b1d4b212477722ff59623f0",
                             "index": 30
@@ -6734,7 +6741,7 @@
         ]
     ],
     "max_y": 15,
-    "lightradius": 1,
+    "name": "Sewers_1",
     "max_x": 20,
-    "name": "Sewers_1"
+    "lightradius": 1
 }

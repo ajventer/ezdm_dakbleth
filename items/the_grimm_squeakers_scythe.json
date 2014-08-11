@@ -11,7 +11,7 @@
             "silver": 0,
             "gold": 10000
         },
-        "description": "The indestructable blade of this scythe is so thin that it glows slightly blue as air molecules are cut into their component parts when they bounce against it.",
+        "description": "The indestructable blade of this scythe is so thin that it glows slightly blue as air molecules are cut into their component parts when they bounce against it.<br>\r\nSuccessfull strikes do an additional 1d4 shadow damage.",
         "identified": true,
         "rounds_per_charge": 0,
         "icon": "icons/scythe2.png",
@@ -25,6 +25,9 @@
         "range": "medium",
         "damage_type": "slice",
         "weapon_type": "melee",
+        "events": {
+            "onstrike": "from ezdm_libs.util import rolldice\r\nshadow = rolldice (numdice=1, numsides=4, modifier=0)\r\ncampaign.message('%s does additional shadow damage to %s' % (item.displayname(), target.displayname()))\r\ncampaign.message(shadow[1])\r\nresult = target.take_damage(shadow[0])\r\ncampaign.message(result[1])"
+        },
         "save_against": "none"
     },
     "events": {
