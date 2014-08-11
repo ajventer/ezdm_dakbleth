@@ -1,0 +1,42 @@
+{
+    "core": {
+        "lightradius": 0,
+        "current_rounds_performed": 0,
+        "name": "Chomping Bite",
+        "weight": 0,
+        "in_use": false,
+        "charges": 0,
+        "price": {
+            "copper": 0,
+            "silver": 0,
+            "gold": 0
+        },
+        "description": "",
+        "identified": true,
+        "rounds_per_charge": 0,
+        "icon": "",
+        "type": "weapon",
+        "size": "small"
+    },
+    "conditional": {
+        "slot": "twohand",
+        "to_hit": 1,
+        "dmg": 8,
+        "range": "short",
+        "damage_type": "hack",
+        "weapon_type": "melee",
+        "events": {
+            "onstrike": ""
+        },
+        "save_against": "none"
+    },
+    "events": {
+        "ondrop": "",
+        "onround": "",
+        "onunequip": "",
+        "onequip": "",
+        "onpickup": "",
+        "onuse": "",
+        "onfinish": ""
+    }
+}

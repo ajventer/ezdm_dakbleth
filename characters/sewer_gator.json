@@ -1,0 +1,307 @@
+{
+    "core": {
+        "abilities": {
+            "dex": 12,
+            "cha": 3,
+            "int": 8,
+            "wis": 7,
+            "str": 17,
+            "con": 18
+        },
+        "lightradius": 0,
+        "combat": {
+            "level-hitdice": 1,
+            "hitpoints": 0,
+            "max_hp": 0
+        },
+        "personal": {
+            "name": {
+                "last": "Gator",
+                "first": "Sewer"
+            },
+            "backstory": "It's true ! There really are aligators in the sewers !",
+            "sex": "female",
+            "race": "creature",
+            "xp": 0,
+            "alignment": {
+                "law": "chaotic",
+                "social": "evil"
+            }
+        },
+        "location": {
+            "y": "",
+            "map": "",
+            "x": ""
+        },
+        "icon": "avatars/alligator.png",
+        "type": "npc",
+        "class": {
+            "class": "fighter",
+            "parent": "warrior"
+        },
+        "inventory": {
+            "equiped": {
+                "head": {
+                    "core": {
+                        "lightradius": 0,
+                        "current_rounds_performed": 0,
+                        "description": "",
+                        "weight": 2,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 1
+                        },
+                        "identified": true,
+                        "name": "Crocodile Leather Helm",
+                        "rounds_per_charge": 0,
+                        "size": "small",
+                        "type": "armor",
+                        "icon": "icons/tough_leather_helm.png"
+                    },
+                    "conditional": {
+                        "slot": "head",
+                        "ac": 1.6,
+                        "material": "leather"
+                    },
+                    "events": {
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onunequip": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
+                "righthand": {
+                    "core": {
+                        "lightradius": 0,
+                        "current_rounds_performed": 0,
+                        "name": "Chomping Bite",
+                        "weight": 0,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 0
+                        },
+                        "description": "",
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "size": "small",
+                        "type": "weapon",
+                        "icon": ""
+                    },
+                    "conditional": {
+                        "slot": "twohand",
+                        "dmg": 8,
+                        "to_hit": 1,
+                        "range": "short",
+                        "damage_type": "hack",
+                        "weapon_type": "melee",
+                        "events": {
+                            "onstrike": ""
+                        },
+                        "save_against": "none"
+                    },
+                    "events": {
+                        "ondrop": "",
+                        "onround": "",
+                        "onunequip": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
+                "neck": {},
+                "wrists": {},
+                "rightfinger": {},
+                "feet": {
+                    "core": {
+                        "current_rounds_performed": 0,
+                        "name": "Crocodile Leather Boots",
+                        "weight": 1,
+                        "in_use": false,
+                        "charges": 0,
+                        "type": "armor",
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 1
+                        },
+                        "description": "",
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "icon": "icons/tough_leather_boots.png",
+                        "lightradius": 0,
+                        "size": "small"
+                    },
+                    "conditional": {
+                        "slot": "feet",
+                        "ac": 0.4,
+                        "material": "leather"
+                    },
+                    "events": {
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onunequip": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
+                "chest": {
+                    "core": {
+                        "current_rounds_performed": 0,
+                        "lightradius": 0,
+                        "weight": 8,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 50,
+                            "gold": 1
+                        },
+                        "description": "",
+                        "identified": true,
+                        "name": "Crocodile Leather Chest",
+                        "rounds_per_charge": 0,
+                        "size": "medium",
+                        "type": "armor",
+                        "icon": "icons/tough_leather_armor.png"
+                    },
+                    "conditional": {
+                        "slot": "chest",
+                        "ac": 2,
+                        "material": "leather"
+                    },
+                    "events": {
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onunequip": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
+                "leftfinger": {},
+                "gloves": {},
+                "hands": {
+                    "core": {
+                        "lightradius": 0,
+                        "current_rounds_performed": 0,
+                        "description": "",
+                        "weight": 1,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 1
+                        },
+                        "identified": true,
+                        "name": "Crocodile Leather Gloves",
+                        "rounds_per_charge": 0,
+                        "size": "small",
+                        "type": "armor",
+                        "icon": "icons/tough_leather_gloves.png"
+                    },
+                    "conditional": {
+                        "slot": "hands",
+                        "ac": 0.4,
+                        "material": "leather"
+                    },
+                    "events": {
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onunequip": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
+                "legs": {},
+                "lefthand": {
+                    "core": {
+                        "lightradius": 0,
+                        "current_rounds_performed": 0,
+                        "name": "Chomping Bite",
+                        "weight": 0,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 0
+                        },
+                        "description": "",
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "size": "small",
+                        "type": "weapon",
+                        "icon": ""
+                    },
+                    "conditional": {
+                        "slot": "twohand",
+                        "to_hit": 1,
+                        "dmg": 8,
+                        "range": "short",
+                        "damage_type": "hack",
+                        "weapon_type": "melee",
+                        "events": {
+                            "onstrike": ""
+                        },
+                        "save_against": "none"
+                    },
+                    "events": {
+                        "ondrop": "",
+                        "onround": "",
+                        "onunequip": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                }
+            },
+            "money": {
+                "copper": 0,
+                "silver": 0,
+                "gold": 0
+            },
+            "spells_memorized": [],
+            "pack": [],
+            "spells": []
+        }
+    },
+    "conditional": {
+        "armor_types": 4,
+        "shields": true,
+        "loot": {
+            "copper": 99,
+            "items_possible": [
+                "crocodile_leather_boots.json",
+                "crocodile_leather_chest.json",
+                "crocodile_leather_gloves.json",
+                "crocodile_leather_helm.json"
+            ],
+            "gold": 100,
+            "max_items": 1,
+            "always_drops": [],
+            "silver": 99
+        },
+        "events": {
+            "oninspect": "",
+            "oninteract": ""
+        },
+        "orientation": ""
+    }
+}

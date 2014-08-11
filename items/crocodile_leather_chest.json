@@ -1,0 +1,35 @@
+{
+    "core": {
+        "lightradius": 0,
+        "current_rounds_performed": 0,
+        "name": "Crocodile Leather Chest",
+        "weight": 8,
+        "in_use": false,
+        "charges": 0,
+        "price": {
+            "copper": 0,
+            "silver": 50,
+            "gold": 1
+        },
+        "description": "",
+        "identified": false,
+        "rounds_per_charge": 0,
+        "icon": "icons/tough_leather_armor.png",
+        "type": "armor",
+        "size": "medium"
+    },
+    "conditional": {
+        "slot": "chest",
+        "ac": 2,
+        "material": "leather"
+    },
+    "events": {
+        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+        "onround": "",
+        "onunequip": "",
+        "onequip": "",
+        "onpickup": "",
+        "onuse": "",
+        "onfinish": ""
+    }
+}
