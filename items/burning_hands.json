@@ -1,0 +1,35 @@
+{
+    "core": {
+        "lightradius": 0,
+        "current_rounds_performed": 0,
+        "name": "Burning hands",
+        "weight": 0,
+        "in_use": false,
+        "charges": -1,
+        "price": {
+            "copper": 0,
+            "silver": 0,
+            "gold": 3000
+        },
+        "description": "A jet of flame shoots from the wizards fingertips burning the primary target any any other characters on the same tile for 1d3 + level of wizard fire damage.",
+        "identified": "",
+        "rounds_per_charge": 0,
+        "icon": "icons/bolt_of_magma.png",
+        "type": "spell",
+        "size": "small"
+    },
+    "conditional": {
+        "spell_school": "Conjuration",
+        "spell_level": 1,
+        "spell_type": "wizard spells"
+    },
+    "events": {
+        "ondrop": "",
+        "onround": "",
+        "onunequip": "",
+        "onequip": "",
+        "onpickup": "",
+        "onuse": "from ezdm_libs.util import rolldice\r\nmodifier = player.get('/core/combat/level-hitdice', 1)\r\ncampaign.message('%s casts %s at %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nloc = target.location()\r\nfor char in list(campaign.characterlist):\r\n    if char.location() == loc:\r\n        campaign.message('%s hits %s' % (item.displayname(), char.displayname() ))\r\n        damage_roll=rolldice(numdice=1, numsides=3, modifier=modifier)\r\n        campaign.message(damage_roll[1])\r\n        st = char.saving_throw('spell')\r\n        campaign.message(st[1])\r\n        if st[0]:\r\n            campaign.message('%s successfully save, damage reduced by half' % target.displayname())\r\n            damage = int(damage_roll[0] / 2)\r\n        else:\r\n            damage = damage_roll[0]\r\n        result = char.take_damage(damage)\r\n        campaign.message(result[1])\r\n        campaign.message(char.autosave())",
+        "onfinish": ""
+    }
+}

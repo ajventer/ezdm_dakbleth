@@ -31,7 +31,7 @@
         "location": {
             "y": 9,
             "map": "sewers_1.json",
-            "x": 14
+            "x": 13
         },
         "icon": "avatars/quakes_grimmer.png",
         "type": "npc",

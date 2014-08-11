@@ -1,0 +1,30 @@
+{
+    "core": {
+        "lightradius": 0,
+        "current_rounds_performed": 0,
+        "name": "Coninas lost haircutting scissors",
+        "weight": 0,
+        "in_use": false,
+        "charges": 1,
+        "price": {
+            "copper": 0,
+            "silver": 0,
+            "gold": 55
+        },
+        "description": "Conina, daughter of legendary barbarian hero Cohen chose a career as a hair dresser despite the unfortunate drawback of inheriting her fathers talents.<br>\r\nThis didn't work out as well as she had hoped.<br>Her scissors are made of excellent tempered steel, though the hinge-bolt has been rusted from years in the sewers.<br>\r\n",
+        "identified": false,
+        "rounds_per_charge": 0,
+        "icon": "icons/scissors.png",
+        "type": "other",
+        "size": "small"
+    },
+    "events": {
+        "ondrop": "",
+        "onround": "",
+        "onunequip": "",
+        "onequip": "",
+        "onpickup": "",
+        "onuse": "from ezdm_libs.item import Item\r\nfrom ezdm_libs.util import load_json\r\ndagger1=Item(load_json('items','coninas_mainhand_scissor_dagger_+1.json'))\r\ndagger2=Item(load_json('items','coninas_offhand_scissor_dagger_+1.json'))\r\nplayer.acquire_item(dagger1)\r\nplayer.equip_item(0)\r\nplayer.acquire_item(dagger2)\r\nplayer.equip_item(0)\r\nplayer.save()\r\ncampaign.error('The rusty bolt shatters leaving you with two excellent steel blades which will make good daggers !')",
+        "onfinish": ""
+    }
+}
