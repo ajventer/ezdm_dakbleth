@@ -1,0 +1,167 @@
+{
+    "core": {
+        "abilities": {
+            "dex": 7,
+            "cha": 1,
+            "int": 6,
+            "wis": 4,
+            "str": 22,
+            "con": 18
+        },
+        "lightradius": 0,
+        "combat": {
+            "level-hitdice": 5,
+            "hitpoints": 0,
+            "max_hp": 0
+        },
+        "personal": {
+            "name": {
+                "last": "The Crap Demon",
+                "first": "Golgothan"
+            },
+            "backstory": "Crucifixion causes the human body to loose control of it's bowels. It is said that after the many crucifixions at Golgotha the pile of excrement\r\nand the terrible suffering it  represented gave birth to a terrible demon.",
+            "sex": "male",
+            "race": "monster",
+            "xp": 0,
+            "alignment": {
+                "law": "chaotic",
+                "social": "evil"
+            }
+        },
+        "inventory": {
+            "equiped": {
+                "head": {},
+                "righthand": {
+                    "core": {
+                        "size": "large",
+                        "current_rounds_performed": 0,
+                        "description": "The terrible smell of putrid excrement.",
+                        "weight": 0,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 0
+                        },
+                        "identified": true,
+                        "name": "Terrible Stench",
+                        "rounds_per_charge": 0,
+                        "icon": "",
+                        "type": "weapon",
+                        "lightradius": 0
+                    },
+                    "conditional": {
+                        "slot": "twohand",
+                        "dmg": 4,
+                        "to_hit": 1,
+                        "range": "long",
+                        "damage_type": "stab",
+                        "weapon_type": "misile",
+                        "events": {
+                            "onstrike": "campaign.error('You are hit by the terrible smell !')"
+                        },
+                        "save_against": "breath"
+                    },
+                    "events": {
+                        "ondrop": "",
+                        "onround": "",
+                        "onunequip": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
+                "neck": {},
+                "wrists": {},
+                "leftfinger": {},
+                "feet": {},
+                "rightfinger": {},
+                "gloves": {},
+                "legs": {},
+                "lefthand": {
+                    "core": {
+                        "lightradius": 0,
+                        "current_rounds_performed": 0,
+                        "description": "The terrible smell of putrid excrement.",
+                        "weight": 0,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 0
+                        },
+                        "identified": true,
+                        "name": "Terrible Stench",
+                        "rounds_per_charge": 0,
+                        "size": "large",
+                        "type": "weapon",
+                        "icon": ""
+                    },
+                    "conditional": {
+                        "slot": "twohand",
+                        "to_hit": 1,
+                        "dmg": 4,
+                        "range": "long",
+                        "damage_type": "stab",
+                        "weapon_type": "misile",
+                        "events": {
+                            "onstrike": "campaign.error('You are hit by the terrible smell !')"
+                        },
+                        "save_against": "breath"
+                    },
+                    "events": {
+                        "ondrop": "",
+                        "onround": "",
+                        "onunequip": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
+                "chest": {}
+            },
+            "money": {
+                "copper": 0,
+                "silver": 0,
+                "gold": 0
+            },
+            "spells_memorized": [],
+            "pack": [],
+            "spells": []
+        },
+        "icon": "avatars/crazy_yiuf.png",
+        "type": "npc",
+        "class": {
+            "class": "fighter",
+            "parent": "warrior"
+        },
+        "location": {
+            "y": 2,
+            "x": 2,
+            "map": "sewers_3.json"
+        }
+    },
+    "conditional": {
+        "orientation": " aggressive",
+        "armor_types": 4,
+        "loot": {
+            "copper": 99,
+            "items_possible": [],
+            "gold": 1000,
+            "max_items": 1,
+            "always_drops": [
+                "the_g-string_of_ayamahspeto.json"
+            ],
+            "silver": 99
+        },
+        "shields": true,
+        "events": {
+            "oninspect": "",
+            "oninteract": ""
+        }
+    }
+}

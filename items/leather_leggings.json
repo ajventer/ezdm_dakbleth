@@ -1,5 +1,6 @@
 {
     "core": {
+        "lightradius": 0,
         "current_rounds_performed": 0,
         "name": "Leather Leggings",
         "weight": 2,
@@ -13,18 +14,19 @@
         "description": "",
         "identified": false,
         "rounds_per_charge": 0,
-        "icon": "icons/leather_legs.png",
+        "icon": "icons/tough_leather_boots.png",
         "type": "armor",
         "size": "large"
     },
     "conditional": {
         "slot": "legs",
-        "ac": 0.3,
+        "ac": 0.8,
         "material": "leather"
     },
     "events": {
         "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
         "onround": "",
+        "onunequip": "",
         "onequip": "",
         "onpickup": "",
         "onuse": "",
