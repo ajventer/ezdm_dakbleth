@@ -22,7 +22,7 @@
             "backstory": "",
             "sex": "male",
             "race": "human",
-            "xp": 65,
+            "xp": 565,
             "alignment": {
                 "law": "lawful",
                 "social": "neutral"
@@ -52,7 +52,7 @@
                         "price": {
                             "copper": 0,
                             "silver": 0,
-                            "gold": 10
+                            "gold": 8
                         },
                         "identified": true,
                         "name": "Ringmail Coif",
@@ -304,34 +304,6 @@
                             "silver": 0,
                             "gold": 10
                         },
-                        "identified": true,
-                        "rounds_per_charge": 1,
-                        "icon": "icons/health_potion.png",
-                        "size": "small",
-                        "type": "other",
-                        "description": "Heals the target character for 1d6 hitpoints"
-                    },
-                    "events": {
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "onfinish": ""
-                    }
-                },
-                {
-                    "core": {
-                        "current_rounds_performed": 0,
-                        "name": "Health Potion",
-                        "weight": 0,
-                        "in_use": false,
-                        "charges": 1,
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
                         "description": "Heals the target character for 1d6 hitpoints",
                         "identified": true,
                         "rounds_per_charge": 1,
@@ -450,6 +422,34 @@
                         "size": "small",
                         "type": "other",
                         "icon": "icons/health_potion.png"
+                    },
+                    "events": {
+                        "ondrop": "",
+                        "onround": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
+                        "onfinish": ""
+                    }
+                },
+                {
+                    "core": {
+                        "current_rounds_performed": 0,
+                        "name": "Health Potion",
+                        "weight": 0,
+                        "in_use": false,
+                        "charges": 1,
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 10
+                        },
+                        "identified": true,
+                        "rounds_per_charge": 1,
+                        "icon": "icons/health_potion.png",
+                        "size": "small",
+                        "type": "other",
+                        "description": "Heals the target character for 1d6 hitpoints"
                     },
                     "events": {
                         "ondrop": "",
