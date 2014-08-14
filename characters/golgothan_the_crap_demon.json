@@ -11,8 +11,8 @@
         "lightradius": 0,
         "combat": {
             "level-hitdice": 5,
-            "hitpoints": 0,
-            "max_hp": 0
+            "hitpoints": 20,
+            "max_hp": 40
         },
         "personal": {
             "name": {
@@ -140,9 +140,9 @@
             "parent": "warrior"
         },
         "location": {
-            "y": 2,
-            "x": 2,
-            "map": "sewers_3.json"
+            "y": 5,
+            "x": 1,
+            "map": "simple_room.json"
         }
     },
     "conditional": {
@@ -163,5 +163,7 @@
             "oninspect": "",
             "oninteract": ""
         }
-    }
+    },
+    "hash": "f090e2ca723e59023e409a7efcc924a13b107d4de21ba8e7f9b345c911723613a0e5d19ab0b0fc41d01548833c033bc41b6fca9fa337b4e82cb043ab1f511b01",
+    "index": 2
 }

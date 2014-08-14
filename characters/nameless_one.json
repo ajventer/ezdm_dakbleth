@@ -22,20 +22,63 @@
             "backstory": "",
             "sex": "male",
             "race": "human",
-            "xp": 0,
+            "xp": 5,
             "alignment": {
                 "law": "lawful",
                 "social": "good"
             }
         },
+        "location": {
+            "y": 11,
+            "map": "sewers_1.json",
+            "x": 1
+        },
+        "icon": "avatars/human_paladin.png",
+        "type": "player",
+        "class": {
+            "class": "paladin",
+            "parent": "warrior"
+        },
         "inventory": {
             "equiped": {
-                "head": {},
+                "head": {
+                    "core": {
+                        "current_rounds_performed": 0,
+                        "description": "",
+                        "weight": 10,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 30
+                        },
+                        "identified": true,
+                        "name": "Bronze Plate Helm",
+                        "rounds_per_charge": 0,
+                        "size": "small",
+                        "type": "armor",
+                        "icon": "icons/plate_helm.png"
+                    },
+                    "conditional": {
+                        "slot": "head",
+                        "ac": 1,
+                        "material": "plate"
+                    },
+                    "events": {
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
                 "righthand": {
                     "core": {
-                        "size": "medium",
-                        "current_rounds_performed": 0,
                         "lightradius": 0,
+                        "current_rounds_performed": 0,
+                        "name": "One Handed Bastard Sword",
                         "weight": 0,
                         "in_use": false,
                         "charges": 0,
@@ -44,12 +87,12 @@
                             "silver": 0,
                             "gold": 25
                         },
+                        "description": "To use:<br>Hold by blunt end.<br>Aim pointy end at person of unpleasant persona.<br>Attempt to thrust pointy end into person of unpleasant persona by means of a vigorous arm movement.",
                         "identified": true,
-                        "name": "One Handed Bastard Sword",
                         "rounds_per_charge": 0,
-                        "icon": "icons/sword.png",
+                        "size": "medium",
                         "type": "weapon",
-                        "description": "To use:<br>Hold by blunt end.<br>Aim pointy end at person of unpleasant persona.<br>Attempt to thrust pointy end into person of unpleasant persona by means of a vigorous arm movement."
+                        "icon": "icons/sword.png"
                     },
                     "conditional": {
                         "slot": "righthand",
@@ -72,39 +115,157 @@
                 "neck": {},
                 "wrists": {},
                 "rightfinger": {},
-                "feet": {},
-                "chest": {},
+                "feet": {
+                    "core": {
+                        "current_rounds_performed": 0,
+                        "name": "Bronze Plate Boots",
+                        "weight": 2,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 20
+                        },
+                        "description": "",
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "icon": "icons/plate_boots.png",
+                        "type": "armor",
+                        "size": "small"
+                    },
+                    "conditional": {
+                        "slot": "feet",
+                        "ac": 0.2,
+                        "material": "plate"
+                    },
+                    "events": {
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
+                "chest": {
+                    "core": {
+                        "current_rounds_performed": 0,
+                        "description": "",
+                        "weight": 23,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 130
+                        },
+                        "identified": true,
+                        "name": "Bronze Plate Chest",
+                        "rounds_per_charge": 0,
+                        "size": "medium",
+                        "type": "armor",
+                        "icon": "icons/plate_armor.png"
+                    },
+                    "conditional": {
+                        "slot": "chest",
+                        "ac": 3.0,
+                        "material": "plate"
+                    },
+                    "events": {
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
                 "leftfinger": {},
                 "gloves": {},
-                "legs": {},
+                "hands": {
+                    "core": {
+                        "current_rounds_performed": 0,
+                        "description": "Cheap plate gloves made from bronze.",
+                        "weight": 4,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 50
+                        },
+                        "identified": true,
+                        "name": "Bronze Plate Gloves",
+                        "rounds_per_charge": 0,
+                        "size": "small",
+                        "type": "armor",
+                        "icon": "icons/plate_gloves.png"
+                    },
+                    "conditional": {
+                        "slot": "hands",
+                        "ac": 0.6,
+                        "material": "plate"
+                    },
+                    "events": {
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
+                "legs": {
+                    "core": {
+                        "current_rounds_performed": 0,
+                        "description": "",
+                        "weight": 7,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 170
+                        },
+                        "identified": true,
+                        "name": "Bronze Plate Legs",
+                        "rounds_per_charge": 0,
+                        "icon": "icons/plate_legs.png",
+                        "type": "armor",
+                        "size": "large"
+                    },
+                    "conditional": {
+                        "slot": "legs",
+                        "ac": 0.9,
+                        "material": "plate"
+                    },
+                    "events": {
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
                 "lefthand": {}
             },
             "money": {
                 "copper": 0,
                 "silver": 0,
-                "gold": 300
+                "gold": 0
             },
             "pack": [],
             "spells": []
-        },
-        "icon": "avatars/human_paladin.png",
-        "type": "player",
-        "class": {
-            "class": "paladin",
-            "parent": "warrior"
-        },
-        "location": {
-            "y": 11,
-            "x": 10,
-            "map": "town_center.json"
         }
     },
     "conditional": {
         "armor_types": 4,
         "abilities": {
             "sense evil intent(must end turn)": 100,
-            "Turn undead (level 3+)": 100,
             "cure disease(weekly)": 100,
+            "Turn undead (level 3+)": 100,
             "lay on hands (daily)": 100
         },
         "shields": true

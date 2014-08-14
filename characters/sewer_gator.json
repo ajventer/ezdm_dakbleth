@@ -11,8 +11,8 @@
         "lightradius": 0,
         "combat": {
             "level-hitdice": 1,
-            "hitpoints": 0,
-            "max_hp": 0
+            "hitpoints": 5,
+            "max_hp": 8
         },
         "personal": {
             "name": {
@@ -29,9 +29,9 @@
             }
         },
         "location": {
-            "y": "",
-            "map": "",
-            "x": ""
+            "y": 4,
+            "map": "simple_room.json",
+            "x": 2
         },
         "icon": "avatars/alligator.png",
         "type": "npc",
@@ -303,5 +303,7 @@
             "oninteract": ""
         },
         "orientation": ""
-    }
+    },
+    "hash": "0aac778918b8f37d24663526f152edc4920cda25eac7ca702959d0fc645c1eedb662a4ca180cb8a37ef33674372ba5572bbf22956b74e401cdeb587e02e434d7",
+    "index": 2
 }

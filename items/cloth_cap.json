@@ -1,5 +1,6 @@
 {
     "core": {
+        "lightradius": 0,
         "current_rounds_performed": 0,
         "name": "Cloth Cap",
         "weight": 3,
@@ -19,12 +20,13 @@
     },
     "conditional": {
         "slot": "head",
-        "ac": 6,
+        "ac": 0.6,
         "material": "cloth"
     },
     "events": {
         "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
         "onround": "",
+        "onunequip": "",
         "onequip": "",
         "onpickup": "",
         "onuse": "",

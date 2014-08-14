@@ -2096,10 +2096,10 @@
             },
             {
                 "core": {
-                    "revealed": true,
                     "type": "link",
+                    "revealed": true,
                     "name": "map_link",
-                    "icon": "backgrounds/dngn_open_door.png"
+                    "icon": "backgrounds/dngn_closed_door.png"
                 },
                 "conditional": {
                     "players": [],
@@ -3214,9 +3214,7 @@
                         "onenter": ""
                     },
                     "npcs": [],
-                    "players": [
-                        "nameless_one.json"
-                    ],
+                    "players": [],
                     "silver": 0
                 }
             },
@@ -3236,9 +3234,7 @@
                         "onenter": ""
                     },
                     "npcs": [],
-                    "players": [
-                        "sylvann_treesinger.json"
-                    ],
+                    "players": [],
                     "silver": 0
                 }
             },
@@ -3258,9 +3254,7 @@
                         "onenter": ""
                     },
                     "npcs": [],
-                    "players": [
-                        "venator_valdemar.json"
-                    ],
+                    "players": [],
                     "silver": 0
                 }
             },

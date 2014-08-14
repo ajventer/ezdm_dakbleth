@@ -1,5 +1,6 @@
 {
     "core": {
+        "lightradius": 0,
         "current_rounds_performed": 0,
         "name": "Ringmail Coif",
         "weight": 5,
@@ -19,12 +20,13 @@
     },
     "conditional": {
         "slot": "head",
-        "ac": 5,
+        "ac": 0.9,
         "material": "mail"
     },
     "events": {
         "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
         "onround": "",
+        "onunequip": "",
         "onequip": "",
         "onpickup": "",
         "onuse": "",

@@ -1,0 +1,87 @@
+{
+    "core": {
+        "abilities": {
+            "dex": 16,
+            "cha": 1,
+            "int": 1,
+            "wis": 1,
+            "str": 7,
+            "con": 7
+        },
+        "lightradius": 0,
+        "combat": {
+            "level-hitdice": 1,
+            "hitpoints": 2,
+            "max_hp": 8
+        },
+        "personal": {
+            "name": {
+                "last": "Rat",
+                "first": "Sewer"
+            },
+            "backstory": "Smelly, dirty plaguebearing pests.",
+            "sex": "female",
+            "race": "creature",
+            "xp": 0,
+            "alignment": {
+                "law": "",
+                "social": ""
+            }
+        },
+        "location": {
+            "y": 10,
+            "x": 1,
+            "map": "sewers_1.json"
+        },
+        "icon": "avatars/rat.png",
+        "type": "npc",
+        "class": {
+            "class": "fighter",
+            "parent": "warrior"
+        },
+        "inventory": {
+            "equiped": {
+                "head": {},
+                "righthand": {},
+                "neck": {},
+                "wrists": {},
+                "rightfinger": {},
+                "chest": {},
+                "feet": {},
+                "leftfinger": {},
+                "gloves": {},
+                "legs": {},
+                "lefthand": {}
+            },
+            "money": {
+                "copper": 0,
+                "silver": 0,
+                "gold": 0
+            },
+            "spells_memorized": [],
+            "pack": [],
+            "spells": []
+        }
+    },
+    "conditional": {
+        "orientation": " aggressive",
+        "armor_types": 4,
+        "loot": {
+            "copper": 99,
+            "items_possible": [
+                "health_potion.json"
+            ],
+            "gold": 1,
+            "max_items": 1,
+            "always_drops": [],
+            "silver": 99
+        },
+        "shields": true,
+        "events": {
+            "oninspect": "",
+            "oninteract": ""
+        }
+    },
+    "hash": "beccd206d237880f4b6d76f892fde69821d0cca82805c8822dc42b5b081e48575a212be47320cb756c135482f857fab6fbb6466f9b1d4b212477722ff59623f0",
+    "index": 13
+}
