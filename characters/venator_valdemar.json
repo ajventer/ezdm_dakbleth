@@ -11,7 +11,7 @@
         "lightradius": 0,
         "combat": {
             "level-hitdice": 1,
-            "hitpoints": 7,
+            "hitpoints": 6,
             "max_hp": 7
         },
         "personal": {
@@ -22,16 +22,16 @@
             "backstory": "",
             "sex": "male",
             "race": "human",
-            "xp": 565,
+            "xp": 770,
             "alignment": {
                 "law": "lawful",
                 "social": "neutral"
             }
         },
         "location": {
-            "y": 10,
+            "y": 0,
             "map": "sewers_1.json",
-            "x": 1
+            "x": 10
         },
         "icon": "avatars/ven_valdis.png",
         "type": "player",
@@ -289,7 +289,7 @@
             "money": {
                 "copper": 10,
                 "silver": 9,
-                "gold": 188
+                "gold": 195
             },
             "pack": [
                 {
@@ -304,34 +304,6 @@
                             "silver": 0,
                             "gold": 10
                         },
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "identified": true,
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "type": "other",
-                        "icon": "icons/health_potion.png"
-                    },
-                    "events": {
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "onfinish": ""
-                    }
-                },
-                {
-                    "core": {
-                        "current_rounds_performed": 0,
-                        "name": "Health Potion",
-                        "weight": 0,
-                        "in_use": false,
-                        "charges": 1,
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
                         "identified": true,
                         "rounds_per_charge": 1,
                         "icon": "icons/health_potion.png",
@@ -422,34 +394,6 @@
                         "size": "small",
                         "type": "other",
                         "icon": "icons/health_potion.png"
-                    },
-                    "events": {
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "onfinish": ""
-                    }
-                },
-                {
-                    "core": {
-                        "current_rounds_performed": 0,
-                        "name": "Health Potion",
-                        "weight": 0,
-                        "in_use": false,
-                        "charges": 1,
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "identified": true,
-                        "rounds_per_charge": 1,
-                        "icon": "icons/health_potion.png",
-                        "size": "small",
-                        "type": "other",
-                        "description": "Heals the target character for 1d6 hitpoints"
                     },
                     "events": {
                         "ondrop": "",
@@ -468,5 +412,5 @@
         "armor_types": 4,
         "shields": true
     },
-    "index": 4
+    "index": 3
 }

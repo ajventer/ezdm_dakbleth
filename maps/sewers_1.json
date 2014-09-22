@@ -3,7 +3,7 @@
         [
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -15,7 +15,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -27,7 +27,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -39,7 +39,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -52,7 +52,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -72,7 +72,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -92,7 +92,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -112,7 +112,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -136,7 +136,7 @@
                                 "lightradius": 0,
                                 "combat": {
                                     "level-hitdice": 1,
-                                    "hitpoints": 5,
+                                    "hitpoints": 0,
                                     "max_hp": 8
                                 },
                                 "personal": {
@@ -153,15 +153,26 @@
                                         "social": ""
                                     }
                                 },
+                                "location": {
+                                    "y": 0,
+                                    "x": 7,
+                                    "map": "sewers_1.json"
+                                },
+                                "icon": "avatars/rat.png",
+                                "type": "npc",
+                                "class": {
+                                    "class": "fighter",
+                                    "parent": "warrior"
+                                },
                                 "inventory": {
                                     "equiped": {
                                         "head": {},
                                         "righthand": {},
                                         "neck": {},
                                         "wrists": {},
-                                        "rightfinger": {},
-                                        "feet": {},
                                         "chest": {},
+                                        "feet": {},
+                                        "rightfinger": {},
                                         "leftfinger": {},
                                         "gloves": {},
                                         "legs": {},
@@ -173,23 +184,13 @@
                                         "gold": 0
                                     },
                                     "spells_memorized": [],
-                                    "spells": [],
-                                    "pack": []
-                                },
-                                "location": {
-                                    "y": 0,
-                                    "map": "sewers_1.json",
-                                    "x": 7
-                                },
-                                "type": "npc",
-                                "class": {
-                                    "class": "fighter",
-                                    "parent": "warrior"
-                                },
-                                "icon": "avatars/rat.png"
+                                    "pack": [],
+                                    "spells": []
+                                }
                             },
                             "conditional": {
                                 "armor_types": 4,
+                                "shields": true,
                                 "loot": {
                                     "copper": 99,
                                     "items_possible": [
@@ -200,15 +201,14 @@
                                     "always_drops": [],
                                     "silver": 99
                                 },
-                                "orientation": " aggressive",
-                                "shields": true,
                                 "events": {
                                     "oninspect": "",
                                     "oninteract": ""
-                                }
+                                },
+                                "orientation": " aggressive"
                             },
                             "hash": "78eb00a1e1dfb050044903679396210d6fdadc0f4218c37f0d202c75f246a14ae22fc7e827fcb513d34b160d132d0adf538d0fd6317e49348669fc80e23c60d9",
-                            "index": 27
+                            "index": 11
                         }
                     ],
                     "players": [],
@@ -220,7 +220,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -240,7 +240,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -260,7 +260,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -271,7 +271,9 @@
                     "items": [],
                     "silver": 0,
                     "npcs": [],
-                    "players": [],
+                    "players": [
+                        "sylvann_treesinger.json"
+                    ],
                     "events": {
                         "onenter": ""
                     }
@@ -280,7 +282,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -421,7 +423,7 @@
         [
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -434,311 +436,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
-                "conditional": {
-                    "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
-                    "items": [],
-                    "silver": 0,
-                    "npcs": [
-                        {
-                            "core": {
-                                "abilities": {
-                                    "dex": 16,
-                                    "cha": 1,
-                                    "int": 1,
-                                    "wis": 1,
-                                    "str": 7,
-                                    "con": 7
-                                },
-                                "lightradius": 0,
-                                "combat": {
-                                    "level-hitdice": 1,
-                                    "hitpoints": 3,
-                                    "max_hp": 8
-                                },
-                                "personal": {
-                                    "name": {
-                                        "last": "Rat",
-                                        "first": "Sewer"
-                                    },
-                                    "backstory": "Smelly, dirty plaguebearing pests.",
-                                    "sex": "female",
-                                    "race": "creature",
-                                    "xp": 0,
-                                    "alignment": {
-                                        "law": "",
-                                        "social": ""
-                                    }
-                                },
-                                "location": {
-                                    "y": 1,
-                                    "x": 1,
-                                    "map": "sewers_1.json"
-                                },
-                                "icon": "avatars/rat.png",
-                                "type": "npc",
-                                "class": {
-                                    "class": "fighter",
-                                    "parent": "warrior"
-                                },
-                                "inventory": {
-                                    "equiped": {
-                                        "head": {},
-                                        "righthand": {},
-                                        "neck": {},
-                                        "wrists": {},
-                                        "chest": {},
-                                        "feet": {},
-                                        "rightfinger": {},
-                                        "leftfinger": {},
-                                        "gloves": {},
-                                        "legs": {},
-                                        "lefthand": {}
-                                    },
-                                    "money": {
-                                        "copper": 0,
-                                        "silver": 0,
-                                        "gold": 0
-                                    },
-                                    "spells_memorized": [],
-                                    "pack": [],
-                                    "spells": []
-                                }
-                            },
-                            "conditional": {
-                                "armor_types": 4,
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                },
-                                "loot": {
-                                    "copper": 99,
-                                    "items_possible": [
-                                        "health_potion.json"
-                                    ],
-                                    "gold": 1,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "silver": 99
-                                },
-                                "orientation": " aggressive",
-                                "shields": true
-                            },
-                            "hash": "1f0dca87eba245c3a8853055654fd83554509e50e1eafc266ac820bc6691ee5c15797ba75940ab6cb4921755eba03d3af6e619e962d0379038a194cc27839a09"
-                        },
-                        {
-                            "core": {
-                                "abilities": {
-                                    "dex": 16,
-                                    "cha": 1,
-                                    "int": 1,
-                                    "wis": 1,
-                                    "str": 7,
-                                    "con": 7
-                                },
-                                "lightradius": 0,
-                                "combat": {
-                                    "level-hitdice": 1,
-                                    "hitpoints": 5,
-                                    "max_hp": 8
-                                },
-                                "personal": {
-                                    "name": {
-                                        "last": "Rat",
-                                        "first": "Sewer"
-                                    },
-                                    "backstory": "Smelly, dirty plaguebearing pests.",
-                                    "sex": "female",
-                                    "race": "creature",
-                                    "xp": 0,
-                                    "alignment": {
-                                        "law": "",
-                                        "social": ""
-                                    }
-                                },
-                                "inventory": {
-                                    "equiped": {
-                                        "head": {},
-                                        "righthand": {},
-                                        "neck": {},
-                                        "wrists": {},
-                                        "rightfinger": {},
-                                        "feet": {},
-                                        "chest": {},
-                                        "leftfinger": {},
-                                        "gloves": {},
-                                        "legs": {},
-                                        "lefthand": {}
-                                    },
-                                    "money": {
-                                        "copper": 0,
-                                        "silver": 0,
-                                        "gold": 0
-                                    },
-                                    "spells_memorized": [],
-                                    "spells": [],
-                                    "pack": []
-                                },
-                                "location": {
-                                    "y": 1,
-                                    "x": 1,
-                                    "map": "sewers_1.json"
-                                },
-                                "type": "npc",
-                                "class": {
-                                    "class": "fighter",
-                                    "parent": "warrior"
-                                },
-                                "icon": "avatars/rat.png"
-                            },
-                            "conditional": {
-                                "armor_types": 4,
-                                "loot": {
-                                    "copper": 99,
-                                    "items_possible": [
-                                        "health_potion.json"
-                                    ],
-                                    "gold": 1,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "silver": 99
-                                },
-                                "orientation": " aggressive",
-                                "shields": true,
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                }
-                            },
-                            "hash": "022fa01bb7ab81b34418271659e4fe876125e8feb9dc5ef68040d6a2e0cb84f8136aeaea730af026f09de58454d996b6750dfc2029e9e6e6467991674b1dd16d"
-                        },
-                        {
-                            "core": {
-                                "abilities": {
-                                    "dex": 16,
-                                    "cha": 1,
-                                    "int": 1,
-                                    "wis": 1,
-                                    "str": 7,
-                                    "con": 7
-                                },
-                                "lightradius": 0,
-                                "combat": {
-                                    "level-hitdice": 1,
-                                    "hitpoints": 5,
-                                    "max_hp": 8
-                                },
-                                "personal": {
-                                    "name": {
-                                        "last": "Rat",
-                                        "first": "Sewer"
-                                    },
-                                    "backstory": "Smelly, dirty plaguebearing pests.",
-                                    "sex": "female",
-                                    "race": "creature",
-                                    "xp": 0,
-                                    "alignment": {
-                                        "law": "",
-                                        "social": ""
-                                    }
-                                },
-                                "location": {
-                                    "y": 1,
-                                    "map": "sewers_1.json",
-                                    "x": 1
-                                },
-                                "icon": "avatars/rat.png",
-                                "type": "npc",
-                                "class": {
-                                    "class": "fighter",
-                                    "parent": "warrior"
-                                },
-                                "inventory": {
-                                    "equiped": {
-                                        "head": {},
-                                        "righthand": {},
-                                        "neck": {},
-                                        "wrists": {},
-                                        "chest": {},
-                                        "feet": {},
-                                        "rightfinger": {},
-                                        "leftfinger": {},
-                                        "gloves": {},
-                                        "legs": {},
-                                        "lefthand": {}
-                                    },
-                                    "money": {
-                                        "copper": 0,
-                                        "silver": 0,
-                                        "gold": 0
-                                    },
-                                    "spells_memorized": [],
-                                    "pack": [],
-                                    "spells": []
-                                }
-                            },
-                            "conditional": {
-                                "armor_types": 4,
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                },
-                                "loot": {
-                                    "copper": 99,
-                                    "items_possible": [
-                                        "health_potion.json"
-                                    ],
-                                    "gold": 1,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "silver": 99
-                                },
-                                "orientation": " aggressive",
-                                "shields": true
-                            },
-                            "hash": "022fa01bb7ab81b34418271659e4fe876125e8feb9dc5ef68040d6a2e0cb84f8136aeaea730af026f09de58454d996b6750dfc2029e9e6e6467991674b1dd16d",
-                            "index": 30
-                        }
-                    ],
-                    "players": [],
-                    "events": {
-                        "onenter": ""
-                    }
-                }
-            },
-            {
-                "core": {
-                    "revealed": false,
-                    "type": "wall",
-                    "name": "sewer_wall",
-                    "icon": "backgrounds/brick_dark0.png"
-                },
-                "conditional": {
-                    "canenter": false,
-                    "events": ""
-                }
-            },
-            {
-                "core": {
-                    "revealed": false,
-                    "type": "wall",
-                    "name": "sewer_wall",
-                    "icon": "backgrounds/brick_dark0.png"
-                },
-                "conditional": {
-                    "canenter": false,
-                    "events": ""
-                }
-            },
-            {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -757,7 +455,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -769,43 +467,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
-                    "type": "wall",
-                    "name": "sewer_wall",
-                    "icon": "backgrounds/brick_dark0.png"
-                },
-                "conditional": {
-                    "canenter": false,
-                    "events": ""
-                }
-            },
-            {
-                "core": {
-                    "revealed": false,
-                    "type": "wall",
-                    "name": "sewer_wall",
-                    "icon": "backgrounds/brick_dark0.png"
-                },
-                "conditional": {
-                    "canenter": false,
-                    "events": ""
-                }
-            },
-            {
-                "core": {
-                    "revealed": false,
-                    "type": "wall",
-                    "name": "sewer_wall",
-                    "icon": "backgrounds/brick_dark0.png"
-                },
-                "conditional": {
-                    "canenter": false,
-                    "events": ""
-                }
-            },
-            {
-                "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -818,7 +480,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -837,7 +499,87 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "floor",
+                    "revealed": true,
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "silver": 0,
+                    "npcs": [],
+                    "players": [],
+                    "events": {
+                        "onenter": ""
+                    }
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -965,7 +707,7 @@
         [
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -978,7 +720,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -997,7 +739,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -1009,7 +751,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -1022,7 +764,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -1041,7 +783,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -1247,7 +989,7 @@
         [
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -1260,7 +1002,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -1279,7 +1021,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -1291,7 +1033,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -1304,7 +1046,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -1323,7 +1065,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -1521,179 +1263,6 @@
                                         "social": ""
                                     }
                                 },
-                                "location": {
-                                    "y": 3,
-                                    "map": "sewers_1.json",
-                                    "x": 16
-                                },
-                                "icon": "avatars/rat.png",
-                                "type": "npc",
-                                "class": {
-                                    "class": "fighter",
-                                    "parent": "warrior"
-                                },
-                                "inventory": {
-                                    "equiped": {
-                                        "head": {},
-                                        "righthand": {},
-                                        "neck": {},
-                                        "wrists": {},
-                                        "chest": {},
-                                        "feet": {},
-                                        "rightfinger": {},
-                                        "leftfinger": {},
-                                        "gloves": {},
-                                        "legs": {},
-                                        "lefthand": {}
-                                    },
-                                    "money": {
-                                        "copper": 0,
-                                        "silver": 0,
-                                        "gold": 0
-                                    },
-                                    "spells_memorized": [],
-                                    "pack": [],
-                                    "spells": []
-                                }
-                            },
-                            "conditional": {
-                                "armor_types": 4,
-                                "shields": true,
-                                "loot": {
-                                    "copper": 99,
-                                    "items_possible": [
-                                        "health_potion.json"
-                                    ],
-                                    "gold": 1,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "silver": 99
-                                },
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                },
-                                "orientation": " aggressive"
-                            },
-                            "hash": "8a8b58a508b725e2d5e327261d5263fabcfdb17ffea96acfe56c079277a707efd056c96404be99d54c85047e6ab6f9c1cd85a61f18737a74ef36bd31c98ca89e",
-                            "index": 16
-                        },
-                        {
-                            "core": {
-                                "abilities": {
-                                    "dex": 16,
-                                    "cha": 1,
-                                    "int": 1,
-                                    "wis": 1,
-                                    "str": 7,
-                                    "con": 7
-                                },
-                                "lightradius": 0,
-                                "combat": {
-                                    "level-hitdice": 1,
-                                    "hitpoints": 3,
-                                    "max_hp": 8
-                                },
-                                "personal": {
-                                    "name": {
-                                        "last": "Rat",
-                                        "first": "Sewer"
-                                    },
-                                    "backstory": "Smelly, dirty plaguebearing pests.",
-                                    "sex": "female",
-                                    "race": "creature",
-                                    "xp": 0,
-                                    "alignment": {
-                                        "law": "",
-                                        "social": ""
-                                    }
-                                },
-                                "location": {
-                                    "y": 3,
-                                    "x": 16,
-                                    "map": "sewers_1.json"
-                                },
-                                "icon": "avatars/rat.png",
-                                "type": "npc",
-                                "class": {
-                                    "class": "fighter",
-                                    "parent": "warrior"
-                                },
-                                "inventory": {
-                                    "equiped": {
-                                        "head": {},
-                                        "righthand": {},
-                                        "neck": {},
-                                        "wrists": {},
-                                        "chest": {},
-                                        "feet": {},
-                                        "rightfinger": {},
-                                        "leftfinger": {},
-                                        "gloves": {},
-                                        "legs": {},
-                                        "lefthand": {}
-                                    },
-                                    "money": {
-                                        "copper": 0,
-                                        "silver": 0,
-                                        "gold": 0
-                                    },
-                                    "spells_memorized": [],
-                                    "pack": [],
-                                    "spells": []
-                                }
-                            },
-                            "conditional": {
-                                "armor_types": 4,
-                                "loot": {
-                                    "copper": 99,
-                                    "items_possible": [
-                                        "health_potion.json"
-                                    ],
-                                    "gold": 1,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "silver": 99
-                                },
-                                "orientation": " aggressive",
-                                "shields": true,
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                }
-                            },
-                            "hash": "f1c29b50e07295186fcb1a1b9939d9a766e1e01c1115edfda16d254e87f465219bdf077661ee4f81b1443f431e2bfeaa2a7a729630c2fbc57fbf723af29389d4"
-                        },
-                        {
-                            "core": {
-                                "abilities": {
-                                    "dex": 16,
-                                    "cha": 1,
-                                    "int": 1,
-                                    "wis": 1,
-                                    "str": 7,
-                                    "con": 7
-                                },
-                                "lightradius": 0,
-                                "combat": {
-                                    "level-hitdice": 1,
-                                    "hitpoints": 2,
-                                    "max_hp": 8
-                                },
-                                "personal": {
-                                    "name": {
-                                        "last": "Rat",
-                                        "first": "Sewer"
-                                    },
-                                    "backstory": "Smelly, dirty plaguebearing pests.",
-                                    "sex": "female",
-                                    "race": "creature",
-                                    "xp": 0,
-                                    "alignment": {
-                                        "law": "",
-                                        "social": ""
-                                    }
-                                },
                                 "inventory": {
                                     "equiped": {
                                         "head": {},
@@ -1719,8 +1288,8 @@
                                 },
                                 "location": {
                                     "y": 3,
-                                    "x": 16,
-                                    "map": "sewers_1.json"
+                                    "map": "sewers_1.json",
+                                    "x": 16
                                 },
                                 "type": "npc",
                                 "class": {
@@ -1728,92 +1297,6 @@
                                     "parent": "warrior"
                                 },
                                 "icon": "avatars/rat.png"
-                            },
-                            "conditional": {
-                                "armor_types": 4,
-                                "shields": true,
-                                "loot": {
-                                    "copper": 99,
-                                    "items_possible": [
-                                        "health_potion.json"
-                                    ],
-                                    "gold": 1,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "silver": 99
-                                },
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                },
-                                "orientation": " aggressive"
-                            },
-                            "hash": "2df8d0d0d086e162ca97966826113c19504cef98d946c40e7a1d3d65e67932fbceb9d3cf41d1f5fd93199c8368871142044420415b7e06faa6c5ad67ece8027e"
-                        },
-                        {
-                            "core": {
-                                "abilities": {
-                                    "dex": 16,
-                                    "cha": 1,
-                                    "int": 1,
-                                    "wis": 1,
-                                    "str": 7,
-                                    "con": 7
-                                },
-                                "lightradius": 0,
-                                "combat": {
-                                    "level-hitdice": 1,
-                                    "hitpoints": 7,
-                                    "max_hp": 8
-                                },
-                                "personal": {
-                                    "name": {
-                                        "last": "Rat",
-                                        "first": "Sewer"
-                                    },
-                                    "backstory": "Smelly, dirty plaguebearing pests.",
-                                    "sex": "female",
-                                    "race": "creature",
-                                    "xp": 0,
-                                    "alignment": {
-                                        "law": "",
-                                        "social": ""
-                                    }
-                                },
-                                "location": {
-                                    "y": 3,
-                                    "map": "sewers_1.json",
-                                    "x": 16
-                                },
-                                "icon": "avatars/rat.png",
-                                "type": "npc",
-                                "class": {
-                                    "class": "fighter",
-                                    "parent": "warrior"
-                                },
-                                "inventory": {
-                                    "equiped": {
-                                        "head": {},
-                                        "righthand": {},
-                                        "neck": {},
-                                        "wrists": {},
-                                        "chest": {},
-                                        "feet": {},
-                                        "rightfinger": {},
-                                        "leftfinger": {},
-                                        "gloves": {},
-                                        "legs": {},
-                                        "lefthand": {}
-                                    },
-                                    "money": {
-                                        "copper": 0,
-                                        "silver": 0,
-                                        "gold": 0
-                                    },
-                                    "spells_memorized": [],
-                                    "pack": [],
-                                    "spells": []
-                                }
                             },
                             "conditional": {
                                 "armor_types": 4,
@@ -1834,8 +1317,8 @@
                                     "oninteract": ""
                                 }
                             },
-                            "hash": "8a8b58a508b725e2d5e327261d5263fabcfdb17ffea96acfe56c079277a707efd056c96404be99d54c85047e6ab6f9c1cd85a61f18737a74ef36bd31c98ca89e",
-                            "index": 34
+                            "hash": "1a8b58a508b725e2d5e327261d5263fabcfdb17ffea96acfe56c079277a707efd056c96404be99d54c85047e6ab6f9c1cd85a61f18737a74ef36bd31c98ca89e",
+                            "index": 26
                         }
                     ],
                     "players": [],
@@ -1892,7 +1375,7 @@
         [
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -1905,7 +1388,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -1924,7 +1407,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -1936,7 +1419,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -1949,7 +1432,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -1968,7 +1451,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -1988,288 +1471,6 @@
                 "conditional": {
                     "canenter": false,
                     "events": ""
-                }
-            },
-            {
-                "core": {
-                    "revealed": false,
-                    "type": "wall",
-                    "name": "sewer_wall",
-                    "icon": "backgrounds/brick_dark0.png"
-                },
-                "conditional": {
-                    "canenter": false,
-                    "events": ""
-                }
-            },
-            {
-                "core": {
-                    "revealed": false,
-                    "type": "wall",
-                    "name": "sewer_wall",
-                    "icon": "backgrounds/brick_dark0.png"
-                },
-                "conditional": {
-                    "canenter": false,
-                    "events": ""
-                }
-            },
-            {
-                "core": {
-                    "revealed": false,
-                    "type": "wall",
-                    "name": "sewer_wall",
-                    "icon": "backgrounds/brick_dark0.png"
-                },
-                "conditional": {
-                    "canenter": false,
-                    "events": ""
-                }
-            },
-            {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
-                "conditional": {
-                    "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
-                    "items": [],
-                    "silver": 0,
-                    "npcs": [],
-                    "players": [],
-                    "events": {
-                        "onenter": ""
-                    }
-                }
-            },
-            {
-                "core": {
-                    "revealed": false,
-                    "type": "wall",
-                    "name": "sewer_wall",
-                    "icon": "backgrounds/brick_dark0.png"
-                },
-                "conditional": {
-                    "canenter": false,
-                    "events": ""
-                }
-            },
-            {
-                "core": {
-                    "revealed": false,
-                    "type": "wall",
-                    "name": "sewer_wall",
-                    "icon": "backgrounds/brick_dark0.png"
-                },
-                "conditional": {
-                    "canenter": false,
-                    "events": ""
-                }
-            },
-            {
-                "core": {
-                    "revealed": false,
-                    "type": "wall",
-                    "name": "sewer_wall",
-                    "icon": "backgrounds/brick_dark0.png"
-                },
-                "conditional": {
-                    "canenter": false,
-                    "events": ""
-                }
-            },
-            {
-                "core": {
-                    "revealed": false,
-                    "type": "wall",
-                    "name": "sewer_wall",
-                    "icon": "backgrounds/brick_dark0.png"
-                },
-                "conditional": {
-                    "canenter": false,
-                    "events": ""
-                }
-            },
-            {
-                "core": {
-                    "revealed": false,
-                    "type": "wall",
-                    "name": "sewer_wall",
-                    "icon": "backgrounds/brick_dark0.png"
-                },
-                "conditional": {
-                    "canenter": false,
-                    "events": ""
-                }
-            },
-            {
-                "core": {
-                    "revealed": false,
-                    "type": "wall",
-                    "name": "sewer_wall",
-                    "icon": "backgrounds/brick_dark0.png"
-                },
-                "conditional": {
-                    "canenter": false,
-                    "events": ""
-                }
-            },
-            {
-                "core": {
-                    "revealed": false,
-                    "type": "wall",
-                    "name": "sewer_wall",
-                    "icon": "backgrounds/brick_dark0.png"
-                },
-                "conditional": {
-                    "canenter": false,
-                    "events": ""
-                }
-            },
-            {
-                "core": {
-                    "revealed": false,
-                    "type": "wall",
-                    "name": "sewer_wall",
-                    "icon": "backgrounds/brick_dark0.png"
-                },
-                "conditional": {
-                    "canenter": false,
-                    "events": ""
-                }
-            },
-            {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
-                "conditional": {
-                    "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
-                    "items": [],
-                    "silver": 0,
-                    "npcs": [],
-                    "players": [],
-                    "events": {
-                        "onenter": ""
-                    }
-                }
-            }
-        ],
-        [
-            {
-                "core": {
-                    "revealed": false,
-                    "type": "wall",
-                    "name": "sewer_wall",
-                    "icon": "backgrounds/brick_dark0.png"
-                },
-                "conditional": {
-                    "canenter": false,
-                    "events": ""
-                }
-            },
-            {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
-                "conditional": {
-                    "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
-                    "items": [],
-                    "silver": 0,
-                    "npcs": [],
-                    "players": [],
-                    "events": {
-                        "onenter": ""
-                    }
-                }
-            },
-            {
-                "core": {
-                    "revealed": false,
-                    "type": "wall",
-                    "name": "sewer_wall",
-                    "icon": "backgrounds/brick_dark0.png"
-                },
-                "conditional": {
-                    "canenter": false,
-                    "events": ""
-                }
-            },
-            {
-                "core": {
-                    "revealed": false,
-                    "type": "wall",
-                    "name": "sewer_wall",
-                    "icon": "backgrounds/brick_dark0.png"
-                },
-                "conditional": {
-                    "canenter": false,
-                    "events": ""
-                }
-            },
-            {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
-                "conditional": {
-                    "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
-                    "items": [],
-                    "silver": 0,
-                    "npcs": [],
-                    "players": [],
-                    "events": {
-                        "onenter": ""
-                    }
-                }
-            },
-            {
-                "core": {
-                    "revealed": false,
-                    "type": "wall",
-                    "name": "sewer_wall",
-                    "icon": "backgrounds/brick_dark0.png"
-                },
-                "conditional": {
-                    "canenter": false,
-                    "events": ""
-                }
-            },
-            {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
-                "conditional": {
-                    "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
-                    "items": [],
-                    "silver": 0,
-                    "npcs": [],
-                    "players": [],
-                    "events": {
-                        "onenter": ""
-                    }
                 }
             },
             {
@@ -2448,7 +1649,7 @@
         [
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -2461,7 +1662,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -2485,7 +1686,7 @@
                                 "lightradius": 0,
                                 "combat": {
                                     "level-hitdice": 1,
-                                    "hitpoints": 7,
+                                    "hitpoints": 0,
                                     "max_hp": 8
                                 },
                                 "personal": {
@@ -2526,7 +1727,7 @@
                                     "pack": []
                                 },
                                 "location": {
-                                    "y": 6,
+                                    "y": 5,
                                     "x": 1,
                                     "map": "sewers_1.json"
                                 },
@@ -2539,96 +1740,6 @@
                             },
                             "conditional": {
                                 "armor_types": 4,
-                                "shields": true,
-                                "loot": {
-                                    "copper": 99,
-                                    "items_possible": [
-                                        "health_potion.json"
-                                    ],
-                                    "gold": 1,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "silver": 99
-                                },
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                },
-                                "orientation": " aggressive"
-                            },
-                            "hash": "e78b94f87cfae2346e1ed52fa81d371a67c1ee751f37e69c0177801fa1779a75fd5cbb38a90d74768ebf562260171cf31dfcc0a73a464650a31d967181377fb8"
-                        },
-                        {
-                            "core": {
-                                "abilities": {
-                                    "dex": 16,
-                                    "cha": 1,
-                                    "int": 1,
-                                    "wis": 1,
-                                    "str": 7,
-                                    "con": 7
-                                },
-                                "lightradius": 0,
-                                "combat": {
-                                    "level-hitdice": 1,
-                                    "hitpoints": 7,
-                                    "max_hp": 8
-                                },
-                                "personal": {
-                                    "name": {
-                                        "last": "Rat",
-                                        "first": "Sewer"
-                                    },
-                                    "backstory": "Smelly, dirty plaguebearing pests.",
-                                    "sex": "female",
-                                    "race": "creature",
-                                    "xp": 0,
-                                    "alignment": {
-                                        "law": "",
-                                        "social": ""
-                                    }
-                                },
-                                "inventory": {
-                                    "equiped": {
-                                        "head": {},
-                                        "righthand": {},
-                                        "neck": {},
-                                        "wrists": {},
-                                        "rightfinger": {},
-                                        "feet": {},
-                                        "chest": {},
-                                        "leftfinger": {},
-                                        "gloves": {},
-                                        "legs": {},
-                                        "lefthand": {}
-                                    },
-                                    "money": {
-                                        "copper": 0,
-                                        "silver": 0,
-                                        "gold": 0
-                                    },
-                                    "spells_memorized": [],
-                                    "spells": [],
-                                    "pack": []
-                                },
-                                "location": {
-                                    "y": 6,
-                                    "map": "sewers_1.json",
-                                    "x": 1
-                                },
-                                "type": "npc",
-                                "class": {
-                                    "class": "fighter",
-                                    "parent": "warrior"
-                                },
-                                "icon": "avatars/rat.png"
-                            },
-                            "conditional": {
-                                "armor_types": 4,
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                },
                                 "loot": {
                                     "copper": 99,
                                     "items_possible": [
@@ -2640,16 +1751,108 @@
                                     "silver": 99
                                 },
                                 "orientation": " aggressive",
-                                "shields": true
+                                "shields": true,
+                                "events": {
+                                    "oninspect": "",
+                                    "oninteract": ""
+                                }
                             },
-                            "hash": "e78b94f87cfae2346e1ed52fa81d371a67c1ee751f37e69c0177801fa1779a75fd5cbb38a90d74768ebf562260171cf31dfcc0a73a464650a31d967181377fb8",
-                            "index": 36
+                            "hash": "bf785c15da95e95b7cd06d022c529d0eb32c832312ecd65c0b9e17e7ab4e3023443703c300bbd618352a4cf08612c6f7b7ef3ef0a335693d2c6d9964d00a461b",
+                            "index": 11
                         }
                     ],
                     "players": [],
                     "events": {
                         "onenter": ""
                     }
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "floor",
+                    "revealed": true,
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "silver": 0,
+                    "npcs": [],
+                    "players": [],
+                    "events": {
+                        "onenter": ""
+                    }
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "floor",
+                    "revealed": false,
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "silver": 0,
+                    "npcs": [],
+                    "players": [],
+                    "events": {
+                        "onenter": ""
+                    }
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "wall",
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
                 }
             },
             {
@@ -2699,6 +1902,200 @@
             {
                 "core": {
                     "revealed": false,
+                    "type": "wall",
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "wall",
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "wall",
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "wall",
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "wall",
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "wall",
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "wall",
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "type": "wall",
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "floor",
+                    "revealed": false,
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "silver": 0,
+                    "npcs": [],
+                    "players": [],
+                    "events": {
+                        "onenter": ""
+                    }
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "floor",
+                    "revealed": true,
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "silver": 0,
+                    "npcs": [],
+                    "players": [],
+                    "events": {
+                        "onenter": ""
+                    }
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "type": "wall",
+                    "name": "sewer_wall",
+                    "icon": "backgrounds/brick_dark0.png"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "type": "floor",
+                    "revealed": true,
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "canenter": true,
+                    "gold": 0,
+                    "items": [],
+                    "silver": 0,
+                    "npcs": [],
+                    "players": [],
+                    "events": {
+                        "onenter": ""
+                    }
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -2774,107 +2171,22 @@
                                     "spells_memorized": [],
                                     "spells": [],
                                     "pack": []
-                                },
-                                "location": {
-                                    "y": 6,
-                                    "x": 6,
-                                    "map": "sewers_1.json"
-                                },
-                                "type": "npc",
-                                "class": {
-                                    "class": "fighter",
-                                    "parent": "warrior"
-                                },
-                                "icon": "avatars/rat.png"
-                            },
-                            "conditional": {
-                                "armor_types": 4,
-                                "shields": true,
-                                "loot": {
-                                    "copper": 99,
-                                    "items_possible": [
-                                        "health_potion.json"
-                                    ],
-                                    "gold": 1,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "silver": 99
-                                },
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                },
-                                "orientation": " aggressive"
-                            },
-                            "hash": "1bf7f8b718f80b798fcc1f960c4ebd9b01e477e3fd14b13ae1e81c3fd096e088a264d759ba7a72b4479961e41ca05fb72c9dcf433216f8a22244005802b211ac"
-                        },
-                        {
-                            "core": {
-                                "abilities": {
-                                    "dex": 16,
-                                    "cha": 1,
-                                    "int": 1,
-                                    "wis": 1,
-                                    "str": 7,
-                                    "con": 7
-                                },
-                                "lightradius": 0,
-                                "combat": {
-                                    "level-hitdice": 1,
-                                    "hitpoints": 2,
-                                    "max_hp": 8
-                                },
-                                "personal": {
-                                    "name": {
-                                        "last": "Rat",
-                                        "first": "Sewer"
-                                    },
-                                    "backstory": "Smelly, dirty plaguebearing pests.",
-                                    "sex": "female",
-                                    "race": "creature",
-                                    "xp": 0,
-                                    "alignment": {
-                                        "law": "",
-                                        "social": ""
-                                    }
                                 },
                                 "location": {
                                     "y": 6,
                                     "map": "sewers_1.json",
                                     "x": 6
                                 },
-                                "icon": "avatars/rat.png",
                                 "type": "npc",
                                 "class": {
                                     "class": "fighter",
                                     "parent": "warrior"
                                 },
-                                "inventory": {
-                                    "equiped": {
-                                        "head": {},
-                                        "righthand": {},
-                                        "neck": {},
-                                        "wrists": {},
-                                        "chest": {},
-                                        "feet": {},
-                                        "rightfinger": {},
-                                        "leftfinger": {},
-                                        "gloves": {},
-                                        "legs": {},
-                                        "lefthand": {}
-                                    },
-                                    "money": {
-                                        "copper": 0,
-                                        "silver": 0,
-                                        "gold": 0
-                                    },
-                                    "spells_memorized": [],
-                                    "pack": [],
-                                    "spells": []
-                                }
+                                "icon": "avatars/rat.png"
                             },
                             "conditional": {
                                 "armor_types": 4,
+                                "shields": true,
                                 "loot": {
                                     "copper": 99,
                                     "items_possible": [
@@ -2885,15 +2197,14 @@
                                     "always_drops": [],
                                     "silver": 99
                                 },
-                                "orientation": " aggressive",
-                                "shields": true,
                                 "events": {
                                     "oninspect": "",
                                     "oninteract": ""
-                                }
+                                },
+                                "orientation": " aggressive"
                             },
-                            "hash": "1bf7f8b718f80b798fcc1f960c4ebd9b01e477e3fd14b13ae1e81c3fd096e088a264d759ba7a72b4479961e41ca05fb72c9dcf433216f8a22244005802b211ac",
-                            "index": 38
+                            "hash": "2bf7f8b718f80b798fcc1f960c4ebd9b01e477e3fd14b13ae1e81c3fd096e088a264d759ba7a72b4479961e41ca05fb72c9dcf433216f8a22244005802b211ac",
+                            "index": 27
                         }
                     ],
                     "players": [],
@@ -3102,7 +2413,7 @@
         [
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -3115,7 +2426,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -3134,7 +2445,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -3146,7 +2457,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -3159,7 +2470,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -3169,356 +2480,7 @@
                     "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [
-                        {
-                            "core": {
-                                "abilities": {
-                                    "dex": 16,
-                                    "cha": 1,
-                                    "int": 1,
-                                    "wis": 1,
-                                    "str": 7,
-                                    "con": 7
-                                },
-                                "lightradius": 0,
-                                "combat": {
-                                    "level-hitdice": 1,
-                                    "hitpoints": 4,
-                                    "max_hp": 8
-                                },
-                                "personal": {
-                                    "name": {
-                                        "last": "Rat",
-                                        "first": "Sewer"
-                                    },
-                                    "backstory": "Smelly, dirty plaguebearing pests.",
-                                    "sex": "female",
-                                    "race": "creature",
-                                    "xp": 0,
-                                    "alignment": {
-                                        "law": "",
-                                        "social": ""
-                                    }
-                                },
-                                "inventory": {
-                                    "equiped": {
-                                        "head": {},
-                                        "righthand": {},
-                                        "neck": {},
-                                        "wrists": {},
-                                        "rightfinger": {},
-                                        "feet": {},
-                                        "chest": {},
-                                        "leftfinger": {},
-                                        "gloves": {},
-                                        "legs": {},
-                                        "lefthand": {}
-                                    },
-                                    "money": {
-                                        "copper": 0,
-                                        "silver": 0,
-                                        "gold": 0
-                                    },
-                                    "spells_memorized": [],
-                                    "spells": [],
-                                    "pack": []
-                                },
-                                "location": {
-                                    "y": 7,
-                                    "map": "sewers_1.json",
-                                    "x": 4
-                                },
-                                "type": "npc",
-                                "class": {
-                                    "class": "fighter",
-                                    "parent": "warrior"
-                                },
-                                "icon": "avatars/rat.png"
-                            },
-                            "conditional": {
-                                "armor_types": 4,
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                },
-                                "loot": {
-                                    "copper": 99,
-                                    "items_possible": [
-                                        "health_potion.json"
-                                    ],
-                                    "gold": 1,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "silver": 99
-                                },
-                                "orientation": " aggressive",
-                                "shields": true
-                            },
-                            "hash": "d8b6e0970f4a4900b6e378a56bc74112f31b208af0ae3fcd7b3f433eda3ec27ba5875630ed69634ef443164deb95750a719b97445f5793eaf92dbd98e152eb75",
-                            "index": 12
-                        },
-                        {
-                            "core": {
-                                "abilities": {
-                                    "dex": 16,
-                                    "cha": 1,
-                                    "int": 1,
-                                    "wis": 1,
-                                    "str": 7,
-                                    "con": 7
-                                },
-                                "lightradius": 0,
-                                "combat": {
-                                    "level-hitdice": 1,
-                                    "hitpoints": 4,
-                                    "max_hp": 8
-                                },
-                                "personal": {
-                                    "name": {
-                                        "last": "Rat",
-                                        "first": "Sewer"
-                                    },
-                                    "backstory": "Smelly, dirty plaguebearing pests.",
-                                    "sex": "female",
-                                    "race": "creature",
-                                    "xp": 0,
-                                    "alignment": {
-                                        "law": "",
-                                        "social": ""
-                                    }
-                                },
-                                "inventory": {
-                                    "equiped": {
-                                        "head": {},
-                                        "righthand": {},
-                                        "neck": {},
-                                        "wrists": {},
-                                        "rightfinger": {},
-                                        "feet": {},
-                                        "chest": {},
-                                        "leftfinger": {},
-                                        "gloves": {},
-                                        "legs": {},
-                                        "lefthand": {}
-                                    },
-                                    "money": {
-                                        "copper": 0,
-                                        "silver": 0,
-                                        "gold": 0
-                                    },
-                                    "spells_memorized": [],
-                                    "spells": [],
-                                    "pack": []
-                                },
-                                "location": {
-                                    "y": 7,
-                                    "map": "sewers_1.json",
-                                    "x": 4
-                                },
-                                "type": "npc",
-                                "class": {
-                                    "class": "fighter",
-                                    "parent": "warrior"
-                                },
-                                "icon": "avatars/rat.png"
-                            },
-                            "conditional": {
-                                "armor_types": 4,
-                                "shields": true,
-                                "loot": {
-                                    "copper": 99,
-                                    "items_possible": [
-                                        "health_potion.json"
-                                    ],
-                                    "gold": 1,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "silver": 99
-                                },
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                },
-                                "orientation": " aggressive"
-                            },
-                            "hash": "d8b6e0970f4a4900b6e378a56bc74112f31b208af0ae3fcd7b3f433eda3ec27ba5875630ed69634ef443164deb95750a719b97445f5793eaf92dbd98e152eb75",
-                            "index": 13
-                        },
-                        {
-                            "core": {
-                                "abilities": {
-                                    "dex": 16,
-                                    "cha": 1,
-                                    "int": 1,
-                                    "wis": 1,
-                                    "str": 7,
-                                    "con": 7
-                                },
-                                "lightradius": 0,
-                                "combat": {
-                                    "level-hitdice": 1,
-                                    "hitpoints": 4,
-                                    "max_hp": 8
-                                },
-                                "personal": {
-                                    "name": {
-                                        "last": "Rat",
-                                        "first": "Sewer"
-                                    },
-                                    "backstory": "Smelly, dirty plaguebearing pests.",
-                                    "sex": "female",
-                                    "race": "creature",
-                                    "xp": 0,
-                                    "alignment": {
-                                        "law": "",
-                                        "social": ""
-                                    }
-                                },
-                                "location": {
-                                    "y": 7,
-                                    "map": "sewers_1.json",
-                                    "x": 4
-                                },
-                                "icon": "avatars/rat.png",
-                                "type": "npc",
-                                "class": {
-                                    "class": "fighter",
-                                    "parent": "warrior"
-                                },
-                                "inventory": {
-                                    "equiped": {
-                                        "head": {},
-                                        "righthand": {},
-                                        "neck": {},
-                                        "wrists": {},
-                                        "chest": {},
-                                        "feet": {},
-                                        "rightfinger": {},
-                                        "leftfinger": {},
-                                        "gloves": {},
-                                        "legs": {},
-                                        "lefthand": {}
-                                    },
-                                    "money": {
-                                        "copper": 0,
-                                        "silver": 0,
-                                        "gold": 0
-                                    },
-                                    "spells_memorized": [],
-                                    "pack": [],
-                                    "spells": []
-                                }
-                            },
-                            "conditional": {
-                                "armor_types": 4,
-                                "shields": true,
-                                "loot": {
-                                    "copper": 99,
-                                    "items_possible": [
-                                        "health_potion.json"
-                                    ],
-                                    "gold": 1,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "silver": 99
-                                },
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                },
-                                "orientation": " aggressive"
-                            },
-                            "hash": "d8b6e0970f4a4900b6e378a56bc74112f31b208af0ae3fcd7b3f433eda3ec27ba5875630ed69634ef443164deb95750a719b97445f5793eaf92dbd98e152eb75",
-                            "index": 14
-                        },
-                        {
-                            "core": {
-                                "abilities": {
-                                    "dex": 16,
-                                    "cha": 1,
-                                    "int": 1,
-                                    "wis": 1,
-                                    "str": 7,
-                                    "con": 7
-                                },
-                                "lightradius": 0,
-                                "combat": {
-                                    "level-hitdice": 1,
-                                    "hitpoints": 4,
-                                    "max_hp": 8
-                                },
-                                "personal": {
-                                    "name": {
-                                        "last": "Rat",
-                                        "first": "Sewer"
-                                    },
-                                    "backstory": "Smelly, dirty plaguebearing pests.",
-                                    "sex": "female",
-                                    "race": "creature",
-                                    "xp": 0,
-                                    "alignment": {
-                                        "law": "",
-                                        "social": ""
-                                    }
-                                },
-                                "inventory": {
-                                    "equiped": {
-                                        "head": {},
-                                        "righthand": {},
-                                        "neck": {},
-                                        "wrists": {},
-                                        "rightfinger": {},
-                                        "feet": {},
-                                        "chest": {},
-                                        "leftfinger": {},
-                                        "gloves": {},
-                                        "legs": {},
-                                        "lefthand": {}
-                                    },
-                                    "money": {
-                                        "copper": 0,
-                                        "silver": 0,
-                                        "gold": 0
-                                    },
-                                    "spells_memorized": [],
-                                    "spells": [],
-                                    "pack": []
-                                },
-                                "location": {
-                                    "y": 7,
-                                    "map": "sewers_1.json",
-                                    "x": 4
-                                },
-                                "type": "npc",
-                                "class": {
-                                    "class": "fighter",
-                                    "parent": "warrior"
-                                },
-                                "icon": "avatars/rat.png"
-                            },
-                            "conditional": {
-                                "armor_types": 4,
-                                "shields": true,
-                                "loot": {
-                                    "copper": 99,
-                                    "items_possible": [
-                                        "health_potion.json"
-                                    ],
-                                    "gold": 1,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "silver": 99
-                                },
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                },
-                                "orientation": " aggressive"
-                            },
-                            "hash": "d8b6e0970f4a4900b6e378a56bc74112f31b208af0ae3fcd7b3f433eda3ec27ba5875630ed69634ef443164deb95750a719b97445f5793eaf92dbd98e152eb75",
-                            "index": 42
-                        }
-                    ],
+                    "npcs": [],
                     "players": [],
                     "events": {
                         "onenter": ""
@@ -3527,7 +2489,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -3733,7 +2695,7 @@
         [
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -3746,7 +2708,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -3765,7 +2727,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -3777,7 +2739,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -3790,7 +2752,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -3809,7 +2771,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -3822,7 +2784,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -4075,7 +3037,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -4088,7 +3050,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -4108,7 +3070,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -4128,7 +3090,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -4147,7 +3109,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -4626,6 +3588,10 @@
                             },
                             "conditional": {
                                 "armor_types": 4,
+                                "events": {
+                                    "oninspect": "",
+                                    "oninteract": ""
+                                },
                                 "loot": {
                                     "copper": 99,
                                     "items_possible": [],
@@ -4635,11 +3601,7 @@
                                     "silver": 99
                                 },
                                 "orientation": " aggressive",
-                                "shields": true,
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                }
+                                "shields": true
                             }
                         }
                     ],
@@ -4995,10 +3957,12 @@
                                 "shields": true
                             },
                             "hash": "ea10d79038bdd3f3acb70bafa7088f4b6b38b6dfed5c65f8bd7bbdc290d562b0860cf6787fde25b3688c5e73a146aee63f01b47814d11410d381a9a10f95622b",
-                            "index": 43
+                            "index": 28
                         }
                     ],
-                    "players": [],
+                    "players": [
+                        "quakes_grimmer.json"
+                    ],
                     "events": {
                         "onenter": ""
                     }
@@ -5132,11 +4096,7 @@
                     "items": [],
                     "silver": 0,
                     "npcs": [],
-                    "players": [
-                        "sylvann_treesinger.json",
-                        "venator_valdemar.json",
-                        "sewer_rat.json"
-                    ],
+                    "players": [],
                     "events": {
                         "onenter": ""
                     }
@@ -5156,7 +4116,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -5168,7 +4128,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -5180,7 +4140,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -5193,7 +4153,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -5212,7 +4172,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -5434,9 +4394,7 @@
                     "items": [],
                     "silver": 0,
                     "npcs": [],
-                    "players": [
-                        "nameless_one.json"
-                    ],
+                    "players": [],
                     "events": {
                         "onenter": ""
                     }
@@ -5488,7 +4446,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -5501,7 +4459,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -5520,7 +4478,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -5758,7 +4716,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -5771,7 +4729,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -5790,7 +4748,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -6024,7 +4982,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -6037,7 +4995,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -6056,7 +5014,7 @@
             },
             {
                 "core": {
-                    "revealed": false,
+                    "revealed": true,
                     "type": "wall",
                     "name": "sewer_wall",
                     "icon": "backgrounds/brick_dark0.png"
@@ -6324,7 +5282,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -6344,7 +5302,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -6364,7 +5322,7 @@
             {
                 "core": {
                     "type": "floor",
-                    "revealed": false,
+                    "revealed": true,
                     "name": "sewer_floor",
                     "icon": "backgrounds/dngn_shallow_water.png"
                 },
@@ -6445,15 +5403,26 @@
                                         "social": ""
                                     }
                                 },
+                                "location": {
+                                    "y": 14,
+                                    "map": "sewers_1.json",
+                                    "x": 9
+                                },
+                                "icon": "avatars/rat.png",
+                                "type": "npc",
+                                "class": {
+                                    "class": "fighter",
+                                    "parent": "warrior"
+                                },
                                 "inventory": {
                                     "equiped": {
                                         "head": {},
                                         "righthand": {},
                                         "neck": {},
                                         "wrists": {},
-                                        "rightfinger": {},
-                                        "feet": {},
                                         "chest": {},
+                                        "feet": {},
+                                        "rightfinger": {},
                                         "leftfinger": {},
                                         "gloves": {},
                                         "legs": {},
@@ -6465,24 +5434,12 @@
                                         "gold": 0
                                     },
                                     "spells_memorized": [],
-                                    "spells": [],
-                                    "pack": []
-                                },
-                                "location": {
-                                    "y": 14,
-                                    "map": "sewers_1.json",
-                                    "x": 9
-                                },
-                                "type": "npc",
-                                "class": {
-                                    "class": "fighter",
-                                    "parent": "warrior"
-                                },
-                                "icon": "avatars/rat.png"
+                                    "pack": [],
+                                    "spells": []
+                                }
                             },
                             "conditional": {
                                 "armor_types": 4,
-                                "shields": true,
                                 "loot": {
                                     "copper": 99,
                                     "items_possible": [
@@ -6493,17 +5450,20 @@
                                     "always_drops": [],
                                     "silver": 99
                                 },
+                                "orientation": " aggressive",
+                                "shields": true,
                                 "events": {
                                     "oninspect": "",
                                     "oninteract": ""
-                                },
-                                "orientation": " aggressive"
+                                }
                             },
                             "hash": "d4c6ccf53ea389249f0f719eadfc8c6c624ee4afdbeb570e41d98e9b5d3f993c298c2cca399a48062d237c35bd0ff1de7becdb14cea85e324a6267cd0ce5782b",
-                            "index": 44
+                            "index": 29
                         }
                     ],
-                    "players": [],
+                    "players": [
+                        "sewer_rat.json"
+                    ],
                     "events": {
                         "onenter": ""
                     }
@@ -6664,7 +5624,7 @@
         ]
     ],
     "max_y": 15,
-    "lightradius": 1,
+    "name": "Sewers_1",
     "max_x": 20,
-    "name": "Sewers_1"
+    "lightradius": 1
 }

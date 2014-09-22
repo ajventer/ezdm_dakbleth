@@ -11,7 +11,7 @@
         "lightradius": 0,
         "combat": {
             "level-hitdice": 1,
-            "hitpoints": 7,
+            "hitpoints": 6,
             "max_hp": 7
         },
         "personal": {
@@ -29,9 +29,9 @@
             }
         },
         "location": {
-            "y": 11,
+            "y": 0,
             "map": "sewers_1.json",
-            "x": 1
+            "x": 10
         },
         "icon": "avatars/human_paladin.png",
         "type": "player",
@@ -252,9 +252,9 @@
                 "lefthand": {}
             },
             "money": {
-                "copper": 0,
-                "silver": 0,
-                "gold": 0
+                "copper": 5,
+                "silver": 9,
+                "gold": 9
             },
             "pack": [],
             "spells": []
@@ -270,5 +270,5 @@
         },
         "shields": true
     },
-    "index": 2
+    "index": 1
 }

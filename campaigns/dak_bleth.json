@@ -10,11 +10,10 @@
 	    "moes_tavern.json"
         ],
         "players": [
-		"kenia_el'andearre.json",
-		"mymon_el'andearre.json",
 		"nameless_one.json",
 		"sylvann_treesinger.json",
-		"venator_valdemar.json"
+		"venator_valdemar.json",
+		"elsa_baggins.json"
         ],
         "initiative": [],
         "incombat": false,
