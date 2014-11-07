@@ -96,8 +96,8 @@
             "parent": "warrior"
         },
         "location": {
-            "y": 8,
-            "x": 2,
+            "y": 1,
+            "x": 5,
             "map": "moes_tavern.json"
         }
     },
@@ -118,6 +118,6 @@
             "oninteract": ""
         }
     },
-    "hash": "9d4b4f73f029d7be5f051267ab5f28ed7c244001b1fc62f37f53617922e55e7d2a7c268350883d151fd59dcb572c8432b884a45979bd6e5cb53f6ff21007333c",
-    "index": 12
+    "hash": "5f91886a0e2f2c2ceac007ed0ad1a0b8693dfa9d8ce15b4d113feacf69b4bdebee546d9637181a9c877c2ad764f45de15d8fd69288cdb8d683c59956cada24da",
+    "index": 0
 }

@@ -11,7 +11,7 @@
         "lightradius": 0,
         "combat": {
             "level-hitdice": 1,
-            "hitpoints": 2,
+            "hitpoints": 7,
             "max_hp": 8
         },
         "personal": {
@@ -29,8 +29,8 @@
             }
         },
         "location": {
-            "y": 10,
-            "x": 1,
+            "y": 14,
+            "x": 9,
             "map": "sewers_1.json"
         },
         "icon": "avatars/rat.png",
@@ -82,6 +82,6 @@
             "oninteract": ""
         }
     },
-    "hash": "beccd206d237880f4b6d76f892fde69821d0cca82805c8822dc42b5b081e48575a212be47320cb756c135482f857fab6fbb6466f9b1d4b212477722ff59623f0",
-    "index": 13
+    "hash": "d4c6ccf53ea389249f0f719eadfc8c6c624ee4afdbeb570e41d98e9b5d3f993c298c2cca399a48062d237c35bd0ff1de7becdb14cea85e324a6267cd0ce5782b",
+    "index": 8
 }

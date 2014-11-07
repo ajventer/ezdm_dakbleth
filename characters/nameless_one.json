@@ -22,16 +22,16 @@
             "backstory": "",
             "sex": "male",
             "race": "human",
-            "xp": 570,
+            "xp": 920,
             "alignment": {
                 "law": "lawful",
                 "social": "good"
             }
         },
         "location": {
-            "y": 0,
-            "map": "sewers_1.json",
-            "x": 10
+            "y": 3,
+            "map": "town_center.json",
+            "x": 5
         },
         "icon": "avatars/human_paladin.png",
         "type": "player",
@@ -78,34 +78,38 @@
                     "core": {
                         "lightradius": 0,
                         "current_rounds_performed": 0,
-                        "name": "One Handed Bastard Sword",
+                        "name": "The Grimm Squeakers Scythe",
                         "weight": 0,
                         "in_use": false,
                         "charges": 0,
                         "price": {
                             "copper": 0,
                             "silver": 0,
-                            "gold": 25
+                            "gold": 10000
                         },
-                        "description": "To use:<br>Hold by blunt end.<br>Aim pointy end at person of unpleasant persona.<br>Attempt to thrust pointy end into person of unpleasant persona by means of a vigorous arm movement.",
+                        "description": "The indestructable blade of this scythe is so thin that it glows slightly blue as air molecules are cut into their component parts when they bounce against it.<br>\r\nSuccessfull strikes do an additional 1d4 shadow damage.",
                         "identified": true,
                         "rounds_per_charge": 0,
-                        "size": "medium",
+                        "size": "large",
                         "type": "weapon",
-                        "icon": "icons/sword.png"
+                        "icon": "icons/scythe2.png"
                     },
                     "conditional": {
-                        "slot": "righthand",
-                        "dmg": 8,
-                        "to_hit": "",
-                        "range": "short",
+                        "slot": "twohand",
+                        "dmg": 10,
+                        "to_hit": "+1",
+                        "range": "medium",
                         "damage_type": "slice",
                         "weapon_type": "melee",
+                        "events": {
+                            "onstrike": "from ezdm_libs.util import rolldice\r\nshadow = rolldice (numdice=1, numsides=4, modifier=0)\r\ncampaign.message('%s does additional shadow damage to %s' % (item.displayname(), target.displayname()))\r\ncampaign.message(shadow[1])\r\nresult = target.take_damage(shadow[0])\r\ncampaign.message(result[1])"
+                        },
                         "save_against": "none"
                     },
                     "events": {
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "ondrop": "",
                         "onround": "",
+                        "onunequip": "",
                         "onequip": "",
                         "onpickup": "",
                         "onuse": "",
@@ -231,9 +235,9 @@
                         "identified": true,
                         "name": "Bronze Plate Legs",
                         "rounds_per_charge": 0,
-                        "icon": "icons/plate_legs.png",
+                        "size": "large",
                         "type": "armor",
-                        "size": "large"
+                        "icon": "icons/plate_legs.png"
                     },
                     "conditional": {
                         "slot": "legs",
@@ -249,14 +253,99 @@
                         "onfinish": ""
                     }
                 },
-                "lefthand": {}
+                "lefthand": {
+                    "core": {
+                        "lightradius": 0,
+                        "current_rounds_performed": 0,
+                        "name": "The Grimm Squeakers Scythe",
+                        "weight": 0,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 10000
+                        },
+                        "description": "The indestructable blade of this scythe is so thin that it glows slightly blue as air molecules are cut into their component parts when they bounce against it.<br>\r\nSuccessfull strikes do an additional 1d4 shadow damage.",
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "size": "large",
+                        "type": "weapon",
+                        "icon": "icons/scythe2.png"
+                    },
+                    "conditional": {
+                        "slot": "twohand",
+                        "to_hit": "+1",
+                        "dmg": 10,
+                        "range": "medium",
+                        "damage_type": "slice",
+                        "weapon_type": "melee",
+                        "events": {
+                            "onstrike": "from ezdm_libs.util import rolldice\r\nshadow = rolldice (numdice=1, numsides=4, modifier=0)\r\ncampaign.message('%s does additional shadow damage to %s' % (item.displayname(), target.displayname()))\r\ncampaign.message(shadow[1])\r\nresult = target.take_damage(shadow[0])\r\ncampaign.message(result[1])"
+                        },
+                        "save_against": "none"
+                    },
+                    "events": {
+                        "ondrop": "",
+                        "onround": "",
+                        "onunequip": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                }
             },
             "money": {
                 "copper": 5,
                 "silver": 9,
-                "gold": 9
+                "gold": 509
             },
-            "pack": [],
+            "pack": [
+                {
+                    "core": {
+                        "identified": true
+                    }
+                },
+                {
+                    "core": {
+                        "size": "medium",
+                        "current_rounds_performed": 0,
+                        "lightradius": 0,
+                        "weight": 0,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 25
+                        },
+                        "identified": true,
+                        "name": "One Handed Bastard Sword",
+                        "rounds_per_charge": 0,
+                        "icon": "icons/sword.png",
+                        "type": "weapon",
+                        "description": "To use:<br>Hold by blunt end.<br>Aim pointy end at person of unpleasant persona.<br>Attempt to thrust pointy end into person of unpleasant persona by means of a vigorous arm movement."
+                    },
+                    "conditional": {
+                        "slot": "righthand",
+                        "dmg": 8,
+                        "to_hit": "",
+                        "range": "short",
+                        "damage_type": "slice",
+                        "weapon_type": "melee",
+                        "save_against": "none"
+                    },
+                    "events": {
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                }
+            ],
             "spells": []
         }
     },
@@ -270,5 +359,5 @@
         },
         "shields": true
     },
-    "index": 1
+    "index": 14
 }

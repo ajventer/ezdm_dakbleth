@@ -10,9 +10,9 @@
         },
         "lightradius": 0,
         "combat": {
-            "level-hitdice": 1,
-            "hitpoints": 4,
-            "max_hp": 4
+            "level-hitdice": 2,
+            "hitpoints": 8,
+            "max_hp": 8
         },
         "personal": {
             "name": {
@@ -22,16 +22,16 @@
             "backstory": "",
             "sex": "female",
             "race": "gnome",
-            "xp": 720,
+            "xp": 1525,
             "alignment": {
                 "law": "chaotic",
                 "social": "good"
             }
         },
         "location": {
-            "y": 0,
-            "map": "sewers_1.json",
-            "x": 10
+            "y": 3,
+            "map": "town_center.json",
+            "x": 5
         },
         "icon": "avatars/sylvann.png",
         "type": "player",
@@ -55,11 +55,387 @@
                             "gold": 1
                         },
                         "identified": true,
-                        "name": "Leather Helm",
+                        "name": "Crocodile Leather Helm",
                         "rounds_per_charge": 0,
                         "size": "small",
                         "lightradius": 0,
-                        "icon": "icons/leather_helm.png"
+                        "icon": "icons/tough_leather_helm.png"
+                    },
+                    "conditional": {
+                        "slot": "head",
+                        "ac": 1.6,
+                        "material": "leather"
+                    },
+                    "events": {
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onunequip": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
+                "righthand": {
+                    "core": {
+                        "lightradius": 0,
+                        "current_rounds_performed": 0,
+                        "name": "Coninas mainhand scissor dagger +1",
+                        "weight": 0,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 1500
+                        },
+                        "description": "",
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "size": "small",
+                        "type": "weapon",
+                        "icon": "icons/orcish_dagger.png"
+                    },
+                    "conditional": {
+                        "slot": "righthand",
+                        "dmg": 6,
+                        "to_hit": 1,
+                        "range": "short",
+                        "damage_type": "stab",
+                        "weapon_type": "melee",
+                        "events": {
+                            "onstrike": ""
+                        },
+                        "save_against": "none"
+                    },
+                    "events": {
+                        "ondrop": "",
+                        "onround": "",
+                        "onunequip": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
+                "neck": {},
+                "wrists": {},
+                "rightfinger": {},
+                "leftfinger": {},
+                "feet": {
+                    "core": {
+                        "current_rounds_performed": 0,
+                        "name": "Crocodile Leather Boots",
+                        "weight": 1,
+                        "in_use": false,
+                        "charges": 0,
+                        "type": "armor",
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 1
+                        },
+                        "description": "",
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "icon": "icons/tough_leather_boots.png",
+                        "lightradius": 0,
+                        "size": "small"
+                    },
+                    "conditional": {
+                        "slot": "feet",
+                        "ac": 0.4,
+                        "material": "leather"
+                    },
+                    "events": {
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onunequip": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
+                "chest": {
+                    "core": {
+                        "current_rounds_performed": 0,
+                        "lightradius": 0,
+                        "weight": 8,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 50,
+                            "gold": 1
+                        },
+                        "description": "",
+                        "identified": true,
+                        "name": "Crocodile Leather Chest",
+                        "rounds_per_charge": 0,
+                        "size": "medium",
+                        "type": "armor",
+                        "icon": "icons/tough_leather_armor.png"
+                    },
+                    "conditional": {
+                        "slot": "chest",
+                        "ac": 2,
+                        "material": "leather"
+                    },
+                    "events": {
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onunequip": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
+                "gloves": {},
+                "hands": {
+                    "core": {
+                        "lightradius": 0,
+                        "current_rounds_performed": 0,
+                        "description": "",
+                        "weight": 1,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 1
+                        },
+                        "identified": true,
+                        "name": "Crocodile Leather Gloves",
+                        "rounds_per_charge": 0,
+                        "size": "small",
+                        "type": "armor",
+                        "icon": "icons/tough_leather_gloves.png"
+                    },
+                    "conditional": {
+                        "slot": "hands",
+                        "ac": 0.4,
+                        "material": "leather"
+                    },
+                    "events": {
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onunequip": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
+                "legs": {
+                    "core": {
+                        "lightradius": 0,
+                        "current_rounds_performed": 0,
+                        "description": "",
+                        "weight": 2,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 50,
+                            "gold": 1
+                        },
+                        "identified": true,
+                        "name": "Leather Leggings",
+                        "rounds_per_charge": 0,
+                        "size": "large",
+                        "type": "armor",
+                        "icon": "icons/tough_leather_boots.png"
+                    },
+                    "conditional": {
+                        "slot": "legs",
+                        "ac": 0.8,
+                        "material": "leather"
+                    },
+                    "events": {
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onunequip": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
+                "lefthand": {
+                    "core": {
+                        "lightradius": 0,
+                        "current_rounds_performed": 0,
+                        "name": "Coninas offhand scissor dagger +1",
+                        "weight": 0,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 1500
+                        },
+                        "description": "",
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "size": "small",
+                        "type": "weapon",
+                        "icon": "icons/orcish_dagger.png"
+                    },
+                    "conditional": {
+                        "slot": "lefthand",
+                        "to_hit": 1,
+                        "dmg": 6,
+                        "range": "short",
+                        "damage_type": "stab",
+                        "weapon_type": "melee",
+                        "events": {
+                            "onstrike": ""
+                        },
+                        "save_against": "none"
+                    },
+                    "events": {
+                        "ondrop": "",
+                        "onround": "",
+                        "onunequip": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                }
+            },
+            "money": {
+                "copper": 8,
+                "silver": 1,
+                "gold": 643
+            },
+            "spells_memorized": [],
+            "pack": [
+                {
+                    "core": {
+                        "current_rounds_performed": 0,
+                        "name": "Offhand_Dagger",
+                        "weight": "",
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": "",
+                            "silver": "",
+                            "gold": 2
+                        },
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "icon": "icons/dagger.png",
+                        "size": "small",
+                        "type": "weapon",
+                        "description": "A small dagger balanced for use in the offhand."
+                    },
+                    "conditional": {
+                        "slot": "lefthand",
+                        "dmg": 4,
+                        "to_hit": 0,
+                        "range": "",
+                        "damage_type": "stab",
+                        "weapon_type": "melee",
+                        "save_against": "none"
+                    },
+                    "events": {
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
+                {
+                    "core": {
+                        "current_rounds_performed": 0,
+                        "name": "Mainhand Dagger",
+                        "weight": "",
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": "",
+                            "silver": "",
+                            "gold": 2
+                        },
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "icon": "icons/dagger.png",
+                        "size": "small",
+                        "type": "weapon",
+                        "description": "A small dagger balanced for use in the main hand."
+                    },
+                    "conditional": {
+                        "slot": " righthand",
+                        "to_hit": 0,
+                        "dmg": 4,
+                        "range": "",
+                        "damage_type": "stab",
+                        "weapon_type": "melee",
+                        "save_against": "none"
+                    },
+                    "events": {
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
+                {
+                    "core": {
+                        "current_rounds_performed": 0,
+                        "lightradius": 0,
+                        "weight": 0,
+                        "in_use": false,
+                        "charges": 1,
+                        "price": {
+                            "copper": 25,
+                            "silver": 50,
+                            "gold": 1000
+                        },
+                        "description": "Ressurrects a dead ally with 1 hitpoint. Takes ten rounds to read.",
+                        "identified": true,
+                        "name": "Scroll of Resurrection",
+                        "rounds_per_charge": 10,
+                        "icon": "icons/scrolloflove.png",
+                        "type": "other",
+                        "size": "small"
+                    },
+                    "events": {
+                        "ondrop": "",
+                        "onround": "campaign.error('%s continues to cast Scroll of Ressurection at %s' % (player.displayname(), target.displayname()))",
+                        "onunequip": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "hitpoints = target.get('/core/combat/hitpoints',1)\r\nif hitpoints > 0:\r\n   campaign.error('%s is not dead ! What a waste of a scroll !')\r\ncampaign.error('%s is casting Scroll of Ressurection at %s' % (player.displayname(), target.displayname()))",
+                        "onfinish": "campaign.error('%s has finished casting Scroll of Resurrection at %s'  % (player.displayname(), target.displayname()))\r\nhitpoints = target.get('/core/combat/hitpoints',1)\r\nif hitpoints > 0:\r\n   campaign.error('%s is not dead ! What a waste of a scroll !')\r\nelse:\r\n   campaign.error('%s resurrected with one hitpoint.')\r\n   target.put('/core/combat/hitpoints',1)"
+                    }
+                },
+                {
+                    "core": {
+                        "current_rounds_performed": 0,
+                        "lightradius": 0,
+                        "weight": 2,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 1
+                        },
+                        "description": "",
+                        "identified": true,
+                        "name": "Leather Helm",
+                        "rounds_per_charge": 0,
+                        "icon": "icons/leather_helm.png",
+                        "type": "armor",
+                        "size": "small"
                     },
                     "conditional": {
                         "slot": "head",
@@ -76,36 +452,32 @@
                         "onfinish": ""
                     }
                 },
-                "righthand": {
+                {
                     "core": {
                         "current_rounds_performed": 0,
-                        "name": "Fist",
-                        "weight": 0,
+                        "description": "",
+                        "weight": 1,
                         "in_use": false,
                         "charges": 0,
                         "price": {
                             "copper": 0,
                             "silver": 0,
-                            "gold": 0
+                            "gold": 1
                         },
-                        "description": "Throw a barehanded punch with fist.",
                         "identified": true,
                         "rounds_per_charge": 0,
+                        "icon": "icons/leather_gloves.png",
                         "size": "small",
-                        "type": "weapon",
-                        "icon": ""
+                        "type": "armor",
+                        "name": "Leather Gloves"
                     },
                     "conditional": {
-                        "slot": "twohand",
-                        "dmg": 2,
-                        "to_hit": 0,
-                        "range": "short",
-                        "damage_type": "stab",
-                        "weapon_type": "melee",
-                        "save_against": "none"
+                        "slot": "hands",
+                        "ac": 0.2,
+                        "material": "leather"
                     },
                     "events": {
-                        "ondrop": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
                         "onround": "",
                         "onequip": "",
                         "onpickup": "",
@@ -113,10 +485,40 @@
                         "onfinish": ""
                     }
                 },
-                "neck": {},
-                "wrists": {},
-                "rightfinger": {},
-                "feet": {
+                {
+                    "core": {
+                        "current_rounds_performed": 0,
+                        "description": "",
+                        "weight": 8,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 50,
+                            "gold": 1
+                        },
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "icon": "icons/leather_armor.png",
+                        "size": "medium",
+                        "type": "armor",
+                        "name": "Leather Chest"
+                    },
+                    "conditional": {
+                        "slot": "chest",
+                        "ac": 1,
+                        "material": "leather"
+                    },
+                    "events": {
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
+                {
                     "core": {
                         "current_rounds_performed": 0,
                         "name": "Leather Boots",
@@ -149,191 +551,6 @@
                         "onfinish": ""
                     }
                 },
-                "chest": {
-                    "core": {
-                        "current_rounds_performed": 0,
-                        "description": "",
-                        "weight": 8,
-                        "in_use": false,
-                        "charges": 0,
-                        "price": {
-                            "copper": 0,
-                            "silver": 50,
-                            "gold": 1
-                        },
-                        "identified": true,
-                        "name": "Leather Chest",
-                        "rounds_per_charge": 0,
-                        "size": "medium",
-                        "type": "armor",
-                        "icon": "icons/leather_armor.png"
-                    },
-                    "conditional": {
-                        "slot": "chest",
-                        "ac": 1,
-                        "material": "leather"
-                    },
-                    "events": {
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "",
-                        "onfinish": ""
-                    }
-                },
-                "leftfinger": {},
-                "gloves": {},
-                "hands": {
-                    "core": {
-                        "current_rounds_performed": 0,
-                        "description": "",
-                        "weight": 1,
-                        "in_use": false,
-                        "charges": 0,
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 1
-                        },
-                        "identified": true,
-                        "name": "Leather Gloves",
-                        "rounds_per_charge": 0,
-                        "size": "small",
-                        "type": "armor",
-                        "icon": "icons/leather_gloves.png"
-                    },
-                    "conditional": {
-                        "slot": "hands",
-                        "ac": 0.2,
-                        "material": "leather"
-                    },
-                    "events": {
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "",
-                        "onfinish": ""
-                    }
-                },
-                "legs": {
-                    "core": {
-                        "lightradius": 0,
-                        "current_rounds_performed": 0,
-                        "description": "",
-                        "weight": 2,
-                        "in_use": false,
-                        "charges": 0,
-                        "price": {
-                            "copper": 0,
-                            "silver": 50,
-                            "gold": 1
-                        },
-                        "identified": true,
-                        "name": "Leather Leggings",
-                        "rounds_per_charge": 0,
-                        "icon": "icons/tough_leather_boots.png",
-                        "type": "armor",
-                        "size": "large"
-                    },
-                    "conditional": {
-                        "slot": "legs",
-                        "ac": 0.8,
-                        "material": "leather"
-                    },
-                    "events": {
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onround": "",
-                        "onunequip": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "",
-                        "onfinish": ""
-                    }
-                },
-                "lefthand": {
-                    "core": {
-                        "current_rounds_performed": 0,
-                        "name": "Fist",
-                        "weight": 0,
-                        "in_use": false,
-                        "charges": 0,
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 0
-                        },
-                        "description": "Throw a barehanded punch with fist.",
-                        "identified": true,
-                        "rounds_per_charge": 0,
-                        "size": "small",
-                        "type": "weapon",
-                        "icon": ""
-                    },
-                    "conditional": {
-                        "slot": "twohand",
-                        "dmg": 2,
-                        "to_hit": 0,
-                        "range": "short",
-                        "damage_type": "stab",
-                        "weapon_type": "melee",
-                        "save_against": "none"
-                    },
-                    "events": {
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "",
-                        "onfinish": ""
-                    }
-                }
-            },
-            "money": {
-                "copper": 8,
-                "silver": 1,
-                "gold": 143
-            },
-            "spells_memorized": [],
-            "pack": [
-                {
-                    "core": {
-                        "current_rounds_performed": 0,
-                        "name": "Fist",
-                        "weight": 0,
-                        "in_use": false,
-                        "charges": 0,
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 0
-                        },
-                        "description": "Throw a barehanded punch with fist.",
-                        "identified": true,
-                        "rounds_per_charge": 0,
-                        "icon": "",
-                        "type": "weapon",
-                        "size": "small"
-                    },
-                    "conditional": {
-                        "slot": "twohand",
-                        "to_hit": 0,
-                        "dmg": 2,
-                        "range": "short",
-                        "damage_type": "stab",
-                        "weapon_type": "melee",
-                        "save_against": "none"
-                    },
-                    "events": {
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "",
-                        "onfinish": ""
-                    }
-                },
                 {
                     "core": {
                         "current_rounds_performed": 0,
@@ -346,12 +563,12 @@
                             "silver": 0,
                             "gold": 10
                         },
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "identified": true,
                         "rounds_per_charge": 1,
-                        "icon": "icons/health_potion.png",
                         "size": "small",
                         "type": "other",
-                        "description": "Heals the target character for 1d6 hitpoints"
+                        "icon": "icons/health_potion.png"
                     },
                     "events": {
                         "ondrop": "",
@@ -374,12 +591,12 @@
                             "silver": 0,
                             "gold": 10
                         },
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "identified": true,
                         "rounds_per_charge": 1,
-                        "icon": "icons/health_potion.png",
                         "size": "small",
                         "type": "other",
-                        "description": "Heals the target character for 1d6 hitpoints"
+                        "icon": "icons/health_potion.png"
                     },
                     "events": {
                         "ondrop": "",
@@ -402,12 +619,12 @@
                             "silver": 0,
                             "gold": 10
                         },
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "identified": true,
                         "rounds_per_charge": 1,
-                        "icon": "icons/health_potion.png",
                         "size": "small",
                         "type": "other",
-                        "description": "Heals the target character for 1d6 hitpoints"
+                        "icon": "icons/health_potion.png"
                     },
                     "events": {
                         "ondrop": "",
@@ -430,12 +647,12 @@
                             "silver": 0,
                             "gold": 10
                         },
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "identified": true,
                         "rounds_per_charge": 1,
-                        "icon": "icons/health_potion.png",
                         "size": "small",
                         "type": "other",
-                        "description": "Heals the target character for 1d6 hitpoints"
+                        "icon": "icons/health_potion.png"
                     },
                     "events": {
                         "ondrop": "",
@@ -458,12 +675,12 @@
                             "silver": 0,
                             "gold": 10
                         },
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "identified": true,
                         "rounds_per_charge": 1,
-                        "icon": "icons/health_potion.png",
                         "size": "small",
                         "type": "other",
-                        "description": "Heals the target character for 1d6 hitpoints"
+                        "icon": "icons/health_potion.png"
                     },
                     "events": {
                         "ondrop": "",
@@ -483,14 +700,14 @@
         "abilities": {
             "find-remove traps": 25,
             "read languages": 0,
-            "pick pockets": 15,
+            "pick pockets": 30,
             "detect noise": 30,
             "move silently": 25,
-            "hide in shadows": 5,
+            "hide in shadows": 25,
             "open locks": 25,
             "climb walls": 60
         },
         "shields": false
     },
-    "index": 2
+    "index": 14
 }
