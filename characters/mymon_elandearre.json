@@ -1,0 +1,144 @@
+{
+    "core": {
+        "abilities": {
+            "dex": 11,
+            "cha": 14,
+            "int": 13,
+            "wis": 13,
+            "str": 15,
+            "con": 13
+        },
+        "lightradius": 1,
+        "combat": {
+            "level-hitdice": 1,
+            "hitpoints": 4,
+            "max_hp": 4
+        },
+        "personal": {
+            "name": {
+                "last": "El'Andearre",
+                "first": "Mymon"
+            },
+            "backstory": "",
+            "sex": "female",
+            "race": "half-elf",
+            "xp": 10,
+            "alignment": {
+                "law": "chaotic",
+                "social": "neutral"
+            }
+        },
+        "inventory": {
+            "equiped": {
+                "head": {},
+                "righthand": {
+                    "core": {
+                        "current_rounds_performed": 0,
+                        "description": "This thick length of heavy Birchwood can generate significant force through centripetal force when swung into contact with an opponents body. Wizards often use them as an aid when casting\r\nspells - everybody else uses them as an aid when building a fire.",
+                        "weight": 0,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 15
+                        },
+                        "identified": true,
+                        "name": "Simple Wooden Staff",
+                        "rounds_per_charge": 0,
+                        "icon": "icons/quarterstaff.png",
+                        "size": "large",
+                        "type": "weapon",
+                        "lightradius": 0
+                    },
+                    "conditional": {
+                        "slot": "twohand",
+                        "dmg": 6,
+                        "to_hit": "",
+                        "range": "medium",
+                        "damage_type": "hack",
+                        "weapon_type": "melee",
+                        "save_against": "none"
+                    },
+                    "events": {
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
+                "neck": {},
+                "wrists": {},
+                "leftfinger": {},
+                "feet": {},
+                "rightfinger": {},
+                "gloves": {},
+                "legs": {},
+                "lefthand": {
+                    "core": {
+                        "lightradius": 0,
+                        "current_rounds_performed": 0,
+                        "description": "This thick length of heavy Birchwood can generate significant force through centripetal force when swung into contact with an opponents body. Wizards often use them as an aid when casting\r\nspells - everybody else uses them as an aid when building a fire.",
+                        "weight": 0,
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 15
+                        },
+                        "identified": true,
+                        "name": "Simple Wooden Staff",
+                        "rounds_per_charge": 0,
+                        "size": "large",
+                        "type": "weapon",
+                        "icon": "icons/quarterstaff.png"
+                    },
+                    "conditional": {
+                        "slot": "twohand",
+                        "dmg": 6,
+                        "to_hit": "",
+                        "range": "medium",
+                        "damage_type": "hack",
+                        "weapon_type": "melee",
+                        "save_against": "none"
+                    },
+                    "events": {
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onfinish": ""
+                    }
+                },
+                "chest": {}
+            },
+            "money": {
+                "copper": 0,
+                "silver": 0,
+                "gold": 300
+            },
+            "pack": [],
+            "spells": []
+        },
+        "icon": "avatars/48x48_Faces_4th_Sheet_Update_CharlesGabriel_OGA_0-0-3.png",
+        "type": "player",
+        "class": {
+            "class": "mage",
+            "parent": "wizard"
+        },
+        "location": {
+            "y": 1,
+            "x": 1,
+            "map": "test4x4.json"
+        }
+    },
+    "conditional": {
+        "armor_types": 1,
+        "shields": false
+    },
+    "index": 1
+}

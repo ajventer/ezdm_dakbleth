@@ -1,35 +1,35 @@
 {
     "events": {
-        "ondrop": "",
-        "onround": "",
-        "onuse": "",
-        "onequip": "",
         "onpickup": "",
-        "onfinish": "",
-        "onunequip": ""
+        "onround": "campaign.error('%s continues to cast Animal Friendship at %s' % (player.displayname(), target.displayname()))",
+        "onequip": "",
+        "onunequip": "",
+        "onfinish": "campaign.error('%s has finished casting Animal Friendship at %s' % (player.displayname(), target.displayname()))",
+        "onuse": "campaign.error('%s is casting Animal Friendship at %s' % (player.displayname(), target.displayname()))",
+        "ondrop": ""
     },
     "core": {
-        "in_use": false,
-        "description": "Caster charms an animal which fights alongside it as a companion. ",
-        "size": "",
-        "type": "spell",
-        "icon": "icons/tame_beasts.png",
-        "price": {
-            "silver": 0,
-            "copper": 0,
-            "gold": 0
-        },
         "current_rounds_performed": 0,
-        "rounds_per_charge": 0,
-        "charges": 0,
         "weight": 0,
-        "identified": true,
         "lightradius": 0,
+        "price": {
+            "gold": 0,
+            "silver": 0,
+            "copper": 0
+        },
+        "in_use": false,
+        "charges": -1,
+        "type": "spell",
+        "identified": true,
+        "icon": "icons/tame_beasts.png",
+        "rounds_per_charge": 3,
+        "description": "Caster charms an animal which fights alongside it as a companion. The spell takes three rounds to cast. ",
+        "size": "",
         "name": "Animal Friendship"
     },
     "conditional": {
+        "spell_school": "Enchantment",
         "spell_level": 1,
-        "spell_type": "priest spells",
-        "spell_school": "Enchantment"
+        "spell_type": "priest spells"
     }
 }

@@ -1,0 +1,42 @@
+{
+    "events": {
+        "onpickup": "",
+        "onround": "",
+        "onequip": "",
+        "onunequip": "",
+        "onfinish": "",
+        "onuse": "",
+        "ondrop": ""
+    },
+    "core": {
+        "current_rounds_performed": 0,
+        "weight": 0,
+        "lightradius": 0,
+        "price": {
+            "gold": 0,
+            "silver": 0,
+            "copper": 0
+        },
+        "in_use": false,
+        "charges": 0,
+        "type": "weapon",
+        "identified": true,
+        "icon": "",
+        "rounds_per_charge": 0,
+        "description": "Biting with it's snapping jaws",
+        "size": "small",
+        "name": "Jaws"
+    },
+    "conditional": {
+        "events": {
+            "onstrike": ""
+        },
+        "damage_type": "hack",
+        "dmg": 8,
+        "range": "short",
+        "weapon_type": "melee",
+        "to_hit": "+1",
+        "slot": "twohand",
+        "save_against": "none"
+    }
+}

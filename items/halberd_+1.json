@@ -1,0 +1,42 @@
+{
+    "events": {
+        "onpickup": "",
+        "onround": "",
+        "onequip": "",
+        "onunequip": "",
+        "onfinish": "",
+        "onuse": "",
+        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))"
+    },
+    "core": {
+        "current_rounds_performed": 0,
+        "weight": "",
+        "lightradius": 0,
+        "price": {
+            "gold": 25,
+            "silver": "",
+            "copper": ""
+        },
+        "in_use": false,
+        "charges": 0,
+        "type": "weapon",
+        "identified": false,
+        "icon": "icons/w_axe_war_0.png",
+        "rounds_per_charge": 0,
+        "description": "A powerful halberd",
+        "size": "large",
+        "name": "Halberd +1"
+    },
+    "conditional": {
+        "events": {
+            "onstrike": ""
+        },
+        "damage_type": "hack",
+        "dmg": 8,
+        "range": "medium",
+        "weapon_type": "melee",
+        "to_hit": 1,
+        "slot": "twohand",
+        "save_against": "none"
+    }
+}

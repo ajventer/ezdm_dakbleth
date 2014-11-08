@@ -1,0 +1,86 @@
+{
+    "conditional": {
+        "shields": true,
+        "orientation": " aggressive",
+        "armor_types": 1,
+        "loot": {
+            "gold": 20,
+            "items_possible": [
+                "thieves_tools.json",
+                "candle.json"
+            ],
+            "max_items": 1,
+            "copper": 99,
+            "always_drops": [],
+            "silver": 99
+        },
+        "events": {
+            "oninteract": "",
+            "oninspect": ""
+        }
+    },
+    "core": {
+        "abilities": {
+            "wis": 12,
+            "dex": 17,
+            "int": 13,
+            "str": 14,
+            "cha": 8,
+            "con": 15
+        },
+        "personal": {
+            "race": "creature",
+            "sex": "male",
+            "name": {
+                "last": "Hungry",
+                "first": "Wolf"
+            },
+            "backstory": "",
+            "alignment": {
+                "social": "neutral",
+                "law": "neutral"
+            },
+            "xp": 0
+        },
+        "icon": "avatars/wolf.png",
+        "type": "npc",
+        "combat": {
+            "hitpoints": 16,
+            "max_hp": 16,
+            "level-hitdice": 2
+        },
+        "location": {
+            "y": 5,
+            "map": "simple_room.json",
+            "x": 3
+        },
+        "inventory": {
+            "spells_memorized": [],
+            "pack": [],
+            "spells": [],
+            "equiped": {
+                "wrists": {},
+                "feet": {},
+                "chest": {},
+                "head": {},
+                "rightfinger": {},
+                "leftfinger": {},
+                "lefthand": {},
+                "legs": {},
+                "righthand": {},
+                "neck": {},
+                "gloves": {}
+            },
+            "money": {
+                "gold": 0,
+                "copper": 0,
+                "silver": 0
+            }
+        },
+        "class": {
+            "parent": "warrior",
+            "class": "fighter"
+        },
+        "lightradius": 0
+    }
+}
