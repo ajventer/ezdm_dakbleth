@@ -1,0 +1,4681 @@
+{
+    "max_y": 15,
+    "lightradius": 1,
+    "name": "Road_To_Darrowshire",
+    "tiles": [
+        [
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_deep_water.png",
+                    "type": "wall",
+                    "name": "River"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/signpost.png",
+                    "type": "signpost",
+                    "name": "simple_signpost"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "message": "The happy ending"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dngn_open_door.png",
+                    "type": "door",
+                    "name": "door_unlocked"
+                },
+                "conditional": {
+                    "background_alternate": "",
+                    "canenter": true,
+                    "locked": false,
+                    "events": {
+                        "onunlock": "",
+                        "onenter": "",
+                        "ontryunlock": ""
+                    }
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/dirt0.png",
+                    "type": "floor",
+                    "name": "path"
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/grass0-dirt-mix3.png",
+                    "type": "floor",
+                    "name": "Grassland"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "npcs": {},
+                    "players": [],
+                    "items": [],
+                    "gold": 0,
+                    "events": {
+                        "onenter": ""
+                    },
+                    "silver": 0,
+                    "canenter": true
+                }
+            },
+            {
+                "core": {
+                    "revealed": false,
+                    "icon": "backgrounds/tree1_lightred.png",
+                    "type": "wall",
+                    "name": "Thick Trees"
+                }
+            }
+        ],
+        [
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/map_link.png",
+                    "type": "link",
+                    "name": "map_link"
+                },
+                "conditional": {
+                    "canenter": true,
+                    "players": [],
+                    "newmap": {
+                        "mapname": "town_center.json",
+                        "y": 0,
+                        "x": 11
+                    }
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            },
+            {
+                "core": {
+                    "revealed": true,
+                    "icon": "backgrounds/gate_closed_middle.png",
+                    "type": "wall",
+                    "name": "town_wall"
+                },
+                "conditional": {
+                    "canenter": false,
+                    "events": ""
+                }
+            }
+        ]
+    ],
+    "max_x": 25
+}

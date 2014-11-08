@@ -1,0 +1,42 @@
+{
+    "core": {
+        "lightradius": 0,
+        "current_rounds_performed": 0,
+        "name": "One Handed Bronze Mace",
+        "weight": 0,
+        "in_use": false,
+        "charges": 0,
+        "price": {
+            "copper": 0,
+            "silver": 0,
+            "gold": 25
+        },
+        "description": "To use:<br> Swing vigorously.",
+        "identified": "",
+        "rounds_per_charge": 0,
+        "icon": "icons/eveningstar1.png",
+        "type": "weapon",
+        "size": "medium"
+    },
+    "conditional": {
+        "slot": "righthand",
+        "to_hit": "",
+        "dmg": 8,
+        "range": "short",
+        "damage_type": "slice",
+        "weapon_type": "melee",
+        "events": {
+            "onstrike": ""
+        },
+        "save_against": "none"
+    },
+    "events": {
+        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+        "onround": "",
+        "onunequip": "",
+        "onequip": "",
+        "onpickup": "",
+        "onuse": "",
+        "onfinish": ""
+    }
+}

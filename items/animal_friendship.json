@@ -1,0 +1,35 @@
+{
+    "events": {
+        "ondrop": "",
+        "onround": "",
+        "onuse": "",
+        "onequip": "",
+        "onpickup": "",
+        "onfinish": "",
+        "onunequip": ""
+    },
+    "core": {
+        "in_use": false,
+        "description": "Caster charms an animal which fights alongside it as a companion. ",
+        "size": "",
+        "type": "spell",
+        "icon": "icons/tame_beasts.png",
+        "price": {
+            "silver": 0,
+            "copper": 0,
+            "gold": 0
+        },
+        "current_rounds_performed": 0,
+        "rounds_per_charge": 0,
+        "charges": 0,
+        "weight": 0,
+        "identified": true,
+        "lightradius": 0,
+        "name": "Animal Friendship"
+    },
+    "conditional": {
+        "spell_level": 1,
+        "spell_type": "priest spells",
+        "spell_school": "Enchantment"
+    }
+}

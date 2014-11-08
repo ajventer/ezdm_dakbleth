@@ -1,0 +1,35 @@
+{
+    "core": {
+        "lightradius": 0,
+        "current_rounds_performed": 0,
+        "name": "Healing Hands",
+        "weight": 0,
+        "in_use": false,
+        "charges": -1,
+        "price": {
+            "copper": 25,
+            "silver": 50,
+            "gold": 200
+        },
+        "description": "Heals the target for 1d6",
+        "identified": true,
+        "rounds_per_charge": 2,
+        "icon": "icons/magic_misile.png",
+        "type": "spell",
+        "size": "small"
+    },
+    "conditional": {
+        "spell_school": "Invocation",
+        "spell_level": 1,
+        "spell_type": "priest spells"
+    },
+    "events": {
+        "ondrop": "",
+        "onround": "campaign.error('%s continues to cast Magic Misile at %s' % (player.displayname(), target.displayname()))",
+        "onunequip": "",
+        "onequip": "",
+        "onpickup": "",
+        "onuse": "campaign.error('%s is casting Magic Missile at %s' % (player.displayname(), target.displayname()))",
+        "onfinish": "campaign.warning('%s has finished casting Healing Hands at %s'  % (player.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nspell_success = player.spell_success()\r\nif not spell_success[1]:\r\n\tcampaign.error(spell_success)\r\nelse:\r\n\thealed = rolldice(numdice=1, numsides=6, modifier=1)\r\n\tcampaign.error(healed[1])\r\n\ttarget.hitpoints += (healed)\r\n\tcampaign.error(target.hitpoints)\r\n"
+    }
+}
