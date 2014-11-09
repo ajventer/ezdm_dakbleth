@@ -1,0 +1,20 @@
+{
+    "conditional": {
+        "npcs": {},
+        "players": [],
+        "gold": 0,
+        "events": {
+            "onenter": ""
+        },
+        "copper": 0,
+        "items": [],
+        "canenter": true,
+        "silver": 0
+    },
+    "core": {
+        "type": "floor",
+        "revealed": false,
+        "name": "Grassland2",
+        "icon": "backgrounds/grass0.png"
+    }
+}

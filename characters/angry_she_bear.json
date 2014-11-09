@@ -1,65 +1,21 @@
 {
     "core": {
-        "icon": "avatars/human_paladin.png",
+        "icon": "avatars/black_bear.png",
         "combat": {
-            "max_hp": 7,
-            "hitpoints": 6,
-            "level-hitdice": 1
+            "max_hp": 0,
+            "hitpoints": 0,
+            "level-hitdice": 4
         },
         "abilities": {
-            "cha": 17,
-            "int": 10,
-            "con": 15,
-            "str": 12,
-            "dex": 14,
-            "wis": 13
+            "cha": 5,
+            "int": 7,
+            "con": 18,
+            "str": 18,
+            "dex": 10,
+            "wis": 8
         },
         "inventory": {
-            "pack": [
-                {
-                    "core": {
-                        "identified": true
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 0,
-                        "weight": 0,
-                        "name": "One Handed Bastard Sword",
-                        "description": "To use:<br>Hold by blunt end.<br>Aim pointy end at person of unpleasant persona.<br>Attempt to thrust pointy end into person of unpleasant persona by means of a vigorous arm movement.",
-                        "icon": "icons/sword.png",
-                        "size": "medium",
-                        "charges": 0,
-                        "lightradius": 0,
-                        "in_use": false,
-                        "price": {
-                            "gold": 25,
-                            "silver": 0,
-                            "copper": 0
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "type": "weapon"
-                    },
-                    "conditional": {
-                        "dmg": 8,
-                        "weapon_type": "melee",
-                        "slot": "righthand",
-                        "range": "short",
-                        "damage_type": "slice",
-                        "save_against": "none",
-                        "to_hit": ""
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onequip": "",
-                        "onround": "",
-                        "onuse": "",
-                        "onpickup": ""
-                    }
-                }
-            ],
+            "pack": [],
             "equiped": {
                 "hands": {
                     "core": {
@@ -96,9 +52,11 @@
                 },
                 "head": {
                     "core": {
+                        "identified": true,
+                        "description": "",
                         "rounds_per_charge": 0,
                         "weight": 10,
-                        "identified": true,
+                        "name": "Iron Plate Helm",
                         "price": {
                             "gold": 30,
                             "silver": 0,
@@ -108,13 +66,12 @@
                         "size": "small",
                         "charges": 0,
                         "in_use": false,
-                        "name": "Bronze Plate Helm",
                         "current_rounds_performed": 0,
-                        "description": "",
+                        "lightradius": 0,
                         "type": "armor"
                     },
                     "conditional": {
-                        "ac": 1,
+                        "ac": 2,
                         "slot": "head",
                         "material": "plate"
                     },
@@ -124,7 +81,8 @@
                         "onequip": "",
                         "onround": "",
                         "onuse": "",
-                        "onpickup": ""
+                        "onpickup": "",
+                        "onunequip": ""
                     }
                 },
                 "wrists": {},
@@ -164,13 +122,13 @@
                 },
                 "lefthand": {
                     "conditional": {
-                        "dmg": 10,
-                        "damage_type": "slice",
-                        "slot": "twohand",
-                        "range": "medium",
+                        "dmg": 8,
+                        "damage_type": "stab",
+                        "slot": "lefthand",
+                        "range": "short",
                         "weapon_type": "melee",
                         "events": {
-                            "onstrike": "from ezdm_libs.util import rolldice\r\nshadow = rolldice (numdice=1, numsides=4, modifier=0)\r\ncampaign.message('%s does additional shadow damage to %s' % (item.displayname(), target.displayname()))\r\ncampaign.message(shadow[1])\r\nresult = target.take_damage(shadow[0])\r\ncampaign.message(result[1])"
+                            "onstrike": ""
                         },
                         "save_against": "none",
                         "to_hit": "+1"
@@ -181,17 +139,17 @@
                         "weight": 0,
                         "lightradius": 0,
                         "price": {
-                            "gold": 10000,
+                            "gold": 0,
                             "silver": 0,
                             "copper": 0
                         },
-                        "icon": "icons/scythe2.png",
-                        "size": "large",
+                        "icon": "",
+                        "size": "medium",
                         "charges": 0,
                         "in_use": false,
-                        "name": "The Grimm Squeakers Scythe",
+                        "name": "Bear Bite",
                         "current_rounds_performed": 0,
-                        "description": "The indestructable blade of this scythe is so thin that it glows slightly blue as air molecules are cut into their component parts when they bounce against it.<br>\r\nSuccessfull strikes do an additional 1d4 shadow damage.",
+                        "description": "",
                         "type": "weapon"
                     },
                     "events": {
@@ -241,17 +199,17 @@
                 "righthand": {
                     "core": {
                         "identified": true,
-                        "description": "The indestructable blade of this scythe is so thin that it glows slightly blue as air molecules are cut into their component parts when they bounce against it.<br>\r\nSuccessfull strikes do an additional 1d4 shadow damage.",
+                        "description": "",
                         "rounds_per_charge": 0,
                         "weight": 0,
-                        "name": "The Grimm Squeakers Scythe",
+                        "name": "Bear claw swipe",
                         "price": {
-                            "gold": 10000,
+                            "gold": 0,
                             "silver": 0,
                             "copper": 0
                         },
-                        "icon": "icons/scythe2.png",
-                        "size": "large",
+                        "icon": "",
+                        "size": "medium",
                         "charges": 0,
                         "in_use": false,
                         "current_rounds_performed": 0,
@@ -259,16 +217,16 @@
                         "type": "weapon"
                     },
                     "conditional": {
-                        "dmg": 10,
+                        "dmg": 8,
                         "damage_type": "slice",
-                        "slot": "twohand",
+                        "slot": "righthand",
                         "range": "medium",
                         "weapon_type": "melee",
                         "events": {
-                            "onstrike": "from ezdm_libs.util import rolldice\r\nshadow = rolldice (numdice=1, numsides=4, modifier=0)\r\ncampaign.message('%s does additional shadow damage to %s' % (item.displayname(), target.displayname()))\r\ncampaign.message(shadow[1])\r\nresult = target.take_damage(shadow[0])\r\ncampaign.message(result[1])"
+                            "onstrike": ""
                         },
                         "save_against": "none",
-                        "to_hit": "+1"
+                        "to_hit": 0
                     },
                     "events": {
                         "onfinish": "",
@@ -316,48 +274,60 @@
                 },
                 "gloves": {}
             },
+            "spells_memorized": [],
             "spells": [],
             "money": {
-                "gold": 509,
-                "silver": 9,
-                "copper": 5
+                "gold": 0,
+                "silver": 0,
+                "copper": 0
             }
         },
         "class": {
             "parent": "warrior",
-            "class": "paladin"
+            "class": "fighter"
         },
         "personal": {
-            "race": "human",
-            "backstory": "",
-            "xp": 920,
+            "race": "",
+            "backstory": "An angry she bear. Do not tickle.",
+            "xp": 0,
             "name": {
-                "last": "One",
-                "first": "Nameless"
+                "last": "Bear",
+                "first": "Angry_She"
             },
-            "sex": "male",
+            "sex": "female",
             "alignment": {
-                "social": "good",
-                "law": "lawful"
+                "social": "neutral",
+                "law": "neutral"
             }
         },
         "lightradius": 0,
         "location": {
-            "map": "secret_cellar.json",
-            "x": 0,
-            "y": 3
+            "map": "road_to_darrowshire.json",
+            "x": 2,
+            "y": 9
         },
-        "type": "player"
+        "type": "npc"
     },
-    "index": 14,
     "conditional": {
         "armor_types": 4,
-        "abilities": {
-            "Turn undead (level 3+)": 100,
-            "lay on hands (daily)": 100,
-            "sense evil intent(must end turn)": 100,
-            "cure disease(weekly)": 100
+        "orientation": " aggressive",
+        "shields": true,
+        "events": {
+            "oninteract": "",
+            "oninspect": ""
         },
-        "shields": true
+        "loot": {
+            "silver": 99,
+            "always_drops": [
+                "bronze_plate_bracers_of_illumination.json"
+            ],
+            "max_items": 3,
+            "gold": 100,
+            "items_possible": [
+                "scroll_of_resurrection.json",
+                "iron_plate_helm.json"
+            ],
+            "copper": 99
+        }
     }
 }

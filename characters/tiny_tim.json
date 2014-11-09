@@ -1,181 +1,157 @@
 {
     "core": {
+        "icon": "avatars/dwarf.png",
+        "combat": {
+            "max_hp": 38,
+            "hitpoints": 1,
+            "level-hitdice": 5
+        },
         "abilities": {
-            "dex": 12,
             "cha": 10,
             "int": 11,
-            "wis": 12,
+            "con": 14,
             "str": 17,
-            "con": 14
+            "dex": 12,
+            "wis": 12
         },
-        "lightradius": 0,
-        "combat": {
-            "level-hitdice": 5,
-            "hitpoints": 22,
-            "max_hp": 38
+        "type": "player",
+        "class": {
+            "parent": "warrior",
+            "class": "fighter"
         },
         "personal": {
+            "race": "dwarf",
+            "alignment": {
+                "social": "good",
+                "law": "neutral"
+            },
+            "xp": 25705,
             "name": {
                 "last": "TIM",
                 "first": "TINY"
             },
-            "backstory": "",
             "sex": "male",
-            "race": "dwarf",
-            "xp": 25705,
-            "alignment": {
-                "law": "neutral",
-                "social": "good"
-            }
+            "backstory": ""
+        },
+        "lightradius": 0,
+        "location": {
+            "map": "simple_room.json",
+            "x": 3,
+            "y": 5
         },
         "inventory": {
-            "equiped": {
-                "head": "",
-                "righthand": {
-                    "core": {
-                        "current_rounds_performed": 0,
-                        "description": "Throw a barehanded punch with fist.",
-                        "weight": 0,
-                        "in_use": false,
-                        "charges": 0,
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 0
-                        },
-                        "identified": true,
-                        "rounds_per_charge": 0,
-                        "icon": "",
-                        "size": "small",
-                        "type": "weapon",
-                        "name": "Fist"
-                    },
-                    "conditional": {
-                        "slot": "twohand",
-                        "to_hit": 0,
-                        "dmg": 2,
-                        "range": "short",
-                        "damage_type": "stab",
-                        "weapon_type": "melee",
-                        "save_against": "none"
-                    },
-                    "events": {
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "",
-                        "onfinish": ""
-                    }
-                },
-                "neck": "",
-                "wrists": "",
-                "leftfinger": "",
-                "feet": "",
-                "rightfinger": "",
-                "gloves": {},
-                "legs": "",
-                "lefthand": {
-                    "core": {
-                        "current_rounds_performed": 0,
-                        "description": "Throw a barehanded punch with fist.",
-                        "weight": 0,
-                        "in_use": false,
-                        "charges": 0,
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 0
-                        },
-                        "identified": true,
-                        "name": "Fist",
-                        "rounds_per_charge": 0,
-                        "size": "small",
-                        "type": "weapon",
-                        "icon": ""
-                    },
-                    "conditional": {
-                        "slot": "twohand",
-                        "dmg": 2,
-                        "to_hit": 0,
-                        "range": "short",
-                        "damage_type": "stab",
-                        "weapon_type": "melee",
-                        "save_against": "none"
-                    },
-                    "events": {
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "",
-                        "onfinish": ""
-                    }
-                },
-                "chest": ""
-            },
-            "money": {
-                "copper": 2,
-                "silver": 2,
-                "gold": 110
-            },
             "pack": [
                 {
                     "core": {
-                        "current_rounds_performed": 0,
-                        "name": "Fist",
-                        "weight": 0,
-                        "in_use": false,
-                        "charges": 0,
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 0
-                        },
-                        "description": "Throw a barehanded punch with fist.",
-                        "identified": true,
-                        "rounds_per_charge": 0,
-                        "icon": "",
-                        "type": "weapon",
-                        "size": "small"
-                    },
-                    "conditional": {
-                        "slot": "twohand",
-                        "to_hit": 0,
-                        "dmg": 2,
-                        "range": "short",
-                        "damage_type": "stab",
-                        "weapon_type": "melee",
-                        "save_against": "none"
-                    },
-                    "events": {
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "",
-                        "onfinish": ""
+                        "in_use": true
+                    }
+                },
+                {
+                    "core": {
+                        "in_use": true
                     }
                 }
             ],
+            "equiped": {
+                "rightfinger": "",
+                "chest": "",
+                "head": "",
+                "wrists": {
+                    "core": {
+                        "rounds_per_charge": 0,
+                        "size": "small",
+                        "weight": 0,
+                        "name": "Bronze Plate Bracers of illumination",
+                        "description": "These bracers add a small amount of extra armor but shine with shimmer that lets you see further.",
+                        "icon": "icons/leather_gloves.png",
+                        "in_use": true,
+                        "lightradius": 1,
+                        "charges": -1,
+                        "price": {
+                            "gold": 0,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "identified": true,
+                        "type": "armor"
+                    },
+                    "conditional": {
+                        "slot": "wrists",
+                        "ac": 0.5,
+                        "material": "plate"
+                    },
+                    "events": {
+                        "onfinish": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "ondrop": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "onequip": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "onround": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "onuse": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "onpickup": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "onunequip": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()"
+                    }
+                },
+                "neck": "",
+                "leftfinger": "",
+                "feet": "",
+                "legs": "",
+                "lefthand": {},
+                "gloves": {},
+                "righthand": {
+                    "conditional": {
+                        "dmg": 4,
+                        "damage_type": "slice",
+                        "slot": "righthand",
+                        "range": "short",
+                        "weapon_type": "melee",
+                        "events": {
+                            "onstrike": ""
+                        },
+                        "save_against": "none",
+                        "to_hit": 1
+                    },
+                    "core": {
+                        "description": "",
+                        "rounds_per_charge": 0,
+                        "weight": 0,
+                        "identified": true,
+                        "price": {
+                            "gold": 0,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "icon": "icons/silver.png",
+                        "in_use": false,
+                        "charges": 0,
+                        "size": "small",
+                        "name": "Broken Bottle",
+                        "current_rounds_performed": 0,
+                        "lightradius": 0,
+                        "type": "weapon"
+                    },
+                    "events": {
+                        "onfinish": "",
+                        "onuse": "",
+                        "onequip": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onpickup": "",
+                        "onunequip": ""
+                    }
+                }
+            },
             "%s": [],
-            "spells": ""
-        },
-        "icon": "avatars/dwarf.png",
-        "type": "player",
-        "class": {
-            "class": "fighter",
-            "parent": "warrior"
-        },
-        "location": {
-            "y": 6,
-            "x": 2,
-            "map": "simple_room.json"
+            "spells": "",
+            "money": {
+                "gold": 133,
+                "silver": 1,
+                "copper": 7
+            }
         }
     },
+    "index": 1,
     "conditional": {
         "armor_types": 4,
         "shields": true
-    },
-    "index": 1
+    }
 }

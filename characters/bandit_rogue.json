@@ -1,0 +1,342 @@
+{
+    "core": {
+        "icon": "avatars/human.png",
+        "combat": {
+            "max_hp": 0,
+            "hitpoints": 0,
+            "level-hitdice": 3
+        },
+        "abilities": {
+            "cha": 14,
+            "int": 12,
+            "con": 14,
+            "str": 14,
+            "dex": 17,
+            "wis": 10
+        },
+        "inventory": {
+            "pack": [],
+            "equiped": {
+                "hands": {
+                    "core": {
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "weight": 1,
+                        "name": "Crocodile Leather Gloves",
+                        "price": {
+                            "gold": 1,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "icon": "icons/tough_leather_gloves.png",
+                        "size": "small",
+                        "charges": 0,
+                        "lightradius": 0,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "description": "",
+                        "type": "armor"
+                    },
+                    "conditional": {
+                        "slot": "hands",
+                        "ac": 0.4,
+                        "material": "leather"
+                    },
+                    "events": {
+                        "onfinish": "",
+                        "onuse": "",
+                        "onequip": "",
+                        "onround": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onpickup": "",
+                        "onunequip": ""
+                    }
+                },
+                "head": {
+                    "core": {
+                        "identified": true,
+                        "description": "",
+                        "rounds_per_charge": 0,
+                        "weight": 2,
+                        "name": "Crocodile Leather Helm",
+                        "price": {
+                            "gold": 1,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "icon": "icons/tough_leather_helm.png",
+                        "size": "small",
+                        "charges": 0,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "lightradius": 0,
+                        "type": "armor"
+                    },
+                    "conditional": {
+                        "ac": 1.6,
+                        "slot": "head",
+                        "material": "leather"
+                    },
+                    "events": {
+                        "onfinish": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onequip": "",
+                        "onround": "",
+                        "onuse": "",
+                        "onpickup": "",
+                        "onunequip": ""
+                    }
+                },
+                "wrists": {},
+                "neck": {},
+                "legs": {
+                    "core": {
+                        "identified": true,
+                        "description": "",
+                        "rounds_per_charge": 0,
+                        "in_use": false,
+                        "weight": 2,
+                        "lightradius": 0,
+                        "price": {
+                            "gold": 1,
+                            "silver": 50,
+                            "copper": 0
+                        },
+                        "icon": "icons/tough_leather_boots.png",
+                        "size": "large",
+                        "charges": 0,
+                        "current_rounds_performed": 0,
+                        "name": "Leather Leggings",
+                        "type": "armor"
+                    },
+                    "conditional": {
+                        "slot": "legs",
+                        "ac": 0.8,
+                        "material": "leather"
+                    },
+                    "events": {
+                        "onfinish": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onequip": "",
+                        "onround": "",
+                        "onuse": "",
+                        "onpickup": "",
+                        "onunequip": ""
+                    }
+                },
+                "lefthand": {
+                    "conditional": {
+                        "dmg": 4,
+                        "damage_type": "stab",
+                        "slot": "lefthand",
+                        "range": "",
+                        "weapon_type": "melee",
+                        "save_against": "none",
+                        "to_hit": 0
+                    },
+                    "core": {
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "weight": "",
+                        "name": "Offhand_Dagger",
+                        "price": {
+                            "gold": 2,
+                            "silver": "",
+                            "copper": ""
+                        },
+                        "icon": "icons/dagger.png",
+                        "in_use": false,
+                        "charges": 0,
+                        "size": "small",
+                        "current_rounds_performed": 0,
+                        "description": "A small dagger balanced for use in the offhand.",
+                        "type": "weapon"
+                    },
+                    "events": {
+                        "onfinish": "",
+                        "onuse": "",
+                        "onequip": "",
+                        "onround": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onpickup": ""
+                    }
+                },
+                "chest": {
+                    "core": {
+                        "rounds_per_charge": 0,
+                        "size": "medium",
+                        "weight": 8,
+                        "identified": true,
+                        "price": {
+                            "gold": 1,
+                            "silver": 50,
+                            "copper": 0
+                        },
+                        "icon": "icons/tough_leather_armor.png",
+                        "in_use": false,
+                        "lightradius": 0,
+                        "charges": 0,
+                        "name": "Crocodile Leather Chest",
+                        "current_rounds_performed": 0,
+                        "description": "",
+                        "type": "armor"
+                    },
+                    "conditional": {
+                        "slot": "chest",
+                        "ac": 2,
+                        "material": "leather"
+                    },
+                    "events": {
+                        "onfinish": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onequip": "",
+                        "onround": "",
+                        "onuse": "",
+                        "onpickup": "",
+                        "onunequip": ""
+                    }
+                },
+                "rightfinger": {},
+                "righthand": {
+                    "core": {
+                        "rounds_per_charge": 0,
+                        "weight": "",
+                        "identified": true,
+                        "description": "A small dagger balanced for use in the main hand.",
+                        "icon": "icons/dagger.png",
+                        "size": "small",
+                        "charges": 0,
+                        "in_use": false,
+                        "price": {
+                            "gold": 2,
+                            "silver": "",
+                            "copper": ""
+                        },
+                        "current_rounds_performed": 0,
+                        "name": "Mainhand Dagger",
+                        "type": "weapon"
+                    },
+                    "conditional": {
+                        "dmg": 4,
+                        "damage_type": "stab",
+                        "slot": " righthand",
+                        "range": "",
+                        "weapon_type": "melee",
+                        "save_against": "none",
+                        "to_hit": 0
+                    },
+                    "events": {
+                        "onfinish": "",
+                        "onuse": "",
+                        "onequip": "",
+                        "onround": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onpickup": ""
+                    }
+                },
+                "leftfinger": {},
+                "feet": {
+                    "conditional": {
+                        "slot": "feet",
+                        "ac": 0.4,
+                        "material": "leather"
+                    },
+                    "core": {
+                        "identified": true,
+                        "description": "",
+                        "rounds_per_charge": 0,
+                        "in_use": false,
+                        "weight": 1,
+                        "lightradius": 0,
+                        "price": {
+                            "gold": 1,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "icon": "icons/tough_leather_boots.png",
+                        "size": "small",
+                        "charges": 0,
+                        "current_rounds_performed": 0,
+                        "name": "Crocodile Leather Boots",
+                        "type": "armor"
+                    },
+                    "events": {
+                        "onfinish": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onequip": "",
+                        "onround": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onunequip": ""
+                    }
+                },
+                "gloves": {}
+            },
+            "spells_memorized": [],
+            "spells": [],
+            "money": {
+                "gold": 0,
+                "silver": 0,
+                "copper": 0
+            }
+        },
+        "class": {
+            "parent": "rogue",
+            "class": "thief"
+        },
+        "personal": {
+            "race": "human",
+            "backstory": "These bandits stalk the countryside.",
+            "xp": 0,
+            "name": {
+                "last": "Rogue",
+                "first": "Bandit"
+            },
+            "sex": "male",
+            "alignment": {
+                "social": "evil",
+                "law": "chaotic"
+            }
+        },
+        "lightradius": 0,
+        "location": {
+            "map": "road_to_darrowshire.json",
+            "x": 10,
+            "y": 2
+        },
+        "type": "npc"
+    },
+    "conditional": {
+        "armor_types": 3,
+        "abilities": {
+            "open locks": 30,
+            "read languages": 0,
+            "pick pockets": 45,
+            "find-remove traps": 5,
+            "move silently": 45,
+            "climb walls": 60,
+            "hide in shadows": 30,
+            "detect noise": 15
+        },
+        "shields": false,
+        "orientation": " aggressive",
+        "events": {
+            "oninteract": "",
+            "oninspect": ""
+        },
+        "loot": {
+            "silver": 99,
+            "always_drops": [],
+            "max_items": 2,
+            "gold": 50,
+            "items_possible": [
+                "simple_lute.json",
+                "halberd_+1.json",
+                "long_bow.json",
+                "broken_bottle.json",
+                "candle.json"
+            ],
+            "copper": 99
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "conditional": {
+        "canenter": false,
+        "events": ""
+    },
+    "core": {
+        "icon": "backgrounds/dngn_deep_water.png",
+        "name": "River",
+        "type": "wall",
+        "revealed": false
+    }
+}

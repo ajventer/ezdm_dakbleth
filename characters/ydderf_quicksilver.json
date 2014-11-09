@@ -1,155 +1,155 @@
 {
     "core": {
-        "abilities": {
-            "dex": 25,
-            "cha": 25,
-            "int": 25,
-            "wis": 25,
-            "str": 25,
-            "con": 25
-        },
-        "combat": {
-            "hitpoints": 72,
-            "thac0": 8,
-            "level-hitdice": 19,
-            "saving_throws": {
-                "breath": 8,
-                "pp": 5,
-                "spell": 7,
-                "rod": 6,
-                "ppd": 6
-            },
-            "max_hp": 152
-        },
-        "personal": {
-            "name": {
-                "last": "Quicksilver",
-                "first": "Ydderf"
-            },
-            "backstory": "Her Royal Majesty Queen Quicksilver of Cinobubia.\\r\\nForced to marry the evil queen Dak Bleth against her will under duress as Dak Bleth held her people hostage with the plague.\\r\\n\\r\\nSecret leader of the resistance, she has asked your help in the war to end Dak Bleth's reign, there is very little love lost in her marriage.",
-            "sex": "female",
-            "race": "human",
-            "xp": "",
-            "alignment": {
-                "law": "lawful",
-                "social": "good"
-            }
-        },
         "tileindex": 1,
+        "abilities": {
+            "int": 25,
+            "con": 25,
+            "str": 25,
+            "wis": 25,
+            "cha": 25,
+            "dex": 25
+        },
+        "icon": "avatars/48x48_Faces_4th_Sheet_Update_CharlesGabriel_OGA_0-4-2.png",
         "inventory": {
             "equiped": {
-                "head": {},
-                "righthand": {
-                    "core": {
-                        "current_rounds_performed": 0,
-                        "name": "Fist",
-                        "weight": 0,
-                        "in_use": false,
-                        "charges": 0,
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 0
-                        },
-                        "identified": true,
-                        "rounds_per_charge": 0,
-                        "icon": "",
-                        "size": "small",
-                        "type": "weapon",
-                        "description": "Throw a barehanded punch with fist."
-                    },
-                    "conditional": {
-                        "slot": "twohand",
-                        "to_hit": 0,
-                        "dmg": 2,
-                        "range": "short",
-                        "damage_type": "stab",
-                        "weapon_type": "melee",
-                        "save_against": "none"
-                    },
-                    "events": {
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "",
-                        "onfinish": ""
-                    }
-                },
-                "neck": {},
-                "wrists": {},
-                "leftfinger": {},
-                "feet": {},
                 "rightfinger": {},
                 "gloves": {},
-                "legs": {},
-                "lefthand": {
+                "leftfinger": {},
+                "wrists": {},
+                "righthand": {
                     "core": {
+                        "in_use": false,
+                        "rounds_per_charge": 0,
+                        "charges": 0,
+                        "size": "small",
+                        "icon": "",
+                        "type": "weapon",
                         "current_rounds_performed": 0,
                         "description": "Throw a barehanded punch with fist.",
                         "weight": 0,
-                        "in_use": false,
-                        "charges": 0,
                         "price": {
                             "copper": 0,
-                            "silver": 0,
-                            "gold": 0
+                            "gold": 0,
+                            "silver": 0
                         },
-                        "identified": true,
                         "name": "Fist",
-                        "rounds_per_charge": 0,
-                        "size": "small",
-                        "type": "weapon",
-                        "icon": ""
+                        "identified": true
                     },
                     "conditional": {
+                        "save_against": "none",
+                        "weapon_type": "melee",
+                        "damage_type": "stab",
                         "slot": "twohand",
-                        "dmg": 2,
                         "to_hit": 0,
                         "range": "short",
-                        "damage_type": "stab",
-                        "weapon_type": "melee",
-                        "save_against": "none"
+                        "dmg": 2
                     },
                     "events": {
-                        "ondrop": "",
-                        "onround": "",
                         "onequip": "",
-                        "onpickup": "",
+                        "ondrop": "",
+                        "onfinish": "",
                         "onuse": "",
-                        "onfinish": ""
+                        "onround": "",
+                        "onpickup": ""
                     }
                 },
-                "chest": {}
+                "neck": {},
+                "chest": {},
+                "feet": {},
+                "lefthand": {
+                    "core": {
+                        "in_use": false,
+                        "rounds_per_charge": 0,
+                        "charges": 0,
+                        "size": "small",
+                        "icon": "",
+                        "type": "weapon",
+                        "current_rounds_performed": 0,
+                        "description": "Throw a barehanded punch with fist.",
+                        "weight": 0,
+                        "price": {
+                            "copper": 0,
+                            "gold": 0,
+                            "silver": 0
+                        },
+                        "name": "Fist",
+                        "identified": true
+                    },
+                    "conditional": {
+                        "save_against": "none",
+                        "weapon_type": "melee",
+                        "damage_type": "stab",
+                        "slot": "twohand",
+                        "to_hit": 0,
+                        "range": "short",
+                        "dmg": 2
+                    },
+                    "events": {
+                        "onequip": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onuse": "",
+                        "onround": "",
+                        "onpickup": ""
+                    }
+                },
+                "legs": {},
+                "head": {}
             },
+            "spells": [],
             "money": {
                 "copper": 0,
-                "silver": 0,
-                "gold": 0
+                "gold": 0,
+                "silver": 0
             },
-            "pack": [],
-            "spells": []
+            "pack": []
         },
-        "icon": "avatars/48x48_Faces_4th_Sheet_Update_CharlesGabriel_OGA_0-4-2.png",
         "type": "npc",
+        "personal": {
+            "sex": "female",
+            "alignment": {
+                "social": "good",
+                "law": "lawful"
+            },
+            "xp": "",
+            "name": {
+                "first": "Ydderf",
+                "last": "Quicksilver"
+            },
+            "race": "human",
+            "backstory": "Her Royal Majesty Queen Quicksilver of Cinobubia.\\r\\nForced to marry the evil queen Dak Bleth against her will under duress as Dak Bleth held her people hostage with the plague.\\r\\n\\r\\nSecret leader of the resistance, she has asked your help in the war to end Dak Bleth's reign, there is very little love lost in her marriage."
+        },
+        "combat": {
+            "level-hitdice": 19,
+            "max_hp": 152,
+            "hitpoints": 72,
+            "saving_throws": {
+                "pp": 5,
+                "rod": 6,
+                "breath": 8,
+                "ppd": 6,
+                "spell": 7
+            },
+            "thac0": 8
+        },
+        "location": {
+            "y": 2,
+            "x": 8,
+            "map": "secret_cellar.json"
+        },
         "class": {
             "class": "cleric",
             "parent": "priest"
-        },
-        "location": {
-            "y": 1,
-            "x": 7,
-            "map": "secret_cellar.json"
         }
     },
     "conditional": {
+        "shields": false,
         "armor_types": 0,
-	"shields": false,
         "loot": {
             "copper": "",
-            "items_possible": [],
             "max_items": 1,
             "gold": "",
+            "items_possible": [],
             "silver": ""
         },
         "events": {

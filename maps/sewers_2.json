@@ -757,10 +757,7 @@
                             },
                             "conditional": {
                                 "armor_types": 4,
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                },
+                                "shields": true,
                                 "loot": {
                                     "copper": 99,
                                     "items_possible": [
@@ -774,8 +771,11 @@
                                     "always_drops": [],
                                     "silver": 99
                                 },
-                                "orientation": "",
-                                "shields": true
+                                "events": {
+                                    "oninspect": "",
+                                    "oninteract": ""
+                                },
+                                "orientation": ""
                             },
                             "hash": "594b96d1acf9dd66c57b62dd0728db3598ac2b416ed1db0f21c714cdd1baa89f80f2310b8d1fd7f8299a921e72f56d0edd6ccd9985c63bf76fcc6844870b51d2",
                             "index": 3
@@ -1066,7 +1066,6 @@
                             },
                             "conditional": {
                                 "armor_types": 4,
-                                "shields": true,
                                 "loot": {
                                     "copper": 99,
                                     "items_possible": [
@@ -1080,11 +1079,12 @@
                                     "always_drops": [],
                                     "silver": 99
                                 },
+                                "orientation": "",
+                                "shields": true,
                                 "events": {
                                     "oninspect": "",
                                     "oninteract": ""
-                                },
-                                "orientation": ""
+                                }
                             },
                             "hash": "74af61700dc9214365de94af04dbf9a0fe4c9c2bb7a42f9ea651953886cf4ab97ccabd29a0b9c8a6194610624389ef9bfd09f2f85b78557c217b1ca575b6580f",
                             "index": 3
@@ -1375,10 +1375,7 @@
                             },
                             "conditional": {
                                 "armor_types": 4,
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                },
+                                "shields": true,
                                 "loot": {
                                     "copper": 99,
                                     "items_possible": [
@@ -1392,8 +1389,11 @@
                                     "always_drops": [],
                                     "silver": 99
                                 },
-                                "orientation": "",
-                                "shields": true
+                                "events": {
+                                    "oninspect": "",
+                                    "oninteract": ""
+                                },
+                                "orientation": ""
                             },
                             "hash": "a9c67da94adc92ea745da3e191b62cdc53be93e21ba6478f158bb7d9eb89fe4e9ce06d85f22324953e70f1fd6bbf3aace610bd2f7b3b8d4253b8d951be6a1aa7",
                             "index": 3
@@ -1684,10 +1684,7 @@
                             },
                             "conditional": {
                                 "armor_types": 4,
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                },
+                                "shields": true,
                                 "loot": {
                                     "copper": 99,
                                     "items_possible": [
@@ -1701,8 +1698,11 @@
                                     "always_drops": [],
                                     "silver": 99
                                 },
-                                "orientation": "",
-                                "shields": true
+                                "events": {
+                                    "oninspect": "",
+                                    "oninteract": ""
+                                },
+                                "orientation": ""
                             },
                             "hash": "594b96d1acf9dd66c57b62dd0728db3598ac2b416ed1db0f21c714cdd1baa89f80f2310b8d1fd7f8299a921e72f56d0edd6ccd9985c63bf76fcc6844870b51d2",
                             "index": 16
@@ -2014,7 +2014,6 @@
                             },
                             "conditional": {
                                 "armor_types": 4,
-                                "shields": true,
                                 "loot": {
                                     "copper": 99,
                                     "items_possible": [
@@ -2028,11 +2027,12 @@
                                     "always_drops": [],
                                     "silver": 99
                                 },
+                                "orientation": "",
+                                "shields": true,
                                 "events": {
                                     "oninspect": "",
                                     "oninteract": ""
-                                },
-                                "orientation": ""
+                                }
                             },
                             "hash": "1208add56fda307185833bc0e9a15c753c1f34cbc69bb9e3eaa4ecd26526e5f23216d3b4addff6603f8e4322f987f9d68350b5aed649da7ffd523ec5a2408d88",
                             "index": 3
@@ -2323,6 +2323,7 @@
                             },
                             "conditional": {
                                 "armor_types": 4,
+                                "shields": true,
                                 "loot": {
                                     "copper": 99,
                                     "items_possible": [
@@ -2336,12 +2337,11 @@
                                     "always_drops": [],
                                     "silver": 99
                                 },
-                                "orientation": "",
-                                "shields": true,
                                 "events": {
                                     "oninspect": "",
                                     "oninteract": ""
-                                }
+                                },
+                                "orientation": ""
                             },
                             "hash": "1208add56fda307185833bc0e9a15c753c1f34cbc69bb9e3eaa4ecd26526e5f23216d3b4addff6603f8e4322f987f9d68350b5aed649da7ffd523ec5a2408d88",
                             "index": 18
@@ -2859,10 +2859,7 @@
                             },
                             "conditional": {
                                 "armor_types": 4,
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                },
+                                "shields": true,
                                 "loot": {
                                     "copper": 99,
                                     "items_possible": [
@@ -2876,8 +2873,11 @@
                                     "always_drops": [],
                                     "silver": 99
                                 },
-                                "orientation": "",
-                                "shields": true
+                                "events": {
+                                    "oninspect": "",
+                                    "oninteract": ""
+                                },
+                                "orientation": ""
                             },
                             "hash": "20719ce7c0faae289e84e85196d53a776092a2f27b957663068c44212885523323bb4ea81d78ef22b71ff972c2d0603dafa8db97ae48ec8c2cb52614e70c2930",
                             "index": 19
@@ -4067,6 +4067,10 @@
                             },
                             "conditional": {
                                 "armor_types": 4,
+                                "events": {
+                                    "oninspect": "",
+                                    "oninteract": ""
+                                },
                                 "loot": {
                                     "copper": 99,
                                     "items_possible": [
@@ -4081,11 +4085,7 @@
                                     "silver": 99
                                 },
                                 "orientation": "",
-                                "shields": true,
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                }
+                                "shields": true
                             },
                             "hash": "5e7dbb58b323cdaa786cdc20879723f365312a5ba2b28d9f9169ae1b90e1672db672021fdfb46ef11d17c082c863a9ee68b0574421f159ee30834b2e22d0700e",
                             "index": 3
@@ -4376,6 +4376,10 @@
                             },
                             "conditional": {
                                 "armor_types": 4,
+                                "events": {
+                                    "oninspect": "",
+                                    "oninteract": ""
+                                },
                                 "loot": {
                                     "copper": 99,
                                     "items_possible": [
@@ -4390,11 +4394,7 @@
                                     "silver": 99
                                 },
                                 "orientation": "",
-                                "shields": true,
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                }
+                                "shields": true
                             },
                             "hash": "6b529f9c7f0803c9e1266a3a75bfac04a28fb3f0bba2c0803c688d33c29be1ff01969c7531b5d2e723d16c1a33930445594b9a137f910c1b36b3e2eb8f3e8eb7",
                             "index": 22
@@ -5370,6 +5370,7 @@
                             },
                             "conditional": {
                                 "armor_types": 4,
+                                "shields": true,
                                 "loot": {
                                     "copper": 99,
                                     "items_possible": [
@@ -5383,12 +5384,11 @@
                                     "always_drops": [],
                                     "silver": 99
                                 },
-                                "orientation": "",
-                                "shields": true,
                                 "events": {
                                     "oninspect": "",
                                     "oninteract": ""
-                                }
+                                },
+                                "orientation": ""
                             },
                             "hash": "9a9b790125cf67d2a5a590a85998c028d86da828eee671c18c6464325f344c7794154a301f7898dba80ffdf6480bcd0f5b2cce35d79562af572f6146b8992c45",
                             "index": 24
@@ -6116,10 +6116,7 @@
                             },
                             "conditional": {
                                 "armor_types": 4,
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                },
+                                "shields": true,
                                 "loot": {
                                     "copper": 99,
                                     "items_possible": [
@@ -6133,8 +6130,11 @@
                                     "always_drops": [],
                                     "silver": 99
                                 },
-                                "orientation": "",
-                                "shields": true
+                                "events": {
+                                    "oninspect": "",
+                                    "oninteract": ""
+                                },
+                                "orientation": ""
                             },
                             "hash": "d27bbb839ed030b8056b169f888c7bd1531e45adb7ee0e138ae9a527fd01fddf0960894b8075e52295329665fbfc3f2536b6196f4e146a7468626841d3db1609",
                             "index": 25

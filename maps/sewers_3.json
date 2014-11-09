@@ -1,687 +1,687 @@
 {
     "name": "Sewers_3",
+    "max_y": 5,
     "tiles": [
         [
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": false
                 }
             },
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": false
                 }
             },
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": true
                 }
             },
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": true
                 }
             },
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": true
                 }
             }
         ],
         [
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": false
                 }
             },
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": true
                 }
             },
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": true
                 }
             },
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": true
                 }
             },
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": true
                 }
             }
         ],
         [
             {
+                "conditional": {
+                    "newmap": {
+                        "y": 1,
+                        "x": 14,
+                        "mapname": "sewers_2.json"
+                    },
+                    "canenter": true
+                },
                 "core": {
                     "type": "link",
-                    "revealed": true,
                     "name": "cellar_exit",
-                    "icon": "backgrounds/stone_stairs_up.png"
-                },
-                "conditional": {
-                    "canenter": true,
-                    "newmap": {
-                        "mapname": "sewers_2.json",
-                        "x": 14,
-                        "y": 1
-                    }
+                    "icon": "backgrounds/stone_stairs_up.png",
+                    "revealed": true
                 }
             },
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": true
                 }
             },
             {
-                "core": {
-                    "revealed": false,
-                    "type": "floor",
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
+                    "silver": 0,
+                    "gold": 0,
                     "events": {
                         "onenter": ""
                     },
                     "npcs": [
                         {
+                            "conditional": {
+                                "armor_types": 4,
+                                "loot": {
+                                    "copper": 99,
+                                    "max_items": 1,
+                                    "silver": 99,
+                                    "gold": 1000,
+                                    "items_possible": [],
+                                    "always_drops": [
+                                        "the_g-string_of_ayamahspeto.json"
+                                    ]
+                                },
+                                "shields": true,
+                                "events": {
+                                    "oninteract": "",
+                                    "oninspect": ""
+                                },
+                                "orientation": " aggressive"
+                            },
+                            "index": 5,
+                            "hash": "39ffa20cbd49279006b6e6f46a3167ba388d9f04b747d85cf980db6c7a54b8681287c5d9b274928ef016092795ff1840e92b46eed90201499a2383c5d33e2d71",
                             "core": {
-                                "abilities": {
-                                    "dex": 7,
-                                    "cha": 1,
-                                    "int": 6,
-                                    "wis": 4,
-                                    "str": 22,
-                                    "con": 18
+                                "inventory": {
+                                    "spells_memorized": [],
+                                    "equiped": {
+                                        "head": {},
+                                        "feet": {},
+                                        "leftfinger": {},
+                                        "chest": {},
+                                        "gloves": {},
+                                        "rightfinger": {},
+                                        "righthand": {
+                                            "conditional": {
+                                                "save_against": "breath",
+                                                "slot": "twohand",
+                                                "weapon_type": "misile",
+                                                "events": {
+                                                    "onstrike": "campaign.error('You are hit by the terrible smell !')"
+                                                },
+                                                "range": "long",
+                                                "dmg": 4,
+                                                "damage_type": "stab",
+                                                "to_hit": 1
+                                            },
+                                            "core": {
+                                                "description": "The terrible smell of putrid excrement.",
+                                                "in_use": false,
+                                                "name": "Terrible Stench",
+                                                "lightradius": 0,
+                                                "identified": true,
+                                                "icon": "",
+                                                "price": {
+                                                    "copper": 0,
+                                                    "silver": 0,
+                                                    "gold": 0
+                                                },
+                                                "weight": 0,
+                                                "type": "weapon",
+                                                "current_rounds_performed": 0,
+                                                "rounds_per_charge": 0,
+                                                "size": "large",
+                                                "charges": 0
+                                            },
+                                            "events": {
+                                                "onpickup": "",
+                                                "onround": "",
+                                                "onfinish": "",
+                                                "onunequip": "",
+                                                "ondrop": "",
+                                                "onuse": "",
+                                                "onequip": ""
+                                            }
+                                        },
+                                        "lefthand": {
+                                            "conditional": {
+                                                "save_against": "breath",
+                                                "slot": "twohand",
+                                                "weapon_type": "misile",
+                                                "events": {
+                                                    "onstrike": "campaign.error('You are hit by the terrible smell !')"
+                                                },
+                                                "range": "long",
+                                                "dmg": 4,
+                                                "damage_type": "stab",
+                                                "to_hit": 1
+                                            },
+                                            "core": {
+                                                "description": "The terrible smell of putrid excrement.",
+                                                "in_use": false,
+                                                "name": "Terrible Stench",
+                                                "lightradius": 0,
+                                                "identified": true,
+                                                "icon": "",
+                                                "price": {
+                                                    "copper": 0,
+                                                    "silver": 0,
+                                                    "gold": 0
+                                                },
+                                                "weight": 0,
+                                                "type": "weapon",
+                                                "current_rounds_performed": 0,
+                                                "rounds_per_charge": 0,
+                                                "size": "large",
+                                                "charges": 0
+                                            },
+                                            "events": {
+                                                "onpickup": "",
+                                                "onround": "",
+                                                "onfinish": "",
+                                                "onunequip": "",
+                                                "ondrop": "",
+                                                "onuse": "",
+                                                "onequip": ""
+                                            }
+                                        },
+                                        "legs": {},
+                                        "neck": {},
+                                        "wrists": {}
+                                    },
+                                    "spells": [],
+                                    "pack": [],
+                                    "money": {
+                                        "copper": 0,
+                                        "silver": 0,
+                                        "gold": 0
+                                    }
                                 },
                                 "lightradius": 0,
+                                "location": {
+                                    "y": 2,
+                                    "x": 2,
+                                    "map": "sewers_3.json"
+                                },
                                 "combat": {
-                                    "level-hitdice": 5,
                                     "hitpoints": 40,
-                                    "max_hp": 40
+                                    "max_hp": 40,
+                                    "level-hitdice": 5
                                 },
                                 "personal": {
+                                    "race": "monster",
+                                    "sex": "male",
+                                    "alignment": {
+                                        "law": "chaotic",
+                                        "social": "evil"
+                                    },
                                     "name": {
                                         "last": "The Crap Demon",
                                         "first": "Golgothan"
                                     },
                                     "backstory": "Crucifixion causes the human body to loose control of it's bowels. It is said that after the many crucifixions at Golgotha the pile of excrement\r\nand the terrible suffering it  represented gave birth to a terrible demon.",
-                                    "sex": "male",
-                                    "race": "monster",
-                                    "xp": 0,
-                                    "alignment": {
-                                        "law": "chaotic",
-                                        "social": "evil"
-                                    }
+                                    "xp": 0
                                 },
-                                "inventory": {
-                                    "equiped": {
-                                        "head": {},
-                                        "righthand": {
-                                            "core": {
-                                                "size": "large",
-                                                "current_rounds_performed": 0,
-                                                "lightradius": 0,
-                                                "weight": 0,
-                                                "in_use": false,
-                                                "charges": 0,
-                                                "price": {
-                                                    "copper": 0,
-                                                    "silver": 0,
-                                                    "gold": 0
-                                                },
-                                                "identified": true,
-                                                "name": "Terrible Stench",
-                                                "rounds_per_charge": 0,
-                                                "icon": "",
-                                                "type": "weapon",
-                                                "description": "The terrible smell of putrid excrement."
-                                            },
-                                            "conditional": {
-                                                "slot": "twohand",
-                                                "dmg": 4,
-                                                "to_hit": 1,
-                                                "range": "long",
-                                                "damage_type": "stab",
-                                                "weapon_type": "misile",
-                                                "events": {
-                                                    "onstrike": "campaign.error('You are hit by the terrible smell !')"
-                                                },
-                                                "save_against": "breath"
-                                            },
-                                            "events": {
-                                                "ondrop": "",
-                                                "onround": "",
-                                                "onunequip": "",
-                                                "onequip": "",
-                                                "onpickup": "",
-                                                "onuse": "",
-                                                "onfinish": ""
-                                            }
-                                        },
-                                        "neck": {},
-                                        "wrists": {},
-                                        "leftfinger": {},
-                                        "feet": {},
-                                        "rightfinger": {},
-                                        "gloves": {},
-                                        "legs": {},
-                                        "lefthand": {
-                                            "core": {
-                                                "size": "large",
-                                                "current_rounds_performed": 0,
-                                                "lightradius": 0,
-                                                "weight": 0,
-                                                "in_use": false,
-                                                "charges": 0,
-                                                "price": {
-                                                    "copper": 0,
-                                                    "silver": 0,
-                                                    "gold": 0
-                                                },
-                                                "identified": true,
-                                                "name": "Terrible Stench",
-                                                "rounds_per_charge": 0,
-                                                "icon": "",
-                                                "type": "weapon",
-                                                "description": "The terrible smell of putrid excrement."
-                                            },
-                                            "conditional": {
-                                                "slot": "twohand",
-                                                "to_hit": 1,
-                                                "dmg": 4,
-                                                "range": "long",
-                                                "damage_type": "stab",
-                                                "weapon_type": "misile",
-                                                "events": {
-                                                    "onstrike": "campaign.error('You are hit by the terrible smell !')"
-                                                },
-                                                "save_against": "breath"
-                                            },
-                                            "events": {
-                                                "ondrop": "",
-                                                "onround": "",
-                                                "onunequip": "",
-                                                "onequip": "",
-                                                "onpickup": "",
-                                                "onuse": "",
-                                                "onfinish": ""
-                                            }
-                                        },
-                                        "chest": {}
-                                    },
-                                    "money": {
-                                        "copper": 0,
-                                        "silver": 0,
-                                        "gold": 0
-                                    },
-                                    "spells_memorized": [],
-                                    "pack": [],
-                                    "spells": []
+                                "abilities": {
+                                    "cha": 1,
+                                    "int": 6,
+                                    "wis": 4,
+                                    "con": 18,
+                                    "str": 22,
+                                    "dex": 7
                                 },
-                                "icon": "avatars/crazy_yiuf.png",
                                 "type": "npc",
                                 "class": {
                                     "class": "fighter",
                                     "parent": "warrior"
                                 },
-                                "location": {
-                                    "y": 2,
-                                    "map": "sewers_3.json",
-                                    "x": 2
-                                }
-                            },
-                            "conditional": {
-                                "armor_types": 4,
-                                "events": {
-                                    "oninspect": "",
-                                    "oninteract": ""
-                                },
-                                "loot": {
-                                    "copper": 99,
-                                    "items_possible": [],
-                                    "gold": 1000,
-                                    "max_items": 1,
-                                    "always_drops": [
-                                        "the_g-string_of_ayamahspeto.json"
-                                    ],
-                                    "silver": 99
-                                },
-                                "orientation": " aggressive",
-                                "shields": true
-                            },
-                            "hash": "39ffa20cbd49279006b6e6f46a3167ba388d9f04b747d85cf980db6c7a54b8681287c5d9b274928ef016092795ff1840e92b46eed90201499a2383c5d33e2d71",
-                            "index": 4
+                                "icon": "avatars/crazy_yiuf.png"
+                            }
                         }
                     ],
                     "players": [],
-                    "silver": 0
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": true
                 }
             },
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": true
                 }
             },
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [
                         "iron_plate_helm.json",
                         "iron_plate_helm.json"
                     ],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": true
                 }
             }
         ],
         [
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": false
                 }
             },
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": true
                 }
             },
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": true
                 }
             },
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": true
                 }
             },
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": false
                 }
             }
         ],
         [
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": false
                 }
             },
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": false
                 }
             },
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": false
                 }
             },
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": false
                 }
             },
             {
-                "core": {
-                    "type": "floor",
-                    "revealed": false,
-                    "name": "sewer_floor",
-                    "icon": "backgrounds/dngn_shallow_water.png"
-                },
                 "conditional": {
                     "copper": 0,
-                    "canenter": true,
-                    "gold": 0,
                     "items": [],
                     "silver": 0,
-                    "npcs": [],
-                    "players": [],
+                    "gold": 0,
                     "events": {
                         "onenter": ""
-                    }
+                    },
+                    "npcs": [],
+                    "players": [],
+                    "canenter": true
+                },
+                "core": {
+                    "type": "floor",
+                    "name": "sewer_floor",
+                    "icon": "backgrounds/dngn_shallow_water.png",
+                    "revealed": false
                 }
             }
         ]
     ],
-    "lightradius": 1,
     "max_x": 5,
-    "max_y": 5
+    "lightradius": 1
 }

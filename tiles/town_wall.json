@@ -1,9 +1,9 @@
 {
     "core": {
-        "revealed": true,
         "type": "wall",
+        "revealed": true,
         "name": "town_wall",
-        "icon": "backgrounds/gate_closed_middle_r.png"
+        "icon": "backgrounds/gate_closed_middle.png"
     },
     "conditional": {
         "canenter": false,

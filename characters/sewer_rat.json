@@ -1,87 +1,87 @@
 {
+    "hash": "d4c6ccf53ea389249f0f719eadfc8c6c624ee4afdbeb570e41d98e9b5d3f993c298c2cca399a48062d237c35bd0ff1de7becdb14cea85e324a6267cd0ce5782b",
     "core": {
-        "abilities": {
-            "dex": 16,
-            "cha": 1,
-            "int": 1,
-            "wis": 1,
-            "str": 7,
-            "con": 7
-        },
-        "lightradius": 0,
-        "combat": {
-            "level-hitdice": 1,
-            "hitpoints": 7,
-            "max_hp": 8
-        },
-        "personal": {
-            "name": {
-                "last": "Rat",
-                "first": "Sewer"
-            },
-            "backstory": "Smelly, dirty plaguebearing pests.",
-            "sex": "female",
-            "race": "creature",
-            "xp": 0,
-            "alignment": {
-                "law": "",
-                "social": ""
-            }
-        },
-        "location": {
-            "y": 14,
-            "x": 9,
-            "map": "sewers_1.json"
-        },
         "icon": "avatars/rat.png",
-        "type": "npc",
         "class": {
             "class": "fighter",
             "parent": "warrior"
         },
+        "type": "npc",
         "inventory": {
             "equiped": {
-                "head": {},
-                "righthand": {},
-                "neck": {},
                 "wrists": {},
-                "rightfinger": {},
                 "chest": {},
-                "feet": {},
-                "leftfinger": {},
+                "lefthand": {},
                 "gloves": {},
+                "head": {},
+                "rightfinger": {},
+                "righthand": {},
+                "leftfinger": {},
                 "legs": {},
-                "lefthand": {}
+                "feet": {},
+                "neck": {}
             },
-            "money": {
-                "copper": 0,
-                "silver": 0,
-                "gold": 0
-            },
+            "spells": [],
             "spells_memorized": [],
             "pack": [],
-            "spells": []
+            "money": {
+                "copper": 0,
+                "gold": 0,
+                "silver": 0
+            }
+        },
+        "combat": {
+            "hitpoints": 7,
+            "max_hp": 8,
+            "level-hitdice": 1
+        },
+        "lightradius": 0,
+        "location": {
+            "x": 19,
+            "y": 11,
+            "map": "road_to_darrowshire.json"
+        },
+        "abilities": {
+            "str": 7,
+            "con": 7,
+            "cha": 1,
+            "dex": 16,
+            "wis": 1,
+            "int": 1
+        },
+        "personal": {
+            "race": "creature",
+            "name": {
+                "last": "Rat",
+                "first": "Sewer"
+            },
+            "alignment": {
+                "law": "",
+                "social": ""
+            },
+            "sex": "female",
+            "xp": 0,
+            "backstory": "Smelly, dirty plaguebearing pests."
         }
     },
+    "index": 8,
     "conditional": {
         "orientation": " aggressive",
-        "armor_types": 4,
-        "loot": {
-            "copper": 99,
-            "items_possible": [
-                "health_potion.json"
-            ],
-            "gold": 1,
-            "max_items": 1,
-            "always_drops": [],
-            "silver": 99
-        },
-        "shields": true,
         "events": {
             "oninspect": "",
             "oninteract": ""
-        }
-    },
-    "hash": "d4c6ccf53ea389249f0f719eadfc8c6c624ee4afdbeb570e41d98e9b5d3f993c298c2cca399a48062d237c35bd0ff1de7becdb14cea85e324a6267cd0ce5782b",
-    "index": 8
+        },
+        "shields": true,
+        "loot": {
+            "copper": 99,
+            "gold": 1,
+            "silver": 99,
+            "items_possible": [
+                "health_potion.json"
+            ],
+            "max_items": 1,
+            "always_drops": []
+        },
+        "armor_types": 4
+    }
 }

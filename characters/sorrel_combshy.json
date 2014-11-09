@@ -1,42 +1,42 @@
 {
     "core": {
-        "icon": "avatars/wolf.png",
+        "icon": "avatars/48x48_Faces_4th_Sheet_Update_CharlesGabriel_OGA_0-1-2.png",
         "combat": {
-            "max_hp": 16,
-            "hitpoints": 16,
-            "level-hitdice": 2
+            "max_hp": 8,
+            "hitpoints": 0,
+            "level-hitdice": 1
         },
         "abilities": {
-            "cha": 8,
-            "int": 13,
-            "con": 15,
-            "str": 14,
-            "dex": 17,
-            "wis": 12
+            "cha": 19,
+            "int": 12,
+            "con": 17,
+            "str": 7,
+            "dex": 19,
+            "wis": 14
         },
         "type": "npc",
         "class": {
-            "parent": "warrior",
-            "class": "fighter"
+            "parent": "wizard",
+            "class": "mage"
         },
         "personal": {
-            "race": "creature",
+            "race": "half-elf",
             "alignment": {
-                "social": "neutral",
-                "law": "neutral"
+                "social": "good",
+                "law": "chaotic"
             },
             "xp": 0,
             "name": {
-                "last": "Hungry",
-                "first": "Wolf"
+                "last": "COMBSHY",
+                "first": "SORREL"
             },
-            "sex": "male",
-            "backstory": ""
+            "sex": "female",
+            "backstory": "An \"employee\" at the nearby \"inn\"..."
         },
         "lightradius": 0,
         "location": {
-            "map": "road_to_darrowshire.json",
-            "x": 18,
+            "map": "the_happy_ending.json",
+            "x": 3,
             "y": 13
         },
         "inventory": {
@@ -64,22 +64,20 @@
         }
     },
     "conditional": {
-        "shields": true,
-        "orientation": " aggressive",
+        "shields": false,
+        "orientation": "friendly",
         "armor_types": 1,
         "events": {
             "oninspect": "",
             "oninteract": ""
         },
         "loot": {
-            "silver": 99,
-            "gold": 20,
-            "max_items": 1,
+            "silver": 0,
+            "gold": 0,
+            "max_items": 0,
             "always_drops": [],
-            "items_possible": [
-                "candle.json"
-            ],
-            "copper": 99
+            "items_possible": [],
+            "copper": 0
         }
     }
 }

@@ -1,0 +1,8 @@
+{
+    "core": {
+        "type": "wall",
+        "revealed": false,
+        "name": "Thick Trees",
+        "icon": "backgrounds/tree1_lightred.png"
+    }
+}

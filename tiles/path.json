@@ -1,0 +1,20 @@
+{
+    "core": {
+        "icon": "backgrounds/dirt0.png",
+        "name": "path",
+        "type": "floor",
+        "revealed": false
+    },
+    "conditional": {
+        "copper": 0,
+        "gold": 0,
+        "silver": 0,
+        "npcs": {},
+        "canenter": true,
+        "events": {
+            "onenter": ""
+        },
+        "items": [],
+        "players": []
+    }
+}

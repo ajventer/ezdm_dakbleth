@@ -1,0 +1,35 @@
+{
+    "core": {
+        "rounds_per_charge": 0,
+        "weight": 0,
+        "identified": false,
+        "description": "These bracers add a small amount of extra armor but shine with shimmer that lets you see further.",
+        "icon": "icons/leather_gloves.png",
+        "size": "small",
+        "charges": -1,
+        "in_use": true,
+        "name": "Bronze Plate Bracers of illumination",
+        "price": {
+            "gold": 0,
+            "silver": 0,
+            "copper": 0
+        },
+        "current_rounds_performed": 0,
+        "lightradius": 1,
+        "type": "armor"
+    },
+    "conditional": {
+        "slot": "wrists",
+        "ac": 0.5,
+        "material": "plate"
+    },
+    "events": {
+        "onfinish": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+        "ondrop": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+        "onequip": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+        "onround": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+        "onpickup": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+        "onuse": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+        "onunequip": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()"
+    }
+}
