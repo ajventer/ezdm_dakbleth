@@ -1,126 +1,127 @@
 {
     "max_y": 10,
-    "name": "Simple Room",
+    "lightradius": 1,
+    "max_x": 10,
     "tiles": [
         [
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             }
         ],
@@ -128,183 +129,183 @@
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/dngn_open_door.png",
-                    "name": "door_unlocked",
+                    "revealed": false,
                     "type": "door",
-                    "revealed": false
+                    "name": "door_unlocked"
                 },
                 "conditional": {
-                    "canenter": true,
                     "locked": false,
+                    "background_alternate": "",
                     "events": {
-                        "ontryunlock": "",
                         "onunlock": "",
+                        "ontryunlock": "",
                         "onenter": ""
                     },
-                    "background_alternate": ""
+                    "canenter": true
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             }
         ],
@@ -312,169 +313,169 @@
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             }
         ],
@@ -482,177 +483,177 @@
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             }
         ],
@@ -660,177 +661,177 @@
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": true,
                     "type": "floor",
-                    "revealed": true
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": true,
                     "type": "floor",
-                    "revealed": true
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": true,
                     "type": "floor",
-                    "revealed": true
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             }
         ],
@@ -838,1398 +839,1396 @@
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": true,
                     "type": "wall",
-                    "revealed": true
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": true,
                     "type": "floor",
-                    "revealed": true
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 55,
-                    "gold": 6,
-                    "canenter": "True",
+                    "copper": 87,
                     "players": [],
                     "npcs": {
                         "5f91886a0e2f2c2ceac007ed0ad1a0b8693dfa9d8ce15b4d113feacf69b4bdebee546d9637181a9c877c2ad764f45de15d8fd69288cdb8d683c59956cada24da": {
                             "core": {
                                 "icon": "avatars/48x48_Faces_4th_Sheet_Update_CharlesGabriel_OGA_0-4-1.png",
+                                "inventory": {
+                                    "spells_memorized": [],
+                                    "pack": [],
+                                    "spells": [],
+                                    "equiped": {
+                                        "righthand": {
+                                            "core": {
+                                                "charges": 0,
+                                                "current_rounds_performed": 0,
+                                                "type": "weapon",
+                                                "description": "",
+                                                "size": "small",
+                                                "icon": "icons/silver.png",
+                                                "in_use": false,
+                                                "rounds_per_charge": 0,
+                                                "weight": 0,
+                                                "price": {
+                                                    "copper": 0,
+                                                    "gold": 0,
+                                                    "silver": 0
+                                                },
+                                                "identified": true,
+                                                "lightradius": 0,
+                                                "name": "Broken Bottle"
+                                            },
+                                            "conditional": {
+                                                "dmg": "1d4",
+                                                "damage_type": "slice",
+                                                "weapon_type": "melee",
+                                                "slot": "righthand",
+                                                "save_against": "none",
+                                                "to_hit": 0,
+                                                "range": "short"
+                                            },
+                                            "events": {
+                                                "onpickup": "",
+                                                "onuse": "",
+                                                "onequip": "",
+                                                "onunequip": "",
+                                                "ondrop": "",
+                                                "onround": "",
+                                                "onfinish": ""
+                                            }
+                                        },
+                                        "leftfinger": {},
+                                        "neck": {},
+                                        "head": {},
+                                        "gloves": {},
+                                        "feet": {},
+                                        "rightfinger": {},
+                                        "lefthand": {},
+                                        "chest": {},
+                                        "wrists": {},
+                                        "legs": {}
+                                    },
+                                    "money": {
+                                        "copper": 0,
+                                        "gold": 0,
+                                        "silver": 0
+                                    }
+                                },
+                                "abilities": {
+                                    "dex": 8,
+                                    "cha": 4,
+                                    "wis": 6,
+                                    "str": 10,
+                                    "int": 6,
+                                    "con": 10
+                                },
+                                "class": {
+                                    "class": "fighter",
+                                    "parent": "warrior"
+                                },
+                                "type": "npc",
+                                "location": {
+                                    "y": 5,
+                                    "map": "simple_room.json",
+                                    "x": 1
+                                },
+                                "lightradius": 0,
+                                "personal": {
+                                    "race": "human",
+                                    "sex": "male",
+                                    "backstory": "This person appears to enjoy drinking in bars.",
+                                    "xp": 0,
+                                    "alignment": {
+                                        "law": "lawful",
+                                        "social": "neutral"
+                                    },
+                                    "name": {
+                                        "first": "Bar",
+                                        "last": "Patron"
+                                    }
+                                },
                                 "combat": {
                                     "max_hp": 8,
                                     "hitpoints": 0,
                                     "level-hitdice": 1
-                                },
-                                "abilities": {
-                                    "cha": 4,
-                                    "int": 6,
-                                    "wis": 6,
-                                    "str": 10,
-                                    "dex": 8,
-                                    "con": 10
-                                },
-                                "type": "npc",
-                                "class": {
-                                    "parent": "warrior",
-                                    "class": "fighter"
-                                },
-                                "personal": {
-                                    "race": "human",
-                                    "backstory": "This person appears to enjoy drinking in bars.",
-                                    "xp": 0,
-                                    "name": {
-                                        "last": "Patron",
-                                        "first": "Bar"
-                                    },
-                                    "sex": "male",
-                                    "alignment": {
-                                        "social": "neutral",
-                                        "law": "lawful"
-                                    }
-                                },
-                                "lightradius": 0,
-                                "location": {
-                                    "map": "simple_room.json",
-                                    "x": 1,
-                                    "y": 5
-                                },
-                                "inventory": {
-                                    "pack": [],
-                                    "spells_memorized": [],
-                                    "money": {
-                                        "gold": 0,
-                                        "silver": 0,
-                                        "copper": 0
-                                    },
-                                    "equiped": {
-                                        "rightfinger": {},
-                                        "chest": {},
-                                        "head": {},
-                                        "righthand": {
-                                            "core": {
-                                                "description": "",
-                                                "rounds_per_charge": 0,
-                                                "weight": 0,
-                                                "lightradius": 0,
-                                                "price": {
-                                                    "gold": 0,
-                                                    "silver": 0,
-                                                    "copper": 0
-                                                },
-                                                "icon": "icons/silver.png",
-                                                "size": "small",
-                                                "charges": 0,
-                                                "in_use": false,
-                                                "name": "Broken Bottle",
-                                                "current_rounds_performed": 0,
-                                                "identified": true,
-                                                "type": "weapon"
-                                            },
-                                            "conditional": {
-                                                "dmg": "1d4",
-                                                "range": "short",
-                                                "slot": "righthand",
-                                                "weapon_type": "melee",
-                                                "damage_type": "slice",
-                                                "save_against": "none",
-                                                "to_hit": 0
-                                            },
-                                            "events": {
-                                                "onfinish": "",
-                                                "ondrop": "",
-                                                "onequip": "",
-                                                "onround": "",
-                                                "onpickup": "",
-                                                "onuse": "",
-                                                "onunequip": ""
-                                            }
-                                        },
-                                        "neck": {},
-                                        "leftfinger": {},
-                                        "legs": {},
-                                        "feet": {},
-                                        "lefthand": {},
-                                        "gloves": {},
-                                        "wrists": {}
-                                    },
-                                    "spells": []
                                 }
                             },
-                            "index": 0,
-                            "hash": "5f91886a0e2f2c2ceac007ed0ad1a0b8693dfa9d8ce15b4d113feacf69b4bdebee546d9637181a9c877c2ad764f45de15d8fd69288cdb8d683c59956cada24da",
                             "conditional": {
-                                "shields": true,
                                 "orientation": "",
+                                "loot": {
+                                    "copper": 99,
+                                    "silver": 99,
+                                    "always_drops": [],
+                                    "max_items": 1,
+                                    "items_possible": [],
+                                    "gold": 10
+                                },
                                 "armor_types": 4,
                                 "events": {
                                     "oninteract": "",
                                     "oninspect": ""
                                 },
-                                "loot": {
-                                    "silver": 99,
-                                    "gold": 10,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "items_possible": [],
-                                    "copper": 99
-                                }
-                            }
+                                "shields": true
+                            },
+                            "hash": "5f91886a0e2f2c2ceac007ed0ad1a0b8693dfa9d8ce15b4d113feacf69b4bdebee546d9637181a9c877c2ad764f45de15d8fd69288cdb8d683c59956cada24da",
+                            "index": 0
                         },
                         "d6f39e8533afb71410df52608f0eff1ed15fcac04c290229197478aca66d067e6897833cbaaf477651ea906717ae49bd7fc2aea710e4c052a2c39b636280713d": {
                             "core": {
                                 "icon": "avatars/48x48_Faces_4th_Sheet_Update_CharlesGabriel_OGA_0-4-1.png",
+                                "inventory": {
+                                    "spells_memorized": [],
+                                    "pack": [],
+                                    "spells": [],
+                                    "equiped": {
+                                        "righthand": {
+                                            "core": {
+                                                "charges": 0,
+                                                "current_rounds_performed": 0,
+                                                "type": "weapon",
+                                                "description": "",
+                                                "size": "small",
+                                                "icon": "icons/silver.png",
+                                                "in_use": false,
+                                                "rounds_per_charge": 0,
+                                                "weight": 0,
+                                                "price": {
+                                                    "copper": 0,
+                                                    "gold": 0,
+                                                    "silver": 0
+                                                },
+                                                "identified": true,
+                                                "lightradius": 0,
+                                                "name": "Broken Bottle"
+                                            },
+                                            "conditional": {
+                                                "dmg": "1d4",
+                                                "damage_type": "slice",
+                                                "weapon_type": "melee",
+                                                "slot": "righthand",
+                                                "save_against": "none",
+                                                "to_hit": 0,
+                                                "range": "short"
+                                            },
+                                            "events": {
+                                                "onpickup": "",
+                                                "onuse": "",
+                                                "onequip": "",
+                                                "onunequip": "",
+                                                "ondrop": "",
+                                                "onround": "",
+                                                "onfinish": ""
+                                            }
+                                        },
+                                        "leftfinger": {},
+                                        "neck": {},
+                                        "head": {},
+                                        "gloves": {},
+                                        "feet": {},
+                                        "rightfinger": {},
+                                        "lefthand": {},
+                                        "chest": {},
+                                        "wrists": {},
+                                        "legs": {}
+                                    },
+                                    "money": {
+                                        "copper": 0,
+                                        "gold": 0,
+                                        "silver": 0
+                                    }
+                                },
+                                "abilities": {
+                                    "dex": 8,
+                                    "cha": 4,
+                                    "wis": 6,
+                                    "str": 10,
+                                    "int": 6,
+                                    "con": 10
+                                },
+                                "class": {
+                                    "class": "fighter",
+                                    "parent": "warrior"
+                                },
+                                "type": "npc",
+                                "location": {
+                                    "y": 5,
+                                    "map": "simple_room.json",
+                                    "x": 1
+                                },
+                                "lightradius": 0,
+                                "personal": {
+                                    "race": "human",
+                                    "sex": "male",
+                                    "backstory": "This person appears to enjoy drinking in bars.",
+                                    "xp": 0,
+                                    "alignment": {
+                                        "law": "lawful",
+                                        "social": "neutral"
+                                    },
+                                    "name": {
+                                        "first": "Bar",
+                                        "last": "Patron"
+                                    }
+                                },
                                 "combat": {
                                     "max_hp": 8,
                                     "hitpoints": 0,
                                     "level-hitdice": 1
-                                },
-                                "abilities": {
-                                    "cha": 4,
-                                    "int": 6,
-                                    "wis": 6,
-                                    "str": 10,
-                                    "dex": 8,
-                                    "con": 10
-                                },
-                                "type": "npc",
-                                "class": {
-                                    "parent": "warrior",
-                                    "class": "fighter"
-                                },
-                                "personal": {
-                                    "race": "human",
-                                    "backstory": "This person appears to enjoy drinking in bars.",
-                                    "xp": 0,
-                                    "name": {
-                                        "last": "Patron",
-                                        "first": "Bar"
-                                    },
-                                    "sex": "male",
-                                    "alignment": {
-                                        "social": "neutral",
-                                        "law": "lawful"
-                                    }
-                                },
-                                "lightradius": 0,
-                                "location": {
-                                    "map": "simple_room.json",
-                                    "x": 1,
-                                    "y": 5
-                                },
-                                "inventory": {
-                                    "pack": [],
-                                    "spells_memorized": [],
-                                    "money": {
-                                        "gold": 0,
-                                        "silver": 0,
-                                        "copper": 0
-                                    },
-                                    "equiped": {
-                                        "rightfinger": {},
-                                        "chest": {},
-                                        "head": {},
-                                        "righthand": {
-                                            "core": {
-                                                "description": "",
-                                                "rounds_per_charge": 0,
-                                                "weight": 0,
-                                                "lightradius": 0,
-                                                "price": {
-                                                    "gold": 0,
-                                                    "silver": 0,
-                                                    "copper": 0
-                                                },
-                                                "icon": "icons/silver.png",
-                                                "size": "small",
-                                                "charges": 0,
-                                                "in_use": false,
-                                                "name": "Broken Bottle",
-                                                "current_rounds_performed": 0,
-                                                "identified": true,
-                                                "type": "weapon"
-                                            },
-                                            "conditional": {
-                                                "dmg": "1d4",
-                                                "range": "short",
-                                                "slot": "righthand",
-                                                "weapon_type": "melee",
-                                                "damage_type": "slice",
-                                                "save_against": "none",
-                                                "to_hit": 0
-                                            },
-                                            "events": {
-                                                "onfinish": "",
-                                                "ondrop": "",
-                                                "onequip": "",
-                                                "onround": "",
-                                                "onpickup": "",
-                                                "onuse": "",
-                                                "onunequip": ""
-                                            }
-                                        },
-                                        "neck": {},
-                                        "leftfinger": {},
-                                        "legs": {},
-                                        "feet": {},
-                                        "lefthand": {},
-                                        "gloves": {},
-                                        "wrists": {}
-                                    },
-                                    "spells": []
                                 }
                             },
-                            "index": 0,
-                            "hash": "d6f39e8533afb71410df52608f0eff1ed15fcac04c290229197478aca66d067e6897833cbaaf477651ea906717ae49bd7fc2aea710e4c052a2c39b636280713d",
                             "conditional": {
-                                "shields": true,
                                 "orientation": "",
+                                "loot": {
+                                    "copper": 99,
+                                    "silver": 99,
+                                    "always_drops": [],
+                                    "max_items": 1,
+                                    "items_possible": [],
+                                    "gold": 10
+                                },
                                 "armor_types": 4,
                                 "events": {
                                     "oninteract": "",
                                     "oninspect": ""
                                 },
-                                "loot": {
-                                    "silver": 99,
-                                    "gold": 10,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "items_possible": [],
-                                    "copper": 99
-                                }
-                            }
+                                "shields": true
+                            },
+                            "hash": "d6f39e8533afb71410df52608f0eff1ed15fcac04c290229197478aca66d067e6897833cbaaf477651ea906717ae49bd7fc2aea710e4c052a2c39b636280713d",
+                            "index": 0
                         },
                         "2fdf4740a83495aed88b98390790ad30da4c27bb87495dd3209661f21ac1c202e6719a80fb0ba1166b69b5c4b44d5e50d24a29d94c872b53e0c557b4781274a4": {
                             "core": {
                                 "icon": "avatars/48x48_Faces_4th_Sheet_Update_CharlesGabriel_OGA_0-4-1.png",
+                                "inventory": {
+                                    "spells_memorized": [],
+                                    "pack": [],
+                                    "spells": [],
+                                    "equiped": {
+                                        "righthand": {
+                                            "core": {
+                                                "charges": 0,
+                                                "current_rounds_performed": 0,
+                                                "type": "weapon",
+                                                "description": "",
+                                                "size": "small",
+                                                "icon": "icons/silver.png",
+                                                "in_use": false,
+                                                "rounds_per_charge": 0,
+                                                "weight": 0,
+                                                "price": {
+                                                    "copper": 0,
+                                                    "gold": 0,
+                                                    "silver": 0
+                                                },
+                                                "identified": true,
+                                                "lightradius": 0,
+                                                "name": "Broken Bottle"
+                                            },
+                                            "conditional": {
+                                                "dmg": "1d4",
+                                                "damage_type": "slice",
+                                                "weapon_type": "melee",
+                                                "slot": "righthand",
+                                                "save_against": "none",
+                                                "to_hit": 0,
+                                                "range": "short"
+                                            },
+                                            "events": {
+                                                "onpickup": "",
+                                                "onuse": "",
+                                                "onequip": "",
+                                                "onunequip": "",
+                                                "ondrop": "",
+                                                "onround": "",
+                                                "onfinish": ""
+                                            }
+                                        },
+                                        "leftfinger": {},
+                                        "neck": {},
+                                        "head": {},
+                                        "gloves": {},
+                                        "feet": {},
+                                        "rightfinger": {},
+                                        "lefthand": {},
+                                        "chest": {},
+                                        "wrists": {},
+                                        "legs": {}
+                                    },
+                                    "money": {
+                                        "copper": 0,
+                                        "gold": 0,
+                                        "silver": 0
+                                    }
+                                },
+                                "abilities": {
+                                    "dex": 8,
+                                    "cha": 4,
+                                    "wis": 6,
+                                    "str": 10,
+                                    "int": 6,
+                                    "con": 10
+                                },
+                                "class": {
+                                    "class": "fighter",
+                                    "parent": "warrior"
+                                },
+                                "type": "npc",
+                                "location": {
+                                    "y": 5,
+                                    "map": "simple_room.json",
+                                    "x": 1
+                                },
+                                "lightradius": 0,
+                                "personal": {
+                                    "race": "human",
+                                    "sex": "male",
+                                    "backstory": "This person appears to enjoy drinking in bars.",
+                                    "xp": 0,
+                                    "alignment": {
+                                        "law": "lawful",
+                                        "social": "neutral"
+                                    },
+                                    "name": {
+                                        "first": "Bar",
+                                        "last": "Patron"
+                                    }
+                                },
                                 "combat": {
                                     "max_hp": 8,
                                     "hitpoints": 0,
                                     "level-hitdice": 1
-                                },
-                                "abilities": {
-                                    "cha": 4,
-                                    "int": 6,
-                                    "wis": 6,
-                                    "str": 10,
-                                    "dex": 8,
-                                    "con": 10
-                                },
-                                "type": "npc",
-                                "class": {
-                                    "parent": "warrior",
-                                    "class": "fighter"
-                                },
-                                "personal": {
-                                    "race": "human",
-                                    "backstory": "This person appears to enjoy drinking in bars.",
-                                    "xp": 0,
-                                    "name": {
-                                        "last": "Patron",
-                                        "first": "Bar"
-                                    },
-                                    "sex": "male",
-                                    "alignment": {
-                                        "social": "neutral",
-                                        "law": "lawful"
-                                    }
-                                },
-                                "lightradius": 0,
-                                "location": {
-                                    "map": "simple_room.json",
-                                    "x": 1,
-                                    "y": 5
-                                },
-                                "inventory": {
-                                    "pack": [],
-                                    "spells_memorized": [],
-                                    "money": {
-                                        "gold": 0,
-                                        "silver": 0,
-                                        "copper": 0
-                                    },
-                                    "equiped": {
-                                        "rightfinger": {},
-                                        "chest": {},
-                                        "head": {},
-                                        "righthand": {
-                                            "core": {
-                                                "description": "",
-                                                "rounds_per_charge": 0,
-                                                "weight": 0,
-                                                "lightradius": 0,
-                                                "price": {
-                                                    "gold": 0,
-                                                    "silver": 0,
-                                                    "copper": 0
-                                                },
-                                                "icon": "icons/silver.png",
-                                                "size": "small",
-                                                "charges": 0,
-                                                "in_use": false,
-                                                "name": "Broken Bottle",
-                                                "current_rounds_performed": 0,
-                                                "identified": true,
-                                                "type": "weapon"
-                                            },
-                                            "conditional": {
-                                                "dmg": "1d4",
-                                                "range": "short",
-                                                "slot": "righthand",
-                                                "weapon_type": "melee",
-                                                "damage_type": "slice",
-                                                "save_against": "none",
-                                                "to_hit": 0
-                                            },
-                                            "events": {
-                                                "onfinish": "",
-                                                "ondrop": "",
-                                                "onequip": "",
-                                                "onround": "",
-                                                "onpickup": "",
-                                                "onuse": "",
-                                                "onunequip": ""
-                                            }
-                                        },
-                                        "neck": {},
-                                        "leftfinger": {},
-                                        "legs": {},
-                                        "feet": {},
-                                        "lefthand": {},
-                                        "gloves": {},
-                                        "wrists": {}
-                                    },
-                                    "spells": []
                                 }
                             },
-                            "index": 0,
-                            "hash": "2fdf4740a83495aed88b98390790ad30da4c27bb87495dd3209661f21ac1c202e6719a80fb0ba1166b69b5c4b44d5e50d24a29d94c872b53e0c557b4781274a4",
                             "conditional": {
-                                "shields": true,
                                 "orientation": "",
+                                "loot": {
+                                    "copper": 99,
+                                    "silver": 99,
+                                    "always_drops": [],
+                                    "max_items": 1,
+                                    "items_possible": [],
+                                    "gold": 10
+                                },
                                 "armor_types": 4,
                                 "events": {
                                     "oninteract": "",
                                     "oninspect": ""
                                 },
-                                "loot": {
-                                    "silver": 99,
-                                    "gold": 10,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "items_possible": [],
-                                    "copper": 99
-                                }
-                            }
+                                "shields": true
+                            },
+                            "hash": "2fdf4740a83495aed88b98390790ad30da4c27bb87495dd3209661f21ac1c202e6719a80fb0ba1166b69b5c4b44d5e50d24a29d94c872b53e0c557b4781274a4",
+                            "index": 0
                         }
                     },
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 87
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 55,
+                    "gold": 6
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": true,
                     "type": "floor",
-                    "revealed": true
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": true,
                     "type": "floor",
-                    "revealed": true
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 67,
-                    "gold": 14,
-                    "canenter": "True",
-                    "players": [
-                        "tiny_tim.json"
-                    ],
+                    "copper": 24,
+                    "players": [],
                     "npcs": {
                         "b'e4902d9a4eaac12b5533d5e7272500597d85aecefd14708257f35bcc10f0daa923decc8a4be418f106cb26a7f003042682623d6a50702ad5aaa47cff4d7884dd'": {
                             "core": {
                                 "icon": "avatars/wolf.png",
-                                "combat": {
-                                    "max_hp": 16,
-                                    "hitpoints": 0,
-                                    "level-hitdice": 2
-                                },
-                                "abilities": {
-                                    "cha": 8,
-                                    "int": 13,
-                                    "wis": 12,
-                                    "str": 14,
-                                    "dex": 17,
-                                    "con": 15
-                                },
-                                "type": "npc",
-                                "class": {
-                                    "parent": "warrior",
-                                    "class": "fighter"
-                                },
-                                "personal": {
-                                    "race": "creature",
-                                    "backstory": "",
-                                    "xp": 0,
-                                    "name": {
-                                        "last": "Hungry",
-                                        "first": "Wolf"
-                                    },
-                                    "sex": "male",
-                                    "alignment": {
-                                        "social": "neutral",
-                                        "law": "neutral"
-                                    }
-                                },
-                                "lightradius": 0,
-                                "location": {
-                                    "map": "simple_room.json",
-                                    "x": 3,
-                                    "y": 5
-                                },
                                 "inventory": {
-                                    "pack": [],
                                     "spells_memorized": [],
-                                    "money": {
-                                        "gold": 0,
-                                        "silver": 0,
-                                        "copper": 0
-                                    },
+                                    "pack": [],
+                                    "spells": [],
                                     "equiped": {
-                                        "rightfinger": {},
-                                        "chest": {},
-                                        "head": {},
                                         "righthand": {},
-                                        "neck": {},
                                         "leftfinger": {},
-                                        "legs": {},
-                                        "feet": {},
-                                        "lefthand": {},
-                                        "gloves": {},
-                                        "wrists": {}
-                                    },
-                                    "spells": []
-                                }
-                            },
-                            "hash": "b'e4902d9a4eaac12b5533d5e7272500597d85aecefd14708257f35bcc10f0daa923decc8a4be418f106cb26a7f003042682623d6a50702ad5aaa47cff4d7884dd'",
-                            "conditional": {
-                                "shields": true,
-                                "orientation": " aggressive",
-                                "armor_types": 1,
-                                "events": {
-                                    "oninteract": "",
-                                    "oninspect": ""
-                                },
-                                "loot": {
-                                    "silver": 99,
-                                    "gold": 20,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "items_possible": "['thieves_tools.json', 'candle.json']",
-                                    "copper": 99
-                                }
-                            }
-                        },
-                        "b'259700623bc73716cd7bcd2b66848dd25e4e70716d384a4e557435d2a5b4eae4559ea7cb76080ed96fa6da99cd48315d5033e07d4c5a3a072123f96be3c13faa'": {
-                            "core": {
-                                "icon": "avatars/wolf.png",
-                                "combat": {
-                                    "max_hp": 16,
-                                    "hitpoints": 0,
-                                    "level-hitdice": 2
-                                },
-                                "abilities": {
-                                    "cha": 8,
-                                    "int": 13,
-                                    "wis": 12,
-                                    "str": 14,
-                                    "dex": 17,
-                                    "con": 15
-                                },
-                                "type": "npc",
-                                "class": {
-                                    "parent": "warrior",
-                                    "class": "fighter"
-                                },
-                                "personal": {
-                                    "race": "creature",
-                                    "backstory": "",
-                                    "xp": 0,
-                                    "name": {
-                                        "last": "Hungry",
-                                        "first": "Wolf"
-                                    },
-                                    "sex": "male",
-                                    "alignment": {
-                                        "social": "neutral",
-                                        "law": "neutral"
-                                    }
-                                },
-                                "lightradius": 0,
-                                "location": {
-                                    "map": "simple_room.json",
-                                    "x": 3,
-                                    "y": 5
-                                },
-                                "inventory": {
-                                    "pack": [],
-                                    "spells_memorized": [],
-                                    "money": {
-                                        "gold": 0,
-                                        "silver": 0,
-                                        "copper": 0
-                                    },
-                                    "equiped": {
-                                        "rightfinger": {},
-                                        "chest": {},
+                                        "neck": {},
                                         "head": {},
-                                        "righthand": {},
-                                        "neck": {},
-                                        "leftfinger": {},
-                                        "legs": {},
-                                        "feet": {},
-                                        "lefthand": {},
                                         "gloves": {},
-                                        "wrists": {}
-                                    },
-                                    "spells": []
-                                }
-                            },
-                            "hash": "b'259700623bc73716cd7bcd2b66848dd25e4e70716d384a4e557435d2a5b4eae4559ea7cb76080ed96fa6da99cd48315d5033e07d4c5a3a072123f96be3c13faa'",
-                            "conditional": {
-                                "shields": true,
-                                "orientation": " aggressive",
-                                "armor_types": 1,
-                                "events": {
-                                    "oninteract": "",
-                                    "oninspect": ""
-                                },
-                                "loot": {
-                                    "silver": 99,
-                                    "gold": 20,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "items_possible": "['thieves_tools.json', 'candle.json']",
-                                    "copper": 99
-                                }
-                            }
-                        },
-                        "b'6fbc8fe050c19daeedd8cd669bc4f5cec73c39304436bab0eb9db551748d3e14d2ab383e1200699a749ebaa68e3f5b0777af9f522ccf529989034a293b614891'": {
-                            "core": {
-                                "icon": "avatars/wolf.png",
-                                "combat": {
-                                    "max_hp": 16,
-                                    "hitpoints": 0,
-                                    "level-hitdice": 2
-                                },
-                                "abilities": {
-                                    "cha": 8,
-                                    "int": 13,
-                                    "wis": 12,
-                                    "str": 14,
-                                    "dex": 17,
-                                    "con": 15
-                                },
-                                "type": "npc",
-                                "class": {
-                                    "parent": "warrior",
-                                    "class": "fighter"
-                                },
-                                "personal": {
-                                    "race": "creature",
-                                    "backstory": "",
-                                    "xp": 0,
-                                    "name": {
-                                        "last": "Hungry",
-                                        "first": "Wolf"
-                                    },
-                                    "sex": "male",
-                                    "alignment": {
-                                        "social": "neutral",
-                                        "law": "neutral"
-                                    }
-                                },
-                                "lightradius": 0,
-                                "location": {
-                                    "map": "simple_room.json",
-                                    "x": 3,
-                                    "y": 5
-                                },
-                                "inventory": {
-                                    "pack": [],
-                                    "spells_memorized": [],
-                                    "money": {
-                                        "gold": 0,
-                                        "silver": 0,
-                                        "copper": 0
-                                    },
-                                    "equiped": {
+                                        "feet": {},
                                         "rightfinger": {},
+                                        "lefthand": {},
                                         "chest": {},
-                                        "head": {},
-                                        "righthand": {},
-                                        "neck": {},
-                                        "leftfinger": {},
-                                        "legs": {},
-                                        "feet": {},
-                                        "lefthand": {},
-                                        "gloves": {},
-                                        "wrists": {}
-                                    },
-                                    "spells": []
-                                }
-                            },
-                            "hash": "b'6fbc8fe050c19daeedd8cd669bc4f5cec73c39304436bab0eb9db551748d3e14d2ab383e1200699a749ebaa68e3f5b0777af9f522ccf529989034a293b614891'",
-                            "conditional": {
-                                "shields": true,
-                                "orientation": " aggressive",
-                                "armor_types": 1,
-                                "events": {
-                                    "oninteract": "",
-                                    "oninspect": ""
-                                },
-                                "loot": {
-                                    "silver": 99,
-                                    "gold": 20,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "items_possible": "['thieves_tools.json', 'candle.json']",
-                                    "copper": 99
-                                }
-                            }
-                        },
-                        "b'f6756d2d8fc38f97da3bd321f7cb26ef2660457e39cb3636ca375d2b3e668aa95ee85614c4ff351cd082012f1f1c3f5fb6d5fe67340f5c68cb595dfacf072ed4'": {
-                            "core": {
-                                "icon": "avatars/wolf.png",
-                                "combat": {
-                                    "max_hp": 16,
-                                    "hitpoints": 0,
-                                    "level-hitdice": 2
-                                },
-                                "abilities": {
-                                    "cha": 8,
-                                    "int": 13,
-                                    "wis": 12,
-                                    "str": 14,
-                                    "dex": 17,
-                                    "con": 15
-                                },
-                                "type": "npc",
-                                "class": {
-                                    "parent": "warrior",
-                                    "class": "fighter"
-                                },
-                                "personal": {
-                                    "race": "creature",
-                                    "backstory": "",
-                                    "xp": 0,
-                                    "name": {
-                                        "last": "Hungry",
-                                        "first": "Wolf"
-                                    },
-                                    "sex": "male",
-                                    "alignment": {
-                                        "social": "neutral",
-                                        "law": "neutral"
-                                    }
-                                },
-                                "lightradius": 0,
-                                "location": {
-                                    "map": "simple_room.json",
-                                    "x": 3,
-                                    "y": 5
-                                },
-                                "inventory": {
-                                    "pack": [],
-                                    "spells_memorized": [],
-                                    "money": {
-                                        "gold": 0,
-                                        "silver": 0,
-                                        "copper": 0
-                                    },
-                                    "equiped": {
-                                        "rightfinger": {},
-                                        "chest": {},
-                                        "head": {},
-                                        "righthand": {},
-                                        "neck": {},
-                                        "leftfinger": {},
-                                        "legs": {},
-                                        "feet": {},
-                                        "lefthand": {},
-                                        "gloves": {},
-                                        "wrists": {}
-                                    },
-                                    "spells": []
-                                }
-                            },
-                            "hash": "b'f6756d2d8fc38f97da3bd321f7cb26ef2660457e39cb3636ca375d2b3e668aa95ee85614c4ff351cd082012f1f1c3f5fb6d5fe67340f5c68cb595dfacf072ed4'",
-                            "conditional": {
-                                "shields": true,
-                                "orientation": " aggressive",
-                                "armor_types": 1,
-                                "events": {
-                                    "oninteract": "",
-                                    "oninspect": ""
-                                },
-                                "loot": {
-                                    "silver": 99,
-                                    "gold": 20,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "items_possible": [
-                                        "thieves_tools.json",
-                                        "candle.json"
-                                    ],
-                                    "copper": 99
-                                }
-                            }
-                        },
-                        "b'698105651bf8e1d517956616a823017732102e33629f483962b401c5febc4d669ca3b07c6c238e4927077a07d54a03f60ea692f84b761fa6459c28adaffa3319'": {
-                            "core": {
-                                "icon": "avatars/wolf.png",
-                                "combat": {
-                                    "max_hp": 16,
-                                    "hitpoints": 0,
-                                    "level-hitdice": 2
-                                },
-                                "abilities": {
-                                    "cha": 8,
-                                    "int": 13,
-                                    "wis": 12,
-                                    "str": 14,
-                                    "dex": 17,
-                                    "con": 15
-                                },
-                                "type": "npc",
-                                "class": {
-                                    "parent": "warrior",
-                                    "class": "fighter"
-                                },
-                                "personal": {
-                                    "race": "creature",
-                                    "backstory": "",
-                                    "xp": 0,
-                                    "name": {
-                                        "last": "Hungry",
-                                        "first": "Wolf"
-                                    },
-                                    "sex": "male",
-                                    "alignment": {
-                                        "social": "neutral",
-                                        "law": "neutral"
-                                    }
-                                },
-                                "lightradius": 0,
-                                "location": {
-                                    "map": "simple_room.json",
-                                    "x": 3,
-                                    "y": 5
-                                },
-                                "inventory": {
-                                    "pack": [],
-                                    "spells_memorized": [],
-                                    "money": {
-                                        "gold": 0,
-                                        "silver": 0,
-                                        "copper": 0
-                                    },
-                                    "equiped": {
-                                        "rightfinger": {},
-                                        "chest": {},
-                                        "head": {},
-                                        "righthand": {},
-                                        "neck": {},
-                                        "leftfinger": {},
-                                        "legs": {},
-                                        "feet": {},
-                                        "lefthand": {},
-                                        "gloves": {},
-                                        "wrists": {}
-                                    },
-                                    "spells": []
-                                }
-                            },
-                            "hash": "b'698105651bf8e1d517956616a823017732102e33629f483962b401c5febc4d669ca3b07c6c238e4927077a07d54a03f60ea692f84b761fa6459c28adaffa3319'",
-                            "conditional": {
-                                "shields": true,
-                                "orientation": " aggressive",
-                                "armor_types": 1,
-                                "events": {
-                                    "oninteract": "",
-                                    "oninspect": ""
-                                },
-                                "loot": {
-                                    "silver": 99,
-                                    "gold": 20,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "items_possible": "['thieves_tools.json', 'candle.json']",
-                                    "copper": 99
-                                }
-                            }
-                        },
-                        "b'f34477c6fd74d79083b99a2033a842b8ac1df933fcdfdbb8c828d37027de47981049a338743c8a0e95cfd22a1ce31e776e6825e6ad74c1b08833ad46dae513bd'": {
-                            "core": {
-                                "icon": "avatars/wolf.png",
-                                "combat": {
-                                    "max_hp": 16,
-                                    "hitpoints": 0,
-                                    "level-hitdice": 2
-                                },
-                                "abilities": {
-                                    "cha": 8,
-                                    "int": 13,
-                                    "wis": 12,
-                                    "str": 14,
-                                    "dex": 17,
-                                    "con": 15
-                                },
-                                "type": "npc",
-                                "class": {
-                                    "parent": "warrior",
-                                    "class": "fighter"
-                                },
-                                "personal": {
-                                    "race": "creature",
-                                    "backstory": "",
-                                    "xp": 0,
-                                    "name": {
-                                        "last": "Hungry",
-                                        "first": "Wolf"
-                                    },
-                                    "sex": "male",
-                                    "alignment": {
-                                        "social": "neutral",
-                                        "law": "neutral"
-                                    }
-                                },
-                                "lightradius": 0,
-                                "location": {
-                                    "map": "simple_room.json",
-                                    "x": 3,
-                                    "y": 5
-                                },
-                                "inventory": {
-                                    "pack": [],
-                                    "spells_memorized": [],
-                                    "money": {
-                                        "gold": 0,
-                                        "silver": 0,
-                                        "copper": 0
-                                    },
-                                    "equiped": {
-                                        "rightfinger": {},
-                                        "chest": {},
-                                        "head": {},
-                                        "righthand": {},
-                                        "neck": {},
-                                        "leftfinger": {},
-                                        "legs": {},
-                                        "feet": {},
-                                        "lefthand": {},
-                                        "gloves": {},
-                                        "wrists": {}
-                                    },
-                                    "spells": []
-                                }
-                            },
-                            "hash": "b'f34477c6fd74d79083b99a2033a842b8ac1df933fcdfdbb8c828d37027de47981049a338743c8a0e95cfd22a1ce31e776e6825e6ad74c1b08833ad46dae513bd'",
-                            "conditional": {
-                                "shields": true,
-                                "orientation": " aggressive",
-                                "armor_types": 1,
-                                "events": {
-                                    "oninteract": "",
-                                    "oninspect": ""
-                                },
-                                "loot": {
-                                    "silver": 99,
-                                    "gold": 20,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "items_possible": "['thieves_tools.json', 'candle.json']",
-                                    "copper": 99
-                                }
-                            }
-                        },
-                        "b'33eb826776b080eaf4894f1aed04f6ce989e19fedb23b294abd39c43ae292584de6199f3006d0bc9822bc4ffc0bd4eab3289271c6c5fac049aa8cd5258d987d2'": {
-                            "core": {
-                                "icon": "avatars/wolf.png",
-                                "combat": {
-                                    "max_hp": 16,
-                                    "hitpoints": 11,
-                                    "level-hitdice": 2
-                                },
-                                "abilities": {
-                                    "cha": 8,
-                                    "int": 13,
-                                    "wis": 12,
-                                    "str": 14,
-                                    "dex": 17,
-                                    "con": 15
-                                },
-                                "type": "npc",
-                                "class": {
-                                    "parent": "warrior",
-                                    "class": "fighter"
-                                },
-                                "personal": {
-                                    "race": "creature",
-                                    "backstory": "",
-                                    "xp": 0,
-                                    "name": {
-                                        "last": "Hungry",
-                                        "first": "Wolf"
-                                    },
-                                    "sex": "male",
-                                    "alignment": {
-                                        "social": "neutral",
-                                        "law": "neutral"
-                                    }
-                                },
-                                "lightradius": 0,
-                                "location": {
-                                    "map": "simple_room.json",
-                                    "x": 3,
-                                    "y": 5
-                                },
-                                "inventory": {
-                                    "pack": [],
-                                    "spells_memorized": [],
-                                    "money": {
-                                        "gold": 0,
-                                        "silver": 0,
-                                        "copper": 0
-                                    },
-                                    "equiped": {
-                                        "rightfinger": {},
                                         "wrists": {},
-                                        "head": {},
-                                        "righthand": {},
-                                        "neck": {},
-                                        "leftfinger": {},
-                                        "legs": {},
-                                        "feet": {},
-                                        "lefthand": {},
-                                        "gloves": {},
-                                        "chest": {}
+                                        "legs": {}
                                     },
-                                    "spells": []
+                                    "money": {
+                                        "copper": 0,
+                                        "gold": 0,
+                                        "silver": 0
+                                    }
+                                },
+                                "abilities": {
+                                    "dex": 17,
+                                    "cha": 8,
+                                    "wis": 12,
+                                    "str": 14,
+                                    "int": 13,
+                                    "con": 15
+                                },
+                                "class": {
+                                    "class": "fighter",
+                                    "parent": "warrior"
+                                },
+                                "type": "npc",
+                                "location": {
+                                    "y": 5,
+                                    "map": "simple_room.json",
+                                    "x": 3
+                                },
+                                "lightradius": 0,
+                                "personal": {
+                                    "race": "creature",
+                                    "sex": "male",
+                                    "backstory": "",
+                                    "xp": 0,
+                                    "alignment": {
+                                        "law": "neutral",
+                                        "social": "neutral"
+                                    },
+                                    "name": {
+                                        "first": "Wolf",
+                                        "last": "Hungry"
+                                    }
+                                },
+                                "combat": {
+                                    "max_hp": 16,
+                                    "hitpoints": 0,
+                                    "level-hitdice": 2
                                 }
                             },
-                            "hash": "b'33eb826776b080eaf4894f1aed04f6ce989e19fedb23b294abd39c43ae292584de6199f3006d0bc9822bc4ffc0bd4eab3289271c6c5fac049aa8cd5258d987d2'",
                             "conditional": {
-                                "shields": true,
                                 "orientation": " aggressive",
+                                "loot": {
+                                    "copper": 99,
+                                    "silver": 99,
+                                    "always_drops": [],
+                                    "max_items": 1,
+                                    "items_possible": "['thieves_tools.json', 'candle.json']",
+                                    "gold": 20
+                                },
                                 "armor_types": 1,
                                 "events": {
                                     "oninteract": "",
                                     "oninspect": ""
                                 },
-                                "loot": {
-                                    "silver": 99,
-                                    "gold": 20,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "items_possible": [
-                                        "thieves_tools.json",
-                                        "candle.json"
-                                    ],
-                                    "copper": 99
-                                }
-                            }
+                                "shields": true
+                            },
+                            "hash": "b'e4902d9a4eaac12b5533d5e7272500597d85aecefd14708257f35bcc10f0daa923decc8a4be418f106cb26a7f003042682623d6a50702ad5aaa47cff4d7884dd'"
                         },
                         "b'552e98443ff8a8058c13551d199bf8cb0614117b40119869bee3d712c540612b2f94a9b3627d7badf2c0708077528f23b671334d3271e57de76264c53ea7584c'": {
                             "core": {
                                 "icon": "avatars/wolf.png",
+                                "inventory": {
+                                    "spells_memorized": [],
+                                    "pack": [],
+                                    "spells": [],
+                                    "equiped": {
+                                        "righthand": {},
+                                        "leftfinger": {},
+                                        "neck": {},
+                                        "head": {},
+                                        "gloves": {},
+                                        "feet": {},
+                                        "rightfinger": {},
+                                        "lefthand": {},
+                                        "chest": {},
+                                        "wrists": {},
+                                        "legs": {}
+                                    },
+                                    "money": {
+                                        "copper": 0,
+                                        "gold": 0,
+                                        "silver": 0
+                                    }
+                                },
+                                "abilities": {
+                                    "dex": 17,
+                                    "cha": 8,
+                                    "wis": 12,
+                                    "str": 14,
+                                    "int": 13,
+                                    "con": 15
+                                },
+                                "class": {
+                                    "class": "fighter",
+                                    "parent": "warrior"
+                                },
+                                "type": "npc",
+                                "location": {
+                                    "y": 5,
+                                    "map": "simple_room.json",
+                                    "x": 3
+                                },
+                                "lightradius": 0,
+                                "personal": {
+                                    "race": "creature",
+                                    "sex": "male",
+                                    "backstory": "",
+                                    "xp": 0,
+                                    "alignment": {
+                                        "law": "neutral",
+                                        "social": "neutral"
+                                    },
+                                    "name": {
+                                        "first": "Wolf",
+                                        "last": "Hungry"
+                                    }
+                                },
                                 "combat": {
                                     "max_hp": 16,
                                     "hitpoints": 0,
                                     "level-hitdice": 2
-                                },
-                                "abilities": {
-                                    "cha": 8,
-                                    "int": 13,
-                                    "wis": 12,
-                                    "str": 14,
-                                    "dex": 17,
-                                    "con": 15
-                                },
-                                "type": "npc",
-                                "class": {
-                                    "parent": "warrior",
-                                    "class": "fighter"
-                                },
-                                "personal": {
-                                    "race": "creature",
-                                    "backstory": "",
-                                    "xp": 0,
-                                    "name": {
-                                        "last": "Hungry",
-                                        "first": "Wolf"
-                                    },
-                                    "sex": "male",
-                                    "alignment": {
-                                        "social": "neutral",
-                                        "law": "neutral"
-                                    }
-                                },
-                                "lightradius": 0,
-                                "location": {
-                                    "map": "simple_room.json",
-                                    "x": 3,
-                                    "y": 5
-                                },
-                                "inventory": {
-                                    "pack": [],
-                                    "spells_memorized": [],
-                                    "money": {
-                                        "gold": 0,
-                                        "silver": 0,
-                                        "copper": 0
-                                    },
-                                    "equiped": {
-                                        "rightfinger": {},
-                                        "chest": {},
-                                        "head": {},
-                                        "righthand": {},
-                                        "neck": {},
-                                        "leftfinger": {},
-                                        "legs": {},
-                                        "feet": {},
-                                        "lefthand": {},
-                                        "gloves": {},
-                                        "wrists": {}
-                                    },
-                                    "spells": []
                                 }
                             },
-                            "hash": "b'552e98443ff8a8058c13551d199bf8cb0614117b40119869bee3d712c540612b2f94a9b3627d7badf2c0708077528f23b671334d3271e57de76264c53ea7584c'",
                             "conditional": {
-                                "shields": true,
                                 "orientation": " aggressive",
+                                "loot": {
+                                    "copper": 99,
+                                    "silver": 99,
+                                    "always_drops": [],
+                                    "max_items": 1,
+                                    "items_possible": "['thieves_tools.json', 'candle.json']",
+                                    "gold": 20
+                                },
                                 "armor_types": 1,
                                 "events": {
                                     "oninteract": "",
                                     "oninspect": ""
                                 },
-                                "loot": {
-                                    "silver": 99,
-                                    "gold": 20,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "items_possible": "['thieves_tools.json', 'candle.json']",
-                                    "copper": 99
-                                }
-                            }
+                                "shields": true
+                            },
+                            "hash": "b'552e98443ff8a8058c13551d199bf8cb0614117b40119869bee3d712c540612b2f94a9b3627d7badf2c0708077528f23b671334d3271e57de76264c53ea7584c'"
                         },
-                        "b'1e9717de6ea65478d2178a14186b812950623e916f59eda44c446d9df0708e5e33d345df941f53776b12feb7d3d701b7d957cdb5c53425603ae0d575e889b0e2'": {
+                        "b'33eb826776b080eaf4894f1aed04f6ce989e19fedb23b294abd39c43ae292584de6199f3006d0bc9822bc4ffc0bd4eab3289271c6c5fac049aa8cd5258d987d2'": {
                             "core": {
                                 "icon": "avatars/wolf.png",
-                                "combat": {
-                                    "max_hp": 16,
-                                    "hitpoints": 0,
-                                    "level-hitdice": 2
+                                "inventory": {
+                                    "spells_memorized": [],
+                                    "pack": [],
+                                    "spells": [],
+                                    "equiped": {
+                                        "righthand": {},
+                                        "leftfinger": {},
+                                        "neck": {},
+                                        "head": {},
+                                        "feet": {},
+                                        "gloves": {},
+                                        "rightfinger": {},
+                                        "legs": {},
+                                        "chest": {},
+                                        "wrists": {},
+                                        "lefthand": {}
+                                    },
+                                    "money": {
+                                        "copper": 0,
+                                        "gold": 0,
+                                        "silver": 0
+                                    }
                                 },
                                 "abilities": {
+                                    "dex": 17,
                                     "cha": 8,
-                                    "int": 13,
                                     "wis": 12,
                                     "str": 14,
-                                    "dex": 17,
+                                    "int": 13,
                                     "con": 15
                                 },
-                                "type": "npc",
                                 "class": {
                                     "parent": "warrior",
                                     "class": "fighter"
                                 },
-                                "personal": {
-                                    "race": "creature",
-                                    "backstory": "",
-                                    "xp": 0,
-                                    "name": {
-                                        "last": "Hungry",
-                                        "first": "Wolf"
-                                    },
-                                    "sex": "male",
-                                    "alignment": {
-                                        "social": "neutral",
-                                        "law": "neutral"
-                                    }
+                                "type": "npc",
+                                "location": {
+                                    "y": 5,
+                                    "map": "simple_room.json",
+                                    "x": 3
                                 },
                                 "lightradius": 0,
-                                "location": {
-                                    "map": "simple_room.json",
-                                    "x": 3,
-                                    "y": 5
+                                "personal": {
+                                    "race": "creature",
+                                    "sex": "male",
+                                    "backstory": "",
+                                    "xp": 0,
+                                    "alignment": {
+                                        "law": "neutral",
+                                        "social": "neutral"
+                                    },
+                                    "name": {
+                                        "first": "Wolf",
+                                        "last": "Hungry"
+                                    }
                                 },
-                                "inventory": {
-                                    "pack": [],
-                                    "spells_memorized": [],
-                                    "money": {
-                                        "gold": 0,
-                                        "silver": 0,
-                                        "copper": 0
-                                    },
-                                    "equiped": {
-                                        "rightfinger": {},
-                                        "chest": {},
-                                        "head": {},
-                                        "righthand": {},
-                                        "neck": {},
-                                        "leftfinger": {},
-                                        "legs": {},
-                                        "feet": {},
-                                        "lefthand": {},
-                                        "gloves": {},
-                                        "wrists": {}
-                                    },
-                                    "spells": []
+                                "combat": {
+                                    "max_hp": 16,
+                                    "hitpoints": 11,
+                                    "level-hitdice": 2
                                 }
                             },
-                            "hash": "b'1e9717de6ea65478d2178a14186b812950623e916f59eda44c446d9df0708e5e33d345df941f53776b12feb7d3d701b7d957cdb5c53425603ae0d575e889b0e2'",
                             "conditional": {
-                                "shields": true,
                                 "orientation": " aggressive",
-                                "armor_types": 1,
+                                "shields": true,
+                                "loot": {
+                                    "copper": 99,
+                                    "silver": 99,
+                                    "always_drops": [],
+                                    "max_items": 1,
+                                    "items_possible": [
+                                        "thieves_tools.json",
+                                        "candle.json"
+                                    ],
+                                    "gold": 20
+                                },
                                 "events": {
                                     "oninteract": "",
                                     "oninspect": ""
                                 },
-                                "loot": {
-                                    "silver": 99,
-                                    "gold": 20,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "items_possible": "['thieves_tools.json', 'candle.json']",
-                                    "copper": 99
-                                }
-                            }
+                                "armor_types": 1
+                            },
+                            "hash": "b'33eb826776b080eaf4894f1aed04f6ce989e19fedb23b294abd39c43ae292584de6199f3006d0bc9822bc4ffc0bd4eab3289271c6c5fac049aa8cd5258d987d2'"
                         },
                         "b'626fc6b987d327db87053933442462996b49fc52b62afa84cbe07b05765477f39a241a90b69cf9cd092a4a3338463f07cc37807a46a570c71c4fe8a9652ff782'": {
                             "core": {
                                 "icon": "avatars/wolf.png",
+                                "inventory": {
+                                    "spells_memorized": [],
+                                    "pack": [],
+                                    "spells": [],
+                                    "equiped": {
+                                        "righthand": {},
+                                        "leftfinger": {},
+                                        "neck": {},
+                                        "head": {},
+                                        "gloves": {},
+                                        "feet": {},
+                                        "rightfinger": {},
+                                        "lefthand": {},
+                                        "chest": {},
+                                        "wrists": {},
+                                        "legs": {}
+                                    },
+                                    "money": {
+                                        "copper": 0,
+                                        "gold": 0,
+                                        "silver": 0
+                                    }
+                                },
+                                "abilities": {
+                                    "dex": 17,
+                                    "cha": 8,
+                                    "wis": 12,
+                                    "str": 14,
+                                    "int": 13,
+                                    "con": 15
+                                },
+                                "class": {
+                                    "class": "fighter",
+                                    "parent": "warrior"
+                                },
+                                "type": "npc",
+                                "location": {
+                                    "y": 5,
+                                    "map": "simple_room.json",
+                                    "x": 3
+                                },
+                                "lightradius": 0,
+                                "personal": {
+                                    "race": "creature",
+                                    "sex": "male",
+                                    "backstory": "",
+                                    "xp": 0,
+                                    "alignment": {
+                                        "law": "neutral",
+                                        "social": "neutral"
+                                    },
+                                    "name": {
+                                        "first": "Wolf",
+                                        "last": "Hungry"
+                                    }
+                                },
                                 "combat": {
                                     "max_hp": 16,
                                     "hitpoints": 0,
                                     "level-hitdice": 2
-                                },
-                                "abilities": {
-                                    "cha": 8,
-                                    "int": 13,
-                                    "wis": 12,
-                                    "str": 14,
-                                    "dex": 17,
-                                    "con": 15
-                                },
-                                "type": "npc",
-                                "class": {
-                                    "parent": "warrior",
-                                    "class": "fighter"
-                                },
-                                "personal": {
-                                    "race": "creature",
-                                    "backstory": "",
-                                    "xp": 0,
-                                    "name": {
-                                        "last": "Hungry",
-                                        "first": "Wolf"
-                                    },
-                                    "sex": "male",
-                                    "alignment": {
-                                        "social": "neutral",
-                                        "law": "neutral"
-                                    }
-                                },
-                                "lightradius": 0,
-                                "location": {
-                                    "map": "simple_room.json",
-                                    "x": 3,
-                                    "y": 5
-                                },
-                                "inventory": {
-                                    "pack": [],
-                                    "spells_memorized": [],
-                                    "money": {
-                                        "gold": 0,
-                                        "silver": 0,
-                                        "copper": 0
-                                    },
-                                    "equiped": {
-                                        "rightfinger": {},
-                                        "chest": {},
-                                        "head": {},
-                                        "righthand": {},
-                                        "neck": {},
-                                        "leftfinger": {},
-                                        "legs": {},
-                                        "feet": {},
-                                        "lefthand": {},
-                                        "gloves": {},
-                                        "wrists": {}
-                                    },
-                                    "spells": []
                                 }
                             },
-                            "hash": "b'626fc6b987d327db87053933442462996b49fc52b62afa84cbe07b05765477f39a241a90b69cf9cd092a4a3338463f07cc37807a46a570c71c4fe8a9652ff782'",
                             "conditional": {
-                                "shields": true,
                                 "orientation": " aggressive",
+                                "loot": {
+                                    "copper": 99,
+                                    "silver": 99,
+                                    "always_drops": [],
+                                    "max_items": 1,
+                                    "items_possible": "['thieves_tools.json', 'candle.json']",
+                                    "gold": 20
+                                },
                                 "armor_types": 1,
                                 "events": {
                                     "oninteract": "",
                                     "oninspect": ""
                                 },
-                                "loot": {
-                                    "silver": 99,
-                                    "gold": 20,
-                                    "max_items": 1,
-                                    "always_drops": [],
-                                    "items_possible": "['thieves_tools.json', 'candle.json']",
-                                    "copper": 99
+                                "shields": true
+                            },
+                            "hash": "b'626fc6b987d327db87053933442462996b49fc52b62afa84cbe07b05765477f39a241a90b69cf9cd092a4a3338463f07cc37807a46a570c71c4fe8a9652ff782'"
+                        },
+                        "b'6fbc8fe050c19daeedd8cd669bc4f5cec73c39304436bab0eb9db551748d3e14d2ab383e1200699a749ebaa68e3f5b0777af9f522ccf529989034a293b614891'": {
+                            "core": {
+                                "icon": "avatars/wolf.png",
+                                "inventory": {
+                                    "spells_memorized": [],
+                                    "pack": [],
+                                    "spells": [],
+                                    "equiped": {
+                                        "righthand": {},
+                                        "leftfinger": {},
+                                        "neck": {},
+                                        "head": {},
+                                        "gloves": {},
+                                        "feet": {},
+                                        "rightfinger": {},
+                                        "lefthand": {},
+                                        "chest": {},
+                                        "wrists": {},
+                                        "legs": {}
+                                    },
+                                    "money": {
+                                        "copper": 0,
+                                        "gold": 0,
+                                        "silver": 0
+                                    }
+                                },
+                                "abilities": {
+                                    "dex": 17,
+                                    "cha": 8,
+                                    "wis": 12,
+                                    "str": 14,
+                                    "int": 13,
+                                    "con": 15
+                                },
+                                "class": {
+                                    "class": "fighter",
+                                    "parent": "warrior"
+                                },
+                                "type": "npc",
+                                "location": {
+                                    "y": 5,
+                                    "map": "simple_room.json",
+                                    "x": 3
+                                },
+                                "lightradius": 0,
+                                "personal": {
+                                    "race": "creature",
+                                    "sex": "male",
+                                    "backstory": "",
+                                    "xp": 0,
+                                    "alignment": {
+                                        "law": "neutral",
+                                        "social": "neutral"
+                                    },
+                                    "name": {
+                                        "first": "Wolf",
+                                        "last": "Hungry"
+                                    }
+                                },
+                                "combat": {
+                                    "max_hp": 16,
+                                    "hitpoints": 0,
+                                    "level-hitdice": 2
                                 }
-                            }
+                            },
+                            "conditional": {
+                                "orientation": " aggressive",
+                                "loot": {
+                                    "copper": 99,
+                                    "silver": 99,
+                                    "always_drops": [],
+                                    "max_items": 1,
+                                    "items_possible": "['thieves_tools.json', 'candle.json']",
+                                    "gold": 20
+                                },
+                                "armor_types": 1,
+                                "events": {
+                                    "oninteract": "",
+                                    "oninspect": ""
+                                },
+                                "shields": true
+                            },
+                            "hash": "b'6fbc8fe050c19daeedd8cd669bc4f5cec73c39304436bab0eb9db551748d3e14d2ab383e1200699a749ebaa68e3f5b0777af9f522ccf529989034a293b614891'"
+                        },
+                        "b'259700623bc73716cd7bcd2b66848dd25e4e70716d384a4e557435d2a5b4eae4559ea7cb76080ed96fa6da99cd48315d5033e07d4c5a3a072123f96be3c13faa'": {
+                            "core": {
+                                "icon": "avatars/wolf.png",
+                                "inventory": {
+                                    "spells_memorized": [],
+                                    "pack": [],
+                                    "spells": [],
+                                    "equiped": {
+                                        "righthand": {},
+                                        "leftfinger": {},
+                                        "neck": {},
+                                        "head": {},
+                                        "gloves": {},
+                                        "feet": {},
+                                        "rightfinger": {},
+                                        "lefthand": {},
+                                        "chest": {},
+                                        "wrists": {},
+                                        "legs": {}
+                                    },
+                                    "money": {
+                                        "copper": 0,
+                                        "gold": 0,
+                                        "silver": 0
+                                    }
+                                },
+                                "abilities": {
+                                    "dex": 17,
+                                    "cha": 8,
+                                    "wis": 12,
+                                    "str": 14,
+                                    "int": 13,
+                                    "con": 15
+                                },
+                                "class": {
+                                    "class": "fighter",
+                                    "parent": "warrior"
+                                },
+                                "type": "npc",
+                                "location": {
+                                    "y": 5,
+                                    "map": "simple_room.json",
+                                    "x": 3
+                                },
+                                "lightradius": 0,
+                                "personal": {
+                                    "race": "creature",
+                                    "sex": "male",
+                                    "backstory": "",
+                                    "xp": 0,
+                                    "alignment": {
+                                        "law": "neutral",
+                                        "social": "neutral"
+                                    },
+                                    "name": {
+                                        "first": "Wolf",
+                                        "last": "Hungry"
+                                    }
+                                },
+                                "combat": {
+                                    "max_hp": 16,
+                                    "hitpoints": 0,
+                                    "level-hitdice": 2
+                                }
+                            },
+                            "conditional": {
+                                "orientation": " aggressive",
+                                "loot": {
+                                    "copper": 99,
+                                    "silver": 99,
+                                    "always_drops": [],
+                                    "max_items": 1,
+                                    "items_possible": "['thieves_tools.json', 'candle.json']",
+                                    "gold": 20
+                                },
+                                "armor_types": 1,
+                                "events": {
+                                    "oninteract": "",
+                                    "oninspect": ""
+                                },
+                                "shields": true
+                            },
+                            "hash": "b'259700623bc73716cd7bcd2b66848dd25e4e70716d384a4e557435d2a5b4eae4559ea7cb76080ed96fa6da99cd48315d5033e07d4c5a3a072123f96be3c13faa'"
+                        },
+                        "b'1e9717de6ea65478d2178a14186b812950623e916f59eda44c446d9df0708e5e33d345df941f53776b12feb7d3d701b7d957cdb5c53425603ae0d575e889b0e2'": {
+                            "core": {
+                                "icon": "avatars/wolf.png",
+                                "inventory": {
+                                    "spells_memorized": [],
+                                    "pack": [],
+                                    "spells": [],
+                                    "equiped": {
+                                        "righthand": {},
+                                        "leftfinger": {},
+                                        "neck": {},
+                                        "head": {},
+                                        "gloves": {},
+                                        "feet": {},
+                                        "rightfinger": {},
+                                        "lefthand": {},
+                                        "chest": {},
+                                        "wrists": {},
+                                        "legs": {}
+                                    },
+                                    "money": {
+                                        "copper": 0,
+                                        "gold": 0,
+                                        "silver": 0
+                                    }
+                                },
+                                "abilities": {
+                                    "dex": 17,
+                                    "cha": 8,
+                                    "wis": 12,
+                                    "str": 14,
+                                    "int": 13,
+                                    "con": 15
+                                },
+                                "class": {
+                                    "class": "fighter",
+                                    "parent": "warrior"
+                                },
+                                "type": "npc",
+                                "location": {
+                                    "y": 5,
+                                    "map": "simple_room.json",
+                                    "x": 3
+                                },
+                                "lightradius": 0,
+                                "personal": {
+                                    "race": "creature",
+                                    "sex": "male",
+                                    "backstory": "",
+                                    "xp": 0,
+                                    "alignment": {
+                                        "law": "neutral",
+                                        "social": "neutral"
+                                    },
+                                    "name": {
+                                        "first": "Wolf",
+                                        "last": "Hungry"
+                                    }
+                                },
+                                "combat": {
+                                    "max_hp": 16,
+                                    "hitpoints": 0,
+                                    "level-hitdice": 2
+                                }
+                            },
+                            "conditional": {
+                                "orientation": " aggressive",
+                                "loot": {
+                                    "copper": 99,
+                                    "silver": 99,
+                                    "always_drops": [],
+                                    "max_items": 1,
+                                    "items_possible": "['thieves_tools.json', 'candle.json']",
+                                    "gold": 20
+                                },
+                                "armor_types": 1,
+                                "events": {
+                                    "oninteract": "",
+                                    "oninspect": ""
+                                },
+                                "shields": true
+                            },
+                            "hash": "b'1e9717de6ea65478d2178a14186b812950623e916f59eda44c446d9df0708e5e33d345df941f53776b12feb7d3d701b7d957cdb5c53425603ae0d575e889b0e2'"
+                        },
+                        "b'f6756d2d8fc38f97da3bd321f7cb26ef2660457e39cb3636ca375d2b3e668aa95ee85614c4ff351cd082012f1f1c3f5fb6d5fe67340f5c68cb595dfacf072ed4'": {
+                            "core": {
+                                "icon": "avatars/wolf.png",
+                                "inventory": {
+                                    "spells_memorized": [],
+                                    "pack": [],
+                                    "spells": [],
+                                    "equiped": {
+                                        "righthand": {},
+                                        "leftfinger": {},
+                                        "neck": {},
+                                        "head": {},
+                                        "gloves": {},
+                                        "feet": {},
+                                        "rightfinger": {},
+                                        "lefthand": {},
+                                        "chest": {},
+                                        "wrists": {},
+                                        "legs": {}
+                                    },
+                                    "money": {
+                                        "copper": 0,
+                                        "gold": 0,
+                                        "silver": 0
+                                    }
+                                },
+                                "abilities": {
+                                    "dex": 17,
+                                    "cha": 8,
+                                    "wis": 12,
+                                    "str": 14,
+                                    "int": 13,
+                                    "con": 15
+                                },
+                                "class": {
+                                    "class": "fighter",
+                                    "parent": "warrior"
+                                },
+                                "type": "npc",
+                                "location": {
+                                    "y": 5,
+                                    "map": "simple_room.json",
+                                    "x": 3
+                                },
+                                "lightradius": 0,
+                                "personal": {
+                                    "race": "creature",
+                                    "sex": "male",
+                                    "backstory": "",
+                                    "xp": 0,
+                                    "alignment": {
+                                        "law": "neutral",
+                                        "social": "neutral"
+                                    },
+                                    "name": {
+                                        "first": "Wolf",
+                                        "last": "Hungry"
+                                    }
+                                },
+                                "combat": {
+                                    "max_hp": 16,
+                                    "hitpoints": 0,
+                                    "level-hitdice": 2
+                                }
+                            },
+                            "conditional": {
+                                "orientation": " aggressive",
+                                "loot": {
+                                    "copper": 99,
+                                    "silver": 99,
+                                    "always_drops": [],
+                                    "max_items": 1,
+                                    "items_possible": [
+                                        "thieves_tools.json",
+                                        "candle.json"
+                                    ],
+                                    "gold": 20
+                                },
+                                "armor_types": 1,
+                                "events": {
+                                    "oninteract": "",
+                                    "oninspect": ""
+                                },
+                                "shields": true
+                            },
+                            "hash": "b'f6756d2d8fc38f97da3bd321f7cb26ef2660457e39cb3636ca375d2b3e668aa95ee85614c4ff351cd082012f1f1c3f5fb6d5fe67340f5c68cb595dfacf072ed4'"
+                        },
+                        "b'698105651bf8e1d517956616a823017732102e33629f483962b401c5febc4d669ca3b07c6c238e4927077a07d54a03f60ea692f84b761fa6459c28adaffa3319'": {
+                            "core": {
+                                "icon": "avatars/wolf.png",
+                                "inventory": {
+                                    "spells_memorized": [],
+                                    "pack": [],
+                                    "spells": [],
+                                    "equiped": {
+                                        "righthand": {},
+                                        "leftfinger": {},
+                                        "neck": {},
+                                        "head": {},
+                                        "gloves": {},
+                                        "feet": {},
+                                        "rightfinger": {},
+                                        "lefthand": {},
+                                        "chest": {},
+                                        "wrists": {},
+                                        "legs": {}
+                                    },
+                                    "money": {
+                                        "copper": 0,
+                                        "gold": 0,
+                                        "silver": 0
+                                    }
+                                },
+                                "abilities": {
+                                    "dex": 17,
+                                    "cha": 8,
+                                    "wis": 12,
+                                    "str": 14,
+                                    "int": 13,
+                                    "con": 15
+                                },
+                                "class": {
+                                    "class": "fighter",
+                                    "parent": "warrior"
+                                },
+                                "type": "npc",
+                                "location": {
+                                    "y": 5,
+                                    "map": "simple_room.json",
+                                    "x": 3
+                                },
+                                "lightradius": 0,
+                                "personal": {
+                                    "race": "creature",
+                                    "sex": "male",
+                                    "backstory": "",
+                                    "xp": 0,
+                                    "alignment": {
+                                        "law": "neutral",
+                                        "social": "neutral"
+                                    },
+                                    "name": {
+                                        "first": "Wolf",
+                                        "last": "Hungry"
+                                    }
+                                },
+                                "combat": {
+                                    "max_hp": 16,
+                                    "hitpoints": 0,
+                                    "level-hitdice": 2
+                                }
+                            },
+                            "conditional": {
+                                "orientation": " aggressive",
+                                "loot": {
+                                    "copper": 99,
+                                    "silver": 99,
+                                    "always_drops": [],
+                                    "max_items": 1,
+                                    "items_possible": "['thieves_tools.json', 'candle.json']",
+                                    "gold": 20
+                                },
+                                "armor_types": 1,
+                                "events": {
+                                    "oninteract": "",
+                                    "oninspect": ""
+                                },
+                                "shields": true
+                            },
+                            "hash": "b'698105651bf8e1d517956616a823017732102e33629f483962b401c5febc4d669ca3b07c6c238e4927077a07d54a03f60ea692f84b761fa6459c28adaffa3319'"
+                        },
+                        "b'f34477c6fd74d79083b99a2033a842b8ac1df933fcdfdbb8c828d37027de47981049a338743c8a0e95cfd22a1ce31e776e6825e6ad74c1b08833ad46dae513bd'": {
+                            "core": {
+                                "icon": "avatars/wolf.png",
+                                "inventory": {
+                                    "spells_memorized": [],
+                                    "pack": [],
+                                    "spells": [],
+                                    "equiped": {
+                                        "righthand": {},
+                                        "leftfinger": {},
+                                        "neck": {},
+                                        "head": {},
+                                        "gloves": {},
+                                        "feet": {},
+                                        "rightfinger": {},
+                                        "lefthand": {},
+                                        "chest": {},
+                                        "wrists": {},
+                                        "legs": {}
+                                    },
+                                    "money": {
+                                        "copper": 0,
+                                        "gold": 0,
+                                        "silver": 0
+                                    }
+                                },
+                                "abilities": {
+                                    "dex": 17,
+                                    "cha": 8,
+                                    "wis": 12,
+                                    "str": 14,
+                                    "int": 13,
+                                    "con": 15
+                                },
+                                "class": {
+                                    "class": "fighter",
+                                    "parent": "warrior"
+                                },
+                                "type": "npc",
+                                "location": {
+                                    "y": 5,
+                                    "map": "simple_room.json",
+                                    "x": 3
+                                },
+                                "lightradius": 0,
+                                "personal": {
+                                    "race": "creature",
+                                    "sex": "male",
+                                    "backstory": "",
+                                    "xp": 0,
+                                    "alignment": {
+                                        "law": "neutral",
+                                        "social": "neutral"
+                                    },
+                                    "name": {
+                                        "first": "Wolf",
+                                        "last": "Hungry"
+                                    }
+                                },
+                                "combat": {
+                                    "max_hp": 16,
+                                    "hitpoints": 0,
+                                    "level-hitdice": 2
+                                }
+                            },
+                            "conditional": {
+                                "orientation": " aggressive",
+                                "loot": {
+                                    "copper": 99,
+                                    "silver": 99,
+                                    "always_drops": [],
+                                    "max_items": 1,
+                                    "items_possible": "['thieves_tools.json', 'candle.json']",
+                                    "gold": 20
+                                },
+                                "armor_types": 1,
+                                "events": {
+                                    "oninteract": "",
+                                    "oninspect": ""
+                                },
+                                "shields": true
+                            },
+                            "hash": "b'f34477c6fd74d79083b99a2033a842b8ac1df933fcdfdbb8c828d37027de47981049a338743c8a0e95cfd22a1ce31e776e6825e6ad74c1b08833ad46dae513bd'"
                         }
                     },
+                    "events": {
+                        "onenter": ""
+                    },
+                    "canenter": "True",
                     "items": [
                         "thieves_tools.json"
                     ],
-                    "events": {
-                        "onenter": ""
-                    },
-                    "copper": 24
+                    "silver": 67,
+                    "gold": 14
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": true,
                     "type": "floor",
-                    "revealed": true
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             }
         ],
@@ -2237,177 +2236,175 @@
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": true,
                     "type": "wall",
-                    "revealed": true
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": true,
                     "type": "floor",
-                    "revealed": true
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
-                    "players": [
-                        "bardic_rogue.json"
-                    ],
-                    "npcs": [],
-                    "items": [],
-                    "events": {
-                        "onenter": ""
-                    },
-                    "copper": 0
-                }
-            },
-            {
-                "core": {
-                    "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
-                    "type": "floor",
-                    "revealed": true
-                },
-                "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": true,
                     "type": "floor",
-                    "revealed": true
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": true,
                     "type": "floor",
-                    "revealed": true
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": true,
                     "type": "floor",
-                    "revealed": true
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": true,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
+                }
+            },
+            {
+                "core": {
+                    "icon": "backgrounds/floor_wood.png",
+                    "revealed": false,
+                    "type": "floor",
+                    "name": "Wooden Floor"
+                },
+                "conditional": {
+                    "copper": 0,
+                    "players": [],
+                    "npcs": [],
+                    "events": {
+                        "onenter": ""
+                    },
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/dngn_closed_door.png",
-                    "name": "door_locked",
+                    "revealed": false,
                     "type": "door",
-                    "revealed": false
+                    "name": "door_locked"
                 },
                 "conditional": {
-                    "canenter": false,
                     "locked": "True",
+                    "background_alternate": "backgrounds/dngn_open_door.png",
                     "events": {
-                        "ontryunlock": "",
                         "onunlock": "tile.put('/conditional/canenter, True)\r\ntile.put('/core/background', tile.get('/conditional/background',tile.get('/core/background','')))",
+                        "ontryunlock": "",
                         "onenter": ""
                     },
-                    "background_alternate": "backgrounds/dngn_open_door.png"
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             }
         ],
@@ -2415,169 +2412,169 @@
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": true,
                     "type": "wall",
-                    "revealed": true
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": true,
                     "type": "floor",
-                    "revealed": true
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": true,
                     "type": "floor",
-                    "revealed": true
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": true,
                     "type": "floor",
-                    "revealed": true
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": true,
                     "type": "floor",
-                    "revealed": true
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": true,
                     "type": "floor",
-                    "revealed": true
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/signpost.png",
-                    "name": "simple_signpost",
+                    "revealed": true,
                     "type": "signpost",
-                    "revealed": true
+                    "name": "simple_signpost"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "message": "The rusty blade: Blacksmith shop"
+                    "message": "The rusty blade: Blacksmith shop",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": true,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": true,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": true,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             }
         ],
@@ -2585,169 +2582,169 @@
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": false,
                     "type": "floor",
-                    "revealed": false
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": true,
                     "type": "floor",
-                    "revealed": true
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": true,
                     "type": "floor",
-                    "revealed": true
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": true,
                     "type": "floor",
-                    "revealed": true
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/floor_wood.png",
-                    "name": "Wooden Floor",
+                    "revealed": true,
                     "type": "floor",
-                    "revealed": true
+                    "name": "Wooden Floor"
                 },
                 "conditional": {
-                    "silver": 0,
-                    "gold": 0,
-                    "canenter": "True",
+                    "copper": 0,
                     "players": [],
                     "npcs": [],
-                    "items": [],
                     "events": {
                         "onenter": ""
                     },
-                    "copper": 0
+                    "canenter": "True",
+                    "items": [],
+                    "silver": 0,
+                    "gold": 0
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/dngn_enter_shop.png",
-                    "name": "simple_shop",
+                    "revealed": true,
                     "type": "shop",
-                    "revealed": true
+                    "name": "simple_shop"
                 },
                 "conditional": {
-                    "canenter": "True",
                     "items": [
                         "mainhand_dagger.json",
                         "offhand_dagger.json"
-                    ]
+                    ],
+                    "canenter": "True"
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": true,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/map_link.png",
-                    "name": "map_link",
+                    "revealed": true,
                     "type": "link",
-                    "revealed": false
+                    "name": "map_link"
                 },
                 "conditional": {
-                    "canenter": true,
-                    "players": [],
                     "newmap": {
-                        "x": 2,
                         "mapname": "test4x4",
-                        "y": 2
-                    }
+                        "y": 2,
+                        "x": 2
+                    },
+                    "players": [],
+                    "canenter": true
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": true,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             }
         ],
@@ -2755,125 +2752,124 @@
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": false,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": true,
                     "type": "wall",
-                    "revealed": true
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": true,
                     "type": "wall",
-                    "revealed": true
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": true,
                     "type": "wall",
-                    "revealed": true
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": true,
                     "type": "wall",
-                    "revealed": true
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": true,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": true,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             },
             {
                 "core": {
                     "icon": "backgrounds/wall_rock.png",
-                    "name": "rock_wall",
+                    "revealed": true,
                     "type": "wall",
-                    "revealed": false
+                    "name": "rock_wall"
                 },
                 "conditional": {
-                    "canenter": false,
-                    "events": ""
+                    "events": "",
+                    "canenter": false
                 }
             }
         ]
     ],
-    "lightradius": 1,
-    "max_x": 10
+    "name": "Simple Room"
 }

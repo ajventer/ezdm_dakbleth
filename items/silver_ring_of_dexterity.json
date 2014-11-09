@@ -1,0 +1,35 @@
+{
+    "core": {
+        "name": "Silver ring of dexterity",
+        "icon": "icons/silver_ring.png",
+        "size": "small",
+        "identified": "",
+        "current_rounds_performed": 0,
+        "rounds_per_charge": 0,
+        "description": "This magical ring increases the wearers dexterity rating by one.",
+        "charges": 0,
+        "weight": 0,
+        "price": {
+            "copper": 0,
+            "silver": 0,
+            "gold": 0
+        },
+        "type": "armor",
+        "lightradius": 0,
+        "in_use": false
+    },
+    "events": {
+        "ondrop": "",
+        "onfinish": "",
+        "onround": "",
+        "onequip": "d = int(player.get('/core/abilities/dex', 0))\r\nd += 1\r\nplayer.put('/core/abilities/dex', d)\r\nplayer.autosave()\r\n\r\n",
+        "onpickup": "",
+        "onunequip": "d = int(player.get('/core/abilities/dex', 0))\r\nd -= 1\r\nplayer.put('/core/abilities/dex', d)\r\nplayer.autosave()",
+        "onuse": ""
+    },
+    "conditional": {
+        "material": "cloth",
+        "slot": "finger",
+        "ac": 0
+    }
+}
