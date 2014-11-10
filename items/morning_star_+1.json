@@ -1,0 +1,42 @@
+{
+    "conditional": {
+        "dmg": 10,
+        "damage_type": "slice",
+        "save_against": "none",
+        "range": "short",
+        "slot": "righthand",
+        "events": {
+            "onstrike": ""
+        },
+        "to_hit": 1,
+        "weapon_type": "melee"
+    },
+    "events": {
+        "onpickup": "",
+        "onunequip": "",
+        "onfinish": "",
+        "onequip": "",
+        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+        "onround": "",
+        "onuse": ""
+    },
+    "core": {
+        "current_rounds_performed": 0,
+        "icon": "icons/morningstar2.png",
+        "rounds_per_charge": 0,
+        "in_use": false,
+        "lightradius": 0,
+        "name": "Morning Star +1",
+        "type": "weapon",
+        "size": "medium",
+        "description": "To use:<br> Swing vigorously.",
+        "price": {
+            "copper": 0,
+            "gold": 25,
+            "silver": 0
+        },
+        "identified": "",
+        "weight": 0,
+        "charges": 0
+    }
+}
