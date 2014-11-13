@@ -1,85 +1,86 @@
 {
+    "conditional": {
+        "armor_types": 1,
+        "shields": true,
+        "orientation": " aggressive",
+        "events": {
+            "oninteract": "",
+            "oninspect": ""
+        },
+        "loot": {
+            "max_items": 1,
+            "copper": 99,
+            "silver": 99,
+            "items_possible": [
+                "candle.json"
+            ],
+            "gold": 20,
+            "always_drops": []
+        }
+    },
+    "hash": "b'7caa26bbd2b35b022e2471045e9e87bfc7bdf93f057e6797250dc7a3fc4866e532f57d048c1e9605bb86c101e3b05b517016590fb7f04617f3ef74857d2c4cb2'",
     "core": {
         "icon": "avatars/wolf.png",
-        "combat": {
-            "max_hp": 16,
-            "hitpoints": 16,
-            "level-hitdice": 2
-        },
         "abilities": {
-            "cha": 8,
-            "int": 13,
-            "con": 15,
-            "str": 14,
+            "wis": 12,
             "dex": 17,
-            "wis": 12
-        },
-        "type": "npc",
-        "class": {
-            "parent": "warrior",
-            "class": "fighter"
+            "cha": 8,
+            "str": 14,
+            "con": 15,
+            "int": 13
         },
         "personal": {
-            "race": "creature",
+            "sex": "male",
+            "backstory": "",
             "alignment": {
                 "social": "neutral",
                 "law": "neutral"
             },
             "xp": 0,
             "name": {
-                "last": "Hungry",
-                "first": "Wolf"
+                "first": "Wolf",
+                "last": "Hungry"
             },
-            "sex": "male",
-            "backstory": ""
+            "race": "creature"
+        },
+        "inventory": {
+            "spells_memorized": [],
+            "spells": [],
+            "money": {
+                "silver": 0,
+                "copper": 0,
+                "gold": 0
+            },
+            "equiped": {
+                "chest": {},
+                "legs": {},
+                "gloves": {},
+                "leftfinger": {},
+                "neck": {},
+                "wrists": {},
+                "righthand": {},
+                "feet": {},
+                "lefthand": {},
+                "head": {},
+                "rightfinger": {}
+            },
+            "pack": []
         },
         "lightradius": 0,
         "location": {
+            "y": 11,
             "map": "road_to_darrowshire.json",
-            "x": 18,
-            "y": 13
+            "x": 19
         },
-        "inventory": {
-            "pack": [],
-            "equiped": {
-                "rightfinger": {},
-                "head": {},
-                "wrists": {},
-                "neck": {},
-                "leftfinger": {},
-                "legs": {},
-                "gloves": {},
-                "feet": {},
-                "lefthand": {},
-                "chest": {},
-                "righthand": {}
-            },
-            "spells_memorized": [],
-            "money": {
-                "gold": 0,
-                "silver": 0,
-                "copper": 0
-            },
-            "spells": []
-        }
-    },
-    "conditional": {
-        "shields": true,
-        "orientation": " aggressive",
-        "armor_types": 1,
-        "events": {
-            "oninspect": "",
-            "oninteract": ""
+        "combat": {
+            "hitpoints": 4,
+            "level-hitdice": 2,
+            "max_hp": 16
         },
-        "loot": {
-            "silver": 99,
-            "gold": 20,
-            "max_items": 1,
-            "always_drops": [],
-            "items_possible": [
-                "candle.json"
-            ],
-            "copper": 99
-        }
+        "class": {
+            "class": "fighter",
+            "parent": "warrior"
+        },
+        "type": "npc"
     }
 }

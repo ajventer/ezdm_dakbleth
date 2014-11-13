@@ -1,98 +1,285 @@
 {
+    "conditional": {
+        "shields": false,
+        "armor_types": 1
+    },
+    "index": 2,
     "core": {
+        "icon": "avatars/48x48_Faces_4th_Sheet_Update_CharlesGabriel_OGA_0-0-3.png",
+        "combat": {
+            "hitpoints": 7,
+            "level-hitdice": 20,
+            "max_hp": 20
+        },
+        "location": {
+            "y": 8,
+            "map": "simple_room.json",
+            "x": 8
+        },
+        "personal": {
+            "sex": "male",
+            "backstory": "",
+            "alignment": {
+                "social": "evil",
+                "law": "chaotic"
+            },
+            "xp": 0,
+            "name": {
+                "first": "Wizard",
+                "last": "Mage"
+            },
+            "race": "elf"
+        },
         "inventory": {
-            "spells": [
-                {
-                    "core": {
-                        "icon": "icons/bolt_of_magma.png",
-                        "rounds_per_charge": 0,
-                        "in_use": false,
-                        "lightradius": 0,
-                        "charges": -1,
-                        "target": null,
-                        "weight": 0,
-                        "description": "A jet of flame shoots from the wizards fingertips burning the primary target any any other characters on the same tile for 1d3 + level of wizard fire damage.",
-                        "name": "Burning hands",
-                        "size": "small",
-                        "identified": true,
-                        "type": "spell",
-                        "price": {
-                            "gold": 3000,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "current_rounds_performed": 0
-                    },
+            "equiped_by_type": {
+                "chest": {},
+                "legs": {},
+                "gloves": {},
+                "leftfinger": {},
+                "neck": {},
+                "wrists": {},
+                "righthand": {
                     "conditional": {
-                        "spell_school": "Conjuration",
-                        "spell_level": 1,
-                        "spell_type": "wizard spells"
+                        "save_against": "none",
+                        "to_hit": 0,
+                        "slot": "twohand",
+                        "damage_type": "stab",
+                        "dmg": 2,
+                        "range": "short",
+                        "weapon_type": "melee"
                     },
                     "events": {
-                        "onunequip": "",
                         "onround": "",
                         "ondrop": "",
-                        "onfinish": "",
                         "onequip": "",
-                        "onuse": "from ezdm_libs.util import rolldice\r\nmodifier = player.get('/core/combat/level-hitdice', 1)\r\ncampaign.message('%s casts %s at %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nloc = target.location()\r\nfor char in list(campaign.characterlist):\r\n    if char.location() == loc:\r\n        campaign.message('%s hits %s' % (item.displayname(), char.displayname() ))\r\n        damage_roll=rolldice(numdice=1, numsides=3, modifier=modifier)\r\n        campaign.message(damage_roll[1])\r\n        st = char.saving_throw('spell')\r\n        campaign.message(st[1])\r\n        if st[0]:\r\n            campaign.message('%s successfully save, damage reduced by half' % target.displayname())\r\n            damage = int(damage_roll[0] / 2)\r\n        else:\r\n            damage = damage_roll[0]\r\n        result = char.take_damage(damage)\r\n        campaign.message(result[1])\r\n        campaign.message(char.autosave())",
-                        "onpickup": ""
+                        "onfinish": "",
+                        "onpickup": "",
+                        "onuse": ""
+                    },
+                    "core": {
+                        "size": "small",
+                        "current_rounds_performed": 0,
+                        "rounds_per_charge": 0,
+                        "price": {
+                            "silver": 0,
+                            "copper": 0,
+                            "gold": 0
+                        },
+                        "weight": 0,
+                        "type": "weapon",
+                        "icon": "",
+                        "description": "Throw a barehanded punch with fist.",
+                        "name": "Fist",
+                        "charges": 0,
+                        "in_use": false,
+                        "identified": true
+                    }
+                },
+                "feet": {},
+                "lefthand": {
+                    "conditional": {
+                        "save_against": "none",
+                        "to_hit": 0,
+                        "slot": "twohand",
+                        "damage_type": "stab",
+                        "dmg": 2,
+                        "range": "short",
+                        "weapon_type": "melee"
+                    },
+                    "events": {
+                        "onround": "",
+                        "ondrop": "",
+                        "onequip": "",
+                        "onfinish": "",
+                        "onpickup": "",
+                        "onuse": ""
+                    },
+                    "core": {
+                        "size": "small",
+                        "current_rounds_performed": 0,
+                        "rounds_per_charge": 0,
+                        "price": {
+                            "silver": 0,
+                            "copper": 0,
+                            "gold": 0
+                        },
+                        "weight": 0,
+                        "type": "weapon",
+                        "icon": "",
+                        "description": "Throw a barehanded punch with fist.",
+                        "name": "Fist",
+                        "charges": 0,
+                        "in_use": false,
+                        "identified": true
+                    }
+                },
+                "head": {},
+                "rightfinger": {}
+            },
+            "spells_memorized": [],
+            "money": {
+                "silver": 0,
+                "copper": 0,
+                "gold": 0
+            },
+            "equiped": {
+                "chest": {},
+                "legs": {},
+                "gloves": {},
+                "leftfinger": {},
+                "neck": {},
+                "wrists": {},
+                "righthand": {
+                    "conditional": {
+                        "save_against": "none",
+                        "to_hit": 0,
+                        "slot": "twohand",
+                        "range": "short",
+                        "damage_type": "stab",
+                        "dmg": 2,
+                        "weapon_type": "melee"
+                    },
+                    "events": {
+                        "onround": "",
+                        "ondrop": "",
+                        "onequip": "",
+                        "onfinish": "",
+                        "onpickup": "",
+                        "onuse": ""
+                    },
+                    "core": {
+                        "size": "small",
+                        "current_rounds_performed": 0,
+                        "rounds_per_charge": 0,
+                        "price": {
+                            "silver": 0,
+                            "copper": 0,
+                            "gold": 0
+                        },
+                        "weight": 0,
+                        "type": "weapon",
+                        "icon": "",
+                        "description": "Throw a barehanded punch with fist.",
+                        "name": "Fist",
+                        "charges": 0,
+                        "in_use": false,
+                        "identified": true
+                    }
+                },
+                "feet": {},
+                "lefthand": {
+                    "conditional": {
+                        "save_against": "none",
+                        "to_hit": 0,
+                        "slot": "twohand",
+                        "range": "short",
+                        "damage_type": "stab",
+                        "dmg": 2,
+                        "weapon_type": "melee"
+                    },
+                    "events": {
+                        "onround": "",
+                        "ondrop": "",
+                        "onequip": "",
+                        "onfinish": "",
+                        "onpickup": "",
+                        "onuse": ""
+                    },
+                    "core": {
+                        "size": "small",
+                        "current_rounds_performed": 0,
+                        "rounds_per_charge": 0,
+                        "price": {
+                            "silver": 0,
+                            "copper": 0,
+                            "gold": 0
+                        },
+                        "weight": 0,
+                        "type": "weapon",
+                        "icon": "",
+                        "description": "Throw a barehanded punch with fist.",
+                        "charges": 0,
+                        "name": "Fist",
+                        "in_use": false,
+                        "identified": true
+                    }
+                },
+                "head": {},
+                "rightfinger": {}
+            },
+            "spells": [
+                {
+                    "conditional": {
+                        "spell_type": "wizard spells",
+                        "spell_school": "Conjuration",
+                        "spell_level": 1
+                    },
+                    "events": {
+                        "onround": "",
+                        "onunequip": "",
+                        "ondrop": "",
+                        "onequip": "",
+                        "onfinish": "",
+                        "onpickup": "",
+                        "onuse": "from ezdm_libs.util import rolldice\r\nmodifier = player.get('/core/combat/level-hitdice', 1)\r\ncampaign.message('%s casts %s at %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nloc = target.location()\r\nfor char in list(campaign.characterlist):\r\n    if char.location() == loc:\r\n        campaign.message('%s hits %s' % (item.displayname(), char.displayname() ))\r\n        damage_roll=rolldice(numdice=1, numsides=3, modifier=modifier)\r\n        campaign.message(damage_roll[1])\r\n        st = char.saving_throw('spell')\r\n        campaign.message(st[1])\r\n        if st[0]:\r\n            campaign.message('%s successfully save, damage reduced by half' % target.displayname())\r\n            damage = int(damage_roll[0] / 2)\r\n        else:\r\n            damage = damage_roll[0]\r\n        result = char.take_damage(damage)\r\n        campaign.message(result[1])\r\n        campaign.message(char.autosave())"
+                    },
+                    "core": {
+                        "size": "small",
+                        "target": null,
+                        "current_rounds_performed": 0,
+                        "rounds_per_charge": 0,
+                        "price": {
+                            "silver": 0,
+                            "copper": 0,
+                            "gold": 3000
+                        },
+                        "weight": 0,
+                        "type": "spell",
+                        "icon": "icons/bolt_of_magma.png",
+                        "description": "A jet of flame shoots from the wizards fingertips burning the primary target any any other characters on the same tile for 1d3 + level of wizard fire damage.",
+                        "charges": -1,
+                        "lightradius": 0,
+                        "name": "Burning hands",
+                        "in_use": false,
+                        "identified": true
                     }
                 },
                 {
-                    "core": {
-                        "icon": "icons/magic_misile.png",
-                        "rounds_per_charge": 2,
-                        "in_use": false,
-                        "lightradius": 0,
-                        "charges": -1,
-                        "target": 0,
-                        "weight": 0,
-                        "description": "Fires a bolt of arcane energy at the target, if it hits it does 1d6 damage.",
-                        "name": "Magic Misile",
-                        "size": "small",
-                        "identified": true,
-                        "type": "spell",
-                        "price": {
-                            "gold": 200,
-                            "copper": 25,
-                            "silver": 50
-                        },
-                        "current_rounds_performed": 0
-                    },
                     "conditional": {
+                        "spell_type": "wizard spells",
                         "spell_school": "Conjuration",
-                        "spell_level": 1,
-                        "spell_type": "wizard spells"
+                        "spell_level": 1
                     },
                     "events": {
                         "onround": "campaign.error('%s continues to cast Magic Misile at %s' % (player.displayname(), target.displayname()))",
                         "ondrop": "",
-                        "onfinish": "campaign.warning('%s has finished casting Magic Misile at %s'  % (player.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nspell_success = player.spell_success()\r\nif not spell_success[1]:\r\n\tcampaign.error(spell_success)\r\nelse:\r\n\tdmg = rolldice(numdice=1, numsides=6, modifier=1)\r\n\tcampaign.error(dmg[1])\r\n\tresult = target.take_damage(dmg[0])\r\n\tcampaign.error(result[1])\r\n",
                         "onequip": "",
-                        "onuse": "campaign.error('%s is casting Magic Missile at %s' % (player.displayname(), target.displayname()))",
-                        "onpickup": ""
+                        "onfinish": "campaign.warning('%s has finished casting Magic Misile at %s'  % (player.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nspell_success = player.spell_success()\r\nif not spell_success[1]:\r\n\tcampaign.error(spell_success)\r\nelse:\r\n\tdmg = rolldice(numdice=1, numsides=6, modifier=1)\r\n\tcampaign.error(dmg[1])\r\n\tresult = target.take_damage(dmg[0])\r\n\tcampaign.error(result[1])\r\n",
+                        "onpickup": "",
+                        "onuse": "campaign.error('%s is casting Magic Missile at %s' % (player.displayname(), target.displayname()))"
+                    },
+                    "core": {
+                        "size": "small",
+                        "target": 0,
+                        "current_rounds_performed": 0,
+                        "rounds_per_charge": 2,
+                        "price": {
+                            "silver": 50,
+                            "copper": 25,
+                            "gold": 200
+                        },
+                        "weight": 0,
+                        "type": "spell",
+                        "icon": "icons/magic_misile.png",
+                        "description": "Fires a bolt of arcane energy at the target, if it hits it does 1d6 damage.",
+                        "charges": -1,
+                        "lightradius": 0,
+                        "name": "Magic Misile",
+                        "in_use": false,
+                        "identified": true
                     }
                 },
                 {
-                    "core": {
-                        "type": "spell",
-                        "rounds_per_charge": 0,
-                        "in_use": false,
-                        "size": "small",
-                        "lightradius": 0,
-                        "charges": -1,
-                        "weight": 0,
-                        "name": "Spell Armor",
-                        "description": "Grants the wizard magical armor equivalent to chainmail but with weight or encumbrance",
-                        "identified": true,
-                        "icon": "icons/magic_armor_spell.png",
-                        "price": {
-                            "gold": 200,
-                            "copper": 25,
-                            "silver": 50
-                        },
-                        "current_rounds_performed": 0
-                    },
                     "conditional": {
                         "spell_school": "Conjuration",
                         "spell_level": 1
@@ -100,303 +287,116 @@
                     "events": {
                         "onround": "",
                         "ondrop": "",
-                        "onfinish": "",
                         "onequip": "",
-                        "onuse": "from ezdm_libs.item import Item\r\nfrom ezdm_libs.util import load_json\r\ni = Item(load_json('items','magic_armor.json'))\r\nplayer.acquire_item(i)\r\nplayer.equip_item(0)\r\ncampaign.error('%s is now wearing magic armor' % player.displayname())\r\nplayer.autosave()",
-                        "onpickup": ""
+                        "onfinish": "",
+                        "onpickup": "",
+                        "onuse": "from ezdm_libs.item import Item\r\nfrom ezdm_libs.util import load_json\r\ni = Item(load_json('items','magic_armor.json'))\r\nplayer.acquire_item(i)\r\nplayer.equip_item(0)\r\ncampaign.error('%s is now wearing magic armor' % player.displayname())\r\nplayer.autosave()"
+                    },
+                    "core": {
+                        "size": "small",
+                        "current_rounds_performed": 0,
+                        "rounds_per_charge": 0,
+                        "price": {
+                            "silver": 50,
+                            "copper": 25,
+                            "gold": 200
+                        },
+                        "weight": 0,
+                        "type": "spell",
+                        "icon": "icons/magic_armor_spell.png",
+                        "description": "Grants the wizard magical armor equivalent to chainmail but with weight or encumbrance",
+                        "name": "Spell Armor",
+                        "lightradius": 0,
+                        "charges": -1,
+                        "in_use": false,
+                        "identified": true
                     }
                 }
             ],
-            "equiped_by_type": {
-                "wrists": {},
-                "neck": {},
-                "gloves": {},
-                "feet": {},
-                "legs": {},
-                "chest": {},
-                "rightfinger": {},
-                "righthand": {
-                    "core": {
-                        "icon": "",
-                        "rounds_per_charge": 0,
-                        "in_use": false,
-                        "size": "small",
-                        "charges": 0,
-                        "weight": 0,
-                        "name": "Fist",
-                        "identified": true,
-                        "description": "Throw a barehanded punch with fist.",
-                        "type": "weapon",
-                        "price": {
-                            "gold": 0,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "current_rounds_performed": 0
-                    },
-                    "events": {
-                        "onround": "",
-                        "ondrop": "",
-                        "onuse": "",
-                        "onequip": "",
-                        "onfinish": "",
-                        "onpickup": ""
-                    },
-                    "conditional": {
-                        "weapon_type": "melee",
-                        "to_hit": 0,
-                        "range": "short",
-                        "dmg": 2,
-                        "save_against": "none",
-                        "slot": "twohand",
-                        "damage_type": "stab"
-                    }
-                },
-                "leftfinger": {},
-                "lefthand": {
-                    "core": {
-                        "type": "weapon",
-                        "rounds_per_charge": 0,
-                        "in_use": false,
-                        "charges": 0,
-                        "weight": 0,
-                        "description": "Throw a barehanded punch with fist.",
-                        "name": "Fist",
-                        "identified": true,
-                        "size": "small",
-                        "icon": "",
-                        "price": {
-                            "gold": 0,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "current_rounds_performed": 0
-                    },
-                    "conditional": {
-                        "weapon_type": "melee",
-                        "to_hit": 0,
-                        "range": "short",
-                        "dmg": 2,
-                        "damage_type": "stab",
-                        "save_against": "none",
-                        "slot": "twohand"
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onround": "",
-                        "ondrop": "",
-                        "onuse": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                "head": {}
-            },
-            "equiped": {
-                "wrists": {},
-                "rightfinger": {},
-                "neck": {},
-                "leftfinger": {},
-                "legs": {},
-                "chest": {},
-                "gloves": {},
-                "righthand": {
-                    "core": {
-                        "icon": "",
-                        "rounds_per_charge": 0,
-                        "in_use": false,
-                        "charges": 0,
-                        "weight": 0,
-                        "description": "Throw a barehanded punch with fist.",
-                        "name": "Fist",
-                        "size": "small",
-                        "identified": true,
-                        "type": "weapon",
-                        "price": {
-                            "gold": 0,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "current_rounds_performed": 0
-                    },
-                    "events": {
-                        "onuse": "",
-                        "onround": "",
-                        "ondrop": "",
-                        "onequip": "",
-                        "onfinish": "",
-                        "onpickup": ""
-                    },
-                    "conditional": {
-                        "damage_type": "stab",
-                        "to_hit": 0,
-                        "range": "short",
-                        "dmg": 2,
-                        "weapon_type": "melee",
-                        "save_against": "none",
-                        "slot": "twohand"
-                    }
-                },
-                "feet": {},
-                "lefthand": {
-                    "core": {
-                        "icon": "",
-                        "rounds_per_charge": 0,
-                        "in_use": false,
-                        "size": "small",
-                        "charges": 0,
-                        "weight": 0,
-                        "name": "Fist",
-                        "identified": true,
-                        "description": "Throw a barehanded punch with fist.",
-                        "type": "weapon",
-                        "price": {
-                            "gold": 0,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "current_rounds_performed": 0
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onround": "",
-                        "ondrop": "",
-                        "onequip": "",
-                        "onuse": "",
-                        "onpickup": ""
-                    },
-                    "conditional": {
-                        "weapon_type": "melee",
-                        "to_hit": 0,
-                        "range": "short",
-                        "dmg": 2,
-                        "save_against": "none",
-                        "slot": "twohand",
-                        "damage_type": "stab"
-                    }
-                },
-                "head": {}
-            },
             "pack": [
                 {
-                    "core": {
-                        "icon": "icons/misc_bottle.png",
-                        "rounds_per_charge": 0,
-                        "in_use": false,
-                        "lightradius": 0,
-                        "charges": 1,
-                        "target": 3,
-                        "weight": 0,
-                        "description": "The content of this bottle smells delightfully sweet, you could eradicate quite a powerful stench with this.",
-                        "name": "Ezerbef",
-                        "size": "small",
-                        "identified": false,
-                        "type": "other",
-                        "price": {
-                            "gold": 0,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "current_rounds_performed": 0
-                    },
                     "events": {
-                        "onunequip": "",
                         "onround": "",
+                        "onunequip": "",
                         "ondrop": "",
-                        "onfinish": "",
                         "onequip": "",
-                        "onuse": "if target.name() == 'golgothan_the_crap_demon.json':\r\n  \thp = target.get('/core/combat/hitpoints', 1)\r\n  \tresult = target.take_damage(hp + 10)\r\n  \tcampaign.error('The sweet perfume overpowers the stench of the crap demon')\r\n  \tcampaign.error(result[1])\r\n\tif result[0]:\r\n\t\tcampaign.error('Terribly weakened, the demon is now much easier to slay')",
-                        "onpickup": ""
+                        "onfinish": "",
+                        "onpickup": "",
+                        "onuse": "if target.name() == 'golgothan_the_crap_demon.json':\r\n  \thp = target.get('/core/combat/hitpoints', 1)\r\n  \tresult = target.take_damage(hp + 10)\r\n  \tcampaign.error('The sweet perfume overpowers the stench of the crap demon')\r\n  \tcampaign.error(result[1])\r\n\tif result[0]:\r\n\t\tcampaign.error('Terribly weakened, the demon is now much easier to slay')"
+                    },
+                    "core": {
+                        "size": "small",
+                        "target": 3,
+                        "current_rounds_performed": 0,
+                        "rounds_per_charge": 0,
+                        "price": {
+                            "silver": 0,
+                            "copper": 0,
+                            "gold": 0
+                        },
+                        "weight": 0,
+                        "type": "other",
+                        "icon": "icons/misc_bottle.png",
+                        "description": "The content of this bottle smells delightfully sweet, you could eradicate quite a powerful stench with this.",
+                        "charges": 1,
+                        "lightradius": 0,
+                        "name": "Ezerbef",
+                        "in_use": false,
+                        "identified": false
                     }
                 },
                 {
-                    "core": {
-                        "type": "weapon",
-                        "rounds_per_charge": 0,
-                        "in_use": false,
-                        "size": "small",
-                        "charges": 0,
-                        "weight": 0,
-                        "name": "Fist",
-                        "description": "Throw a barehanded punch with fist.",
-                        "identified": true,
-                        "icon": "",
-                        "price": {
-                            "gold": 0,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "current_rounds_performed": 0
-                    },
                     "conditional": {
-                        "weapon_type": "melee",
-                        "to_hit": 0,
-                        "range": "short",
-                        "dmg": 2,
-                        "damage_type": "stab",
                         "save_against": "none",
-                        "slot": "twohand"
+                        "to_hit": 0,
+                        "slot": "twohand",
+                        "damage_type": "stab",
+                        "dmg": 2,
+                        "range": "short",
+                        "weapon_type": "melee"
                     },
                     "events": {
                         "onround": "",
                         "ondrop": "",
-                        "onfinish": "",
                         "onequip": "",
-                        "onuse": "",
-                        "onpickup": ""
+                        "onfinish": "",
+                        "onpickup": "",
+                        "onuse": ""
+                    },
+                    "core": {
+                        "size": "small",
+                        "current_rounds_performed": 0,
+                        "rounds_per_charge": 0,
+                        "price": {
+                            "silver": 0,
+                            "copper": 0,
+                            "gold": 0
+                        },
+                        "weight": 0,
+                        "type": "weapon",
+                        "icon": "",
+                        "description": "Throw a barehanded punch with fist.",
+                        "name": "Fist",
+                        "charges": 0,
+                        "in_use": false,
+                        "identified": true
                     }
                 }
-            ],
-            "spells_memorized": [],
-            "money": {
-                "gold": 0,
-                "copper": 0,
-                "silver": 0
-            }
-        },
-        "combat": {
-            "hitpoints": 7,
-            "max_hp": 20,
-            "level-hitdice": 20
-        },
-        "location": {
-            "y": 2,
-            "x": 2,
-            "map": "test4x4.json"
-        },
-        "class": {
-            "parent": "wizard",
-            "class": "mage"
+            ]
         },
         "lightradius": 0,
-        "personal": {
-            "sex": "male",
-            "backstory": "",
-            "name": {
-                "first": "Wizard",
-                "last": "Mage"
-            },
-            "alignment": {
-                "law": "chaotic",
-                "social": "evil"
-            },
-            "race": "elf",
-            "xp": 0
-        },
-        "icon": "avatars/48x48_Faces_4th_Sheet_Update_CharlesGabriel_OGA_0-0-3.png",
         "type": "player",
+        "class": {
+            "class": "mage",
+            "parent": "wizard"
+        },
         "abilities": {
             "wis": 20,
-            "int": 20,
             "dex": 20,
-            "str": 20,
+            "cha": 20,
+            "int": 20,
             "con": 20,
-            "cha": 20
+            "str": 20
         }
-    },
-    "index": 2,
-    "conditional": {
-        "armor_types": 1,
-        "shields": false
     }
 }

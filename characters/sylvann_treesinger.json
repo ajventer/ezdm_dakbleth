@@ -1,713 +1,909 @@
 {
     "core": {
-        "icon": "avatars/sylvann.png",
-        "type": "player",
-        "class": {
-            "class": "thief",
-            "parent": "rogue"
-        },
-        "lightradius": 0,
-        "abilities": {
-            "wis": 12,
-            "int": 12,
-            "cha": 13,
-            "str": 16,
-            "con": 8,
-            "dex": 13
-        },
-        "location": {
-            "y": 3,
-            "x": 8,
-            "map": "secret_cellar.json"
-        },
-        "combat": {
-            "level-hitdice": 2,
-            "max_hp": 8,
-            "hitpoints": 8
-        },
-        "personal": {
-            "xp": 1525,
-            "name": {
-                "first": "Sylvann",
-                "last": "Treesinger"
-            },
-            "sex": "female",
-            "backstory": "",
-            "alignment": {
-                "law": "chaotic",
-                "social": "good"
-            },
-            "race": "gnome"
-        },
         "inventory": {
-            "equiped": {
-                "hands": {
-                    "core": {
-                        "icon": "icons/tough_leather_gloves.png",
-                        "name": "Crocodile Leather Gloves",
-                        "charges": 0,
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "type": "armor",
-                        "rounds_per_charge": 0,
-                        "lightradius": 0,
-                        "description": "",
-                        "current_rounds_performed": 0,
-                        "price": {
-                            "gold": 1,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "weight": 1
-                    },
+            "money": {
+                "copper": 8.5,
+                "gold": 645,
+                "silver": 3
+            },
+            "pack": [
+                {
                     "events": {
-                        "onfinish": "",
+                        "onfinish": "campaign.error('%s has finished casting Scroll of Resurrection at %s'  % (player.displayname(), target.displayname()))\r\nhitpoints = target.get('/core/combat/hitpoints',1)\r\nif hitpoints > 0:\r\n   campaign.error('%s is not dead ! What a waste of a scroll !')\r\nelse:\r\n   campaign.error('%s resurrected with one hitpoint.')\r\n   target.put('/core/combat/hitpoints',1)",
+                        "onuse": "hitpoints = target.get('/core/combat/hitpoints',1)\r\nif hitpoints > 0:\r\n   campaign.error('%s is not dead ! What a waste of a scroll !')\r\ncampaign.error('%s is casting Scroll of Ressurection at %s' % (player.displayname(), target.displayname()))",
                         "onequip": "",
                         "onpickup": "",
-                        "onuse": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onunequip": "",
-                        "onround": ""
-                    },
-                    "conditional": {
-                        "slot": "hands",
-                        "material": "leather",
-                        "ac": 0.4
-                    }
-                },
-                "neck": {},
-                "gloves": {},
-                "feet": {
-                    "core": {
-                        "icon": "icons/tough_leather_boots.png",
-                        "description": "",
-                        "charges": 0,
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "type": "armor",
-                        "rounds_per_charge": 0,
-                        "lightradius": 0,
-                        "name": "Crocodile Leather Boots",
-                        "current_rounds_performed": 0,
-                        "price": {
-                            "gold": 1,
-                            "silver": 0,
-                            "copper": 0
-                        },
-                        "weight": 1
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onunequip": "",
-                        "onround": ""
-                    },
-                    "conditional": {
-                        "slot": "feet",
-                        "material": "leather",
-                        "ac": 0.4
-                    }
-                },
-                "chest": {
-                    "core": {
-                        "icon": "icons/tough_leather_armor.png",
-                        "name": "Crocodile Leather Chest",
-                        "charges": 0,
-                        "in_use": false,
-                        "identified": true,
-                        "size": "medium",
-                        "type": "armor",
-                        "rounds_per_charge": 0,
-                        "lightradius": 0,
-                        "description": "",
-                        "current_rounds_performed": 0,
-                        "price": {
-                            "gold": 1,
-                            "copper": 0,
-                            "silver": 50
-                        },
-                        "weight": 8
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onunequip": "",
-                        "onround": ""
-                    },
-                    "conditional": {
-                        "slot": "chest",
-                        "material": "leather",
-                        "ac": 2
-                    }
-                },
-                "righthand": {
-                    "core": {
-                        "icon": "icons/orcish_dagger.png",
-                        "name": "Coninas mainhand scissor dagger +1",
-                        "charges": 0,
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "type": "weapon",
-                        "rounds_per_charge": 0,
-                        "lightradius": 0,
-                        "description": "",
-                        "current_rounds_performed": 0,
-                        "price": {
-                            "gold": 1500,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "weight": 0
-                    },
-                    "conditional": {
-                        "dmg": 6,
-                        "events": {
-                            "onstrike": ""
-                        },
-                        "slot": "righthand",
-                        "to_hit": 1,
-                        "range": "short",
-                        "damage_type": "stab",
-                        "save_against": "none",
-                        "weapon_type": "melee"
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "",
                         "ondrop": "",
                         "onunequip": "",
+                        "onround": "campaign.error('%s continues to cast Scroll of Ressurection at %s' % (player.displayname(), target.displayname()))"
+                    },
+                    "core": {
+                        "description": "Ressurrects a dead ally with 1 hitpoint. Takes ten rounds to read.",
+                        "price": {
+                            "silver": 50,
+                            "gold": 1000,
+                            "copper": 25
+                        },
+                        "weight": 0,
+                        "size": "small",
+                        "in_use": false,
+                        "charges": 1,
+                        "icon": "icons/scrolloflove.png",
+                        "lightradius": 0,
+                        "type": "other",
+                        "identified": true,
+                        "rounds_per_charge": 10,
+                        "current_rounds_performed": 0,
+                        "name": "Scroll of Resurrection"
+                    }
+                },
+                {
+                    "events": {
+                        "onfinish": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onround": "",
+                        "onuse": ""
+                    },
+                    "core": {
+                        "description": "A small dagger balanced for use in the offhand.",
+                        "price": {
+                            "silver": "",
+                            "gold": 2,
+                            "copper": ""
+                        },
+                        "weight": "",
+                        "size": "small",
+                        "in_use": false,
+                        "charges": 0,
+                        "icon": "icons/dagger.png",
+                        "type": "weapon",
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "current_rounds_performed": 0,
+                        "name": "Offhand_Dagger"
+                    },
+                    "conditional": {
+                        "to_hit": 0,
+                        "save_against": "none",
+                        "range": "",
+                        "weapon_type": "melee",
+                        "dmg": 4,
+                        "damage_type": "stab",
+                        "slot": "lefthand"
+                    }
+                },
+                {
+                    "events": {
+                        "onfinish": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onround": "",
+                        "onuse": ""
+                    },
+                    "core": {
+                        "description": "A small dagger balanced for use in the main hand.",
+                        "price": {
+                            "silver": "",
+                            "gold": 2,
+                            "copper": ""
+                        },
+                        "weight": "",
+                        "size": "small",
+                        "in_use": false,
+                        "charges": 0,
+                        "icon": "icons/dagger.png",
+                        "type": "weapon",
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "current_rounds_performed": 0,
+                        "name": "Mainhand Dagger"
+                    },
+                    "conditional": {
+                        "to_hit": 0,
+                        "save_against": "none",
+                        "range": "",
+                        "weapon_type": "melee",
+                        "dmg": 4,
+                        "damage_type": "stab",
+                        "slot": " righthand"
+                    }
+                },
+                {
+                    "events": {
+                        "onfinish": "campaign.error('%s has finished casting Scroll of Resurrection at %s'  % (player.displayname(), target.displayname()))\r\nhitpoints = target.get('/core/combat/hitpoints',1)\r\nif hitpoints > 0:\r\n   campaign.error('%s is not dead ! What a waste of a scroll !')\r\nelse:\r\n   campaign.error('%s resurrected with one hitpoint.')\r\n   target.put('/core/combat/hitpoints',1)",
+                        "onuse": "hitpoints = target.get('/core/combat/hitpoints',1)\r\nif hitpoints > 0:\r\n   campaign.error('%s is not dead ! What a waste of a scroll !')\r\ncampaign.error('%s is casting Scroll of Ressurection at %s' % (player.displayname(), target.displayname()))",
+                        "onequip": "",
+                        "onpickup": "",
+                        "ondrop": "",
+                        "onunequip": "",
+                        "onround": "campaign.error('%s continues to cast Scroll of Ressurection at %s' % (player.displayname(), target.displayname()))"
+                    },
+                    "core": {
+                        "description": "Ressurrects a dead ally with 1 hitpoint. Takes ten rounds to read.",
+                        "price": {
+                            "silver": 50,
+                            "gold": 1000,
+                            "copper": 25
+                        },
+                        "weight": 0,
+                        "size": "small",
+                        "in_use": false,
+                        "charges": 1,
+                        "icon": "icons/scrolloflove.png",
+                        "lightradius": 0,
+                        "type": "other",
+                        "identified": true,
+                        "rounds_per_charge": 10,
+                        "current_rounds_performed": 0,
+                        "name": "Scroll of Resurrection"
+                    }
+                },
+                {
+                    "events": {
+                        "onfinish": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onround": "",
+                        "onuse": ""
+                    },
+                    "core": {
+                        "description": "",
+                        "price": {
+                            "silver": 0,
+                            "gold": 1,
+                            "copper": 0
+                        },
+                        "weight": 1,
+                        "size": "small",
+                        "in_use": false,
+                        "charges": 0,
+                        "icon": "icons/leather_boots.png",
+                        "type": "armor",
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "current_rounds_performed": 0,
+                        "name": "Leather Boots"
+                    },
+                    "conditional": {
+                        "ac": 0.2,
+                        "material": "leather",
+                        "slot": "feet"
+                    }
+                },
+                {
+                    "events": {
+                        "onfinish": "",
+                        "ondrop": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onround": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    },
+                    "core": {
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "price": {
+                            "silver": 0,
+                            "gold": 10,
+                            "copper": 0
+                        },
+                        "weight": 0,
+                        "type": "other",
+                        "size": "small",
+                        "in_use": false,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "target": 2,
+                        "identified": true,
+                        "rounds_per_charge": 1,
+                        "current_rounds_performed": 0,
+                        "name": "Health Potion"
+                    }
+                },
+                {
+                    "events": {
+                        "onfinish": "",
+                        "ondrop": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onround": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    },
+                    "core": {
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "price": {
+                            "silver": 0,
+                            "gold": 10,
+                            "copper": 0
+                        },
+                        "weight": 0,
+                        "size": "small",
+                        "in_use": false,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "type": "other",
+                        "identified": true,
+                        "rounds_per_charge": 1,
+                        "current_rounds_performed": 0,
+                        "name": "Health Potion"
+                    }
+                },
+                {
+                    "events": {
+                        "onfinish": "",
+                        "ondrop": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onround": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    },
+                    "core": {
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "price": {
+                            "silver": 0,
+                            "gold": 10,
+                            "copper": 0
+                        },
+                        "weight": 0,
+                        "size": "small",
+                        "in_use": false,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "type": "other",
+                        "identified": true,
+                        "rounds_per_charge": 1,
+                        "current_rounds_performed": 0,
+                        "name": "Health Potion"
+                    }
+                },
+                {
+                    "events": {
+                        "onfinish": "",
+                        "ondrop": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onround": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    },
+                    "core": {
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "price": {
+                            "silver": 0,
+                            "gold": 10,
+                            "copper": 0
+                        },
+                        "weight": 0,
+                        "size": "small",
+                        "in_use": false,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "type": "other",
+                        "identified": true,
+                        "rounds_per_charge": 1,
+                        "current_rounds_performed": 0,
+                        "name": "Health Potion"
+                    }
+                },
+                {
+                    "events": {
+                        "onfinish": "",
+                        "ondrop": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onround": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    },
+                    "core": {
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "price": {
+                            "silver": 0,
+                            "gold": 10,
+                            "copper": 0
+                        },
+                        "weight": 0,
+                        "size": "small",
+                        "in_use": false,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "type": "other",
+                        "identified": true,
+                        "rounds_per_charge": 1,
+                        "current_rounds_performed": 0,
+                        "name": "Health Potion"
+                    }
+                }
+            ],
+            "spells_memorized": [],
+            "equiped": {
+                "chest": {
+                    "events": {
+                        "onfinish": "",
+                        "onuse": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onunequip": "",
                         "onround": ""
+                    },
+                    "core": {
+                        "description": "",
+                        "price": {
+                            "silver": 50,
+                            "gold": 1,
+                            "copper": 0
+                        },
+                        "weight": 8,
+                        "type": "armor",
+                        "in_use": false,
+                        "charges": 0,
+                        "icon": "icons/tough_leather_armor.png",
+                        "lightradius": 0,
+                        "size": "medium",
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "current_rounds_performed": 0,
+                        "name": "Crocodile Leather Chest"
+                    },
+                    "conditional": {
+                        "ac": 2,
+                        "material": "leather",
+                        "slot": "chest"
                     }
                 },
                 "leftfinger": {},
-                "lefthand": {
-                    "core": {
-                        "icon": "icons/orcish_dagger.png",
-                        "name": "Coninas offhand scissor dagger +1",
-                        "charges": 0,
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "type": "weapon",
-                        "rounds_per_charge": 0,
-                        "lightradius": 0,
-                        "description": "",
-                        "current_rounds_performed": 0,
-                        "price": {
-                            "gold": 1500,
-                            "silver": 0,
-                            "copper": 0
-                        },
-                        "weight": 0
-                    },
+                "feet": {
                     "events": {
+                        "onuse": "",
                         "onfinish": "",
                         "onequip": "",
                         "onpickup": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onunequip": "",
+                        "onround": ""
+                    },
+                    "core": {
+                        "description": "",
+                        "price": {
+                            "silver": 0,
+                            "gold": 1,
+                            "copper": 0
+                        },
+                        "charges": 0,
+                        "size": "small",
+                        "rounds_per_charge": 0,
+                        "weight": 1,
+                        "icon": "icons/tough_leather_boots.png",
+                        "lightradius": 0,
+                        "type": "armor",
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "name": "Crocodile Leather Boots"
+                    },
+                    "conditional": {
+                        "ac": 0.4,
+                        "material": "leather",
+                        "slot": "feet"
+                    }
+                },
+                "head": {
+                    "events": {
+                        "onfinish": "",
                         "onuse": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onunequip": "",
+                        "onround": ""
+                    },
+                    "core": {
+                        "description": "",
+                        "price": {
+                            "silver": 0,
+                            "gold": 1,
+                            "copper": 0
+                        },
+                        "charges": 0,
+                        "size": "small",
+                        "in_use": false,
+                        "weight": 2,
+                        "icon": "icons/tough_leather_helm.png",
+                        "lightradius": 0,
+                        "type": "armor",
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "current_rounds_performed": 0,
+                        "name": "Crocodile Leather Helm"
+                    },
+                    "conditional": {
+                        "ac": 1.6,
+                        "material": "leather",
+                        "slot": "head"
+                    }
+                },
+                "rightfinger": {},
+                "gloves": {},
+                "lefthand": {
+                    "events": {
+                        "onfinish": "",
+                        "onround": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "ondrop": "",
+                        "onunequip": "",
+                        "onuse": ""
+                    },
+                    "core": {
+                        "description": "",
+                        "price": {
+                            "silver": 0,
+                            "gold": 1500,
+                            "copper": 0
+                        },
+                        "weight": 0,
+                        "type": "weapon",
+                        "in_use": false,
+                        "charges": 0,
+                        "icon": "icons/orcish_dagger.png",
+                        "lightradius": 0,
+                        "size": "small",
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "current_rounds_performed": 0,
+                        "name": "Coninas offhand scissor dagger +1"
+                    },
+                    "conditional": {
+                        "events": {
+                            "onstrike": ""
+                        },
+                        "dmg": 6,
+                        "save_against": "none",
+                        "range": "short",
+                        "weapon_type": "melee",
+                        "to_hit": 1,
+                        "damage_type": "stab",
+                        "slot": "lefthand"
+                    }
+                },
+                "neck": {},
+                "wrists": {},
+                "righthand": {
+                    "events": {
+                        "onfinish": "",
+                        "onuse": "",
+                        "onequip": "",
+                        "onpickup": "",
                         "ondrop": "",
                         "onunequip": "",
                         "onround": ""
                     },
+                    "core": {
+                        "description": "",
+                        "price": {
+                            "copper": 0,
+                            "gold": 1500,
+                            "silver": 0
+                        },
+                        "charges": 0,
+                        "type": "weapon",
+                        "rounds_per_charge": 0,
+                        "weight": 0,
+                        "icon": "icons/orcish_dagger.png",
+                        "lightradius": 0,
+                        "size": "small",
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "name": "Coninas mainhand scissor dagger +1"
+                    },
                     "conditional": {
-                        "dmg": 6,
-                        "weapon_type": "melee",
                         "events": {
                             "onstrike": ""
                         },
-                        "slot": "lefthand",
-                        "to_hit": 1,
-                        "range": "short",
+                        "dmg": 6,
                         "save_against": "none",
+                        "slot": "righthand",
+                        "range": "short",
+                        "weapon_type": "melee",
+                        "to_hit": 1,
                         "damage_type": "stab"
                     }
                 },
                 "legs": {
-                    "core": {
-                        "icon": "icons/tough_leather_boots.png",
-                        "name": "Leather Leggings",
-                        "charges": 0,
-                        "in_use": false,
-                        "identified": true,
-                        "size": "large",
-                        "type": "armor",
-                        "rounds_per_charge": 0,
-                        "lightradius": 0,
-                        "description": "",
-                        "current_rounds_performed": 0,
-                        "price": {
-                            "gold": 1,
-                            "copper": 0,
-                            "silver": 50
-                        },
-                        "weight": 2
+                    "events": {
+                        "onuse": "",
+                        "onround": "",
+                        "onequip": "",
+                        "onfinish": "",
+                        "onpickup": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onunequip": ""
                     },
                     "conditional": {
-                        "slot": "legs",
+                        "ac": 0.8,
                         "material": "leather",
-                        "ac": 0.8
+                        "slot": "legs"
                     },
+                    "core": {
+                        "description": "",
+                        "price": {
+                            "silver": 50,
+                            "gold": 1,
+                            "copper": 0
+                        },
+                        "charges": 0,
+                        "size": "large",
+                        "rounds_per_charge": 0,
+                        "weight": 2,
+                        "icon": "icons/tough_leather_boots.png",
+                        "lightradius": 0,
+                        "type": "armor",
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "name": "Leather Leggings"
+                    }
+                },
+                "hands": {
                     "events": {
                         "onfinish": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
                         "onequip": "",
                         "onpickup": "",
+                        "onround": "",
+                        "onunequip": "",
+                        "onuse": ""
+                    },
+                    "conditional": {
+                        "ac": 0.4,
+                        "material": "leather",
+                        "slot": "hands"
+                    },
+                    "core": {
+                        "description": "",
+                        "price": {
+                            "silver": 0,
+                            "gold": 1,
+                            "copper": 0
+                        },
+                        "charges": 0,
+                        "size": "small",
+                        "in_use": false,
+                        "weight": 1,
+                        "icon": "icons/tough_leather_gloves.png",
+                        "lightradius": 0,
+                        "type": "armor",
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "current_rounds_performed": 0,
+                        "name": "Crocodile Leather Gloves"
+                    }
+                }
+            },
+            "spells": [],
+            "equiped_by_type": {
+                "chest": {
+                    "events": {
+                        "onfinish": "",
+                        "onuse": "",
+                        "onequip": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onpickup": "",
+                        "onround": "",
+                        "onunequip": ""
+                    },
+                    "core": {
+                        "description": "",
+                        "price": {
+                            "silver": 50,
+                            "gold": 1,
+                            "copper": 0
+                        },
+                        "charges": 0,
+                        "size": "medium",
+                        "in_use": false,
+                        "weight": 8,
+                        "icon": "icons/tough_leather_armor.png",
+                        "lightradius": 0,
+                        "type": "armor",
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "current_rounds_performed": 0,
+                        "name": "Crocodile Leather Chest"
+                    },
+                    "conditional": {
+                        "ac": 2,
+                        "material": "leather",
+                        "slot": "chest"
+                    }
+                },
+                "leftfinger": {},
+                "feet": {
+                    "events": {
                         "onuse": "",
                         "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onunequip": "",
-                        "onround": ""
+                        "onequip": "",
+                        "onfinish": "",
+                        "onpickup": "",
+                        "onround": "",
+                        "onunequip": ""
+                    },
+                    "core": {
+                        "description": "",
+                        "price": {
+                            "silver": 0,
+                            "gold": 1,
+                            "copper": 0
+                        },
+                        "charges": 0,
+                        "type": "armor",
+                        "rounds_per_charge": 0,
+                        "weight": 1,
+                        "icon": "icons/tough_leather_boots.png",
+                        "lightradius": 0,
+                        "size": "small",
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "name": "Crocodile Leather Boots"
+                    },
+                    "conditional": {
+                        "ac": 0.4,
+                        "material": "leather",
+                        "slot": "feet"
                     }
                 },
                 "head": {
+                    "events": {
+                        "onuse": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onunequip": "",
+                        "onround": ""
+                    },
                     "core": {
-                        "icon": "icons/tough_leather_helm.png",
-                        "name": "Crocodile Leather Helm",
-                        "charges": 0,
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "type": "armor",
-                        "rounds_per_charge": 0,
-                        "lightradius": 0,
                         "description": "",
-                        "current_rounds_performed": 0,
                         "price": {
-                            "gold": 1,
                             "copper": 0,
+                            "gold": 1,
                             "silver": 0
                         },
-                        "weight": 2
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onunequip": "",
-                        "onround": ""
+                        "charges": 0,
+                        "type": "armor",
+                        "rounds_per_charge": 0,
+                        "weight": 2,
+                        "icon": "icons/tough_leather_helm.png",
+                        "lightradius": 0,
+                        "size": "small",
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "name": "Crocodile Leather Helm"
                     },
                     "conditional": {
-                        "slot": "head",
+                        "ac": 1.6,
                         "material": "leather",
-                        "ac": 1.6
+                        "slot": "head"
                     }
                 },
-                "wrists": {},
-                "rightfinger": {}
-            },
-            "spells_memorized": [],
-            "spells": [],
-            "money": {
-                "gold": 643,
-                "silver": 1,
-                "copper": 8
-            },
-            "pack": [
-                {
-                    "core": {
-                        "icon": "icons/dagger.png",
-                        "description": "A small dagger balanced for use in the offhand.",
-                        "charges": 0,
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "type": "weapon",
-                        "rounds_per_charge": 0,
-                        "name": "Offhand_Dagger",
-                        "current_rounds_performed": 0,
-                        "price": {
-                            "gold": 2,
-                            "silver": "",
-                            "copper": ""
-                        },
-                        "weight": ""
-                    },
+                "rightfinger": {},
+                "gloves": {},
+                "lefthand": {
                     "events": {
+                        "onuse": "",
                         "onfinish": "",
                         "onequip": "",
+                        "ondrop": "",
                         "onpickup": "",
-                        "onuse": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onround": ""
+                        "onround": "",
+                        "onunequip": ""
+                    },
+                    "core": {
+                        "description": "",
+                        "price": {
+                            "copper": 0,
+                            "gold": 1500,
+                            "silver": 0
+                        },
+                        "charges": 0,
+                        "size": "small",
+                        "rounds_per_charge": 0,
+                        "weight": 0,
+                        "icon": "icons/orcish_dagger.png",
+                        "lightradius": 0,
+                        "type": "weapon",
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "name": "Coninas offhand scissor dagger +1"
                     },
                     "conditional": {
-                        "dmg": 4,
-                        "weapon_type": "melee",
+                        "events": {
+                            "onstrike": ""
+                        },
+                        "dmg": 6,
+                        "save_against": "none",
                         "slot": "lefthand",
-                        "to_hit": 0,
-                        "range": "",
-                        "save_against": "none",
-                        "damage_type": "stab"
+                        "range": "short",
+                        "to_hit": 1,
+                        "damage_type": "stab",
+                        "weapon_type": "melee"
                     }
                 },
-                {
+                "neck": {},
+                "wrists": {},
+                "righthand": {
+                    "events": {
+                        "onfinish": "",
+                        "ondrop": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onround": "",
+                        "onunequip": "",
+                        "onuse": ""
+                    },
                     "core": {
-                        "icon": "icons/dagger.png",
-                        "description": "A small dagger balanced for use in the main hand.",
+                        "description": "",
+                        "price": {
+                            "silver": 0,
+                            "gold": 1500,
+                            "copper": 0
+                        },
                         "charges": 0,
-                        "in_use": false,
-                        "identified": true,
                         "size": "small",
+                        "in_use": false,
+                        "weight": 0,
+                        "icon": "icons/orcish_dagger.png",
+                        "lightradius": 0,
                         "type": "weapon",
+                        "identified": true,
                         "rounds_per_charge": 0,
-                        "name": "Mainhand Dagger",
                         "current_rounds_performed": 0,
-                        "price": {
-                            "gold": 2,
-                            "silver": "",
-                            "copper": ""
-                        },
-                        "weight": ""
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onround": ""
+                        "name": "Coninas mainhand scissor dagger +1"
                     },
                     "conditional": {
-                        "dmg": 4,
-                        "weapon_type": "melee",
-                        "slot": " righthand",
-                        "to_hit": 0,
-                        "range": "",
+                        "events": {
+                            "onstrike": ""
+                        },
+                        "to_hit": 1,
                         "save_against": "none",
-                        "damage_type": "stab"
+                        "dmg": 6,
+                        "range": "short",
+                        "slot": "righthand",
+                        "damage_type": "stab",
+                        "weapon_type": "melee"
                     }
                 },
-                {
-                    "core": {
-                        "icon": "icons/scrolloflove.png",
-                        "description": "Ressurrects a dead ally with 1 hitpoint. Takes ten rounds to read.",
-                        "charges": 1,
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "type": "other",
-                        "rounds_per_charge": 10,
-                        "lightradius": 0,
-                        "name": "Scroll of Resurrection",
-                        "current_rounds_performed": 0,
-                        "price": {
-                            "gold": 1000,
-                            "silver": 50,
-                            "copper": 25
-                        },
-                        "weight": 0
-                    },
-                    "events": {
-                        "onfinish": "campaign.error('%s has finished casting Scroll of Resurrection at %s'  % (player.displayname(), target.displayname()))\r\nhitpoints = target.get('/core/combat/hitpoints',1)\r\nif hitpoints > 0:\r\n   campaign.error('%s is not dead ! What a waste of a scroll !')\r\nelse:\r\n   campaign.error('%s resurrected with one hitpoint.')\r\n   target.put('/core/combat/hitpoints',1)",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "hitpoints = target.get('/core/combat/hitpoints',1)\r\nif hitpoints > 0:\r\n   campaign.error('%s is not dead ! What a waste of a scroll !')\r\ncampaign.error('%s is casting Scroll of Ressurection at %s' % (player.displayname(), target.displayname()))",
-                        "ondrop": "",
-                        "onunequip": "",
-                        "onround": "campaign.error('%s continues to cast Scroll of Ressurection at %s' % (player.displayname(), target.displayname()))"
-                    }
-                },
-                {
-                    "core": {
-                        "icon": "icons/leather_helm.png",
-                        "description": "",
-                        "charges": 0,
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "type": "armor",
-                        "rounds_per_charge": 0,
-                        "lightradius": 0,
-                        "name": "Leather Helm",
-                        "current_rounds_performed": 0,
-                        "price": {
-                            "gold": 1,
-                            "silver": 0,
-                            "copper": 0
-                        },
-                        "weight": 2
-                    },
+                "legs": {
                     "events": {
                         "onfinish": "",
+                        "onround": "",
                         "onequip": "",
                         "onpickup": "",
-                        "onuse": "",
                         "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
                         "onunequip": "",
-                        "onround": ""
+                        "onuse": ""
+                    },
+                    "core": {
+                        "description": "",
+                        "price": {
+                            "copper": 0,
+                            "gold": 1,
+                            "silver": 50
+                        },
+                        "charges": 0,
+                        "size": "large",
+                        "rounds_per_charge": 0,
+                        "weight": 2,
+                        "icon": "icons/tough_leather_boots.png",
+                        "lightradius": 0,
+                        "type": "armor",
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "name": "Leather Leggings"
                     },
                     "conditional": {
-                        "slot": "head",
+                        "ac": 0.8,
                         "material": "leather",
-                        "ac": 0.8
+                        "slot": "legs"
                     }
                 },
-                {
+                "hands": {
+                    "events": {
+                        "onuse": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onpickup": "",
+                        "onround": "",
+                        "onunequip": ""
+                    },
                     "core": {
-                        "icon": "icons/leather_gloves.png",
                         "description": "",
-                        "charges": 0,
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
+                        "price": {
+                            "copper": 0,
+                            "gold": 1,
+                            "silver": 0
+                        },
+                        "weight": 1,
                         "type": "armor",
                         "rounds_per_charge": 0,
-                        "name": "Leather Gloves",
-                        "current_rounds_performed": 0,
-                        "price": {
-                            "gold": 1,
-                            "silver": 0,
-                            "copper": 0
-                        },
-                        "weight": 1
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onround": ""
-                    },
-                    "conditional": {
-                        "slot": "hands",
-                        "material": "leather",
-                        "ac": 0.2
-                    }
-                },
-                {
-                    "core": {
-                        "icon": "icons/leather_armor.png",
-                        "description": "",
                         "charges": 0,
-                        "in_use": false,
+                        "icon": "icons/tough_leather_gloves.png",
+                        "lightradius": 0,
+                        "size": "small",
                         "identified": true,
-                        "size": "medium",
-                        "type": "armor",
-                        "rounds_per_charge": 0,
-                        "name": "Leather Chest",
+                        "in_use": false,
                         "current_rounds_performed": 0,
-                        "price": {
-                            "gold": 1,
-                            "silver": 50,
-                            "copper": 0
-                        },
-                        "weight": 8
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onround": ""
+                        "name": "Crocodile Leather Gloves"
                     },
                     "conditional": {
-                        "slot": "chest",
+                        "ac": 0.4,
                         "material": "leather",
-                        "ac": 1
-                    }
-                },
-                {
-                    "core": {
-                        "icon": "icons/leather_boots.png",
-                        "description": "",
-                        "charges": 0,
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "type": "armor",
-                        "rounds_per_charge": 0,
-                        "name": "Leather Boots",
-                        "current_rounds_performed": 0,
-                        "price": {
-                            "gold": 1,
-                            "silver": 0,
-                            "copper": 0
-                        },
-                        "weight": 1
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onround": ""
-                    },
-                    "conditional": {
-                        "slot": "feet",
-                        "material": "leather",
-                        "ac": 0.2
-                    }
-                },
-                {
-                    "core": {
-                        "icon": "icons/health_potion.png",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "charges": 1,
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "type": "other",
-                        "rounds_per_charge": 1,
-                        "name": "Health Potion",
-                        "current_rounds_performed": 0,
-                        "price": {
-                            "gold": 10,
-                            "silver": 0,
-                            "copper": 0
-                        },
-                        "weight": 0
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": ""
-                    }
-                },
-                {
-                    "core": {
-                        "icon": "icons/health_potion.png",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "charges": 1,
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "type": "other",
-                        "rounds_per_charge": 1,
-                        "name": "Health Potion",
-                        "current_rounds_performed": 0,
-                        "price": {
-                            "gold": 10,
-                            "silver": 0,
-                            "copper": 0
-                        },
-                        "weight": 0
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": ""
-                    }
-                },
-                {
-                    "core": {
-                        "icon": "icons/health_potion.png",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "charges": 1,
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "type": "other",
-                        "rounds_per_charge": 1,
-                        "name": "Health Potion",
-                        "current_rounds_performed": 0,
-                        "price": {
-                            "gold": 10,
-                            "silver": 0,
-                            "copper": 0
-                        },
-                        "weight": 0
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": ""
-                    }
-                },
-                {
-                    "core": {
-                        "icon": "icons/health_potion.png",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "charges": 1,
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "type": "other",
-                        "rounds_per_charge": 1,
-                        "name": "Health Potion",
-                        "current_rounds_performed": 0,
-                        "price": {
-                            "gold": 10,
-                            "silver": 0,
-                            "copper": 0
-                        },
-                        "weight": 0
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": ""
-                    }
-                },
-                {
-                    "core": {
-                        "icon": "icons/health_potion.png",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "charges": 1,
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "type": "other",
-                        "rounds_per_charge": 1,
-                        "name": "Health Potion",
-                        "current_rounds_performed": 0,
-                        "price": {
-                            "gold": 10,
-                            "silver": 0,
-                            "copper": 0
-                        },
-                        "weight": 0
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": ""
+                        "slot": "hands"
                     }
                 }
-            ]
-        }
+            }
+        },
+        "abilities": {
+            "int": 12,
+            "con": 8,
+            "str": 16,
+            "cha": 13,
+            "dex": 13,
+            "wis": 12
+        },
+        "icon": "avatars/sylvann.png",
+        "type": "player",
+        "combat": {
+            "level-hitdice": 2,
+            "hitpoints": 8,
+            "max_hp": 8
+        },
+        "location": {
+            "y": 11,
+            "x": 4,
+            "map": "road_to_darrowshire.json"
+        },
+        "personal": {
+            "xp": 1560,
+            "race": "gnome",
+            "sex": "female",
+            "backstory": "",
+            "name": {
+                "last": "Treesinger",
+                "first": "Sylvann"
+            },
+            "alignment": {
+                "law": "chaotic",
+                "social": "good"
+            }
+        },
+        "class": {
+            "parent": "rogue",
+            "class": "thief"
+        },
+        "lightradius": 0
     },
     "index": 14,
     "conditional": {
         "abilities": {
+            "pick pockets": 30,
+            "climb walls": 60,
+            "move silently": 25,
+            "detect noise": 30,
             "read languages": 0,
             "find-remove traps": 25,
             "hide in shadows": 25,
-            "pick pockets": 30,
-            "detect noise": 30,
-            "move silently": 25,
-            "open locks": 25,
-            "climb walls": 60
+            "open locks": 25
         },
-        "shields": false,
-        "armor_types": 3
+        "armor_types": 3,
+        "shields": false
     }
 }
