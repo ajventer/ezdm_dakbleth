@@ -1,0 +1,341 @@
+{
+    "core": {
+        "type": "npc",
+        "abilities": {
+            "int": 16,
+            "wis": 8,
+            "dex": 19,
+            "str": 10,
+            "cha": 9,
+            "con": 12
+        },
+        "class": {
+            "parent": "rogue",
+            "class": "thief"
+        },
+        "inventory": {
+            "money": {
+                "gold": 0,
+                "silver": 0,
+                "copper": 0
+            },
+            "pack": [],
+            "spells_memorized": [],
+            "spells": [],
+            "equiped": {
+                "rightfinger": {},
+                "legs": {
+                    "events": {
+                        "onfinish": "",
+                        "onunequip": "",
+                        "onround": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "",
+                        "onequip": "",
+                        "onpickup": ""
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 1,
+                            "silver": 50,
+                            "copper": 0
+                        },
+                        "charges": 0,
+                        "icon": "icons/tough_leather_boots.png",
+                        "lightradius": 0,
+                        "in_use": false,
+                        "name": "Leather Leggings",
+                        "description": "",
+                        "current_rounds_performed": 0,
+                        "identified": true,
+                        "type": "armor",
+                        "rounds_per_charge": 0,
+                        "weight": 2,
+                        "size": "large"
+                    },
+                    "conditional": {
+                        "ac": 0.8,
+                        "material": "leather",
+                        "slot": "legs"
+                    }
+                },
+                "feet": {
+                    "events": {
+                        "onfinish": "",
+                        "onequip": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "",
+                        "onround": "",
+                        "onpickup": ""
+                    },
+                    "core": {
+                        "description": "",
+                        "charges": 0,
+                        "icon": "icons/leather_boots.png",
+                        "type": "armor",
+                        "in_use": false,
+                        "name": "Leather Boots",
+                        "price": {
+                            "gold": 1,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "weight": 1,
+                        "size": "small"
+                    },
+                    "conditional": {
+                        "ac": 0.2,
+                        "material": "leather",
+                        "slot": "feet"
+                    }
+                },
+                "chest": {
+                    "events": {
+                        "onfinish": "",
+                        "onunequip": "",
+                        "onequip": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "",
+                        "onround": "",
+                        "onpickup": ""
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 1,
+                            "silver": 50,
+                            "copper": 0
+                        },
+                        "charges": 0,
+                        "icon": "icons/tough_leather_armor.png",
+                        "type": "armor",
+                        "in_use": false,
+                        "name": "Crocodile Leather Chest",
+                        "description": "",
+                        "current_rounds_performed": 0,
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "weight": 8,
+                        "lightradius": 0,
+                        "size": "medium"
+                    },
+                    "conditional": {
+                        "ac": 2,
+                        "material": "leather",
+                        "slot": "chest"
+                    }
+                },
+                "head": {
+                    "events": {
+                        "onfinish": "",
+                        "onunequip": "",
+                        "onround": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "",
+                        "onequip": "",
+                        "onpickup": ""
+                    },
+                    "core": {
+                        "description": "",
+                        "charges": 0,
+                        "icon": "icons/tough_leather_helm.png",
+                        "type": "armor",
+                        "in_use": false,
+                        "name": "Crocodile Leather Helm",
+                        "price": {
+                            "gold": 1,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "weight": 2,
+                        "size": "small",
+                        "lightradius": 0
+                    },
+                    "conditional": {
+                        "ac": 1.6,
+                        "material": "leather",
+                        "slot": "head"
+                    }
+                },
+                "gloves": {},
+                "hands": {
+                    "core": {
+                        "description": "",
+                        "type": "armor",
+                        "icon": "icons/tough_leather_gloves.png",
+                        "lightradius": 0,
+                        "in_use": false,
+                        "name": "Crocodile Leather Gloves",
+                        "price": {
+                            "gold": 1,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "charges": 0,
+                        "current_rounds_performed": 0,
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "weight": 1,
+                        "size": "small"
+                    },
+                    "events": {
+                        "onfinish": "",
+                        "onunequip": "",
+                        "onequip": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "",
+                        "onround": "",
+                        "onpickup": ""
+                    },
+                    "conditional": {
+                        "ac": 0.4,
+                        "material": "leather",
+                        "slot": "hands"
+                    }
+                },
+                "neck": {},
+                "wrists": {},
+                "righthand": {
+                    "core": {
+                        "price": {
+                            "gold": 0,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "charges": 0,
+                        "icon": "icons/silver.png",
+                        "type": "weapon",
+                        "in_use": false,
+                        "name": "Broken Bottle",
+                        "description": "",
+                        "current_rounds_performed": 0,
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "weight": 0,
+                        "size": "small",
+                        "lightradius": 0
+                    },
+                    "events": {
+                        "onfinish": "",
+                        "onunequip": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onuse": "",
+                        "onequip": "",
+                        "onpickup": ""
+                    },
+                    "conditional": {
+                        "damage_type": "slice",
+                        "weapon_type": "melee",
+                        "range": "short",
+                        "save_against": "none",
+                        "to_hit": 0,
+                        "slot": "righthand",
+                        "dmg": "1d4"
+                    }
+                },
+                "lefthand": {
+                    "core": {
+                        "description": "",
+                        "lightradius": 0,
+                        "icon": "",
+                        "type": "weapon",
+                        "in_use": false,
+                        "name": "Bear Bite",
+                        "price": {
+                            "gold": 0,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "charges": 0,
+                        "current_rounds_performed": 0,
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "weight": 0,
+                        "size": "medium"
+                    },
+                    "events": {
+                        "onfinish": "",
+                        "onunequip": "",
+                        "onequip": "",
+                        "ondrop": "",
+                        "onuse": "",
+                        "onround": "",
+                        "onpickup": ""
+                    },
+                    "conditional": {
+                        "to_hit": "+1",
+                        "damage_type": "stab",
+                        "events": {
+                            "onstrike": ""
+                        },
+                        "weapon_type": "melee",
+                        "range": "short",
+                        "dmg": 8,
+                        "slot": "lefthand",
+                        "save_against": "none"
+                    }
+                },
+                "leftfinger": {}
+            }
+        },
+        "personal": {
+            "name": {
+                "last": "Floop",
+                "first": "Floop"
+            },
+            "alignment": {
+                "social": "evil",
+                "law": "chaotic"
+            },
+            "sex": "female",
+            "xp": 0,
+            "backstory": "Evil  vampire-bat",
+            "race": "creature"
+        },
+        "combat": {
+            "level-hitdice": 4,
+            "max_hp": 0,
+            "hitpoints": 0
+        },
+        "icon": "avatars/floop.png",
+        "lightradius": 0,
+        "location": {
+            "x": "",
+            "y": "",
+            "map": ""
+        }
+    },
+    "conditional": {
+        "shields": false,
+        "abilities": {
+            "move silently": 60,
+            "hide in shadows": 45,
+            "open locks": 10,
+            "pick pockets": 15,
+            "find-remove traps": 5,
+            "read languages": 0,
+            "detect noise": 15,
+            "climb walls": 60
+        },
+        "events": {
+            "oninspect": "",
+            "oninteract": ""
+        },
+        "armor_types": 3,
+        "loot": {
+            "copper": 99,
+            "max_items": 1,
+            "gold": 10,
+            "silver": 99,
+            "always_drops": [],
+            "items_possible": ["health_potion.json", "scroll_of_resurrection.json","scroll_of_identify.json"]
+        },
+        "orientation": " aggressive"
+    }
+}

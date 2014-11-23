@@ -1,0 +1,42 @@
+{
+    "core": {
+        "lightradius": 0,
+        "price": {
+            "copper": 0,
+            "silver": 0,
+            "gold": 0
+        },
+        "identified": true,
+        "rounds_per_charge": 0,
+        "type": "weapon",
+        "description": "This is the great sword with which the legendary hero hercules completed his 12 tasks. It is also a Paladin artifact sword.",
+        "icon": "icons/urand_plutonium.png",
+        "weight": 0,
+        "size": "large",
+        "in_use": false,
+        "name": "Sword of Hercules",
+        "current_rounds_performed": 0,
+        "charges": 0
+    },
+    "events": {
+        "ondrop": "",
+        "onfinish": "",
+        "onequip": "",
+        "onround": "",
+        "onuse": "",
+        "onpickup": "",
+        "onunequip": ""
+    },
+    "conditional": {
+        "dmg": 10,
+        "damage_type": "slice",
+        "slot": "twohand",
+        "weapon_type": "melee",
+        "range": "medium",
+        "save_against": "none",
+        "events": {
+            "onstrike": ""
+        },
+        "to_hit": 2
+    }
+}
