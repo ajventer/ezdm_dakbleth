@@ -1,275 +1,245 @@
 {
-    "conditional": {
-        "shields": true,
-        "armor_types": 4
-    },
     "index": 1,
     "core": {
-        "class": {
-            "class": "fighter",
-            "parent": "warrior"
-        },
-        "icon": "avatars/dwarf.png",
-        "combat": {
-            "hitpoints": 29,
-            "level-hitdice": 5,
-            "max_hp": 38
-        },
-        "abilities": {
-            "wis": 12,
-            "dex": 13,
-            "cha": 10,
-            "int": 11,
-            "con": 14,
-            "str": 17
-        },
         "personal": {
-            "sex": "male",
             "backstory": "",
+            "race": "dwarf",
+            "sex": "male",
             "alignment": {
                 "social": "good",
                 "law": "neutral"
             },
-            "xp": 25705,
             "name": {
                 "first": "TINY",
                 "last": "TIM"
             },
-            "race": "dwarf"
+            "xp": 25705
+        },
+        "icon": "avatars/dwarf.png",
+        "abilities": {
+            "dex": 13,
+            "int": 11,
+            "con": 14,
+            "wis": 12,
+            "cha": 10,
+            "str": 17
+        },
+        "class": {
+            "parent": "warrior",
+            "class": "fighter"
+        },
+        "location": {
+            "y": 8,
+            "x": 8,
+            "map": "simple_room.json"
+        },
+        "type": "player",
+        "combat": {
+            "max_hp": 38,
+            "level-hitdice": 5,
+            "hitpoints": 29
         },
         "inventory": {
+            "money": {
+                "copper": 7,
+                "gold": 133,
+                "silver": 1
+            },
+            "%s": [],
             "equiped_by_type": {
-                "chest": "",
-                "legs": "",
                 "gloves": {},
-                "feet": "",
-                "neck": "",
                 "wrists": {
+                    "core": {
+                        "in_use": false
+                    }
+                },
+                "neck": "",
+                "righthand": {
                     "conditional": {
-                        "slot": "wrists",
-                        "ac": 0.5,
-                        "material": "plate"
-                    },
-                    "events": {
-                        "onround": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "onunequip": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "ondrop": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "onequip": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "onfinish": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "onpickup": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "onuse": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()"
+                        "range": "short",
+                        "to_hit": 1,
+                        "slot": "righthand",
+                        "dmg": 4,
+                        "weapon_type": "melee",
+                        "damage_type": "slice",
+                        "save_against": "none",
+                        "events": {
+                            "onstrike": ""
+                        }
                     },
                     "core": {
                         "size": "small",
-                        "current_rounds_performed": 0,
-                        "rounds_per_charge": 0,
-                        "price": {
-                            "silver": 0,
-                            "copper": 0,
-                            "gold": 0
-                        },
+                        "icon": "icons/silver.png",
+                        "charges": 0,
                         "weight": 0,
-                        "type": "armor",
-                        "icon": "icons/leather_gloves.png",
-                        "description": "These bracers add a small amount of extra armor but shine with shimmer that lets you see further.",
-                        "charges": -1,
-                        "lightradius": 1,
-                        "name": "Bronze Plate Bracers of illumination",
-                        "in_use": false,
-                        "identified": true
-                    }
-                },
-                "righthand": {
-                    "conditional": {
-                        "save_against": "none",
-                        "to_hit": 1,
-                        "range": "short",
-                        "damage_type": "slice",
-                        "slot": "righthand",
-                        "dmg": 4,
-                        "events": {
-                            "onstrike": ""
+                        "rounds_per_charge": 0,
+                        "description": "",
+                        "price": {
+                            "copper": 0,
+                            "gold": 0,
+                            "silver": 0
                         },
-                        "weapon_type": "melee"
+                        "current_rounds_performed": 0,
+                        "in_use": false,
+                        "type": "weapon",
+                        "lightradius": 0,
+                        "name": "Broken Bottle",
+                        "identified": true
                     },
                     "events": {
-                        "onround": "",
+                        "onfinish": "",
                         "onunequip": "",
                         "ondrop": "",
                         "onequip": "",
-                        "onfinish": "",
-                        "onpickup": "",
-                        "onuse": ""
-                    },
-                    "core": {
-                        "size": "small",
-                        "current_rounds_performed": 0,
-                        "rounds_per_charge": 0,
-                        "price": {
-                            "silver": 0,
-                            "copper": 0,
-                            "gold": 0
-                        },
-                        "weight": 0,
-                        "type": "weapon",
-                        "icon": "icons/silver.png",
-                        "description": "",
-                        "name": "Broken Bottle",
-                        "lightradius": 0,
-                        "charges": 0,
-                        "in_use": false,
-                        "identified": true
+                        "onround": "",
+                        "onuse": "",
+                        "onpickup": ""
                     }
                 },
-                "head": "",
-                "leftfinger": "",
                 "lefthand": {},
-                "rightfinger": ""
-            },
-            "money": {
-                "silver": 1,
-                "copper": 7,
-                "gold": 133
+                "legs": "",
+                "head": "",
+                "rightfinger": {},
+                "leftfinger": "",
+                "feet": "",
+                "chest": ""
             },
             "equiped": {
-                "head": "",
-                "legs": "",
                 "gloves": {},
-                "leftfinger": "",
-                "neck": "",
                 "wrists": {
                     "core": {
-                        "in_use": true
+                        "in_use": false
                     }
                 },
+                "neck": "",
+                "head": "",
+                "chest": "",
+                "legs": "",
                 "righthand": {
-                    "conditional": {
-                        "save_against": "none",
-                        "to_hit": 1,
-                        "slot": "righthand",
-                        "damage_type": "slice",
-                        "range": "short",
-                        "dmg": 4,
-                        "events": {
-                            "onstrike": ""
+                    "core": {
+                        "size": "small",
+                        "icon": "icons/silver.png",
+                        "charges": 0,
+                        "weight": 0,
+                        "rounds_per_charge": 0,
+                        "description": "",
+                        "price": {
+                            "copper": 0,
+                            "gold": 0,
+                            "silver": 0
                         },
-                        "weapon_type": "melee"
+                        "current_rounds_performed": 0,
+                        "in_use": false,
+                        "type": "weapon",
+                        "lightradius": 0,
+                        "name": "Broken Bottle",
+                        "identified": true
                     },
                     "events": {
-                        "onround": "",
+                        "onfinish": "",
                         "onunequip": "",
                         "ondrop": "",
                         "onequip": "",
-                        "onfinish": "",
                         "onpickup": "",
+                        "onround": "",
                         "onuse": ""
                     },
-                    "core": {
-                        "size": "small",
-                        "current_rounds_performed": 0,
-                        "rounds_per_charge": 0,
-                        "price": {
-                            "silver": 0,
-                            "copper": 0,
-                            "gold": 0
-                        },
-                        "weight": 0,
-                        "type": "weapon",
-                        "icon": "icons/silver.png",
-                        "description": "",
-                        "name": "Broken Bottle",
-                        "lightradius": 0,
-                        "charges": 0,
-                        "in_use": false,
-                        "identified": true
+                    "conditional": {
+                        "to_hit": 1,
+                        "slot": "righthand",
+                        "dmg": 4,
+                        "weapon_type": "melee",
+                        "damage_type": "slice",
+                        "range": "short",
+                        "save_against": "none",
+                        "events": {
+                            "onstrike": ""
+                        }
                     }
                 },
+                "rightfinger": {},
+                "leftfinger": "",
                 "feet": "",
-                "chest": "",
-                "lefthand": {},
-                "rightfinger": {}
+                "lefthand": {}
             },
             "spells": "",
-            "%s": [],
             "pack": [
                 {
-                    "conditional": {
-                        "slot": "wrists",
-                        "ac": 0.5,
-                        "material": "plate"
-                    },
                     "events": {
-                        "onround": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "onfinish": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
                         "onunequip": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
                         "ondrop": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
                         "onequip": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "onfinish": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "onround": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
                         "onpickup": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
                         "onuse": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()"
                     },
                     "core": {
                         "size": "small",
-                        "current_rounds_performed": 0,
-                        "rounds_per_charge": 0,
-                        "price": {
-                            "silver": 0,
-                            "copper": 0,
-                            "gold": 0
-                        },
-                        "weight": 0,
-                        "type": "armor",
                         "icon": "icons/leather_gloves.png",
-                        "description": "These bracers add a small amount of extra armor but shine with shimmer that lets you see further.",
-                        "name": "Bronze Plate Bracers of illumination",
-                        "lightradius": 1,
                         "charges": -1,
-                        "in_use": true,
+                        "weight": 0,
+                        "rounds_per_charge": 0,
+                        "description": "These bracers add a small amount of extra armor but shine with shimmer that lets you see further.",
+                        "price": {
+                            "copper": 0,
+                            "gold": 0,
+                            "silver": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "in_use": false,
+                        "type": "armor",
+                        "lightradius": 1,
+                        "name": "Bronze Plate Bracers of illumination",
                         "identified": true
+                    },
+                    "conditional": {
+                        "ac": 0.5,
+                        "slot": "wrists",
+                        "material": "plate"
                     }
                 },
                 {
-                    "conditional": {
-                        "slot": "finger",
-                        "ac": 0,
-                        "material": "cloth"
-                    },
                     "events": {
-                        "onround": "",
+                        "onfinish": "",
                         "onunequip": "d = int(player.get('/core/abilities/dex', 0))\r\nd -= 1\r\nplayer.put('/core/abilities/dex', d)\r\nplayer.autosave()",
                         "ondrop": "",
                         "onequip": "d = int(player.get('/core/abilities/dex', 0))\r\nd += 1\r\nplayer.put('/core/abilities/dex', d)\r\nplayer.autosave()\r\n\r\n",
-                        "onfinish": "",
+                        "onround": "",
                         "onpickup": "",
                         "onuse": ""
                     },
                     "core": {
                         "size": "small",
-                        "current_rounds_performed": 0,
-                        "rounds_per_charge": 0,
-                        "price": {
-                            "silver": 0,
-                            "copper": 0,
-                            "gold": 0
-                        },
-                        "weight": 0,
-                        "type": "armor",
                         "icon": "icons/silver_ring.png",
-                        "description": "This magical ring increases the wearers dexterity rating by one.",
-                        "name": "Silver ring of dexterity",
-                        "lightradius": 0,
                         "charges": 0,
+                        "weight": 0,
+                        "rounds_per_charge": 0,
+                        "description": "This magical ring increases the wearers dexterity rating by one.",
+                        "price": {
+                            "copper": 0,
+                            "gold": 0,
+                            "silver": 0
+                        },
+                        "current_rounds_performed": 0,
                         "in_use": false,
+                        "type": "armor",
+                        "lightradius": 0,
+                        "name": "Silver ring of dexterity",
                         "identified": true
+                    },
+                    "conditional": {
+                        "ac": 0,
+                        "slot": "finger",
+                        "material": "cloth"
                     }
                 }
             ]
         },
-        "lightradius": 0,
-        "location": {
-            "y": 8,
-            "map": "simple_room.json",
-            "x": 8
-        },
-        "type": "player"
+        "lightradius": 0
+    },
+    "conditional": {
+        "shields": true,
+        "armor_types": 4
     }
 }

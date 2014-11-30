@@ -1,120 +1,91 @@
 {
     "conditional": {
-        "loot": {
-            "items_possible": ["morning_star_+1.json","simple_wooden_staff.json","halberd.json","candle.json","iron_plate_helm.json","thieves_tools.json","health_potion.json","scroll_of_identify.json"],
-            "silver": 99,
-            "copper": 99,
-            "max_items": 1,
-            "gold": 30,
-            "always_drops": []
-        },
+        "armor_types": 4,
         "orientation": " aggressive",
-        "events": {
-            "oninteract": "",
-            "oninspect": ""
-        },
         "shields": true,
-        "armor_types": 4
+        "loot": {
+            "max_items": 1,
+            "silver": 99,
+            "items_possible": [
+                "morning_star_+1.json",
+                "simple_wooden_staff.json",
+                "halberd.json",
+                "candle.json",
+                "iron_plate_helm.json",
+                "thieves_tools.json",
+                "health_potion.json",
+                "scroll_of_identify.json"
+            ],
+            "always_drops": [],
+            "copper": 99,
+            "gold": 30
+        },
+        "events": {
+            "oninspect": "",
+            "oninteract": ""
+        }
     },
     "core": {
-        "icon": "avatars/ghoul.png",
-        "class": {
-            "parent": "warrior",
-            "class": "ranger"
-        },
-        "location": {
-            "y": "",
-            "x": "",
-            "map": ""
-        },
         "combat": {
             "hitpoints": 0,
-            "level-hitdice": 3,
-            "max_hp": 0
+            "max_hp": 0,
+            "level-hitdice": 3
         },
+        "icon": "avatars/ghoul.png",
+        "location": {
+            "map": "darrowshire.json",
+            "x": 3,
+            "y": 3
+        },
+        "lightradius": 0,
+        "type": "npc",
         "personal": {
-            "sex": "male",
-            "race": "human",
-            "alignment": {
-                "law": "chaotic",
-                "social": "evil"
-            },
             "backstory": "Risen from the dead by a terrible curse, this dreadful monster was once a human being.",
+            "alignment": {
+                "social": "evil",
+                "law": "chaotic"
+            },
+            "race": "human",
+            "sex": "male",
             "name": {
                 "first": "Dreaded",
                 "last": "Ghoul"
             },
             "xp": 0
         },
-        "type": "npc",
         "inventory": {
-            "spells": [],
             "equiped": {
-                "neck": {},
-                "hands": {
+                "head": {
                     "conditional": {
-                        "ac": 0.6,
+                        "ac": 1,
                         "material": "plate",
-                        "slot": "hands"
+                        "slot": "head"
                     },
                     "events": {
-                        "onround": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onequip": "",
-                        "onpickup": "",
                         "onfinish": "",
-                        "onuse": ""
-                    },
-                    "core": {
-                        "in_use": false,
-                        "name": "Bronze Plate Gloves",
-                        "rounds_per_charge": 0,
-                        "type": "armor",
-                        "price": {
-                            "gold": 50,
-                            "silver": 0,
-                            "copper": 0
-                        },
-                        "description": "Cheap plate gloves made from bronze.",
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "charges": 0,
-                        "weight": 4,
-                        "size": "small",
-                        "icon": "icons/plate_gloves.png"
-                    }
-                },
-                "legs": {
-                    "conditional": {
-                        "ac": 0.9,
-                        "material": "plate",
-                        "slot": "legs"
-                    },
-                    "events": {
-                        "onround": "",
                         "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "",
                         "onequip": "",
                         "onpickup": "",
-                        "onuse": "",
-                        "onfinish": ""
+                        "onround": ""
                     },
                     "core": {
-                        "in_use": false,
-                        "price": {
-                            "gold": 170,
-                            "silver": 0,
-                            "copper": 0
-                        },
-                        "identified": true,
-                        "type": "armor",
-                        "name": "Bronze Plate Legs",
-                        "description": "",
                         "current_rounds_performed": 0,
+                        "in_use": false,
+                        "icon": "icons/plate_helm.png",
+                        "weight": 10,
+                        "size": "small",
+                        "name": "Bronze Plate Helm",
                         "rounds_per_charge": 0,
+                        "description": "",
                         "charges": 0,
-                        "weight": 7,
-                        "size": "large",
-                        "icon": "icons/plate_legs.png"
+                        "type": "armor",
+                        "identified": true,
+                        "price": {
+                            "silver": 0,
+                            "gold": 30,
+                            "copper": 0
+                        }
                     }
                 },
                 "chest": {
@@ -124,120 +95,65 @@
                         "slot": "chest"
                     },
                     "events": {
-                        "onround": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onuse": "",
-                        "onfinish": ""
-                    },
-                    "core": {
-                        "in_use": false,
-                        "price": {
-                            "gold": 130,
-                            "silver": 0,
-                            "copper": 0
-                        },
-                        "rounds_per_charge": 0,
-                        "type": "armor",
-                        "name": "Bronze Plate Chest",
-                        "description": "",
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "charges": 0,
-                        "weight": 23,
-                        "size": "medium",
-                        "icon": "icons/plate_armor.png"
-                    }
-                },
-                "gloves": {},
-                "leftfinger": {},
-                "rightfinger": {},
-                "lefthand": {
-                    "conditional": {
-                        "weapon_type": "melee",
-                        "damage_type": "hack",
-                        "events": {
-                            "onstrike": ""
-                        },
-                        "dmg": 8,
-                        "range": "medium",
-                        "to_hit": 1,
-                        "slot": "twohand",
-                        "save_against": "none"
-                    },
-                    "events": {
-                        "onunequip": "",
-                        "onround": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onequip": "",
-                        "onpickup": "",
                         "onfinish": "",
-                        "onuse": ""
+                        "onround": "",
+                        "onequip": "",
+                        "onuse": "",
+                        "onpickup": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))"
                     },
                     "core": {
-                        "in_use": false,
-                        "name": "Halberd +1",
-                        "lightradius": 0,
-                        "identified": true,
-                        "type": "weapon",
-                        "price": {
-                            "gold": 25,
-                            "silver": "",
-                            "copper": ""
-                        },
-                        "current_rounds_performed": 0,
                         "rounds_per_charge": 0,
-                        "weight": "",
+                        "current_rounds_performed": 0,
+                        "in_use": false,
+                        "icon": "icons/plate_armor.png",
+                        "size": "medium",
+                        "name": "Bronze Plate Chest",
+                        "weight": 23,
+                        "description": "",
                         "charges": 0,
-                        "description": "A powerful halberd",
-                        "size": "large",
-                        "icon": "icons/w_axe_war_0.png"
+                        "type": "armor",
+                        "identified": true,
+                        "price": {
+                            "silver": 0,
+                            "gold": 130,
+                            "copper": 0
+                        }
                     }
                 },
-                "righthand": {
+                "legs": {
                     "conditional": {
-                        "weapon_type": "melee",
-                        "damage_type": "hack",
-                        "events": {
-                            "onstrike": ""
-                        },
-                        "dmg": 8,
-                        "range": "medium",
-                        "to_hit": 1,
-                        "slot": "twohand",
-                        "save_against": "none"
+                        "ac": 0.9,
+                        "material": "plate",
+                        "slot": "legs"
                     },
                     "events": {
-                        "onunequip": "",
-                        "onround": "",
+                        "onfinish": "",
                         "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
                         "onequip": "",
-                        "onpickup": "",
                         "onuse": "",
-                        "onfinish": ""
+                        "onpickup": "",
+                        "onround": ""
                     },
                     "core": {
-                        "in_use": false,
-                        "price": {
-                            "gold": 25,
-                            "silver": "",
-                            "copper": ""
-                        },
-                        "lightradius": 0,
-                        "identified": true,
-                        "type": "weapon",
-                        "name": "Halberd +1",
-                        "description": "A powerful halberd",
                         "current_rounds_performed": 0,
-                        "rounds_per_charge": 0,
-                        "charges": 0,
-                        "weight": "",
+                        "in_use": false,
+                        "icon": "icons/plate_legs.png",
+                        "weight": 7,
                         "size": "large",
-                        "icon": "icons/w_axe_war_0.png"
+                        "name": "Bronze Plate Legs",
+                        "rounds_per_charge": 0,
+                        "description": "",
+                        "charges": 0,
+                        "type": "armor",
+                        "identified": true,
+                        "price": {
+                            "silver": 0,
+                            "gold": 170,
+                            "copper": 0
+                        }
                     }
                 },
-                "wrists": {},
                 "feet": {
                     "conditional": {
                         "ac": 0.2,
@@ -245,82 +161,175 @@
                         "slot": "feet"
                     },
                     "events": {
+                        "onfinish": "",
                         "onround": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "",
                         "onequip": "",
                         "onpickup": "",
-                        "onuse": "",
-                        "onfinish": ""
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))"
                     },
                     "core": {
-                        "in_use": false,
-                        "name": "Bronze Plate Boots",
-                        "identified": true,
-                        "type": "armor",
-                        "price": {
-                            "gold": 20,
-                            "silver": 0,
-                            "copper": 0
-                        },
-                        "description": "",
                         "current_rounds_performed": 0,
-                        "rounds_per_charge": 0,
-                        "charges": 0,
+                        "in_use": false,
+                        "icon": "icons/plate_boots.png",
                         "weight": 2,
                         "size": "small",
-                        "icon": "icons/plate_boots.png"
-                    }
-                },
-                "head": {
-                    "conditional": {
-                        "ac": 1,
-                        "material": "plate",
-                        "slot": "head"
-                    },
-                    "events": {
-                        "onround": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onequip": "",
-                        "onpickup": "",
-                        "onfinish": "",
-                        "onuse": ""
-                    },
-                    "core": {
-                        "in_use": false,
-                        "name": "Bronze Plate Helm",
+                        "name": "Bronze Plate Boots",
                         "rounds_per_charge": 0,
+                        "description": "",
+                        "charges": 0,
                         "type": "armor",
                         "price": {
-                            "gold": 30,
                             "silver": 0,
+                            "gold": 20,
                             "copper": 0
                         },
-                        "description": "",
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "charges": 0,
-                        "weight": 10,
-                        "size": "small",
-                        "icon": "icons/plate_helm.png"
+                        "identified": true
                     }
-                }
+                },
+                "leftfinger": {},
+                "neck": {},
+                "lefthand": {
+                    "conditional": {
+                        "dmg": 8,
+                        "to_hit": 1,
+                        "slot": "twohand",
+                        "weapon_type": "melee",
+                        "damage_type": "hack",
+                        "save_against": "none",
+                        "events": {
+                            "onstrike": ""
+                        },
+                        "range": "medium"
+                    },
+                    "events": {
+                        "onfinish": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onround": "",
+                        "onunequip": ""
+                    },
+                    "core": {
+                        "current_rounds_performed": 0,
+                        "in_use": false,
+                        "lightradius": 0,
+                        "icon": "icons/w_axe_war_0.png",
+                        "weight": "",
+                        "size": "large",
+                        "name": "Halberd +1",
+                        "rounds_per_charge": 0,
+                        "description": "A powerful halberd",
+                        "charges": 0,
+                        "type": "weapon",
+                        "price": {
+                            "silver": "",
+                            "gold": 25,
+                            "copper": ""
+                        },
+                        "identified": true
+                    }
+                },
+                "gloves": {},
+                "wrists": {},
+                "hands": {
+                    "conditional": {
+                        "ac": 0.6,
+                        "material": "plate",
+                        "slot": "hands"
+                    },
+                    "events": {
+                        "onfinish": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onround": ""
+                    },
+                    "core": {
+                        "current_rounds_performed": 0,
+                        "type": "armor",
+                        "icon": "icons/plate_gloves.png",
+                        "weight": 4,
+                        "size": "small",
+                        "name": "Bronze Plate Gloves",
+                        "rounds_per_charge": 0,
+                        "description": "Cheap plate gloves made from bronze.",
+                        "in_use": false,
+                        "charges": 0,
+                        "identified": true,
+                        "price": {
+                            "silver": 0,
+                            "gold": 50,
+                            "copper": 0
+                        }
+                    }
+                },
+                "righthand": {
+                    "conditional": {
+                        "dmg": 8,
+                        "to_hit": 1,
+                        "slot": "twohand",
+                        "weapon_type": "melee",
+                        "damage_type": "hack",
+                        "save_against": "none",
+                        "events": {
+                            "onstrike": ""
+                        },
+                        "range": "medium"
+                    },
+                    "events": {
+                        "onfinish": "",
+                        "onunequip": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onequip": "",
+                        "onuse": "",
+                        "onpickup": "",
+                        "onround": ""
+                    },
+                    "core": {
+                        "rounds_per_charge": 0,
+                        "current_rounds_performed": 0,
+                        "type": "weapon",
+                        "lightradius": 0,
+                        "icon": "icons/w_axe_war_0.png",
+                        "weight": "",
+                        "size": "large",
+                        "name": "Halberd +1",
+                        "in_use": false,
+                        "description": "A powerful halberd",
+                        "charges": 0,
+                        "identified": true,
+                        "price": {
+                            "silver": "",
+                            "gold": 25,
+                            "copper": ""
+                        }
+                    }
+                },
+                "rightfinger": {}
+            },
+            "spells": [],
+            "money": {
+                "silver": 0,
+                "gold": 0,
+                "copper": 0
             },
             "spells_memorized": [],
-            "pack": [],
-            "money": {
-                "gold": 0,
-                "silver": 0,
-                "copper": 0
-            }
+            "pack": []
         },
         "abilities": {
-            "cha": 4,
-            "wis": 4,
-            "con": 16,
+            "str": 16,
             "int": 4,
+            "con": 16,
+            "wis": 4,
             "dex": 4,
-            "str": 16
+            "cha": 4
         },
-        "lightradius": 0
+        "class": {
+            "parent": "warrior",
+            "class": "ranger"
+        }
     }
 }

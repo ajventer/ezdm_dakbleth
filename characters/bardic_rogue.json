@@ -1,443 +1,306 @@
 {
-    "conditional": {
-        "abilities": {
-            "find-remove traps": 5,
-            "move silently": 10,
-            "open locks": 10,
-            "detect noise": 20,
-            "read languages": 5,
-            "pick pockets": 10,
-            "climb walls": 50
-        },
-        "armor_types": 3
-    },
     "index": 0,
     "core": {
-        "class": {
-            "class": "bard",
-            "parent": "rogue"
-        },
-        "icon": "avatars/48x48_Faces_4th_Sheet_Update_CharlesGabriel_OGA_0-1-3.png",
-        "location": {
-            "y": 8,
-            "map": "simple_room.json",
-            "x": 8
-        },
         "personal": {
+            "xp": 5460,
+            "race": "half-elf",
             "sex": "female",
             "backstory": "",
-            "alignment": {
-                "social": "good",
-                "law": "neutral"
-            },
-            "xp": 5460,
             "name": {
                 "first": "BARDIC",
                 "last": "ROGUE"
             },
-            "race": "half-elf"
+            "alignment": {
+                "social": "good",
+                "law": "neutral"
+            }
+        },
+        "icon": "avatars/48x48_Faces_4th_Sheet_Update_CharlesGabriel_OGA_0-1-3.png",
+        "abilities": {
+            "dex": 12,
+            "int": 14,
+            "con": 11,
+            "wis": 8,
+            "cha": 17,
+            "str": 9
+        },
+        "class": {
+            "parent": "rogue",
+            "class": "bard"
+        },
+        "location": {
+            "y": 8,
+            "x": 8,
+            "map": "simple_room.json"
+        },
+        "type": "player",
+        "combat": {
+            "max_hp": 16,
+            "level-hitdice": 4,
+            "thac0": 18,
+            "hitpoints": 16,
+            "saving_throws": {
+                "spell": 15,
+                "pp": 12,
+                "rod": 14,
+                "ppd": 13,
+                "breath": 16
+            }
         },
         "inventory": {
-            "equiped_by_type": {
-                "chest": {},
-                "legs": {},
+            "money": {
+                "copper": 4,
+                "gold": 649,
+                "silver": 2
+            },
+            "pack": [
+                {
+                    "events": {
+                        "onfinish": "",
+                        "ondrop": "",
+                        "onequip": "",
+                        "onround": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
+                        "onpickup": ""
+                    },
+                    "core": {
+                        "size": "small",
+                        "icon": "icons/health_potion.png",
+                        "charges": 0,
+                        "weight": 0,
+                        "rounds_per_charge": 1,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "price": {
+                            "copper": 0,
+                            "gold": 10,
+                            "silver": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "in_use": false,
+                        "type": "other",
+                        "name": "Health Potion",
+                        "identified": true,
+                        "target": null
+                    }
+                }
+            ],
+            "equiped": {
                 "gloves": {},
-                "leftfinger": {},
-                "neck": {},
                 "wrists": {},
+                "neck": {},
                 "righthand": {
+                    "events": {
+                        "onfinish": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onequip": "",
+                        "onpickup": "",
+                        "onround": "",
+                        "onuse": ""
+                    },
+                    "core": {
+                        "size": "small",
+                        "icon": "icons/dagger.png",
+                        "charges": 0,
+                        "weight": "",
+                        "rounds_per_charge": 0,
+                        "description": "A small dagger balanced for use in the main hand.",
+                        "price": {
+                            "copper": "",
+                            "gold": 25,
+                            "silver": ""
+                        },
+                        "current_rounds_performed": 0,
+                        "in_use": false,
+                        "type": "weapon",
+                        "name": "Mainhand Dagger",
+                        "identified": true
+                    },
                     "conditional": {
-                        "save_against": "none",
+                        "range": "",
                         "to_hit": 0,
                         "slot": " righthand",
-                        "damage_type": "stab",
                         "dmg": 4,
-                        "range": "",
-                        "weapon_type": "melee"
-                    },
-                    "events": {
-                        "onround": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onequip": "",
-                        "onfinish": "",
-                        "onpickup": "",
-                        "onuse": ""
-                    },
-                    "core": {
-                        "size": "small",
-                        "current_rounds_performed": 0,
-                        "rounds_per_charge": 0,
-                        "price": {
-                            "silver": "",
-                            "copper": "",
-                            "gold": 25
-                        },
-                        "weight": "",
-                        "type": "weapon",
-                        "icon": "icons/dagger.png",
-                        "description": "A small dagger balanced for use in the main hand.",
-                        "name": "Mainhand Dagger",
-                        "charges": 0,
-                        "in_use": false,
-                        "identified": true
+                        "weapon_type": "melee",
+                        "damage_type": "stab",
+                        "save_against": "none"
                     }
                 },
-                "feet": {},
                 "lefthand": {
-                    "conditional": {
-                        "save_against": "none",
-                        "to_hit": 0,
-                        "slot": "lefthand",
-                        "damage_type": "stab",
-                        "dmg": 4,
-                        "range": "",
-                        "weapon_type": "melee"
-                    },
                     "events": {
-                        "onround": "",
+                        "onfinish": "",
                         "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
                         "onequip": "",
-                        "onfinish": "",
                         "onpickup": "",
+                        "onround": "",
                         "onuse": ""
                     },
                     "core": {
                         "size": "small",
-                        "current_rounds_performed": 0,
-                        "rounds_per_charge": 0,
-                        "price": {
-                            "silver": "",
-                            "copper": "",
-                            "gold": 2
-                        },
-                        "weight": "",
-                        "type": "weapon",
                         "icon": "icons/dagger.png",
-                        "description": "A small dagger balanced for use in the offhand.",
-                        "name": "Offhand_Dagger",
                         "charges": 0,
+                        "weight": "",
+                        "rounds_per_charge": 0,
+                        "description": "A small dagger balanced for use in the offhand.",
+                        "price": {
+                            "copper": "",
+                            "gold": 2,
+                            "silver": ""
+                        },
+                        "current_rounds_performed": 0,
                         "in_use": false,
+                        "type": "weapon",
+                        "name": "Offhand_Dagger",
                         "identified": true
+                    },
+                    "conditional": {
+                        "range": "",
+                        "damage_type": "stab",
+                        "slot": "lefthand",
+                        "dmg": 4,
+                        "weapon_type": "melee",
+                        "to_hit": 0,
+                        "save_against": "none"
                     }
                 },
+                "legs": {},
                 "head": {},
-                "rightfinger": {}
+                "rightfinger": {},
+                "leftfinger": {},
+                "feet": {},
+                "chest": {}
             },
             "spells": [
                 {
                     "conditional": {
-                        "spell_school": "Conjuration",
-                        "spell_level": 1
+                        "spell_level": 1,
+                        "spell_school": "Conjuration"
                     },
                     "events": {
-                        "onround": "campaign.error('%s continues to cast Magic Misile at %s' % (player.displayname(), target.displayname()))",
+                        "onfinish": "campaign.warning('%s has finished casting Magic Misile at %s'  % (player.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nspell_success = player.spell_success()\r\nif not spell_success[1]:\r\n\tcampaign.error(spell_success[0])\r\nelse:\r\n\tdmg = rolldice(numdice=1, numsides=4, modifier=0)\r\n\tresult = target.take_damage(dmg)\r\n\tcampaign.error(result[1])",
                         "ondrop": "",
                         "onequip": "",
-                        "onfinish": "campaign.warning('%s has finished casting Magic Misile at %s'  % (player.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nspell_success = player.spell_success()\r\nif not spell_success[1]:\r\n\tcampaign.error(spell_success[0])\r\nelse:\r\n\tdmg = rolldice(numdice=1, numsides=4, modifier=0)\r\n\tresult = target.take_damage(dmg)\r\n\tcampaign.error(result[1])",
-                        "onpickup": "",
-                        "onuse": "campaign.error('%s is casting Magic Missile at %s' % (player.displayname(), target.displayname()))"
+                        "onround": "campaign.error('%s continues to cast Magic Misile at %s' % (player.displayname(), target.displayname()))",
+                        "onuse": "campaign.error('%s is casting Magic Missile at %s' % (player.displayname(), target.displayname()))",
+                        "onpickup": ""
                     },
                     "core": {
                         "size": "small",
-                        "target": null,
-                        "current_rounds_performed": 0,
-                        "rounds_per_charge": 2,
-                        "price": {
-                            "silver": 50,
-                            "copper": 25,
-                            "gold": 200
-                        },
-                        "weight": 0,
-                        "type": "spell",
                         "icon": "icons/magic_misile.png",
-                        "description": "Fires a bolt of arcane energy at the target, if it hits it does 1d4 damage.",
-                        "name": "Magic Misile",
                         "charges": -1,
+                        "weight": 0,
+                        "rounds_per_charge": 2,
+                        "description": "Fires a bolt of arcane energy at the target, if it hits it does 1d4 damage.",
+                        "price": {
+                            "copper": 25,
+                            "gold": 200,
+                            "silver": 50
+                        },
+                        "current_rounds_performed": 0,
                         "in_use": false,
-                        "identified": true
+                        "type": "spell",
+                        "name": "Magic Misile",
+                        "identified": true,
+                        "target": null
                     }
                 }
             ],
-            "money": {
-                "silver": 1,
-                "copper": 10,
-                "gold": 105
-            },
-            "equiped": {
-                "chest": {},
-                "legs": {},
+            "equiped_by_type": {
                 "gloves": {},
-                "leftfinger": {},
-                "neck": {},
                 "wrists": {},
-                "righthand": {
-                    "conditional": {
-                        "save_against": "none",
-                        "to_hit": 0,
-                        "slot": " righthand",
-                        "range": "",
-                        "damage_type": "stab",
-                        "dmg": 4,
-                        "weapon_type": "melee"
-                    },
-                    "events": {
-                        "onround": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onequip": "",
-                        "onfinish": "",
-                        "onpickup": "",
-                        "onuse": ""
-                    },
-                    "core": {
-                        "size": "small",
-                        "current_rounds_performed": 0,
-                        "rounds_per_charge": 0,
-                        "price": {
-                            "silver": "",
-                            "copper": "",
-                            "gold": 25
-                        },
-                        "weight": "",
-                        "type": "weapon",
-                        "icon": "icons/dagger.png",
-                        "description": "A small dagger balanced for use in the main hand.",
-                        "charges": 0,
-                        "name": "Mainhand Dagger",
-                        "in_use": false,
-                        "identified": true
-                    }
-                },
-                "feet": {},
+                "neck": {},
+                "head": {},
                 "lefthand": {
                     "conditional": {
-                        "save_against": "none",
                         "to_hit": 0,
+                        "save_against": "none",
                         "slot": "lefthand",
-                        "range": "",
-                        "damage_type": "stab",
                         "dmg": 4,
-                        "weapon_type": "melee"
+                        "weapon_type": "melee",
+                        "damage_type": "stab",
+                        "range": ""
+                    },
+                    "core": {
+                        "size": "small",
+                        "icon": "icons/dagger.png",
+                        "charges": 0,
+                        "weight": "",
+                        "rounds_per_charge": 0,
+                        "description": "A small dagger balanced for use in the offhand.",
+                        "price": {
+                            "copper": "",
+                            "gold": 2,
+                            "silver": ""
+                        },
+                        "current_rounds_performed": 0,
+                        "in_use": false,
+                        "type": "weapon",
+                        "name": "Offhand_Dagger",
+                        "identified": true
                     },
                     "events": {
-                        "onround": "",
+                        "onfinish": "",
                         "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
                         "onequip": "",
-                        "onfinish": "",
+                        "onround": "",
                         "onpickup": "",
                         "onuse": ""
+                    }
+                },
+                "legs": {},
+                "righthand": {
+                    "conditional": {
+                        "range": "",
+                        "damage_type": "stab",
+                        "slot": " righthand",
+                        "dmg": 4,
+                        "weapon_type": "melee",
+                        "to_hit": 0,
+                        "save_against": "none"
                     },
                     "core": {
                         "size": "small",
-                        "current_rounds_performed": 0,
-                        "rounds_per_charge": 0,
-                        "price": {
-                            "silver": "",
-                            "copper": "",
-                            "gold": 2
-                        },
-                        "weight": "",
-                        "type": "weapon",
                         "icon": "icons/dagger.png",
-                        "description": "A small dagger balanced for use in the offhand.",
                         "charges": 0,
-                        "name": "Offhand_Dagger",
+                        "weight": "",
+                        "rounds_per_charge": 0,
+                        "description": "A small dagger balanced for use in the main hand.",
+                        "price": {
+                            "copper": "",
+                            "gold": 25,
+                            "silver": ""
+                        },
+                        "current_rounds_performed": 0,
                         "in_use": false,
+                        "type": "weapon",
+                        "name": "Mainhand Dagger",
                         "identified": true
-                    }
-                },
-                "head": {},
-                "rightfinger": {}
-            },
-            "pack": [
-                {
-                    "conditional": {
-                        "spell_type": "wizard spells",
-                        "spell_school": "Conjuration",
-                        "spell_level": 1
                     },
                     "events": {
-                        "onround": "campaign.error('%s continues to cast Magic Misile at %s' % (player.displayname(), target.displayname()))",
-                        "ondrop": "",
-                        "onequip": "",
-                        "onfinish": "campaign.warning('%s has finished casting Magic Misile at %s'  % (player.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nspell_success = player.spell_success()\r\nif not spell_success[1]:\r\n\tcampaign.error(spell_success)\r\nelse:\r\n\tdmg = rolldice(numdice=1, numsides=6, modifier=1)\r\n\tcampaign.error(dmg[1])\r\n\tresult = target.take_damage(dmg[0])\r\n\tcampaign.error(result[1])\r\n",
-                        "onpickup": "",
-                        "onuse": "campaign.error('%s is casting Magic Missile at %s' % (player.displayname(), target.displayname()))"
-                    },
-                    "core": {
-                        "size": "small",
-                        "target": -1,
-                        "current_rounds_performed": 0,
-                        "rounds_per_charge": 2,
-                        "price": {
-                            "silver": 50,
-                            "copper": 25,
-                            "gold": 200
-                        },
-                        "weight": 0,
-                        "type": "spell",
-                        "icon": "icons/magic_misile.png",
-                        "description": "Fires a bolt of arcane energy at the target, if it hits it does 1d6 damage.",
-                        "charges": -1,
-                        "lightradius": 0,
-                        "name": "Magic Misile",
-                        "in_use": false,
-                        "identified": ""
-                    }
-                },
-                {
-                    "conditional": {
-                        "spell_type": "wizard spells",
-                        "spell_school": "Conjuration",
-                        "spell_level": 1
-                    },
-                    "events": {
-                        "onround": "campaign.error('%s continues to cast Magic Misile at %s' % (player.displayname(), target.displayname()))",
-                        "ondrop": "",
-                        "onequip": "",
-                        "onfinish": "campaign.warning('%s has finished casting Magic Misile at %s'  % (player.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nspell_success = player.spell_success()\r\nif not spell_success[1]:\r\n\tcampaign.error(spell_success)\r\nelse:\r\n\tdmg = rolldice(numdice=1, numsides=6, modifier=1)\r\n\tcampaign.error(dmg[1])\r\n\tresult = target.take_damage(dmg[0])\r\n\tcampaign.error(result[1])\r\n",
-                        "onpickup": "",
-                        "onuse": "campaign.error('%s is casting Magic Missile at %s' % (player.displayname(), target.displayname()))"
-                    },
-                    "core": {
-                        "size": "small",
-                        "current_rounds_performed": 0,
-                        "rounds_per_charge": 2,
-                        "price": {
-                            "silver": 50,
-                            "copper": 25,
-                            "gold": 200
-                        },
-                        "weight": 0,
-                        "type": "spell",
-                        "icon": "icons/magic_misile.png",
-                        "description": "Fires a bolt of arcane energy at the target, if it hits it does 1d6 damage.",
-                        "name": "Magic Misile",
-                        "lightradius": 0,
-                        "charges": -1,
-                        "in_use": false,
-                        "identified": ""
-                    }
-                },
-                {
-                    "conditional": {
-                        "spell_type": "wizard spells",
-                        "spell_school": "Conjuration",
-                        "spell_level": 1
-                    },
-                    "events": {
-                        "onround": "campaign.error('%s continues to cast Magic Misile at %s' % (player.displayname(), target.displayname()))",
-                        "ondrop": "",
-                        "onequip": "",
-                        "onfinish": "campaign.warning('%s has finished casting Magic Misile at %s'  % (player.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nspell_success = player.spell_success()\r\nif not spell_success[1]:\r\n\tcampaign.error(spell_success)\r\nelse:\r\n\tdmg = rolldice(numdice=1, numsides=6, modifier=1)\r\n\tcampaign.error(dmg[1])\r\n\tresult = target.take_damage(dmg[0])\r\n\tcampaign.error(result[1])\r\n",
-                        "onpickup": "",
-                        "onuse": "campaign.error('%s is casting Magic Missile at %s' % (player.displayname(), target.displayname()))"
-                    },
-                    "core": {
-                        "size": "small",
-                        "current_rounds_performed": 0,
-                        "rounds_per_charge": 2,
-                        "price": {
-                            "silver": 50,
-                            "copper": 25,
-                            "gold": 200
-                        },
-                        "weight": 0,
-                        "type": "spell",
-                        "icon": "icons/magic_misile.png",
-                        "description": "Fires a bolt of arcane energy at the target, if it hits it does 1d6 damage.",
-                        "name": "Magic Misile",
-                        "lightradius": 0,
-                        "charges": -1,
-                        "in_use": false,
-                        "identified": ""
-                    }
-                },
-                {
-                    "conditional": {
-                        "spell_type": "wizard spells",
-                        "spell_school": "Conjuration",
-                        "spell_level": 1
-                    },
-                    "events": {
-                        "onround": "campaign.error('%s continues to cast Magic Misile at %s' % (player.displayname(), target.displayname()))",
-                        "ondrop": "",
-                        "onequip": "",
-                        "onfinish": "campaign.warning('%s has finished casting Magic Misile at %s'  % (player.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nspell_success = player.spell_success()\r\nif not spell_success[1]:\r\n\tcampaign.error(spell_success)\r\nelse:\r\n\tdmg = rolldice(numdice=1, numsides=6, modifier=1)\r\n\tcampaign.error(dmg[1])\r\n\tresult = target.take_damage(dmg[0])\r\n\tcampaign.error(result[1])\r\n",
-                        "onpickup": "",
-                        "onuse": "campaign.error('%s is casting Magic Missile at %s' % (player.displayname(), target.displayname()))"
-                    },
-                    "core": {
-                        "size": "small",
-                        "current_rounds_performed": 0,
-                        "rounds_per_charge": 2,
-                        "price": {
-                            "silver": 50,
-                            "copper": 25,
-                            "gold": 200
-                        },
-                        "weight": 0,
-                        "type": "spell",
-                        "icon": "icons/magic_misile.png",
-                        "description": "Fires a bolt of arcane energy at the target, if it hits it does 1d6 damage.",
-                        "name": "Magic Misile",
-                        "lightradius": 0,
-                        "charges": -1,
-                        "in_use": false,
-                        "identified": ""
-                    }
-                },
-                {
-                    "events": {
-                        "onround": "",
-                        "ondrop": "",
-                        "onequip": "",
                         "onfinish": "",
                         "onpickup": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
-                    },
-                    "core": {
-                        "size": "small",
-                        "target": null,
-                        "current_rounds_performed": 0,
-                        "rounds_per_charge": 1,
-                        "price": {
-                            "silver": 0,
-                            "copper": 0,
-                            "gold": 10
-                        },
-                        "weight": 0,
-                        "type": "other",
-                        "icon": "icons/health_potion.png",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "name": "Health Potion",
-                        "charges": 0,
-                        "in_use": false,
-                        "identified": true
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onequip": "",
+                        "onround": "",
+                        "onuse": ""
                     }
-                }
-            ]
-        },
-        "type": "player",
-        "combat": {
-            "thac0": 18,
-            "saving_throws": {
-                "spell": 15,
-                "pp": 12,
-                "breath": 16,
-                "ppd": 13,
-                "rod": 14
-            },
-            "level-hitdice": 4,
-            "hitpoints": 16,
-            "max_hp": 16
-        },
-        "abilities": {
-            "wis": 8,
-            "dex": 12,
-            "cha": 17,
-            "int": 14,
-            "con": 11,
-            "str": 9
+                },
+                "rightfinger": {},
+                "leftfinger": {},
+                "feet": {},
+                "chest": {}
+            }
         }
+    },
+    "conditional": {
+        "abilities": {
+            "climb walls": 50,
+            "detect noise": 20,
+            "find-remove traps": 5,
+            "move silently": 10,
+            "pick pockets": 10,
+            "read languages": 5,
+            "open locks": 10
+        },
+        "armor_types": 3
     }
 }

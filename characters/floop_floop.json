@@ -127,42 +127,6 @@
                         "slot": "chest"
                     }
                 },
-                "head": {
-                    "events": {
-                        "onfinish": "",
-                        "onunequip": "",
-                        "onround": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onuse": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    },
-                    "core": {
-                        "description": "",
-                        "charges": 0,
-                        "icon": "icons/tough_leather_helm.png",
-                        "type": "armor",
-                        "in_use": false,
-                        "name": "Crocodile Leather Helm",
-                        "price": {
-                            "gold": 1,
-                            "silver": 0,
-                            "copper": 0
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "rounds_per_charge": 0,
-                        "weight": 2,
-                        "size": "small",
-                        "lightradius": 0
-                    },
-                    "conditional": {
-                        "ac": 1.6,
-                        "material": "leather",
-                        "slot": "head"
-                    }
-                },
-                "gloves": {},
                 "hands": {
                     "core": {
                         "description": "",
@@ -198,9 +162,54 @@
                         "slot": "hands"
                     }
                 },
+                "gloves": {},
+                "head": {
+                    "events": {
+                        "onfinish": "",
+                        "onunequip": "",
+                        "onround": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "",
+                        "onequip": "",
+                        "onpickup": ""
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 1,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "charges": 0,
+                        "icon": "icons/tough_leather_helm.png",
+                        "type": "armor",
+                        "in_use": false,
+                        "name": "Crocodile Leather Helm",
+                        "description": "",
+                        "current_rounds_performed": 0,
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "weight": 2,
+                        "size": "small",
+                        "lightradius": 0
+                    },
+                    "conditional": {
+                        "ac": 1.6,
+                        "material": "leather",
+                        "slot": "head"
+                    }
+                },
                 "neck": {},
                 "wrists": {},
                 "righthand": {
+                    "events": {
+                        "onfinish": "",
+                        "onunequip": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onuse": "",
+                        "onequip": "",
+                        "onpickup": ""
+                    },
                     "core": {
                         "price": {
                             "gold": 0,
@@ -219,15 +228,6 @@
                         "weight": 0,
                         "size": "small",
                         "lightradius": 0
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onunequip": "",
-                        "onround": "",
-                        "ondrop": "",
-                        "onuse": "",
-                        "onequip": "",
-                        "onpickup": ""
                     },
                     "conditional": {
                         "damage_type": "slice",
@@ -334,7 +334,7 @@
             "gold": 10,
             "silver": 99,
             "always_drops": [],
-            "items_possible": ["health_potion.json", "scroll_of_resurrection.json","scroll_of_identify.json"]
+            "items_possible": []
         },
         "orientation": " aggressive"
     }
