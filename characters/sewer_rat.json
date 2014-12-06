@@ -1,87 +1,87 @@
 {
     "hash": "d4c6ccf53ea389249f0f719eadfc8c6c624ee4afdbeb570e41d98e9b5d3f993c298c2cca399a48062d237c35bd0ff1de7becdb14cea85e324a6267cd0ce5782b",
     "core": {
-        "icon": "avatars/rat.png",
-        "class": {
-            "class": "fighter",
-            "parent": "warrior"
-        },
-        "type": "npc",
-        "inventory": {
-            "equiped": {
-                "wrists": {},
-                "chest": {},
-                "lefthand": {},
-                "gloves": {},
-                "head": {},
-                "rightfinger": {},
-                "righthand": {},
-                "leftfinger": {},
-                "legs": {},
-                "feet": {},
-                "neck": {}
-            },
-            "spells": [],
-            "spells_memorized": [],
-            "pack": [],
-            "money": {
-                "copper": 0,
-                "gold": 0,
-                "silver": 0
-            }
-        },
         "combat": {
             "hitpoints": 7,
-            "max_hp": 8,
-            "level-hitdice": 1
+            "level-hitdice": 1,
+            "max_hp": 8
         },
-        "lightradius": 0,
         "location": {
-            "x": 19,
-            "y": 11,
-            "map": "road_to_darrowshire.json"
-        },
-        "abilities": {
-            "str": 7,
-            "con": 7,
-            "cha": 1,
-            "dex": 16,
-            "wis": 1,
-            "int": 1
+            "y": 7,
+            "map": "simple_room.json",
+            "x": 8
         },
         "personal": {
             "race": "creature",
+            "xp": 0,
             "name": {
                 "last": "Rat",
                 "first": "Sewer"
             },
-            "alignment": {
-                "law": "",
-                "social": ""
-            },
             "sex": "female",
-            "xp": 0,
+            "alignment": {
+                "social": "",
+                "law": ""
+            },
             "backstory": "Smelly, dirty plaguebearing pests."
+        },
+        "inventory": {
+            "spells_memorized": [],
+            "money": {
+                "gold": 0,
+                "silver": 0,
+                "copper": 0
+            },
+            "spells": [],
+            "equiped": {
+                "leftfinger": {},
+                "legs": {},
+                "righthand": {},
+                "gloves": {},
+                "chest": {},
+                "lefthand": {},
+                "head": {},
+                "neck": {},
+                "rightfinger": {},
+                "feet": {},
+                "wrists": {}
+            },
+            "pack": []
+        },
+        "type": "npc",
+        "lightradius": 0,
+        "class": {
+            "class": "fighter",
+            "parent": "warrior"
+        },
+        "icon": "avatars/rat.png",
+        "abilities": {
+            "cha": 1,
+            "dex": 16,
+            "wis": 1,
+            "int": 1,
+            "con": 7,
+            "str": 7
         }
     },
-    "index": 8,
     "conditional": {
-        "orientation": " aggressive",
-        "events": {
-            "oninspect": "",
-            "oninteract": ""
-        },
+        "armor_types": 4,
         "shields": true,
+        "orientation": " aggressive",
         "loot": {
-            "copper": 99,
-            "gold": 1,
-            "silver": 99,
             "items_possible": [
                 "health_potion.json"
             ],
-            "max_items": 1,
-            "always_drops": []
+            "gold": 1,
+            "silver": 99,
+            "copper": 99,
+            "always_drops": [],
+            "max_items": 1
         },
-        "armor_types": 4
-    }
+        "events": {
+            "oninspect": "",
+            "oninteract": ""
+        }
+    },
+    "index": 8
 }

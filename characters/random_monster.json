@@ -1,0 +1,96 @@
+{
+    "core": {
+        "location": {
+            "y": 5,
+            "x": 3,
+            "map": "simple_room.json"
+        },
+        "personal": {
+            "xp": 1,
+            "sex": "male",
+            "alignment": {
+                "law": "chaotic",
+                "social": "evil"
+            },
+            "race": "monster",
+            "name": {
+                "first": "RANDOM",
+                "last": "MONSTER"
+            },
+            "backstory": ""
+        },
+        "inventory": {
+            "equiped": {
+                "feet": "",
+                "legs": "",
+                "leftfinger": "",
+                "righthand": "",
+                "neck": "",
+                "chest": "",
+                "wrists": "",
+                "gloves": {},
+                "head": "",
+                "rightfinger": "",
+                "lefthand": ""
+            },
+            "pack": [],
+            "%s": [],
+            "money": {
+                "silver": 0,
+                "gold": 0,
+                "copper": 0
+            },
+            "spells": ""
+        },
+        "combat": {
+            "saving_throws": {
+                "rod": 13,
+                "spell": 14,
+                "ppd": 11,
+                "breath": 13,
+                "pp": 12
+            },
+            "hitpoints": 22,
+            "level-hitdice": 5,
+            "max_hp": 40,
+            "thac0": 16
+        },
+        "abilities": {
+            "cha": 5,
+            "str": 17,
+            "con": 15,
+            "dex": 16,
+            "int": 10,
+            "wis": 8
+        },
+        "class": {
+            "class": "fighter",
+            "parent": "warrior"
+        },
+        "tileindex": 0,
+        "type": "npc",
+        "icon": "avatars/rat.png"
+    },
+    "conditional": {
+        "orientation": " aggressive",
+        "armor_types": 4,
+        "loot": {
+            "always_drops": [
+                "health_potion.json"
+            ],
+            "silver": 99,
+            "gold": 10,
+            "items_possible": [
+                "long_bow.json",
+                "mainhand_dagger.json",
+                "halberd_+1.json"
+            ],
+            "max_items": 2,
+            "copper": 99
+        },
+        "events": {
+            "oninteract": "",
+            "oninspect": ""
+        }
+    }
+}

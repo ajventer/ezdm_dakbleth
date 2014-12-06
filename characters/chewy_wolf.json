@@ -1,360 +1,168 @@
 {
-    "core": {
-        "combat": {
-            "level-hitdice": 2,
-            "max_hp": 16,
-            "hitpoints": 4
+    "hash": "b'7caa26bbd2b35b022e2471045e9e87bfc7bdf93f057e6797250dc7a3fc4866e532f57d048c1e9605bb86c101e3b05b517016590fb7f04617f3ef74857d2c4cb2'",
+    "conditional": {
+        "loot": {
+            "gold": 20,
+            "copper": 99,
+            "max_items": 1,
+            "items_possible": [
+                "candle.json"
+            ],
+            "always_drops": [],
+            "silver": 99
         },
+        "shields": true,
+        "events": {
+            "oninspect": "",
+            "oninteract": ""
+        },
+        "armor_types": 1,
+        "orientation": " aggressive"
+    },
+    "core": {
         "icon": "avatars/war_dog.png",
+        "class": {
+            "class": "fighter",
+            "parent": "warrior"
+        },
+        "lightradius": 0,
+        "location": {
+            "x": 20,
+            "map": "darrowshire.json",
+            "y": 12
+        },
+        "combat": {
+            "hitpoints": 4,
+            "level-hitdice": 2,
+            "max_hp": 16
+        },
         "type": "player",
-        "personal": {
-            "backstory": "",
-            "alignment": {
-                "social": "neutral",
-                "law": "neutral"
+        "inventory": {
+            "equiped": {
+                "head": {},
+                "lefthand": {
+                    "conditional": {
+                        "damage_type": "hack",
+                        "to_hit": 1,
+                        "dmg": 8,
+                        "range": "short",
+                        "slot": "twohand",
+                        "weapon_type": "melee",
+                        "events": {
+                            "onstrike": ""
+                        },
+                        "save_against": "none"
+                    },
+                    "events": {
+                        "ondrop": "",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onunequip": "",
+                        "onequip": "",
+                        "onround": "",
+                        "onfinish": ""
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 0,
+                            "copper": 0,
+                            "silver": 0
+                        },
+                        "in_use": false,
+                        "icon": "",
+                        "size": "small",
+                        "description": "Biting with it's snapping jaws",
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "identified": true,
+                        "lightradius": 0,
+                        "rounds_per_charge": 0,
+                        "name": "Jaws",
+                        "charges": 0,
+                        "type": "weapon"
+                    }
+                },
+                "chest": {},
+                "neck": {},
+                "feet": {},
+                "gloves": {},
+                "rightfinger": {},
+                "wrists": {},
+                "righthand": {
+                    "conditional": {
+                        "damage_type": "hack",
+                        "range": "short",
+                        "dmg": 8,
+                        "to_hit": 1,
+                        "slot": "twohand",
+                        "weapon_type": "melee",
+                        "events": {
+                            "onstrike": ""
+                        },
+                        "save_against": "none"
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "ondrop": "",
+                        "onuse": "",
+                        "onunequip": "",
+                        "onequip": "",
+                        "onround": "",
+                        "onfinish": ""
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 0,
+                            "copper": 0,
+                            "silver": 0
+                        },
+                        "in_use": false,
+                        "identified": true,
+                        "size": "small",
+                        "description": "Biting with it's snapping jaws",
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "icon": "",
+                        "lightradius": 0,
+                        "rounds_per_charge": 0,
+                        "name": "Jaws",
+                        "charges": 0,
+                        "type": "weapon"
+                    }
+                },
+                "leftfinger": {},
+                "legs": {}
             },
+            "money": {
+                "gold": 488,
+                "copper": 6,
+                "silver": 9
+            },
+            "spells_memorized": [],
+            "spells": [],
+            "pack": []
+        },
+        "abilities": {
+            "dex": 17,
+            "cha": 8,
+            "wis": 12,
+            "int": 13,
+            "str": 14,
+            "con": 15
+        },
+        "personal": {
+            "alignment": {
+                "law": "neutral",
+                "social": "neutral"
+            },
+            "sex": "male",
+            "race": "creature",
             "name": {
                 "first": "Chewy",
                 "last": "Wolf"
             },
-            "race": "creature",
-            "sex": "male",
-            "xp": 2890
-        },
-        "lightradius": 0,
-        "class": {
-            "parent": "warrior",
-            "class": "fighter"
-        },
-        "location": {
-            "map": "the_happy_ending.json",
-            "y": 13,
-            "x": 4
-        },
-        "inventory": {
-            "equiped": {
-                "lefthand": {
-                    "core": {
-                        "current_rounds_performed": 0,
-                        "type": "weapon",
-                        "lightradius": 0,
-                        "description": "Biting with it's snapping jaws",
-                        "weight": 0,
-                        "rounds_per_charge": 0,
-                        "icon": "",
-                        "name": "Jaws",
-                        "price": {
-                            "silver": 0,
-                            "gold": 0,
-                            "copper": 0
-                        },
-                        "charges": 0,
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small"
-                    },
-                    "conditional": {
-                        "dmg": 8,
-                        "save_against": "none",
-                        "damage_type": "hack",
-                        "events": {
-                            "onstrike": ""
-                        },
-                        "to_hit": "+1",
-                        "slot": "twohand",
-                        "weapon_type": "melee",
-                        "range": "short"
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onunequip": "",
-                        "onpickup": "",
-                        "onround": "",
-                        "ondrop": "",
-                        "onequip": "",
-                        "onuse": ""
-                    }
-                },
-                "gloves": {},
-                "righthand": {
-                    "core": {
-                        "type": "weapon",
-                        "current_rounds_performed": 0,
-                        "lightradius": 0,
-                        "description": "Biting with it's snapping jaws",
-                        "weight": 0,
-                        "rounds_per_charge": 0,
-                        "icon": "",
-                        "name": "Jaws",
-                        "price": {
-                            "silver": 0,
-                            "gold": 0,
-                            "copper": 0
-                        },
-                        "charges": 0,
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small"
-                    },
-                    "conditional": {
-                        "dmg": 8,
-                        "save_against": "none",
-                        "damage_type": "hack",
-                        "events": {
-                            "onstrike": ""
-                        },
-                        "to_hit": "+1",
-                        "slot": "twohand",
-                        "weapon_type": "melee",
-                        "range": "short"
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onunequip": "",
-                        "onpickup": "",
-                        "onround": "",
-                        "ondrop": "",
-                        "onequip": "",
-                        "onuse": ""
-                    }
-                },
-                "wrists": {},
-                "legs": {},
-                "neck": {},
-                "head": {},
-                "chest": {},
-                "rightfinger": {},
-                "leftfinger": {},
-                "feet": {}
-            },
-            "pack": [
-                {
-                    "events": {
-                        "onfinish": "",
-                        "onunequip": "",
-                        "onpickup": "",
-                        "onround": "",
-                        "ondrop": "",
-                        "onequip": "",
-                        "onuse": ""
-                    },
-                    "conditional": {
-                        "dmg": "1d4",
-                        "save_against": "none",
-                        "damage_type": "slice",
-                        "to_hit": 0,
-                        "slot": "righthand",
-                        "weapon_type": "melee",
-                        "range": "short"
-                    },
-                    "core": {
-                        "type": "weapon",
-                        "current_rounds_performed": 0,
-                        "lightradius": 0,
-                        "description": "",
-                        "weight": 0,
-                        "rounds_per_charge": 0,
-                        "icon": "icons/silver.png",
-                        "name": "Broken Bottle",
-                        "price": {
-                            "silver": 0,
-                            "gold": 0,
-                            "copper": 0
-                        },
-                        "charges": 0,
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small"
-                    }
-                },
-                {
-                    "events": {
-                        "onfinish": "",
-                        "onpickup": "",
-                        "onround": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onequip": "",
-                        "onuse": ""
-                    },
-                    "conditional": {
-                        "dmg": 6,
-                        "save_against": "none",
-                        "damage_type": "stab",
-                        "to_hit": 0,
-                        "slot": "twohand",
-                        "weapon_type": "misile",
-                        "range": "long"
-                    },
-                    "core": {
-                        "type": "weapon",
-                        "current_rounds_performed": 0,
-                        "lightradius": 0,
-                        "description": "A powerful but simple longbow used for firing projectile weapons (arrows) at high velocity through spring-power.",
-                        "weight": "",
-                        "rounds_per_charge": 0,
-                        "icon": "icons/longbow.png",
-                        "name": "Long bow",
-                        "price": {
-                            "silver": "",
-                            "gold": 75,
-                            "copper": ""
-                        },
-                        "charges": 0,
-                        "in_use": false,
-                        "identified": false,
-                        "size": "large"
-                    }
-                },
-                {
-                    "events": {
-                        "onfinish": "",
-                        "onpickup": "",
-                        "onround": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onequip": "",
-                        "onuse": ""
-                    },
-                    "conditional": {
-                        "dmg": 6,
-                        "save_against": "none",
-                        "damage_type": "stab",
-                        "to_hit": 0,
-                        "slot": "twohand",
-                        "weapon_type": "misile",
-                        "range": "long"
-                    },
-                    "core": {
-                        "type": "weapon",
-                        "current_rounds_performed": 0,
-                        "lightradius": 0,
-                        "description": "A powerful but simple longbow used for firing projectile weapons (arrows) at high velocity through spring-power.",
-                        "weight": "",
-                        "rounds_per_charge": 0,
-                        "icon": "icons/longbow.png",
-                        "name": "Long bow",
-                        "price": {
-                            "silver": "",
-                            "gold": 75,
-                            "copper": ""
-                        },
-                        "charges": 0,
-                        "in_use": false,
-                        "identified": false,
-                        "size": "large"
-                    }
-                },
-                {
-                    "events": {
-                        "onfinish": "",
-                        "onpickup": "",
-                        "onround": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onequip": "",
-                        "onuse": ""
-                    },
-                    "conditional": {
-                        "dmg": 6,
-                        "save_against": "none",
-                        "damage_type": "stab",
-                        "to_hit": 0,
-                        "slot": "twohand",
-                        "weapon_type": "misile",
-                        "range": "long"
-                    },
-                    "core": {
-                        "type": "weapon",
-                        "current_rounds_performed": 0,
-                        "lightradius": 0,
-                        "description": "A powerful but simple longbow used for firing projectile weapons (arrows) at high velocity through spring-power.",
-                        "weight": "",
-                        "rounds_per_charge": 0,
-                        "icon": "icons/longbow.png",
-                        "name": "Long bow",
-                        "price": {
-                            "silver": "",
-                            "gold": 75,
-                            "copper": ""
-                        },
-                        "charges": 0,
-                        "in_use": false,
-                        "identified": false,
-                        "size": "large"
-                    }
-                },
-                {
-                    "events": {
-                        "onfinish": "",
-                        "onpickup": "",
-                        "onround": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onequip": "",
-                        "onuse": ""
-                    },
-                    "conditional": {
-                        "dmg": 6,
-                        "save_against": "none",
-                        "damage_type": "stab",
-                        "to_hit": 0,
-                        "slot": "twohand",
-                        "weapon_type": "misile",
-                        "range": "long"
-                    },
-                    "core": {
-                        "type": "weapon",
-                        "current_rounds_performed": 0,
-                        "lightradius": 0,
-                        "description": "A powerful but simple longbow used for firing projectile weapons (arrows) at high velocity through spring-power.",
-                        "weight": "",
-                        "rounds_per_charge": 0,
-                        "icon": "icons/longbow.png",
-                        "name": "Long bow",
-                        "price": {
-                            "silver": "",
-                            "gold": 75,
-                            "copper": ""
-                        },
-                        "charges": 0,
-                        "in_use": false,
-                        "identified": false,
-                        "size": "large"
-                    }
-                }
-            ],
-            "spells": [],
-            "money": {
-                "silver": 9,
-                "gold": 297,
-                "copper": 9
-            },
-            "spells_memorized": []
-        },
-        "abilities": {
-            "dex": 17,
-            "int": 13,
-            "wis": 12,
-            "con": 15,
-            "cha": 8,
-            "str": 14
-        }
-    },
-    "hash": "b'7caa26bbd2b35b022e2471045e9e87bfc7bdf93f057e6797250dc7a3fc4866e532f57d048c1e9605bb86c101e3b05b517016590fb7f04617f3ef74857d2c4cb2'",
-    "conditional": {
-        "orientation": " aggressive",
-        "events": {
-            "oninteract": "",
-            "oninspect": ""
-        },
-        "armor_types": 1,
-        "shields": true,
-        "loot": {
-            "silver": 99,
-            "gold": 20,
-            "copper": 99,
-            "items_possible": [
-                "candle.json"
-            ],
-            "max_items": 1,
-            "always_drops": []
+            "backstory": "",
+            "xp": 2955
         }
     }
 }

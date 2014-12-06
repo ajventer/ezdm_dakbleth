@@ -3,167 +3,35 @@
         "armor_types": 4,
         "shields": true
     },
-    "index": 14,
     "core": {
-        "icon": "avatars/ven_valdis.png",
+        "icon": "avatars/48x48_Faces_4th_Sheet_Update_CharlesGabriel_OGA_0-1-2.png",
         "class": {
-            "class": "ranger",
-            "parent": "warrior"
+            "class": "mage",
+            "parent": "wizard"
         },
         "lightradius": 0,
+        "conditional": {
+            "shields": false,
+            "armor_types": 1
+        },
         "location": {
             "x": 20,
             "map": "darrowshire.json",
             "y": 12
         },
         "combat": {
-            "hitpoints": 7,
+            "hitpoints": 5,
             "level-hitdice": 1,
-            "max_hp": 7
+            "max_hp": 5
         },
         "type": "player",
         "inventory": {
             "equiped": {
-                "lefthand": {
-                    "conditional": {
-                        "slot": "lefthand",
-                        "material": "shield",
-                        "ac": 1
-                    },
-                    "events": {
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onpickup": "",
-                        "onuse": "",
-                        "onequip": "",
-                        "onround": "",
-                        "onfinish": ""
-                    },
-                    "core": {
-                        "price": {
-                            "gold": 1,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "This \"shield\" is little more than a battered piece of bronze plate, there are some dents and suspicious looking stains on it. You think it may be second hand and you doubt the original owner\r\nwas alive when he lost it.",
-                        "current_rounds_performed": 0,
-                        "weight": 3,
-                        "rounds_per_charge": 0,
-                        "lightradius": 0,
-                        "icon": "icons/shield4.png",
-                        "name": "Small Bronze Shield",
-                        "charges": 0,
-                        "type": "armor"
-                    }
-                },
-                "chest": {
-                    "conditional": {
-                        "slot": "chest",
-                        "ac": 3.0,
-                        "material": "plate"
-                    },
-                    "events": {
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onpickup": "",
-                        "onuse": "",
-                        "onequip": "",
-                        "onround": "",
-                        "onfinish": ""
-                    },
-                    "core": {
-                        "identified": true,
-                        "in_use": false,
-                        "current_rounds_performed": 0,
-                        "size": "medium",
-                        "description": "",
-                        "price": {
-                            "gold": 130,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "weight": 23,
-                        "rounds_per_charge": 0,
-                        "icon": "icons/plate_armor.png",
-                        "type": "armor",
-                        "charges": 0,
-                        "name": "Bronze Plate Chest"
-                    }
-                },
-                "feet": {
-                    "conditional": {
-                        "slot": "feet",
-                        "material": "plate",
-                        "ac": 0.2
-                    },
-                    "events": {
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onpickup": "",
-                        "onuse": "",
-                        "onequip": "",
-                        "onround": "",
-                        "onfinish": ""
-                    },
-                    "core": {
-                        "in_use": false,
-                        "rounds_per_charge": 0,
-                        "size": "small",
-                        "description": "",
-                        "price": {
-                            "gold": 20,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "weight": 2,
-                        "identified": true,
-                        "icon": "icons/plate_boots.png",
-                        "current_rounds_performed": 0,
-                        "type": "armor",
-                        "charges": 0,
-                        "name": "Bronze Plate Boots"
-                    }
-                },
-                "rightfinger": {},
-                "hands": {
-                    "conditional": {
-                        "slot": "hands",
-                        "material": "plate",
-                        "ac": 0.6
-                    },
-                    "events": {
-                        "onpickup": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onuse": "",
-                        "onequip": "",
-                        "onround": "",
-                        "onfinish": ""
-                    },
-                    "core": {
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "Cheap plate gloves made from bronze.",
-                        "price": {
-                            "gold": 50,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "weight": 4,
-                        "rounds_per_charge": 0,
-                        "icon": "icons/plate_gloves.png",
-                        "current_rounds_performed": 0,
-                        "name": "Bronze Plate Gloves",
-                        "charges": 0,
-                        "type": "armor"
-                    }
-                },
-                "leftfinger": {},
                 "head": {
                     "conditional": {
                         "slot": "head",
-                        "material": "plate",
-                        "ac": 2
+                        "material": "cloth",
+                        "ac": 0.6
                     },
                     "events": {
                         "onpickup": "",
@@ -176,31 +44,33 @@
                     },
                     "core": {
                         "price": {
-                            "gold": 30,
+                            "gold": 4,
                             "copper": 0,
                             "silver": 0
                         },
                         "in_use": false,
                         "identified": true,
                         "size": "small",
-                        "description": "",
+                        "description": "A simple cloth cap",
                         "rounds_per_charge": 0,
-                        "weight": 10,
-                        "icon": "icons/plate_helm.png",
+                        "weight": 3,
+                        "icon": "icons/leather_helm.png",
                         "lightradius": 0,
                         "current_rounds_performed": 0,
                         "type": "armor",
                         "charges": 0,
-                        "name": "Iron Plate Helm"
+                        "name": "Cloth Cap"
                     }
                 },
-                "neck": {},
-                "gloves": {},
-                "legs": {
+                "lefthand": {
                     "conditional": {
-                        "slot": "legs",
-                        "material": "plate",
-                        "ac": 0.9
+                        "damage_type": "hack",
+                        "to_hit": "",
+                        "dmg": 6,
+                        "weapon_type": "melee",
+                        "slot": "twohand",
+                        "range": "medium",
+                        "save_against": "none"
                     },
                     "events": {
                         "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
@@ -211,32 +81,71 @@
                         "onfinish": ""
                     },
                     "core": {
-                        "in_use": false,
-                        "rounds_per_charge": 0,
-                        "size": "large",
-                        "description": "",
                         "price": {
-                            "gold": 170,
+                            "gold": 15,
                             "copper": 0,
                             "silver": 0
                         },
-                        "weight": 7,
+                        "in_use": false,
                         "identified": true,
-                        "icon": "icons/plate_legs.png",
+                        "size": "large",
+                        "description": "This thick length of heavy Birchwood can generate significant force through centripetal force when swung into contact with an opponents body. Wizards often use them as an aid when casting\r\nspells - everybody else uses them as an aid when building a fire.",
                         "current_rounds_performed": 0,
-                        "name": "Bronze Plate Legs",
+                        "weight": 0,
+                        "rounds_per_charge": 0,
+                        "lightradius": 0,
+                        "icon": "icons/quarterstaff.png",
+                        "name": "Simple Wooden Staff",
                         "charges": 0,
-                        "type": "armor"
+                        "type": "weapon"
                     }
                 },
+                "chest": {
+                    "conditional": {
+                        "slot": "chest",
+                        "ac": 1,
+                        "material": "cloth"
+                    },
+                    "events": {
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onpickup": "",
+                        "onuse": "",
+                        "onequip": "",
+                        "onround": "",
+                        "onfinish": ""
+                    },
+                    "core": {
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "size": "large",
+                        "description": "",
+                        "price": {
+                            "gold": 5,
+                            "copper": 0,
+                            "silver": 0
+                        },
+                        "weight": 8,
+                        "rounds_per_charge": 0,
+                        "icon": "icons/cloth_armor.png",
+                        "type": "armor",
+                        "charges": 0,
+                        "name": "Cloth Robes"
+                    }
+                },
+                "neck": {},
+                "feet": {},
+                "gloves": {},
+                "rightfinger": {},
+                "wrists": {},
                 "righthand": {
                     "conditional": {
-                        "damage_type": "slice",
-                        "range": "short",
-                        "dmg": 10,
-                        "slot": "righthand",
+                        "damage_type": "hack",
+                        "range": "medium",
+                        "dmg": 6,
+                        "slot": "twohand",
                         "weapon_type": "melee",
-                        "to_hit": 1,
+                        "to_hit": 0,
                         "save_against": "none"
                     },
                     "events": {
@@ -248,33 +157,72 @@
                         "onfinish": ""
                     },
                     "core": {
-                        "identified": true,
                         "in_use": false,
-                        "current_rounds_performed": 0,
-                        "size": "medium",
-                        "description": "This sword has been empowered by wrapping the G-string of Amayasthepo around the hilt.",
+                        "identified": true,
+                        "size": "large",
+                        "description": "This thick length of heavy Birchwood can generate significant force through centripetal force when swung into contact with an opponents body. Wizards often use them as an aid when casting\r\nspells - everybody else uses them as an aid when building a fire.",
                         "price": {
-                            "gold": 25,
+                            "gold": 15,
                             "copper": 0,
                             "silver": 0
                         },
                         "weight": 0,
                         "rounds_per_charge": 0,
                         "lightradius": 0,
-                        "icon": "icons/sword.png",
-                        "name": "Singing Bastard Sword of Amayasthepo",
+                        "icon": "icons/quarterstaff.png",
+                        "current_rounds_performed": 0,
+                        "name": "Simple Wooden Staff",
                         "charges": 0,
                         "type": "weapon"
                     }
                 },
-                "wrists": {}
+                "leftfinger": {},
+                "legs": {}
             },
             "money": {
-                "gold": 639,
-                "copper": 6,
-                "silver": 1
+                "gold": 0,
+                "copper": 0,
+                "silver": 0
             },
-            "spells": [],
+            "spells_memorized": [
+                0
+            ],
+            "spells": [
+                {
+                    "conditional": {
+                        "spell_school": "Conjuration",
+                        "spell_level": 1,
+                        "spell_type": "wizard spells"
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "ondrop": "",
+                        "onuse": "campaign.error('%s is casting Magic Missile at %s' % (player.displayname(), target.displayname()))",
+                        "onequip": "",
+                        "onround": "campaign.error('%s continues to cast Magic Misile at %s' % (player.displayname(), target.displayname()))",
+                        "onfinish": "campaign.warning('%s has finished casting Magic Misile at %s'  % (player.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nspell_success = player.spell_success()\r\nif not spell_success[1]:\r\n\tcampaign.error(spell_success)\r\nelse:\r\n\tdmg = rolldice(numdice=1, numsides=6, modifier=1)\r\n\tcampaign.error(dmg[1])\r\n\tresult = target.take_damage(dmg[0])\r\n\tcampaign.error(result[1])\r\n"
+                    },
+                    "core": {
+                        "in_use": false,
+                        "identified": true,
+                        "size": "small",
+                        "description": "Fires a bolt of arcane energy at the target, if it hits it does 1d6 damage.",
+                        "price": {
+                            "gold": 200,
+                            "copper": 25,
+                            "silver": 50
+                        },
+                        "weight": 0,
+                        "rounds_per_charge": 2,
+                        "lightradius": 0,
+                        "icon": "icons/magic_misile.png",
+                        "current_rounds_performed": 0,
+                        "type": "spell",
+                        "charges": -1,
+                        "name": "Magic Misile"
+                    }
+                }
+            ],
             "pack": [
                 {
                     "events": {
@@ -286,16 +234,16 @@
                         "onfinish": ""
                     },
                     "core": {
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "price": {
                             "gold": 10,
                             "copper": 0,
                             "silver": 0
                         },
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
                         "weight": 0,
                         "rounds_per_charge": 1,
                         "icon": "icons/health_potion.png",
@@ -314,16 +262,16 @@
                         "onfinish": ""
                     },
                     "core": {
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "price": {
                             "gold": 10,
                             "copper": 0,
                             "silver": 0
                         },
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
                         "weight": 0,
                         "rounds_per_charge": 1,
                         "icon": "icons/health_potion.png",
@@ -342,16 +290,16 @@
                         "onfinish": ""
                     },
                     "core": {
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "price": {
                             "gold": 10,
                             "copper": 0,
                             "silver": 0
                         },
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
                         "weight": 0,
                         "rounds_per_charge": 1,
                         "icon": "icons/health_potion.png",
@@ -370,16 +318,16 @@
                         "onfinish": ""
                     },
                     "core": {
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "price": {
                             "gold": 10,
                             "copper": 0,
                             "silver": 0
                         },
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
                         "weight": 0,
                         "rounds_per_charge": 1,
                         "icon": "icons/health_potion.png",
@@ -398,16 +346,16 @@
                         "onfinish": ""
                     },
                     "core": {
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "price": {
                             "gold": 10,
                             "copper": 0,
                             "silver": 0
                         },
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
                         "weight": 0,
                         "rounds_per_charge": 1,
                         "icon": "icons/health_potion.png",
@@ -426,16 +374,16 @@
                         "onfinish": ""
                     },
                     "core": {
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "price": {
                             "gold": 10,
                             "copper": 0,
                             "silver": 0
                         },
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
                         "weight": 0,
                         "rounds_per_charge": 1,
                         "icon": "icons/health_potion.png",
@@ -454,16 +402,16 @@
                         "onfinish": ""
                     },
                     "core": {
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "price": {
                             "gold": 10,
                             "copper": 0,
                             "silver": 0
                         },
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
                         "weight": 0,
                         "rounds_per_charge": 1,
                         "icon": "icons/health_potion.png",
@@ -482,16 +430,16 @@
                         "onfinish": ""
                     },
                     "core": {
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "price": {
                             "gold": 10,
                             "copper": 0,
                             "silver": 0
                         },
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
                         "weight": 0,
                         "rounds_per_charge": 1,
                         "icon": "icons/health_potion.png",
@@ -510,16 +458,16 @@
                         "onfinish": ""
                     },
                     "core": {
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "price": {
                             "gold": 10,
                             "copper": 0,
                             "silver": 0
                         },
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
                         "weight": 0,
                         "rounds_per_charge": 1,
                         "icon": "icons/health_potion.png",
@@ -538,16 +486,16 @@
                         "onfinish": ""
                     },
                     "core": {
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "price": {
                             "gold": 10,
                             "copper": 0,
                             "silver": 0
                         },
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
                         "weight": 0,
                         "rounds_per_charge": 1,
                         "icon": "icons/health_potion.png",
@@ -566,16 +514,16 @@
                         "onfinish": ""
                     },
                     "core": {
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "price": {
                             "gold": 10,
                             "copper": 0,
                             "silver": 0
                         },
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
                         "weight": 0,
                         "rounds_per_charge": 1,
                         "icon": "icons/health_potion.png",
@@ -594,16 +542,16 @@
                         "onfinish": ""
                     },
                     "core": {
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "price": {
                             "gold": 10,
                             "copper": 0,
                             "silver": 0
                         },
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
                         "weight": 0,
                         "rounds_per_charge": 1,
                         "icon": "icons/health_potion.png",
@@ -622,16 +570,16 @@
                         "onfinish": ""
                     },
                     "core": {
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "price": {
                             "gold": 10,
                             "copper": 0,
                             "silver": 0
                         },
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
                         "weight": 0,
                         "rounds_per_charge": 1,
                         "icon": "icons/health_potion.png",
@@ -650,16 +598,16 @@
                         "onfinish": ""
                     },
                     "core": {
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "price": {
                             "gold": 10,
                             "copper": 0,
                             "silver": 0
                         },
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
                         "weight": 0,
                         "rounds_per_charge": 1,
                         "icon": "icons/health_potion.png",
@@ -678,16 +626,16 @@
                         "onfinish": ""
                     },
                     "core": {
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "price": {
                             "gold": 10,
                             "copper": 0,
                             "silver": 0
                         },
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
                         "weight": 0,
                         "rounds_per_charge": 1,
                         "icon": "icons/health_potion.png",
@@ -706,16 +654,16 @@
                         "onfinish": ""
                     },
                     "core": {
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "price": {
                             "gold": 10,
                             "copper": 0,
                             "silver": 0
                         },
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
                         "weight": 0,
                         "rounds_per_charge": 1,
                         "icon": "icons/health_potion.png",
@@ -734,16 +682,16 @@
                         "onfinish": ""
                     },
                     "core": {
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "price": {
                             "gold": 10,
                             "copper": 0,
                             "silver": 0
                         },
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
                         "weight": 0,
                         "rounds_per_charge": 1,
                         "icon": "icons/health_potion.png",
@@ -762,16 +710,16 @@
                         "onfinish": ""
                     },
                     "core": {
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "price": {
                             "gold": 10,
                             "copper": 0,
                             "silver": 0
                         },
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
                         "weight": 0,
                         "rounds_per_charge": 1,
                         "icon": "icons/health_potion.png",
@@ -790,16 +738,16 @@
                         "onfinish": ""
                     },
                     "core": {
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "price": {
                             "gold": 10,
                             "copper": 0,
                             "silver": 0
                         },
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
                         "weight": 0,
                         "rounds_per_charge": 1,
                         "icon": "icons/health_potion.png",
@@ -818,188 +766,46 @@
                         "onfinish": ""
                     },
                     "core": {
+                        "identified": true,
+                        "in_use": false,
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "description": "Heals the target character for 1d6 hitpoints",
                         "price": {
                             "gold": 10,
                             "copper": 0,
                             "silver": 0
                         },
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
                         "weight": 0,
                         "rounds_per_charge": 1,
                         "icon": "icons/health_potion.png",
                         "name": "Health Potion",
                         "charges": 1,
                         "type": "other"
-                    }
-                },
-                {
-                    "events": {
-                        "onpickup": "",
-                        "ondrop": "",
-                        "onuse": "hitpoints = target.get('/core/combat/hitpoints',1)\r\nif hitpoints > 0:\r\n   campaign.error('%s is not dead ! What a waste of a scroll !')\r\ncampaign.error('%s is casting Scroll of Ressurection at %s' % (player.displayname(), target.displayname()))",
-                        "onunequip": "",
-                        "onequip": "",
-                        "onround": "campaign.error('%s continues to cast Scroll of Ressurection at %s' % (player.displayname(), target.displayname()))",
-                        "onfinish": "campaign.error('%s has finished casting Scroll of Resurrection at %s'  % (player.displayname(), target.displayname()))\r\nhitpoints = target.get('/core/combat/hitpoints',1)\r\nif hitpoints > 0:\r\n   campaign.error('%s is not dead ! What a waste of a scroll !')\r\nelse:\r\n   campaign.error('%s resurrected with one hitpoint.')\r\n   target.put('/core/combat/hitpoints',1)"
-                    },
-                    "core": {
-                        "in_use": false,
-                        "rounds_per_charge": 10,
-                        "size": "small",
-                        "description": "Ressurrects a dead ally with 1 hitpoint. Takes ten rounds to read.",
-                        "price": {
-                            "gold": 1000,
-                            "copper": 25,
-                            "silver": 50
-                        },
-                        "weight": 0,
-                        "identified": true,
-                        "lightradius": 0,
-                        "icon": "icons/scrolloflove.png",
-                        "current_rounds_performed": 0,
-                        "type": "other",
-                        "charges": 1,
-                        "name": "Scroll of Resurrection"
-                    }
-                },
-                {
-                    "events": {
-                        "onpickup": "",
-                        "ondrop": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "onequip": "",
-                        "onround": "",
-                        "onfinish": ""
-                    },
-                    "core": {
-                        "price": {
-                            "gold": 10,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "in_use": false,
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
-                        "weight": 0,
-                        "identified": true,
-                        "icon": "icons/health_potion.png",
-                        "type": "other",
-                        "charges": 1,
-                        "name": "Health Potion"
-                    }
-                },
-                {
-                    "events": {
-                        "onpickup": "",
-                        "ondrop": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "onequip": "",
-                        "onround": "",
-                        "onfinish": ""
-                    },
-                    "core": {
-                        "price": {
-                            "gold": 10,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "in_use": false,
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
-                        "weight": 0,
-                        "identified": true,
-                        "icon": "icons/health_potion.png",
-                        "type": "other",
-                        "charges": 1,
-                        "name": "Health Potion"
-                    }
-                },
-                {
-                    "events": {
-                        "onpickup": "",
-                        "ondrop": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "onequip": "",
-                        "onround": "",
-                        "onfinish": ""
-                    },
-                    "core": {
-                        "price": {
-                            "gold": 10,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "in_use": false,
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
-                        "weight": 0,
-                        "identified": true,
-                        "icon": "icons/health_potion.png",
-                        "type": "other",
-                        "charges": 1,
-                        "name": "Health Potion"
-                    }
-                },
-                {
-                    "events": {
-                        "onpickup": "",
-                        "ondrop": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "onequip": "",
-                        "onround": "",
-                        "onfinish": ""
-                    },
-                    "core": {
-                        "price": {
-                            "gold": 10,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "in_use": false,
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "current_rounds_performed": 0,
-                        "weight": 0,
-                        "identified": true,
-                        "icon": "icons/health_potion.png",
-                        "type": "other",
-                        "charges": 1,
-                        "name": "Health Potion"
                     }
                 }
             ]
         },
         "abilities": {
-            "dex": 13,
+            "dex": 12,
             "cha": 12,
-            "wis": 14,
-            "int": 12,
-            "str": 16,
-            "con": 14
+            "wis": 13,
+            "int": 14,
+            "str": 11,
+            "con": 11
         },
         "personal": {
             "alignment": {
                 "law": "lawful",
                 "social": "neutral"
             },
-            "sex": "male",
-            "race": "human",
+            "sex": "female",
+            "race": "elf",
             "name": {
-                "first": "Venator",
-                "last": "Valdemar"
+                "first": "Eimana",
+                "last": "Mithrandir"
             },
-            "xp": 2145,
+            "xp": 65,
             "backstory": ""
         }
     }
