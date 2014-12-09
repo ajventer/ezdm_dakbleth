@@ -1,296 +1,284 @@
 {
-    "conditional": {
-        "armor_types": 4,
-        "abilities": {
-            "lay on hands (daily)": 100,
-            "Turn undead (level 3+)": 100,
-            "cure disease(weekly)": 100,
-            "sense evil intent(must end turn)": 100
-        },
-        "shields": true
-    },
-    "index": 14,
     "core": {
-        "icon": "avatars/human_paladin.png",
-        "class": {
-            "class": "paladin",
-            "parent": "warrior"
+        "abilities": {
+            "con": 15,
+            "cha": 17,
+            "int": 10,
+            "wis": 13,
+            "dex": 14,
+            "str": 12
         },
-        "lightradius": 0,
         "location": {
-            "x": 20,
+            "x": 10,
             "map": "darrowshire.json",
-            "y": 12
+            "y": 10
         },
-        "combat": {
-            "hitpoints": 6,
-            "level-hitdice": 1,
-            "max_hp": 7
+        "class": {
+            "parent": "warrior",
+            "class": "paladin"
         },
-        "type": "player",
         "inventory": {
+            "money": {
+                "copper": 5,
+                "silver": 9,
+                "gold": 509
+            },
             "equiped": {
-                "lefthand": {
-                    "conditional": {
-                        "damage_type": "slice",
-                        "to_hit": "+1",
-                        "dmg": 10,
-                        "range": "medium",
-                        "slot": "twohand",
-                        "weapon_type": "melee",
-                        "events": {
-                            "onstrike": "from ezdm_libs.util import rolldice\r\nshadow = rolldice (numdice=1, numsides=4, modifier=0)\r\ncampaign.message('%s does additional shadow damage to %s' % (item.displayname(), target.displayname()))\r\ncampaign.message(shadow[1])\r\nresult = target.take_damage(shadow[0])\r\ncampaign.message(result[1])"
+                "head": {
+                    "core": {
+                        "rounds_per_charge": 0,
+                        "size": "small",
+                        "weight": 10,
+                        "type": "armor",
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 30
                         },
-                        "save_against": "none"
+                        "current_rounds_performed": 0,
+                        "identified": true,
+                        "description": "",
+                        "icon": "icons/plate_helm.png",
+                        "name": "Bronze Plate Helm",
+                        "charges": 0,
+                        "in_use": false
                     },
                     "events": {
-                        "ondrop": "",
-                        "onpickup": "",
+                        "onfinish": "",
                         "onuse": "",
-                        "onunequip": "",
-                        "onequip": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
                         "onround": "",
-                        "onfinish": ""
+                        "onequip": "",
+                        "onpickup": ""
                     },
+                    "conditional": {
+                        "ac": 1,
+                        "material": "plate",
+                        "slot": "head"
+                    }
+                },
+                "legs": {
                     "core": {
-                        "price": {
-                            "gold": 10000,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "in_use": false,
-                        "identified": true,
+                        "rounds_per_charge": 0,
                         "size": "large",
-                        "description": "The indestructable blade of this scythe is so thin that it glows slightly blue as air molecules are cut into their component parts when they bounce against it.<br>\r\nSuccessfull strikes do an additional 1d4 shadow damage.",
-                        "current_rounds_performed": 0,
-                        "weight": 0,
-                        "rounds_per_charge": 0,
-                        "lightradius": 0,
-                        "icon": "icons/scythe2.png",
-                        "name": "The Grimm Squeakers Scythe",
-                        "charges": 0,
-                        "type": "weapon"
-                    }
-                },
-                "chest": {
-                    "conditional": {
-                        "slot": "chest",
-                        "ac": 3.0,
-                        "material": "plate"
-                    },
-                    "events": {
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onpickup": "",
-                        "onuse": "",
-                        "onequip": "",
-                        "onround": "",
-                        "onfinish": ""
-                    },
-                    "core": {
-                        "identified": true,
-                        "in_use": false,
-                        "current_rounds_performed": 0,
-                        "size": "medium",
-                        "description": "",
-                        "price": {
-                            "gold": 130,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "weight": 23,
-                        "rounds_per_charge": 0,
-                        "icon": "icons/plate_armor.png",
+                        "weight": 7,
                         "type": "armor",
-                        "charges": 0,
-                        "name": "Bronze Plate Chest"
-                    }
-                },
-                "feet": {
-                    "conditional": {
-                        "slot": "feet",
-                        "material": "plate",
-                        "ac": 0.2
-                    },
-                    "events": {
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onpickup": "",
-                        "onuse": "",
-                        "onequip": "",
-                        "onround": "",
-                        "onfinish": ""
-                    },
-                    "core": {
-                        "in_use": false,
-                        "rounds_per_charge": 0,
-                        "size": "small",
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 170
+                        },
+                        "current_rounds_performed": 0,
+                        "identified": true,
                         "description": "",
-                        "price": {
-                            "gold": 20,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "weight": 2,
-                        "identified": true,
-                        "icon": "icons/plate_boots.png",
-                        "current_rounds_performed": 0,
-                        "type": "armor",
+                        "icon": "icons/plate_legs.png",
+                        "name": "Bronze Plate Legs",
                         "charges": 0,
-                        "name": "Bronze Plate Boots"
-                    }
-                },
-                "rightfinger": {},
-                "hands": {
-                    "conditional": {
-                        "slot": "hands",
-                        "material": "plate",
-                        "ac": 0.6
+                        "in_use": false
                     },
                     "events": {
-                        "onpickup": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onfinish": "",
                         "onuse": "",
-                        "onequip": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
                         "onround": "",
-                        "onfinish": ""
+                        "onequip": "",
+                        "onpickup": ""
                     },
-                    "core": {
-                        "price": {
-                            "gold": 50,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "in_use": false,
-                        "rounds_per_charge": 0,
-                        "size": "small",
-                        "description": "Cheap plate gloves made from bronze.",
-                        "current_rounds_performed": 0,
-                        "weight": 4,
-                        "identified": true,
-                        "icon": "icons/plate_gloves.png",
-                        "name": "Bronze Plate Gloves",
-                        "charges": 0,
-                        "type": "armor"
+                    "conditional": {
+                        "ac": 0.9,
+                        "material": "plate",
+                        "slot": "legs"
                     }
                 },
                 "leftfinger": {},
-                "head": {
-                    "conditional": {
-                        "slot": "head",
-                        "material": "plate",
-                        "ac": 1
-                    },
-                    "events": {
-                        "onpickup": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onuse": "",
-                        "onequip": "",
-                        "onround": "",
-                        "onfinish": ""
-                    },
+                "chest": {
                     "core": {
-                        "price": {
-                            "gold": 30,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "in_use": false,
-                        "identified": true,
-                        "size": "small",
-                        "description": "",
                         "rounds_per_charge": 0,
-                        "weight": 10,
-                        "icon": "icons/plate_helm.png",
-                        "current_rounds_performed": 0,
+                        "size": "medium",
+                        "weight": 23,
                         "type": "armor",
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 130
+                        },
+                        "current_rounds_performed": 0,
+                        "identified": true,
+                        "description": "",
+                        "icon": "icons/plate_armor.png",
+                        "name": "Bronze Plate Chest",
                         "charges": 0,
-                        "name": "Bronze Plate Helm"
-                    }
-                },
-                "neck": {},
-                "gloves": {},
-                "legs": {
-                    "conditional": {
-                        "slot": "legs",
-                        "material": "plate",
-                        "ac": 0.9
+                        "in_use": false
                     },
                     "events": {
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onpickup": "",
+                        "onfinish": "",
                         "onuse": "",
-                        "onequip": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
                         "onround": "",
-                        "onfinish": ""
+                        "onequip": "",
+                        "onpickup": ""
                     },
-                    "core": {
-                        "in_use": false,
-                        "rounds_per_charge": 0,
-                        "size": "large",
-                        "description": "",
-                        "price": {
-                            "gold": 170,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "weight": 7,
-                        "identified": true,
-                        "icon": "icons/plate_legs.png",
-                        "current_rounds_performed": 0,
-                        "name": "Bronze Plate Legs",
-                        "charges": 0,
-                        "type": "armor"
+                    "conditional": {
+                        "ac": 3.0,
+                        "material": "plate",
+                        "slot": "chest"
                     }
                 },
                 "righthand": {
+                    "core": {
+                        "rounds_per_charge": 0,
+                        "size": "large",
+                        "weight": 0,
+                        "type": "weapon",
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 10000
+                        },
+                        "current_rounds_performed": 0,
+                        "identified": true,
+                        "description": "The indestructable blade of this scythe is so thin that it glows slightly blue as air molecules are cut into their component parts when they bounce against it.<br>\r\nSuccessfull strikes do an additional 1d4 shadow damage.",
+                        "icon": "icons/scythe2.png",
+                        "name": "The Grimm Squeakers Scythe",
+                        "lightradius": 0,
+                        "charges": 0,
+                        "in_use": false
+                    },
+                    "events": {
+                        "onfinish": "",
+                        "onunequip": "",
+                        "onuse": "",
+                        "ondrop": "",
+                        "onround": "",
+                        "onequip": "",
+                        "onpickup": ""
+                    },
                     "conditional": {
-                        "damage_type": "slice",
                         "range": "medium",
-                        "dmg": 10,
-                        "to_hit": "+1",
-                        "slot": "twohand",
                         "weapon_type": "melee",
                         "events": {
                             "onstrike": "from ezdm_libs.util import rolldice\r\nshadow = rolldice (numdice=1, numsides=4, modifier=0)\r\ncampaign.message('%s does additional shadow damage to %s' % (item.displayname(), target.displayname()))\r\ncampaign.message(shadow[1])\r\nresult = target.take_damage(shadow[0])\r\ncampaign.message(result[1])"
                         },
-                        "save_against": "none"
-                    },
-                    "events": {
-                        "onpickup": "",
-                        "ondrop": "",
-                        "onuse": "",
-                        "onunequip": "",
-                        "onequip": "",
-                        "onround": "",
-                        "onfinish": ""
-                    },
-                    "core": {
-                        "identified": true,
-                        "in_use": false,
-                        "current_rounds_performed": 0,
-                        "size": "large",
-                        "description": "The indestructable blade of this scythe is so thin that it glows slightly blue as air molecules are cut into their component parts when they bounce against it.<br>\r\nSuccessfull strikes do an additional 1d4 shadow damage.",
-                        "price": {
-                            "gold": 10000,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "weight": 0,
-                        "rounds_per_charge": 0,
-                        "lightradius": 0,
-                        "icon": "icons/scythe2.png",
-                        "name": "The Grimm Squeakers Scythe",
-                        "charges": 0,
-                        "type": "weapon"
+                        "slot": "twohand",
+                        "to_hit": "+1",
+                        "save_against": "none",
+                        "damage_type": "slice",
+                        "dmg": 10
                     }
                 },
-                "wrists": {}
+                "gloves": {},
+                "wrists": {},
+                "lefthand": {
+                    "core": {
+                        "rounds_per_charge": 0,
+                        "size": "large",
+                        "weight": 0,
+                        "type": "weapon",
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 10000
+                        },
+                        "current_rounds_performed": 0,
+                        "identified": true,
+                        "description": "The indestructable blade of this scythe is so thin that it glows slightly blue as air molecules are cut into their component parts when they bounce against it.<br>\r\nSuccessfull strikes do an additional 1d4 shadow damage.",
+                        "icon": "icons/scythe2.png",
+                        "name": "The Grimm Squeakers Scythe",
+                        "lightradius": 0,
+                        "charges": 0,
+                        "in_use": false
+                    },
+                    "events": {
+                        "onfinish": "",
+                        "onunequip": "",
+                        "onuse": "",
+                        "ondrop": "",
+                        "onround": "",
+                        "onequip": "",
+                        "onpickup": ""
+                    },
+                    "conditional": {
+                        "range": "medium",
+                        "weapon_type": "melee",
+                        "events": {
+                            "onstrike": "from ezdm_libs.util import rolldice\r\nshadow = rolldice (numdice=1, numsides=4, modifier=0)\r\ncampaign.message('%s does additional shadow damage to %s' % (item.displayname(), target.displayname()))\r\ncampaign.message(shadow[1])\r\nresult = target.take_damage(shadow[0])\r\ncampaign.message(result[1])"
+                        },
+                        "save_against": "none",
+                        "to_hit": "+1",
+                        "slot": "twohand",
+                        "damage_type": "slice",
+                        "dmg": 10
+                    }
+                },
+                "rightfinger": {},
+                "feet": {
+                    "core": {
+                        "rounds_per_charge": 0,
+                        "size": "small",
+                        "weight": 2,
+                        "type": "armor",
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 20
+                        },
+                        "current_rounds_performed": 0,
+                        "identified": true,
+                        "description": "",
+                        "icon": "icons/plate_boots.png",
+                        "name": "Bronze Plate Boots",
+                        "charges": 0,
+                        "in_use": false
+                    },
+                    "events": {
+                        "onfinish": "",
+                        "onuse": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onequip": "",
+                        "onpickup": ""
+                    },
+                    "conditional": {
+                        "ac": 0.2,
+                        "material": "plate",
+                        "slot": "feet"
+                    }
+                },
+                "hands": {
+                    "core": {
+                        "rounds_per_charge": 0,
+                        "size": "small",
+                        "weight": 4,
+                        "type": "armor",
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 50
+                        },
+                        "current_rounds_performed": 0,
+                        "identified": true,
+                        "description": "Cheap plate gloves made from bronze.",
+                        "icon": "icons/plate_gloves.png",
+                        "name": "Bronze Plate Gloves",
+                        "charges": 0,
+                        "in_use": false
+                    },
+                    "events": {
+                        "onfinish": "",
+                        "onuse": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onequip": "",
+                        "onpickup": ""
+                    },
+                    "conditional": {
+                        "ac": 0.6,
+                        "material": "plate",
+                        "slot": "hands"
+                    }
+                },
+                "neck": {}
             },
-            "money": {
-                "gold": 509,
-                "copper": 5,
-                "silver": 9
-            },
-            "spells": [],
             "pack": [
                 {
                     "core": {
@@ -298,66 +286,78 @@
                     }
                 },
                 {
-                    "conditional": {
-                        "damage_type": "slice",
-                        "to_hit": "",
-                        "dmg": 8,
-                        "slot": "righthand",
-                        "range": "short",
-                        "save_against": "none",
-                        "weapon_type": "melee"
+                    "core": {
+                        "rounds_per_charge": 0,
+                        "size": "medium",
+                        "weight": 0,
+                        "type": "weapon",
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 25
+                        },
+                        "current_rounds_performed": 0,
+                        "identified": true,
+                        "description": "To use:<br>Hold by blunt end.<br>Aim pointy end at person of unpleasant persona.<br>Attempt to thrust pointy end into person of unpleasant persona by means of a vigorous arm movement.",
+                        "icon": "icons/sword.png",
+                        "name": "One Handed Bastard Sword",
+                        "lightradius": 0,
+                        "charges": 0,
+                        "in_use": false
                     },
                     "events": {
-                        "onpickup": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onfinish": "",
                         "onuse": "",
-                        "onequip": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
                         "onround": "",
-                        "onfinish": ""
+                        "onequip": "",
+                        "onpickup": ""
                     },
-                    "core": {
-                        "in_use": false,
-                        "identified": true,
-                        "size": "medium",
-                        "description": "To use:<br>Hold by blunt end.<br>Aim pointy end at person of unpleasant persona.<br>Attempt to thrust pointy end into person of unpleasant persona by means of a vigorous arm movement.",
-                        "price": {
-                            "gold": 25,
-                            "copper": 0,
-                            "silver": 0
-                        },
-                        "weight": 0,
-                        "rounds_per_charge": 0,
-                        "lightradius": 0,
-                        "icon": "icons/sword.png",
-                        "current_rounds_performed": 0,
-                        "type": "weapon",
-                        "charges": 0,
-                        "name": "One Handed Bastard Sword"
+                    "conditional": {
+                        "range": "short",
+                        "weapon_type": "melee",
+                        "slot": "righthand",
+                        "to_hit": "",
+                        "save_against": "none",
+                        "damage_type": "slice",
+                        "dmg": 8
                     }
                 }
-            ]
+            ],
+            "spells": []
         },
-        "abilities": {
-            "dex": 14,
-            "cha": 17,
-            "wis": 13,
-            "int": 10,
-            "str": 12,
-            "con": 15
-        },
+        "lightradius": 0,
         "personal": {
+            "sex": "male",
+            "name": {
+                "last": "One",
+                "first": "Nameless"
+            },
+            "race": "human",
             "alignment": {
                 "law": "lawful",
                 "social": "good"
             },
-            "sex": "male",
-            "race": "human",
-            "name": {
-                "first": "Nameless",
-                "last": "One"
-            },
-            "xp": 985,
-            "backstory": ""
-        }
+            "backstory": "",
+            "xp": 1375
+        },
+        "type": "player",
+        "combat": {
+            "max_hp": 7,
+            "level-hitdice": 1,
+            "hitpoints": 6
+        },
+        "icon": "avatars/human_paladin.png"
+    },
+    "index": 14,
+    "conditional": {
+        "abilities": {
+            "cure disease(weekly)": 100,
+            "lay on hands (daily)": 100,
+            "Turn undead (level 3+)": 100,
+            "sense evil intent(must end turn)": 100
+        },
+        "armor_types": 4,
+        "shields": true
     }
 }
