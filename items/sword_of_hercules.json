@@ -9,7 +9,7 @@
         "identified": true,
         "rounds_per_charge": 0,
         "type": "weapon",
-        "description": "This is the great sword with which the legendary hero hercules completed his 12 tasks. It is also a Paladin artifact sword.",
+        "description": "The golden double-handed longsword bequeethed unto Hercules by Athena herself",
         "icon": "icons/urand_plutonium.png",
         "weight": 0,
         "size": "large",
@@ -28,6 +28,7 @@
         "onunequip": ""
     },
     "conditional": {
+	"ac": 0.5,
         "dmg": 10,
         "damage_type": "slice",
         "slot": "twohand",
