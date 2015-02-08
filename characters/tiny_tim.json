@@ -3,626 +3,641 @@
         "armor_types": 4,
         "shields": true
     },
+    "index": 1,
     "core": {
-        "type": "player",
-        "personal": {
-            "backstory": "",
-            "race": "dwarf",
-            "sex": "male",
-            "alignment": {
-                "law": "neutral",
-                "social": "good"
-            },
-            "name": {
-                "first": "TINY",
-                "last": "TIM"
-            },
-            "xp": 25705
-        },
         "inventory": {
             "pack": [
                 {
+                    "events": {
+                        "onequip": "",
+                        "onpickup": "",
+                        "onunequip": "",
+                        "ondrop": "",
+                        "onuse": "",
+                        "onround": "",
+                        "onfinish": ""
+                    },
                     "conditional": {
-                        "damage_type": "slice",
-                        "range": "short",
-                        "save_against": "none",
+                        "dmg": "1d4",
                         "weapon_type": "melee",
-                        "slot": "righthand",
+                        "range": "short",
                         "to_hit": 0,
-                        "dmg": "1d4"
+                        "slot": "righthand",
+                        "save_against": "none",
+                        "damage_type": "slice"
                     },
                     "core": {
-                        "price": {
-                            "gold": 0,
-                            "silver": 0,
-                            "copper": 0
-                        },
+                        "name": "Broken Bottle",
+                        "icon": "icons/silver.png",
                         "description": "",
                         "type": "weapon",
-                        "identified": true,
-                        "icon": "icons/silver.png",
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 0
+                        },
                         "in_use": false,
-                        "charges": 0,
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "current_rounds_performed": 0,
                         "weight": 0,
                         "size": "small",
-                        "lightradius": 0,
-                        "current_rounds_performed": 0,
-                        "name": "Broken Bottle",
-                        "rounds_per_charge": 0
-                    },
+                        "charges": 0,
+                        "lightradius": 0
+                    }
+                },
+                {
                     "events": {
-                        "onunequip": "",
-                        "onfinish": "",
+                        "onequip": "",
                         "onpickup": "",
-                        "onround": "",
+                        "onunequip": "",
+                        "ondrop": "",
+                        "onuse": "campaign.error('%s is casting Animal Friendship at %s' % (player.displayname(), target.displayname()))",
+                        "onround": "campaign.error('%s continues to cast Animal Friendship at %s' % (player.displayname(), target.displayname()))",
+                        "onfinish": "campaign.error('%s has finished casting Animal Friendship at %s' % (player.displayname(), target.displayname()))"
+                    },
+                    "conditional": {
+                        "spell_type": "priest spells",
+                        "spell_school": "Enchantment",
+                        "spell_level": 1
+                    },
+                    "core": {
+                        "name": "Animal Friendship",
+                        "icon": "icons/tame_beasts.png",
+                        "description": "Caster charms an animal which fights alongside it as a companion. The spell takes three rounds to cast. ",
+                        "type": "spell",
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 0
+                        },
+                        "in_use": false,
+                        "identified": true,
+                        "rounds_per_charge": 3,
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "size": "",
+                        "charges": -1,
+                        "lightradius": 0
+                    }
+                },
+                {
+                    "events": {
+                        "onequip": "",
+                        "onpickup": "",
+                        "onunequip": "",
+                        "ondrop": "",
+                        "onuse": "campaign.error('%s is casting Animal Friendship at %s' % (player.displayname(), target.displayname()))",
+                        "onround": "campaign.error('%s continues to cast Animal Friendship at %s' % (player.displayname(), target.displayname()))",
+                        "onfinish": "campaign.error('%s has finished casting Animal Friendship at %s' % (player.displayname(), target.displayname()))"
+                    },
+                    "conditional": {
+                        "spell_type": "priest spells",
+                        "spell_school": "Enchantment",
+                        "spell_level": 1
+                    },
+                    "core": {
+                        "name": "Animal Friendship",
+                        "icon": "icons/tame_beasts.png",
+                        "description": "Caster charms an animal which fights alongside it as a companion. The spell takes three rounds to cast. ",
+                        "type": "spell",
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 0
+                        },
+                        "in_use": false,
+                        "identified": true,
+                        "rounds_per_charge": 3,
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "size": "",
+                        "charges": -1,
+                        "lightradius": 0
+                    }
+                },
+                {
+                    "events": {
+                        "onpickup": "",
+                        "onequip": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
                         "onuse": "",
-                        "onequip": "",
-                        "ondrop": ""
-                    }
-                },
-                {
-                    "conditional": {
-                        "spell_school": "Enchantment",
-                        "spell_type": "priest spells",
-                        "spell_level": 1
+                        "onround": "",
+                        "onfinish": "\r\ncampaign.warning('%s sputters out in a light breeze. You can relate it %s more times' %(item.displayname(),item.get('/core/charges',0))"
                     },
                     "core": {
-                        "price": {
-                            "gold": 0,
-                            "silver": 0,
-                            "copper": 0
-                        },
-                        "description": "Caster charms an animal which fights alongside it as a companion. The spell takes three rounds to cast. ",
-                        "type": "spell",
-                        "identified": true,
-                        "icon": "icons/tame_beasts.png",
-                        "in_use": false,
-                        "charges": -1,
-                        "weight": 0,
-                        "size": "",
-                        "lightradius": 0,
-                        "current_rounds_performed": 0,
-                        "name": "Animal Friendship",
-                        "rounds_per_charge": 3
-                    },
-                    "events": {
-                        "onunequip": "",
-                        "onfinish": "campaign.error('%s has finished casting Animal Friendship at %s' % (player.displayname(), target.displayname()))",
-                        "onpickup": "",
-                        "onround": "campaign.error('%s continues to cast Animal Friendship at %s' % (player.displayname(), target.displayname()))",
-                        "onuse": "campaign.error('%s is casting Animal Friendship at %s' % (player.displayname(), target.displayname()))",
-                        "onequip": "",
-                        "ondrop": ""
-                    }
-                },
-                {
-                    "conditional": {
-                        "spell_school": "Enchantment",
-                        "spell_type": "priest spells",
-                        "spell_level": 1
-                    },
-                    "core": {
-                        "price": {
-                            "gold": 0,
-                            "silver": 0,
-                            "copper": 0
-                        },
-                        "description": "Caster charms an animal which fights alongside it as a companion. The spell takes three rounds to cast. ",
-                        "type": "spell",
-                        "identified": true,
-                        "icon": "icons/tame_beasts.png",
-                        "in_use": false,
-                        "charges": -1,
-                        "weight": 0,
-                        "size": "",
-                        "lightradius": 0,
-                        "current_rounds_performed": 0,
-                        "name": "Animal Friendship",
-                        "rounds_per_charge": 3
-                    },
-                    "events": {
-                        "onunequip": "",
-                        "onfinish": "campaign.error('%s has finished casting Animal Friendship at %s' % (player.displayname(), target.displayname()))",
-                        "onpickup": "",
-                        "onround": "campaign.error('%s continues to cast Animal Friendship at %s' % (player.displayname(), target.displayname()))",
-                        "onuse": "campaign.error('%s is casting Animal Friendship at %s' % (player.displayname(), target.displayname()))",
-                        "onequip": "",
-                        "ondrop": ""
-                    }
-                },
-                {
-                    "core": {
-                        "price": {
-                            "gold": 0,
-                            "silver": 15,
-                            "copper": 25
-                        },
+                        "name": "Candle",
+                        "icon": "icons/candle.png",
                         "description": "This dribbled pillar of pigfat with a piece of twine in the middle will allow you to see further in the dark and is not subject to loadshedding. However it doesn't last for very long.",
                         "type": "other",
-                        "identified": true,
-                        "icon": "icons/candle.png",
+                        "price": {
+                            "copper": 25,
+                            "silver": 15,
+                            "gold": 0
+                        },
                         "in_use": false,
-                        "charges": 5,
+                        "identified": true,
+                        "rounds_per_charge": 5,
+                        "current_rounds_performed": 0,
                         "weight": 0,
                         "size": "",
-                        "lightradius": 1,
-                        "current_rounds_performed": 0,
-                        "name": "Candle",
-                        "rounds_per_charge": 5
-                    },
-                    "events": {
-                        "onfinish": "\r\ncampaign.warning('%s sputters out in a light breeze. You can relate it %s more times' %(item.displayname(),item.get('/core/charges',0))",
-                        "onpickup": "",
-                        "onround": "",
-                        "onuse": "",
-                        "onequip": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))"
+                        "charges": 5,
+                        "lightradius": 1
                     }
                 },
                 {
+                    "events": {
+                        "onequip": "",
+                        "onpickup": "",
+                        "onunequip": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "",
+                        "onround": "",
+                        "onfinish": ""
+                    },
                     "conditional": {
                         "material": "cloth",
                         "slot": "head",
                         "ac": 0.6
                     },
                     "core": {
-                        "price": {
-                            "gold": 4,
-                            "silver": 0,
-                            "copper": 0
-                        },
+                        "name": "Cloth Cap",
+                        "icon": "icons/leather_helm.png",
                         "description": "A simple cloth cap",
                         "type": "armor",
-                        "identified": false,
-                        "icon": "icons/leather_helm.png",
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 4
+                        },
                         "in_use": false,
-                        "charges": 0,
+                        "identified": false,
+                        "rounds_per_charge": 0,
+                        "current_rounds_performed": 0,
                         "weight": 3,
                         "size": "small",
-                        "lightradius": 0,
-                        "current_rounds_performed": 0,
-                        "name": "Cloth Cap",
-                        "rounds_per_charge": 0
-                    },
-                    "events": {
-                        "onunequip": "",
-                        "onfinish": "",
-                        "onpickup": "",
-                        "onround": "",
-                        "onuse": "",
-                        "onequip": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))"
+                        "charges": 0,
+                        "lightradius": 0
                     }
                 },
                 {
+                    "events": {
+                        "onequip": "",
+                        "onpickup": "",
+                        "onunequip": "",
+                        "ondrop": "",
+                        "onuse": "",
+                        "onround": "",
+                        "onfinish": ""
+                    },
                     "conditional": {
-                        "damage_type": "slice",
+                        "dmg": 8,
+                        "weapon_type": "melee",
+                        "to_hit": 0,
                         "range": "medium",
-                        "save_against": "none",
                         "events": {
                             "onstrike": ""
                         },
-                        "weapon_type": "melee",
                         "slot": "righthand",
-                        "to_hit": 0,
-                        "dmg": 8
+                        "save_against": "none",
+                        "damage_type": "slice"
                     },
                     "core": {
-                        "price": {
-                            "gold": 0,
-                            "silver": 0,
-                            "copper": 0
-                        },
+                        "name": "Bear claw swipe",
+                        "icon": "",
                         "description": "",
                         "type": "weapon",
-                        "identified": true,
-                        "icon": "",
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 0
+                        },
                         "in_use": false,
-                        "charges": 0,
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "current_rounds_performed": 0,
                         "weight": 0,
                         "size": "medium",
-                        "lightradius": 0,
-                        "current_rounds_performed": 0,
-                        "name": "Bear claw swipe",
-                        "rounds_per_charge": 0
-                    },
+                        "charges": 0,
+                        "lightradius": 0
+                    }
+                },
+                {
                     "events": {
-                        "onunequip": "",
-                        "onfinish": "",
                         "onpickup": "",
+                        "onequip": "",
+                        "ondrop": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
                         "onround": "",
+                        "onfinish": ""
+                    },
+                    "core": {
+                        "name": "Health Potion",
+                        "icon": "icons/health_potion.png",
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "type": "other",
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 10
+                        },
+                        "in_use": false,
+                        "identified": true,
+                        "rounds_per_charge": 1,
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "size": "small",
+                        "charges": 1
+                    }
+                },
+                {
+                    "events": {
+                        "onpickup": "",
+                        "onequip": "",
+                        "ondrop": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
+                        "onround": "",
+                        "onfinish": ""
+                    },
+                    "core": {
+                        "name": "Health Potion",
+                        "icon": "icons/health_potion.png",
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "type": "other",
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 10
+                        },
+                        "in_use": false,
+                        "identified": true,
+                        "rounds_per_charge": 1,
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "size": "small",
+                        "charges": 1
+                    }
+                },
+                {
+                    "events": {
+                        "onpickup": "",
+                        "onequip": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
                         "onuse": "",
-                        "onequip": "",
-                        "ondrop": ""
-                    }
-                },
-                {
-                    "core": {
-                        "price": {
-                            "gold": 10,
-                            "silver": 0,
-                            "copper": 0
-                        },
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "type": "other",
-                        "identified": true,
-                        "icon": "icons/health_potion.png",
-                        "rounds_per_charge": 1,
-                        "charges": 1,
-                        "weight": 0,
-                        "size": "small",
-                        "current_rounds_performed": 0,
-                        "in_use": false,
-                        "name": "Health Potion"
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onpickup": "",
                         "onround": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "onequip": "",
-                        "ondrop": ""
-                    }
-                },
-                {
-                    "core": {
-                        "price": {
-                            "gold": 10,
-                            "silver": 0,
-                            "copper": 0
-                        },
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "type": "other",
-                        "identified": true,
-                        "icon": "icons/health_potion.png",
-                        "rounds_per_charge": 1,
-                        "charges": 1,
-                        "weight": 0,
-                        "size": "small",
-                        "current_rounds_performed": 0,
-                        "in_use": false,
-                        "name": "Health Potion"
+                        "onfinish": ""
                     },
-                    "events": {
-                        "onfinish": "",
-                        "onpickup": "",
-                        "onround": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "onequip": "",
-                        "ondrop": ""
-                    }
-                },
-                {
                     "conditional": {
-                        "damage_type": "stab",
-                        "range": "long",
-                        "save_against": "none",
+                        "dmg": 6,
                         "weapon_type": "misile",
-                        "slot": "twohand",
+                        "range": "long",
                         "to_hit": 0,
-                        "dmg": 6
+                        "slot": "twohand",
+                        "save_against": "none",
+                        "damage_type": "stab"
                     },
                     "core": {
-                        "price": {
-                            "gold": 75,
-                            "silver": "",
-                            "copper": ""
-                        },
+                        "name": "Long bow",
+                        "icon": "icons/longbow.png",
                         "description": "A powerful but simple longbow used for firing projectile weapons (arrows) at high velocity through spring-power.",
                         "type": "weapon",
-                        "identified": false,
-                        "icon": "icons/longbow.png",
+                        "price": {
+                            "copper": "",
+                            "silver": "",
+                            "gold": 75
+                        },
                         "in_use": false,
-                        "charges": 0,
+                        "identified": false,
+                        "rounds_per_charge": 0,
+                        "current_rounds_performed": 0,
                         "weight": "",
                         "size": "large",
-                        "lightradius": 0,
-                        "current_rounds_performed": 0,
-                        "name": "Long bow",
-                        "rounds_per_charge": 0
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onpickup": "",
-                        "onround": "",
-                        "onuse": "",
-                        "onequip": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))"
+                        "charges": 0,
+                        "lightradius": 0
                     }
                 },
                 {
+                    "events": {
+                        "onpickup": "",
+                        "onequip": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "",
+                        "onround": "",
+                        "onfinish": ""
+                    },
                     "core": {
-                        "price": {
-                            "gold": 5,
-                            "silver": 9,
-                            "copper": 9
-                        },
+                        "name": "Thieve's tools",
+                        "icon": "icons/thieves_tools.png",
                         "description": "This leather pouch contains the tools of the thief's illicite trade including an assortment of lockpicks and, for some reason, a slice of lemon.",
                         "type": "other",
-                        "identified": true,
-                        "icon": "icons/thieves_tools.png",
+                        "price": {
+                            "copper": 9,
+                            "silver": 9,
+                            "gold": 5
+                        },
                         "in_use": false,
-                        "charges": 0,
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "current_rounds_performed": 0,
                         "weight": 0,
                         "size": "small",
-                        "lightradius": 0,
-                        "current_rounds_performed": 0,
-                        "name": "Thieve's tools",
-                        "rounds_per_charge": 0
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onpickup": "",
-                        "onround": "",
-                        "onuse": "",
-                        "onequip": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))"
+                        "charges": 0,
+                        "lightradius": 0
                     }
                 },
                 {
+                    "events": {
+                        "onpickup": "",
+                        "onequip": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "",
+                        "onround": "",
+                        "onfinish": ""
+                    },
                     "core": {
-                        "price": {
-                            "gold": 5,
-                            "silver": 9,
-                            "copper": 9
-                        },
+                        "name": "Thieve's tools",
+                        "icon": "icons/thieves_tools.png",
                         "description": "This leather pouch contains the tools of the thief's illicite trade including an assortment of lockpicks and, for some reason, a slice of lemon.",
                         "type": "other",
-                        "identified": true,
-                        "icon": "icons/thieves_tools.png",
+                        "price": {
+                            "copper": 9,
+                            "silver": 9,
+                            "gold": 5
+                        },
                         "in_use": false,
-                        "charges": 0,
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "current_rounds_performed": 0,
                         "weight": 0,
                         "size": "small",
-                        "lightradius": 0,
-                        "current_rounds_performed": 0,
-                        "name": "Thieve's tools",
-                        "rounds_per_charge": 0
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onpickup": "",
-                        "onround": "",
-                        "onuse": "",
-                        "onequip": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))"
+                        "charges": 0,
+                        "lightradius": 0
                     }
                 },
                 {
+                    "events": {
+                        "onequip": "",
+                        "onpickup": "",
+                        "onunequip": "",
+                        "ondrop": "",
+                        "onuse": "",
+                        "onround": "",
+                        "onfinish": ""
+                    },
                     "conditional": {
-                        "damage_type": "slice",
+                        "dmg": 10,
+                        "weapon_type": "melee",
+                        "to_hit": "+1",
                         "range": "medium",
-                        "save_against": "none",
                         "events": {
                             "onstrike": "from ezdm_libs.util import rolldice\r\nshadow = rolldice (numdice=1, numsides=4, modifier=0)\r\ncampaign.message('%s does additional shadow damage to %s' % (item.displayname(), target.displayname()))\r\ncampaign.message(shadow[1])\r\nresult = target.take_damage(shadow[0])\r\ncampaign.message(result[1])"
                         },
-                        "weapon_type": "melee",
                         "slot": "twohand",
-                        "to_hit": "+1",
-                        "dmg": 10
+                        "save_against": "none",
+                        "damage_type": "slice"
                     },
                     "core": {
-                        "price": {
-                            "gold": 10000,
-                            "silver": 0,
-                            "copper": 0
-                        },
+                        "name": "The Grimm Squeakers Scythe",
+                        "icon": "icons/scythe2.png",
                         "description": "The indestructable blade of this scythe is so thin that it glows slightly blue as air molecules are cut into their component parts when they bounce against it.<br>\r\nSuccessfull strikes do an additional 1d4 shadow damage.",
                         "type": "weapon",
-                        "identified": true,
-                        "icon": "icons/scythe2.png",
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 10000
+                        },
                         "in_use": false,
-                        "charges": 0,
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "current_rounds_performed": 0,
                         "weight": 0,
                         "size": "large",
-                        "lightradius": 0,
-                        "current_rounds_performed": 0,
-                        "name": "The Grimm Squeakers Scythe",
-                        "rounds_per_charge": 0
-                    },
-                    "events": {
-                        "onunequip": "",
-                        "onfinish": "",
-                        "onpickup": "",
-                        "onround": "",
-                        "onuse": "",
-                        "onequip": "",
-                        "ondrop": ""
+                        "charges": 0,
+                        "lightradius": 0
                     }
                 },
                 {
+                    "events": {
+                        "onequip": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "onpickup": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "onunequip": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "ondrop": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "onuse": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "onround": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "onfinish": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()"
+                    },
                     "conditional": {
                         "material": "plate",
                         "slot": "wrists",
                         "ac": 0.5
                     },
                     "core": {
-                        "price": {
-                            "gold": 0,
-                            "silver": 0,
-                            "copper": 0
-                        },
+                        "name": "Bronze Plate Bracers of illumination",
+                        "icon": "icons/leather_gloves.png",
                         "description": "These bracers add a small amount of extra armor but shine with shimmer that lets you see further.",
                         "type": "armor",
-                        "identified": true,
-                        "icon": "icons/leather_gloves.png",
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 0
+                        },
                         "in_use": false,
-                        "charges": -1,
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "current_rounds_performed": 0,
                         "weight": 0,
                         "size": "small",
-                        "lightradius": 1,
-                        "current_rounds_performed": 0,
-                        "name": "Bronze Plate Bracers of illumination",
-                        "rounds_per_charge": 0
-                    },
-                    "events": {
-                        "onunequip": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "onfinish": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "onpickup": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "onround": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "onuse": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "onequip": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "ondrop": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()"
+                        "charges": -1,
+                        "lightradius": 1
                     }
                 },
                 {
+                    "events": {
+                        "onequip": "d = int(player.get('/core/abilities/dex', 0))\r\nd += 1\r\nplayer.put('/core/abilities/dex', d)\r\nplayer.autosave()\r\n\r\n",
+                        "onpickup": "",
+                        "onunequip": "d = int(player.get('/core/abilities/dex', 0))\r\nd -= 1\r\nplayer.put('/core/abilities/dex', d)\r\nplayer.autosave()",
+                        "ondrop": "",
+                        "onuse": "",
+                        "onround": "",
+                        "onfinish": ""
+                    },
                     "conditional": {
                         "material": "cloth",
                         "slot": "finger",
                         "ac": 0
                     },
                     "core": {
-                        "price": {
-                            "gold": 0,
-                            "silver": 0,
-                            "copper": 0
-                        },
+                        "name": "Silver ring of dexterity",
+                        "icon": "icons/silver_ring.png",
                         "description": "This magical ring increases the wearers dexterity rating by one.",
                         "type": "armor",
-                        "identified": true,
-                        "icon": "icons/silver_ring.png",
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 0
+                        },
                         "in_use": false,
-                        "charges": 0,
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "current_rounds_performed": 0,
                         "weight": 0,
                         "size": "small",
-                        "lightradius": 0,
-                        "current_rounds_performed": 0,
-                        "name": "Silver ring of dexterity",
-                        "rounds_per_charge": 0
-                    },
-                    "events": {
-                        "onunequip": "d = int(player.get('/core/abilities/dex', 0))\r\nd -= 1\r\nplayer.put('/core/abilities/dex', d)\r\nplayer.autosave()",
-                        "onfinish": "",
-                        "onpickup": "",
-                        "onround": "",
-                        "onuse": "",
-                        "onequip": "d = int(player.get('/core/abilities/dex', 0))\r\nd += 1\r\nplayer.put('/core/abilities/dex', d)\r\nplayer.autosave()\r\n\r\n",
-                        "ondrop": ""
+                        "charges": 0,
+                        "lightradius": 0
                     }
                 }
             ],
-            "money": {
-                "silver": 3,
-                "gold": 764,
-                "copper": 10
-            },
-            "equiped": {
-                "righthand": {
-                    "conditional": {
-                        "damage_type": "slice",
-                        "range": "short",
-                        "save_against": "none",
-                        "events": {
-                            "onstrike": ""
-                        },
-                        "dmg": 4,
-                        "slot": "righthand",
-                        "to_hit": 1,
-                        "weapon_type": "melee"
-                    },
-                    "core": {
-                        "price": {
-                            "gold": 0,
-                            "silver": 0,
-                            "copper": 0
-                        },
-                        "size": "small",
-                        "type": "weapon",
-                        "identified": true,
-                        "icon": "icons/silver.png",
-                        "rounds_per_charge": 0,
-                        "charges": 0,
-                        "weight": 0,
-                        "description": "",
-                        "lightradius": 0,
-                        "current_rounds_performed": 0,
-                        "in_use": false,
-                        "name": "Broken Bottle"
-                    },
-                    "events": {
-                        "onunequip": "",
-                        "onfinish": "",
-                        "onround": "",
-                        "onpickup": "",
-                        "onuse": "",
-                        "onequip": "",
-                        "ondrop": ""
-                    }
-                },
-                "wrists": {
-                    "core": {
-                        "in_use": false
-                    }
-                },
-                "gloves": {},
-                "rightfinger": {},
-                "neck": "",
-                "feet": "",
-                "lefthand": {},
-                "leftfinger": "",
-                "chest": "",
-                "head": "",
-                "legs": ""
-            },
-            "spells": "",
             "%s": [],
             "equiped_by_type": {
                 "righthand": {
+                    "events": {
+                        "onequip": "",
+                        "onpickup": "",
+                        "onunequip": "",
+                        "ondrop": "",
+                        "onuse": "",
+                        "onround": "",
+                        "onfinish": ""
+                    },
                     "conditional": {
-                        "damage_type": "slice",
+                        "dmg": 4,
+                        "weapon_type": "melee",
+                        "to_hit": 1,
                         "range": "short",
-                        "save_against": "none",
                         "events": {
                             "onstrike": ""
                         },
-                        "weapon_type": "melee",
                         "slot": "righthand",
-                        "to_hit": 1,
-                        "dmg": 4
+                        "save_against": "none",
+                        "damage_type": "slice"
                     },
                     "core": {
-                        "price": {
-                            "gold": 0,
-                            "silver": 0,
-                            "copper": 0
-                        },
-                        "size": "small",
-                        "type": "weapon",
-                        "identified": true,
                         "name": "Broken Bottle",
-                        "in_use": false,
-                        "charges": 0,
-                        "weight": 0,
-                        "description": "",
-                        "lightradius": 0,
-                        "current_rounds_performed": 0,
                         "icon": "icons/silver.png",
-                        "rounds_per_charge": 0
-                    },
-                    "events": {
-                        "onunequip": "",
-                        "onfinish": "",
-                        "onpickup": "",
-                        "onround": "",
-                        "onuse": "",
-                        "onequip": "",
-                        "ondrop": ""
+                        "description": "",
+                        "type": "weapon",
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 0
+                        },
+                        "in_use": false,
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "size": "small",
+                        "charges": 0,
+                        "lightradius": 0
                     }
                 },
+                "neck": "",
+                "feet": "",
+                "head": "",
+                "chest": "",
+                "legs": "",
+                "leftfinger": "",
+                "lefthand": {},
+                "gloves": {},
                 "wrists": {
                     "core": {
                         "in_use": false
                     }
                 },
-                "gloves": {},
-                "rightfinger": {},
-                "neck": "",
+                "rightfinger": {}
+            },
+            "spells": "",
+            "equiped": {
                 "feet": "",
-                "lefthand": {},
-                "leftfinger": "",
+                "righthand": {
+                    "events": {
+                        "onequip": "",
+                        "onpickup": "",
+                        "onunequip": "",
+                        "ondrop": "",
+                        "onuse": "",
+                        "onround": "",
+                        "onfinish": ""
+                    },
+                    "conditional": {
+                        "dmg": 4,
+                        "weapon_type": "melee",
+                        "save_against": "none",
+                        "to_hit": 1,
+                        "events": {
+                            "onstrike": ""
+                        },
+                        "slot": "righthand",
+                        "range": "short",
+                        "damage_type": "slice"
+                    },
+                    "core": {
+                        "name": "Broken Bottle",
+                        "icon": "icons/silver.png",
+                        "size": "small",
+                        "type": "weapon",
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 0
+                        },
+                        "in_use": false,
+                        "identified": true,
+                        "rounds_per_charge": 0,
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "",
+                        "charges": 0,
+                        "lightradius": 0
+                    }
+                },
+                "neck": "",
                 "chest": "",
                 "head": "",
-                "legs": ""
+                "legs": "",
+                "gloves": {},
+                "leftfinger": "",
+                "wrists": {
+                    "core": {
+                        "in_use": false
+                    }
+                },
+                "lefthand": {},
+                "rightfinger": {}
+            },
+            "money": {
+                "copper": 10,
+                "silver": 3,
+                "gold": 764
+            }
+        },
+        "icon": "avatars/dwarf.png",
+        "combat": {
+            "level-hitdice": 5,
+            "max_hp": 38,
+            "hitpoints": 29
+        },
+        "type": "player",
+        "abilities": {
+            "con": 14,
+            "str": 17,
+            "wis": 12,
+            "int": 11,
+            "dex": 13,
+            "cha": 10
+        },
+        "personal": {
+            "name": {
+                "first": "TINY",
+                "last": "TIM"
+            },
+            "sex": "male",
+            "backstory": "",
+            "race": "dwarf",
+            "xp": 25705,
+            "alignment": {
+                "law": "neutral",
+                "social": "good"
             }
         },
         "lightradius": 0,
@@ -631,24 +646,9 @@
             "class": "fighter"
         },
         "location": {
-            "y": 8,
+            "x": 8,
             "map": "simple_room.json",
-            "x": 8
-        },
-        "abilities": {
-            "str": 17,
-            "int": 11,
-            "dex": 13,
-            "wis": 12,
-            "con": 14,
-            "cha": 10
-        },
-        "icon": "avatars/dwarf.png",
-        "combat": {
-            "hitpoints": 29,
-            "level-hitdice": 5,
-            "max_hp": 38
+            "y": 8
         }
-    },
-    "index": 1
+    }
 }

@@ -1,417 +1,375 @@
 {
-    "conditional": {
-        "loot": {
-            "silver": 99,
-            "always_drops": [
-                "sword_of_hercules.json"
-            ],
-            "gold": 1000,
-            "max_items": 1,
-            "items_possible": [],
-            "copper": 99
-        },
-        "orientation": "",
-        "events": {
-            "oninteract": "",
-            "oninspect": ""
-        },
-        "shields": false,
-        "armor_types": 1
-    },
     "core": {
-        "lightradius": 0,
-        "personal": {
-            "race": "elf",
-            "xp": 0,
-            "sex": "female",
-            "backstory": "The dark lady was once a great countess, now a cursed vampire she hides from the daylight and spreads a reign of terror at night.",
-            "name": {
-                "first": "Atbyrho",
-                "last": "Countess"
-            },
-            "alignment": {
-                "law": "neutral",
-                "social": "evil"
-            }
-        },
-        "abilities": {
-            "dex": 18,
-            "con": 15,
-            "cha": 16,
-            "str": 16,
-            "wis": 12,
-            "int": 18
-        },
         "inventory": {
-            "pack": [],
             "spells": [
                 {
-                    "conditional": {
-                        "spell_level": 1,
-                        "spell_type": "wizard spells",
-                        "spell_school": "Conjuration"
-                    },
                     "core": {
-                        "lightradius": 0,
-                        "current_rounds_performed": 0,
                         "rounds_per_charge": 0,
-                        "charges": -1,
-                        "icon": "icons/bolt_of_magma.png",
-                        "size": "small",
-                        "identified": true,
-                        "in_use": false,
                         "target": null,
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "type": "spell",
+                        "description": "A jet of flame shoots from the wizards fingertips burning the primary target any any other characters on the same tile for 1d3 + level of wizard fire damage.",
                         "weight": 0,
+                        "identified": true,
+                        "lightradius": 0,
+                        "icon": "icons/bolt_of_magma.png",
+                        "in_use": false,
+                        "name": "Burning hands",
+                        "charges": -1,
                         "price": {
                             "silver": 0,
                             "copper": 0,
                             "gold": 3000
-                        },
-                        "description": "A jet of flame shoots from the wizards fingertips burning the primary target any any other characters on the same tile for 1d3 + level of wizard fire damage.",
-                        "type": "spell",
-                        "name": "Burning hands"
+                        }
                     },
                     "events": {
-                        "ondrop": "",
-                        "onfinish": "",
-                        "onround": "",
-                        "onunequip": "",
-                        "onpickup": "",
                         "onuse": "from ezdm_libs.util import rolldice\r\nmodifier = player.get('/core/combat/level-hitdice', 1)\r\ncampaign.message('%s casts %s at %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nloc = target.location()\r\nfor char in list(campaign.characterlist):\r\n    if char.location() == loc:\r\n        campaign.message('%s hits %s' % (item.displayname(), char.displayname() ))\r\n        damage_roll=rolldice(numdice=1, numsides=3, modifier=modifier)\r\n        campaign.message(damage_roll[1])\r\n        st = char.saving_throw('spell')\r\n        campaign.message(st[1])\r\n        if st[0]:\r\n            campaign.message('%s successfully save, damage reduced by half' % target.displayname())\r\n            damage = int(damage_roll[0] / 2)\r\n        else:\r\n            damage = damage_roll[0]\r\n        result = char.take_damage(damage)\r\n        campaign.message(result[1])\r\n        campaign.message(char.autosave())",
-                        "onequip": ""
-                    }
-                },
-                {
-                    "conditional": {
-                        "spell_level": 1,
-                        "spell_type": "wizard spells",
-                        "spell_school": "Conjuration"
-                    },
-                    "core": {
-                        "lightradius": 0,
-                        "current_rounds_performed": 0,
-                        "rounds_per_charge": 2,
-                        "charges": -1,
-                        "icon": "icons/magic_misile.png",
-                        "size": "small",
-                        "identified": true,
-                        "in_use": false,
-                        "target": 0,
-                        "weight": 0,
-                        "price": {
-                            "silver": 50,
-                            "copper": 25,
-                            "gold": 200
-                        },
-                        "description": "Fires a bolt of arcane energy at the target, if it hits it does 1d6 damage.",
-                        "type": "spell",
-                        "name": "Magic Misile"
-                    },
-                    "events": {
-                        "ondrop": "",
-                        "onfinish": "campaign.warning('%s has finished casting Magic Misile at %s'  % (player.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nspell_success = player.spell_success()\r\nif not spell_success[1]:\r\n\tcampaign.error(spell_success)\r\nelse:\r\n\tdmg = rolldice(numdice=1, numsides=6, modifier=1)\r\n\tcampaign.error(dmg[1])\r\n\tresult = target.take_damage(dmg[0])\r\n\tcampaign.error(result[1])\r\n",
-                        "onround": "campaign.error('%s continues to cast Magic Misile at %s' % (player.displayname(), target.displayname()))",
-                        "onpickup": "",
-                        "onuse": "campaign.error('%s is casting Magic Missile at %s' % (player.displayname(), target.displayname()))",
-                        "onequip": ""
-                    }
-                },
-                {
-                    "conditional": {
-                        "spell_level": 1,
-                        "spell_school": "Conjuration"
-                    },
-                    "core": {
-                        "lightradius": 0,
-                        "current_rounds_performed": 0,
-                        "rounds_per_charge": 0,
-                        "charges": -1,
-                        "icon": "icons/magic_armor_spell.png",
-                        "identified": true,
-                        "weight": 0,
-                        "size": "small",
-                        "in_use": false,
-                        "price": {
-                            "silver": 50,
-                            "copper": 25,
-                            "gold": 200
-                        },
-                        "description": "Grants the wizard magical armor equivalent to chainmail but with weight or encumbrance",
-                        "type": "spell",
-                        "name": "Spell Armor"
-                    },
-                    "events": {
-                        "ondrop": "",
                         "onfinish": "",
-                        "onround": "",
+                        "ondrop": "",
                         "onpickup": "",
+                        "onequip": "",
+                        "onround": "",
+                        "onunequip": ""
+                    },
+                    "conditional": {
+                        "spell_type": "wizard spells",
+                        "spell_level": 1,
+                        "spell_school": "Conjuration"
+                    }
+                },
+                {
+                    "core": {
+                        "rounds_per_charge": 2,
+                        "target": 0,
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "type": "spell",
+                        "description": "Fires a bolt of arcane energy at the target, if it hits it does 1d6 damage.",
+                        "weight": 0,
+                        "identified": true,
+                        "lightradius": 0,
+                        "icon": "icons/magic_misile.png",
+                        "in_use": false,
+                        "name": "Magic Misile",
+                        "charges": -1,
+                        "price": {
+                            "silver": 50,
+                            "copper": 25,
+                            "gold": 200
+                        }
+                    },
+                    "events": {
+                        "onuse": "campaign.error('%s is casting Magic Missile at %s' % (player.displayname(), target.displayname()))",
+                        "onfinish": "campaign.warning('%s has finished casting Magic Misile at %s'  % (player.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nspell_success = player.spell_success()\r\nif not spell_success[1]:\r\n\tcampaign.error(spell_success)\r\nelse:\r\n\tdmg = rolldice(numdice=1, numsides=6, modifier=1)\r\n\tcampaign.error(dmg[1])\r\n\tresult = target.take_damage(dmg[0])\r\n\tcampaign.error(result[1])\r\n",
+                        "ondrop": "",
+                        "onpickup": "",
+                        "onequip": "",
+                        "onround": "campaign.error('%s continues to cast Magic Misile at %s' % (player.displayname(), target.displayname()))"
+                    },
+                    "conditional": {
+                        "spell_type": "wizard spells",
+                        "spell_level": 1,
+                        "spell_school": "Conjuration"
+                    }
+                },
+                {
+                    "core": {
+                        "rounds_per_charge": 0,
+                        "name": "Spell Armor",
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "type": "spell",
+                        "description": "Grants the wizard magical armor equivalent to chainmail but with weight or encumbrance",
+                        "weight": 0,
+                        "identified": true,
+                        "lightradius": 0,
+                        "icon": "icons/magic_armor_spell.png",
+                        "in_use": false,
+                        "charges": -1,
+                        "price": {
+                            "silver": 50,
+                            "copper": 25,
+                            "gold": 200
+                        }
+                    },
+                    "events": {
                         "onuse": "from ezdm_libs.item import Item\r\nfrom ezdm_libs.util import load_json\r\ni = Item(load_json('items','magic_armor.json'))\r\nplayer.acquire_item(i)\r\nplayer.equip_item(0)\r\ncampaign.error('%s is now wearing magic armor' % player.displayname())\r\nplayer.autosave()",
-                        "onequip": ""
+                        "onfinish": "",
+                        "ondrop": "",
+                        "onpickup": "",
+                        "onequip": "",
+                        "onround": ""
+                    },
+                    "conditional": {
+                        "spell_level": 1,
+                        "spell_school": "Conjuration"
                     }
                 }
             ],
+            "pack": [],
             "money": {
                 "copper": 0,
                 "silver": 0,
                 "gold": 0
             },
             "equiped": {
-                "lefthand": {
-                    "conditional": {
-                        "save_against": "none",
-                        "dmg": 10,
-                        "events": {
-                            "onstrike": ""
-                        },
-                        "to_hit": 2,
-                        "slot": "twohand",
-                        "range": "medium",
-                        "weapon_type": "melee",
-                        "damage_type": "slice"
-                    },
+                "righthand": {
                     "core": {
-                        "lightradius": 0,
-                        "weight": 0,
                         "rounds_per_charge": 0,
-                        "charges": 0,
-                        "icon": "icons/urand_plutonium.png",
-                        "identified": true,
-                        "in_use": false,
-                        "size": "large",
+                        "name": "Sword of Hercules",
                         "current_rounds_performed": 0,
+                        "type": "weapon",
+                        "size": "large",
+                        "identified": true,
+                        "weight": 0,
+                        "description": "This is the great sword with which the legendary hero hercules completed his 12 tasks. It is also a Paladin artifact sword.",
+                        "lightradius": 0,
+                        "icon": "icons/urand_plutonium.png",
+                        "in_use": false,
+                        "charges": 0,
                         "price": {
                             "copper": 0,
                             "silver": 0,
                             "gold": 0
-                        },
-                        "description": "This is the great sword with which the legendary hero hercules completed his 12 tasks. It is also a Paladin artifact sword.",
-                        "type": "weapon",
-                        "name": "Sword of Hercules"
+                        }
                     },
                     "events": {
-                        "ondrop": "",
-                        "onfinish": "",
-                        "onround": "",
-                        "onunequip": "",
-                        "onpickup": "",
                         "onuse": "",
-                        "onequip": ""
+                        "onfinish": "",
+                        "ondrop": "",
+                        "onpickup": "",
+                        "onequip": "",
+                        "onround": "",
+                        "onunequip": ""
+                    },
+                    "conditional": {
+                        "damage_type": "slice",
+                        "slot": "twohand",
+                        "save_against": "none",
+                        "weapon_type": "melee",
+                        "to_hit": 2,
+                        "events": {
+                            "onstrike": ""
+                        },
+                        "range": "medium",
+                        "dmg": 10
                     }
                 },
                 "wrists": {},
-                "gloves": {},
                 "rightfinger": {},
-                "leftfinger": {},
-                "feet": {
-                    "conditional": {
-                        "ac": 0.3,
-                        "material": "cloth",
-                        "slot": "feet"
-                    },
+                "gloves": {},
+                "lefthand": {
                     "core": {
-                        "weight": 1,
-                        "current_rounds_performed": 0,
                         "rounds_per_charge": 0,
-                        "charges": 0,
-                        "icon": "icons/cloth_boots.png",
-                        "identified": true,
-                        "type": "armor",
-                        "size": "medium",
-                        "in_use": false,
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 1
-                        },
-                        "description": "",
-                        "name": "Cloth Boots"
-                    },
-                    "events": {
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onfinish": "",
-                        "onround": "",
-                        "onpickup": "",
-                        "onuse": "",
-                        "onequip": ""
-                    }
-                },
-                "righthand": {
-                    "conditional": {
-                        "save_against": "none",
-                        "dmg": 10,
-                        "events": {
-                            "onstrike": ""
-                        },
-                        "slot": "twohand",
-                        "range": "medium",
-                        "to_hit": 2,
-                        "weapon_type": "melee",
-                        "damage_type": "slice"
-                    },
-                    "core": {
-                        "lightradius": 0,
+                        "name": "Sword of Hercules",
                         "current_rounds_performed": 0,
-                        "rounds_per_charge": 0,
-                        "charges": 0,
-                        "icon": "icons/urand_plutonium.png",
-                        "type": "weapon",
-                        "identified": true,
-                        "weight": 0,
                         "size": "large",
+                        "type": "weapon",
+                        "description": "This is the great sword with which the legendary hero hercules completed his 12 tasks. It is also a Paladin artifact sword.",
+                        "charges": 0,
+                        "identified": true,
+                        "lightradius": 0,
+                        "icon": "icons/urand_plutonium.png",
                         "in_use": false,
+                        "weight": 0,
                         "price": {
                             "copper": 0,
                             "silver": 0,
                             "gold": 0
-                        },
-                        "description": "This is the great sword with which the legendary hero hercules completed his 12 tasks. It is also a Paladin artifact sword.",
-                        "name": "Sword of Hercules"
+                        }
                     },
                     "events": {
-                        "ondrop": "",
-                        "onfinish": "",
-                        "onround": "",
-                        "onunequip": "",
-                        "onpickup": "",
                         "onuse": "",
-                        "onequip": ""
+                        "onfinish": "",
+                        "onequip": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onpickup": "",
+                        "onunequip": ""
+                    },
+                    "conditional": {
+                        "slot": "twohand",
+                        "damage_type": "slice",
+                        "save_against": "none",
+                        "weapon_type": "melee",
+                        "events": {
+                            "onstrike": ""
+                        },
+                        "to_hit": 2,
+                        "dmg": 10,
+                        "range": "medium"
                     }
                 },
                 "legs": {
-                    "conditional": {
-                        "ac": 0.3,
-                        "material": "cloth",
-                        "slot": "legs"
-                    },
                     "core": {
-                        "weight": 2,
                         "rounds_per_charge": 0,
+                        "name": "Cloth Leggings",
                         "current_rounds_performed": 0,
-                        "icon": "icons/cloth_legs.png",
-                        "charges": 0,
-                        "identified": true,
-                        "type": "armor",
                         "size": "large",
+                        "type": "armor",
+                        "identified": true,
+                        "weight": 2,
+                        "description": "",
+                        "icon": "icons/cloth_legs.png",
                         "in_use": false,
+                        "charges": 0,
                         "price": {
                             "silver": 0,
                             "copper": 0,
                             "gold": 3
-                        },
-                        "description": "",
-                        "name": "Cloth Leggings"
+                        }
                     },
                     "events": {
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onfinish": "",
-                        "onround": "",
-                        "onpickup": "",
                         "onuse": "",
-                        "onequip": ""
+                        "onfinish": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onequip": "",
+                        "onpickup": ""
+                    },
+                    "conditional": {
+                        "slot": "legs",
+                        "material": "cloth",
+                        "ac": 0.3
+                    }
+                },
+                "head": {
+                    "core": {
+                        "rounds_per_charge": 0,
+                        "name": "Cloth Cap",
+                        "current_rounds_performed": 0,
+                        "size": "small",
+                        "type": "armor",
+                        "identified": true,
+                        "weight": 3,
+                        "description": "A simple cloth cap",
+                        "lightradius": 0,
+                        "icon": "icons/leather_helm.png",
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "copper": 0,
+                            "silver": 0,
+                            "gold": 4
+                        }
+                    },
+                    "events": {
+                        "onuse": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onunequip": ""
+                    },
+                    "conditional": {
+                        "slot": "head",
+                        "material": "cloth",
+                        "ac": 0.6
+                    }
+                },
+                "feet": {
+                    "core": {
+                        "rounds_per_charge": 0,
+                        "name": "Cloth Boots",
+                        "current_rounds_performed": 0,
+                        "size": "medium",
+                        "type": "armor",
+                        "description": "",
+                        "weight": 1,
+                        "identified": true,
+                        "icon": "icons/cloth_boots.png",
+                        "in_use": false,
+                        "charges": 0,
+                        "price": {
+                            "silver": 0,
+                            "copper": 0,
+                            "gold": 1
+                        }
+                    },
+                    "events": {
+                        "onuse": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": ""
+                    },
+                    "conditional": {
+                        "slot": "feet",
+                        "material": "cloth",
+                        "ac": 0.3
                     }
                 },
                 "hands": {
-                    "conditional": {
-                        "ac": 0.2,
-                        "material": "cloth",
-                        "slot": "hands"
-                    },
                     "core": {
-                        "current_rounds_performed": 0,
                         "rounds_per_charge": 0,
-                        "charges": 0,
-                        "icon": "icons/cloth_gloves.png",
-                        "identified": true,
-                        "in_use": false,
-                        "weight": 1,
+                        "name": "Cloth Gloves",
+                        "current_rounds_performed": 0,
                         "size": "small",
+                        "type": "armor",
+                        "description": "",
+                        "weight": 1,
+                        "identified": true,
+                        "icon": "icons/cloth_gloves.png",
+                        "in_use": false,
+                        "charges": 0,
                         "price": {
                             "copper": 0,
                             "silver": 0,
                             "gold": 1
-                        },
-                        "description": "",
-                        "type": "armor",
-                        "name": "Cloth Gloves"
+                        }
                     },
                     "events": {
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onfinish": "",
-                        "onround": "",
-                        "onpickup": "",
                         "onuse": "",
-                        "onequip": ""
+                        "onfinish": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": ""
+                    },
+                    "conditional": {
+                        "slot": "hands",
+                        "material": "cloth",
+                        "ac": 0.2
                     }
                 },
+                "leftfinger": {},
                 "chest": {
-                    "conditional": {
-                        "slot": "chest",
-                        "material": "cloth",
-                        "ac": 1
-                    },
                     "core": {
-                        "in_use": false,
                         "rounds_per_charge": 0,
-                        "charges": 0,
-                        "icon": "icons/cloth_armor.png",
-                        "identified": true,
+                        "name": "Cloth Robes",
+                        "current_rounds_performed": 0,
                         "type": "armor",
                         "size": "large",
+                        "description": "",
                         "weight": 8,
-                        "current_rounds_performed": 0,
+                        "identified": true,
+                        "icon": "icons/cloth_armor.png",
+                        "in_use": false,
+                        "charges": 0,
                         "price": {
                             "copper": 0,
                             "silver": 0,
                             "gold": 5
-                        },
-                        "description": "",
-                        "name": "Cloth Robes"
+                        }
                     },
                     "events": {
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onfinish": "",
-                        "onround": "",
-                        "onpickup": "",
                         "onuse": "",
-                        "onequip": ""
+                        "onfinish": "",
+                        "onequip": "",
+                        "onpickup": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": ""
+                    },
+                    "conditional": {
+                        "slot": "chest",
+                        "material": "cloth",
+                        "ac": 1
                     }
                 },
-                "neck": {},
-                "head": {
-                    "conditional": {
-                        "ac": 0.6,
-                        "material": "cloth",
-                        "slot": "head"
-                    },
-                    "core": {
-                        "lightradius": 0,
-                        "in_use": false,
-                        "name": "Cloth Cap",
-                        "current_rounds_performed": 0,
-                        "icon": "icons/leather_helm.png",
-                        "charges": 0,
-                        "identified": true,
-                        "weight": 3,
-                        "size": "small",
-                        "rounds_per_charge": 0,
-                        "price": {
-                            "silver": 0,
-                            "copper": 0,
-                            "gold": 4
-                        },
-                        "description": "A simple cloth cap",
-                        "type": "armor"
-                    },
-                    "events": {
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onfinish": "",
-                        "onround": "",
-                        "onunequip": "",
-                        "onpickup": "",
-                        "onuse": "",
-                        "onequip": ""
-                    }
-                }
+                "neck": {}
             },
             "spells_memorized": [
                 0,
@@ -421,22 +379,64 @@
                 1
             ]
         },
-        "icon": "avatars/vampire_knight.png",
-        "type": "npc",
-        "combat": {
-            "level-hitdice": 5,
-            "max_hp": 40,
-            "hitpoints": 25
+        "abilities": {
+            "dex": 18,
+            "str": 16,
+            "cha": 16,
+            "wis": 12,
+            "con": 15,
+            "int": 18
         },
+        "lightradius": 0,
         "location": {
             "x": 18,
-            "map": "black_tower.json",
-            "y": 8
+            "y": 8,
+            "map": "black_tower.json"
         },
+        "icon": "avatars/vampire_knight.png",
+        "combat": {
+            "max_hp": 40,
+            "level-hitdice": 5,
+            "hitpoints": 25
+        },
+        "type": "npc",
         "class": {
             "parent": "wizard",
             "class": "mage"
+        },
+        "personal": {
+            "name": {
+                "last": "Countess",
+                "first": "Atbyrho"
+            },
+            "alignment": {
+                "law": "neutral",
+                "social": "evil"
+            },
+            "sex": "female",
+            "race": "elf",
+            "backstory": "The dark lady was once a great countess, now a cursed vampire she hides from the daylight and spreads a reign of terror at night.",
+            "xp": 0
         }
     },
-    "hash": "b'3318802caf0df38b359dae776c76cb8e889d2abb460a95bf00253c1f7ef1f8864bb4f22320e73187869da930578d27e6d05ec5da47cdbaf2db2c02e666d9dedd'"
+    "hash": "b'3318802caf0df38b359dae776c76cb8e889d2abb460a95bf00253c1f7ef1f8864bb4f22320e73187869da930578d27e6d05ec5da47cdbaf2db2c02e666d9dedd'",
+    "conditional": {
+        "shields": false,
+        "orientation": "",
+        "armor_types": 1,
+        "events": {
+            "oninteract": "",
+            "oninspect": ""
+        },
+        "loot": {
+            "copper": 99,
+            "silver": 99,
+            "items_possible": [],
+            "max_items": 1,
+            "gold": 1000,
+            "always_drops": [
+                "sword_of_hercules.json"
+            ]
+        }
+    }
 }

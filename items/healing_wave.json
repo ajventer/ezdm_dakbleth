@@ -1,0 +1,35 @@
+{
+    "conditional": {
+        "spell_level": 2,
+        "spell_school": "Alteration",
+        "spell_type": "priest spells"
+    },
+    "events": {
+        "onunequip": "",
+        "onequip": "",
+        "onround": "",
+        "onuse": "",
+        "ondrop": "",
+        "onfinish": "",
+        "onpickup": ""
+    },
+    "core": {
+        "lightradius": 0,
+        "identified": true,
+        "icon": "icons/cloud_fire2.png",
+        "description": "A wave of healing fire heals all nearby party members for 1d8",
+        "price": {
+            "gold": 1000,
+            "silver": 0,
+            "copper": 0
+        },
+        "type": "spell",
+        "current_rounds_performed": 0,
+        "weight": 0,
+        "in_use": false,
+        "charges": 0,
+        "name": "Healing Wave",
+        "rounds_per_charge": 3,
+        "size": ""
+    }
+}

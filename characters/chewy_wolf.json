@@ -1,168 +1,168 @@
 {
-    "core": {
-        "abilities": {
-            "con": 15,
-            "cha": 8,
-            "int": 13,
-            "wis": 12,
-            "dex": 17,
-            "str": 14
-        },
-        "location": {
-            "x": 10,
-            "map": "darrowshire.json",
-            "y": 10
-        },
-        "class": {
-            "parent": "warrior",
-            "class": "fighter"
-        },
-        "inventory": {
-            "money": {
-                "copper": 6,
-                "silver": 9,
-                "gold": 488
-            },
-            "equiped": {
-                "righthand": {
-                    "core": {
-                        "rounds_per_charge": 0,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "weapon",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 0
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Biting with it's snapping jaws",
-                        "icon": "",
-                        "name": "Jaws",
-                        "lightradius": 0,
-                        "charges": 0,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onunequip": "",
-                        "onuse": "",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    },
-                    "conditional": {
-                        "range": "short",
-                        "weapon_type": "melee",
-                        "events": {
-                            "onstrike": ""
-                        },
-                        "save_against": "none",
-                        "damage_type": "hack",
-                        "slot": "twohand",
-                        "to_hit": 1,
-                        "dmg": 8
-                    }
-                },
-                "gloves": {},
-                "wrists": {},
-                "lefthand": {
-                    "core": {
-                        "rounds_per_charge": 0,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "weapon",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 0
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Biting with it's snapping jaws",
-                        "icon": "",
-                        "name": "Jaws",
-                        "lightradius": 0,
-                        "charges": 0,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onunequip": "",
-                        "onuse": "",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    },
-                    "conditional": {
-                        "range": "short",
-                        "damage_type": "hack",
-                        "weapon_type": "melee",
-                        "slot": "twohand",
-                        "events": {
-                            "onstrike": ""
-                        },
-                        "save_against": "none",
-                        "to_hit": 1,
-                        "dmg": 8
-                    }
-                },
-                "leftfinger": {},
-                "neck": {},
-                "head": {},
-                "feet": {},
-                "rightfinger": {},
-                "legs": {},
-                "chest": {}
-            },
-            "pack": [],
-            "spells": [],
-            "spells_memorized": []
-        },
-        "lightradius": 0,
-        "personal": {
-            "sex": "male",
-            "name": {
-                "last": "Wolf",
-                "first": "Chewy"
-            },
-            "race": "creature",
-            "alignment": {
-                "law": "neutral",
-                "social": "neutral"
-            },
-            "backstory": "",
-            "xp": 3150
-        },
-        "combat": {
-            "max_hp": 16,
-            "hitpoints": 4,
-            "level-hitdice": 2
-        },
-        "icon": "avatars/war_dog.png",
-        "type": "player"
-    },
-    "hash": "b'7caa26bbd2b35b022e2471045e9e87bfc7bdf93f057e6797250dc7a3fc4866e532f57d048c1e9605bb86c101e3b05b517016590fb7f04617f3ef74857d2c4cb2'",
     "conditional": {
-        "armor_types": 1,
         "loot": {
+            "silver": 99,
+            "max_items": 1,
             "always_drops": [],
+            "gold": 20,
             "items_possible": [
                 "candle.json"
             ],
-            "silver": 99,
-            "gold": 20,
-            "copper": 99,
-            "max_items": 1
+            "copper": 99
         },
+        "armor_types": 1,
+        "orientation": " aggressive",
         "events": {
             "oninteract": "",
             "oninspect": ""
         },
-        "shields": true,
-        "orientation": " aggressive"
-    }
+        "shields": true
+    },
+    "core": {
+        "class": {
+            "parent": "warrior",
+            "class": "fighter"
+        },
+        "type": "player",
+        "inventory": {
+            "equiped": {
+                "feet": {},
+                "head": {},
+                "lefthand": {
+                    "conditional": {
+                        "slot": "twohand",
+                        "range": "short",
+                        "save_against": "none",
+                        "to_hit": 1,
+                        "events": {
+                            "onstrike": ""
+                        },
+                        "dmg": 8,
+                        "weapon_type": "melee",
+                        "damage_type": "hack"
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 0,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "size": "small",
+                        "weight": 0,
+                        "description": "Biting with it's snapping jaws",
+                        "in_use": false,
+                        "type": "weapon",
+                        "current_rounds_performed": 0,
+                        "lightradius": 0,
+                        "identified": true,
+                        "charges": 0,
+                        "icon": "",
+                        "name": "Jaws",
+                        "rounds_per_charge": 0
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "onunequip": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": ""
+                    }
+                },
+                "neck": {},
+                "chest": {},
+                "rightfinger": {},
+                "leftfinger": {},
+                "righthand": {
+                    "conditional": {
+                        "dmg": 8,
+                        "slot": "twohand",
+                        "range": "short",
+                        "save_against": "none",
+                        "to_hit": 1,
+                        "weapon_type": "melee",
+                        "events": {
+                            "onstrike": ""
+                        },
+                        "damage_type": "hack"
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 0,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Biting with it's snapping jaws",
+                        "in_use": false,
+                        "type": "weapon",
+                        "size": "small",
+                        "lightradius": 0,
+                        "identified": true,
+                        "charges": 0,
+                        "icon": "",
+                        "name": "Jaws",
+                        "rounds_per_charge": 0
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onfinish": "",
+                        "onunequip": "",
+                        "ondrop": "",
+                        "onuse": "",
+                        "onequip": "",
+                        "onround": ""
+                    }
+                },
+                "legs": {},
+                "wrists": {},
+                "gloves": {}
+            },
+            "pack": [],
+            "spells_memorized": [],
+            "spells": [],
+            "money": {
+                "gold": 488,
+                "silver": 9,
+                "copper": 6
+            }
+        },
+        "combat": {
+            "max_hp": 30,
+            "hitpoints": 30,
+            "level-hitdice": 3
+        },
+        "personal": {
+            "alignment": {
+                "law": "neutral",
+                "social": "neutral"
+            },
+            "xp": 4110,
+            "backstory": "",
+            "sex": "male",
+            "race": "creature",
+            "name": {
+                "last": "Wolf",
+                "first": "Chewy"
+            }
+        },
+        "abilities": {
+            "str": 14,
+            "wis": 12,
+            "dex": 17,
+            "con": 15,
+            "int": 13,
+            "cha": 8
+        },
+        "location": {
+            "y": 8,
+            "x": 16,
+            "map": "black_tower.json"
+        },
+        "lightradius": 0,
+        "icon": "avatars/war_dog.png"
+    },
+    "hash": "b'7caa26bbd2b35b022e2471045e9e87bfc7bdf93f057e6797250dc7a3fc4866e532f57d048c1e9605bb86c101e3b05b517016590fb7f04617f3ef74857d2c4cb2'"
 }

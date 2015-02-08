@@ -1,1550 +1,1585 @@
 {
-    "core": {
-        "abilities": {
-            "wis": 15,
-            "con": 14,
-            "cha": 10,
-            "int": 13,
-            "dex": 13,
-            "str": 13
-        },
-        "location": {
-            "x": 10,
-            "map": "darrowshire.json",
-            "y": 10
-        },
-        "icon": "avatars/elsa.png",
-        "inventory": {
-            "spells_memorized": [
-                0,
-                1
-            ],
-            "equiped_by_type": {
-                "head": {
-                    "core": {
-                        "rounds_per_charge": 0,
-                        "size": "small",
-                        "weight": 10,
-                        "type": "armor",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 30
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "",
-                        "icon": "icons/plate_helm.png",
-                        "name": "Iron Plate Helm",
-                        "lightradius": 0,
-                        "charges": 0,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onunequip": "",
-                        "onuse": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    },
-                    "conditional": {
-                        "ac": 2,
-                        "material": "plate",
-                        "slot": "head"
-                    }
-                },
-                "legs": {
-                    "core": {
-                        "rounds_per_charge": 0,
-                        "size": "large",
-                        "weight": 7,
-                        "type": "armor",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 170
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "",
-                        "icon": "icons/plate_legs.png",
-                        "name": "Bronze Plate Legs",
-                        "charges": 0,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    },
-                    "conditional": {
-                        "ac": 0.9,
-                        "material": "plate",
-                        "slot": "legs"
-                    }
-                },
-                "neck": {},
-                "leftfinger": {},
-                "righthand": {
-                    "core": {
-                        "rounds_per_charge": 0,
-                        "size": "medium",
-                        "weight": 0,
-                        "type": "weapon",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 25
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "To use:<br> Swing vigorously.",
-                        "icon": "icons/eveningstar1.png",
-                        "name": "One Handed Bronze Mace",
-                        "lightradius": 0,
-                        "charges": 0,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onunequip": "",
-                        "onuse": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    },
-                    "conditional": {
-                        "range": "short",
-                        "to_hit": "",
-                        "weapon_type": "melee",
-                        "save_against": "none",
-                        "events": {
-                            "onstrike": ""
-                        },
-                        "slot": "righthand",
-                        "damage_type": "slice",
-                        "dmg": 8
-                    }
-                },
-                "gloves": {},
-                "wrists": {
-                    "core": {
-                        "rounds_per_charge": 0,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "armor",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 0
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "These bracers add a small amount of extra armor but shine with shimmer that lets you see further.",
-                        "icon": "icons/leather_gloves.png",
-                        "target": null,
-                        "lightradius": 1,
-                        "charges": -1,
-                        "name": "Bronze Plate Bracers of illumination",
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "onunequip": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "onuse": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "onequip": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "onround": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "ondrop": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "onpickup": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()"
-                    },
-                    "conditional": {
-                        "ac": 0.5,
-                        "material": "plate",
-                        "slot": "wrists"
-                    }
-                },
-                "lefthand": {
-                    "core": {
-                        "rounds_per_charge": 0,
-                        "size": "small",
-                        "weight": 3,
-                        "type": "armor",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 1
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "This \"shield\" is little more than a battered piece of bronze plate, there are some dents and suspicious looking stains on it. You think it may be second hand and you doubt the original owner\r\nwas alive when he lost it.",
-                        "icon": "icons/shield4.png",
-                        "name": "Small Bronze Shield",
-                        "lightradius": 0,
-                        "charges": 0,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    },
-                    "conditional": {
-                        "ac": 1,
-                        "material": "shield",
-                        "slot": "lefthand"
-                    }
-                },
-                "rightfinger": {},
-                "feet": {
-                    "core": {
-                        "rounds_per_charge": 0,
-                        "size": "small",
-                        "weight": 2,
-                        "type": "armor",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 20
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "",
-                        "icon": "icons/plate_boots.png",
-                        "name": "Bronze Plate Boots",
-                        "charges": 0,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "",
-                        "onequip": "",
-                        "onround": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onpickup": ""
-                    },
-                    "conditional": {
-                        "ac": 0.2,
-                        "material": "plate",
-                        "slot": "feet"
-                    }
-                },
-                "hands": {
-                    "core": {
-                        "rounds_per_charge": 0,
-                        "size": "small",
-                        "weight": 4,
-                        "type": "armor",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 50
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Cheap plate gloves made from bronze.",
-                        "icon": "icons/plate_gloves.png",
-                        "name": "Bronze Plate Gloves",
-                        "charges": 0,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "",
-                        "onequip": "",
-                        "onround": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onpickup": ""
-                    },
-                    "conditional": {
-                        "ac": 0.6,
-                        "material": "plate",
-                        "slot": "hands"
-                    }
-                },
-                "chest": {
-                    "core": {
-                        "rounds_per_charge": 0,
-                        "size": "medium",
-                        "weight": 23,
-                        "type": "armor",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 130
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "",
-                        "icon": "icons/plate_armor.png",
-                        "name": "Bronze Plate Chest",
-                        "charges": 0,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    },
-                    "conditional": {
-                        "ac": 3.0,
-                        "material": "plate",
-                        "slot": "chest"
-                    }
-                }
-            },
-            "money": {
-                "copper": 8,
-                "silver": 1,
-                "gold": 363
-            },
-            "equiped": {
-                "head": {
-                    "core": {
-                        "rounds_per_charge": 0,
-                        "size": "small",
-                        "weight": 10,
-                        "type": "armor",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 30
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "",
-                        "icon": "icons/plate_helm.png",
-                        "name": "Iron Plate Helm",
-                        "lightradius": 0,
-                        "charges": 0,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onunequip": "",
-                        "onuse": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    },
-                    "conditional": {
-                        "ac": 2,
-                        "material": "plate",
-                        "slot": "head"
-                    }
-                },
-                "legs": {
-                    "core": {
-                        "rounds_per_charge": 0,
-                        "size": "large",
-                        "weight": 7,
-                        "type": "armor",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 170
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "",
-                        "icon": "icons/plate_legs.png",
-                        "name": "Bronze Plate Legs",
-                        "charges": 0,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    },
-                    "conditional": {
-                        "ac": 0.9,
-                        "material": "plate",
-                        "slot": "legs"
-                    }
-                },
-                "leftfinger": {},
-                "chest": {
-                    "core": {
-                        "rounds_per_charge": 0,
-                        "size": "medium",
-                        "weight": 23,
-                        "type": "armor",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 130
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "",
-                        "icon": "icons/plate_armor.png",
-                        "name": "Bronze Plate Chest",
-                        "charges": 0,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    },
-                    "conditional": {
-                        "ac": 3.0,
-                        "material": "plate",
-                        "slot": "chest"
-                    }
-                },
-                "righthand": {
-                    "core": {
-                        "rounds_per_charge": 0,
-                        "size": "medium",
-                        "weight": 0,
-                        "type": "weapon",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 25
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "To use:<br> Swing vigorously.",
-                        "icon": "icons/morningstar2.png",
-                        "name": "Morning Star +1",
-                        "lightradius": 0,
-                        "charges": 0,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onunequip": "",
-                        "onuse": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    },
-                    "conditional": {
-                        "range": "short",
-                        "weapon_type": "melee",
-                        "events": {
-                            "onstrike": ""
-                        },
-                        "slot": "righthand",
-                        "to_hit": 1,
-                        "save_against": "none",
-                        "damage_type": "slice",
-                        "dmg": 10
-                    }
-                },
-                "gloves": {},
-                "wrists": {
-                    "core": {
-                        "rounds_per_charge": 0,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "armor",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 0
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "These bracers add a small amount of extra armor but shine with shimmer that lets you see further.",
-                        "icon": "icons/leather_gloves.png",
-                        "name": "Bronze Plate Bracers of illumination",
-                        "lightradius": 1,
-                        "target": null,
-                        "charges": -1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "onunequip": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "onuse": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "ondrop": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "onround": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "onequip": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
-                        "onpickup": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()"
-                    },
-                    "conditional": {
-                        "ac": 0.5,
-                        "material": "plate",
-                        "slot": "wrists"
-                    }
-                },
-                "lefthand": {
-                    "core": {
-                        "rounds_per_charge": 0,
-                        "size": "small",
-                        "weight": 3,
-                        "type": "armor",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 1
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "This \"shield\" is little more than a battered piece of bronze plate, there are some dents and suspicious looking stains on it. You think it may be second hand and you doubt the original owner\r\nwas alive when he lost it.",
-                        "icon": "icons/shield4.png",
-                        "name": "Small Bronze Shield",
-                        "lightradius": 0,
-                        "charges": 0,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "",
-                        "onequip": "",
-                        "onround": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onpickup": ""
-                    },
-                    "conditional": {
-                        "ac": 1,
-                        "material": "shield",
-                        "slot": "lefthand"
-                    }
-                },
-                "rightfinger": {},
-                "feet": {
-                    "core": {
-                        "rounds_per_charge": 0,
-                        "size": "small",
-                        "weight": 2,
-                        "type": "armor",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 20
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "",
-                        "icon": "icons/plate_boots.png",
-                        "name": "Bronze Plate Boots",
-                        "charges": 0,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    },
-                    "conditional": {
-                        "ac": 0.2,
-                        "material": "plate",
-                        "slot": "feet"
-                    }
-                },
-                "hands": {
-                    "core": {
-                        "rounds_per_charge": 0,
-                        "size": "small",
-                        "weight": 4,
-                        "type": "armor",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 50
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Cheap plate gloves made from bronze.",
-                        "icon": "icons/plate_gloves.png",
-                        "name": "Bronze Plate Gloves",
-                        "charges": 0,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "",
-                        "onequip": "",
-                        "onround": "",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onpickup": ""
-                    },
-                    "conditional": {
-                        "ac": 0.6,
-                        "material": "plate",
-                        "slot": "hands"
-                    }
-                },
-                "neck": {}
-            },
-            "spells": [
-                {
-                    "core": {
-                        "rounds_per_charge": 2,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "spell",
-                        "price": {
-                            "copper": 25,
-                            "silver": 50,
-                            "gold": 200
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target for 1d6",
-                        "icon": "icons/magic_misile.png",
-                        "name": "Healing Hands",
-                        "lightradius": 0,
-                        "target": 0,
-                        "charges": -1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "campaign.warning('%s has finished casting Healing Hands at %s'  % (player.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nspell_success = player.spell_success()\r\nif not spell_success[1]:\r\n\tcampaign.error(spell_success)\r\nelse:\r\n\thealed = rolldice(numdice=1, numsides=6, modifier=1)\r\n\tcampaign.error(healed[1])\r\n\ttarget.hitpoints += (healed)\r\n\tcampaign.error(target.hitpoints)\r\n",
-                        "onunequip": "",
-                        "onuse": "campaign.error('%s is casting Magic Missile at %s' % (player.displayname(), target.displayname()))",
-                        "ondrop": "",
-                        "onround": "campaign.error('%s continues to cast Magic Misile at %s' % (player.displayname(), target.displayname()))",
-                        "onequip": "",
-                        "onpickup": ""
-                    },
-                    "conditional": {
-                        "spell_level": 1,
-                        "spell_school": "Invocation",
-                        "spell_type": "priest spells"
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 3,
-                        "size": "",
-                        "weight": 0,
-                        "type": "spell",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 0
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Caster charms an animal which fights alongside it as a companion. The spell takes three rounds to cast. ",
-                        "icon": "icons/tame_beasts.png",
-                        "name": "Animal Friendship",
-                        "lightradius": 0,
-                        "target": 5,
-                        "charges": -1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "campaign.error('%s has finished casting Animal Friendship at %s' % (player.displayname(), target.displayname()))",
-                        "onunequip": "",
-                        "onuse": "campaign.error('%s is casting Animal Friendship at %s' % (player.displayname(), target.displayname()))",
-                        "ondrop": "",
-                        "onround": "campaign.error('%s continues to cast Animal Friendship at %s' % (player.displayname(), target.displayname()))",
-                        "onequip": "",
-                        "onpickup": ""
-                    },
-                    "conditional": {
-                        "spell_level": 1,
-                        "spell_school": "Enchantment",
-                        "spell_type": "priest spells"
-                    }
-                }
-            ],
-            "pack": [
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 0,
-                        "size": "small",
-                        "weight": 1,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 50
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "This scroll is inscribed with powerful magic that can identify the hidden properties of unknown items. It will always identify the first unknown item in your pack.",
-                        "icon": "icons/scrolloflove.png",
-                        "name": "Scroll of Identify",
-                        "lightradius": 0,
-                        "target": 0,
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onunequip": "",
-                        "onuse": "for pitem in player.inventory_generator(sections=['pack']):\r\n\tif not pitem[1].identified():\r\n   \t\tpitem[1].identify()\r\n\t   \tplayer()['core']['inventory']['pack'][pitem[2]] = pitem[1]()\r\n\t   \tbreak\r\ncampaign.error('%s has identified %s' % (player.displayname(), pitem[1].displayname()))\r\n\r\n\r\n   ",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 0,
-                        "size": "small",
-                        "weight": 1,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 50
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "This scroll is inscribed with powerful magic that can identify the hidden properties of unknown items. It will always identify the first unknown item in your pack.",
-                        "icon": "icons/scrolloflove.png",
-                        "name": "Scroll of Identify",
-                        "lightradius": 0,
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onunequip": "",
-                        "onuse": "for pitem in player.inventory_generator(sections=['pack']):\r\n\tif not pitem[1].identified():\r\n   \t\tpitem[1].identify()\r\n\t   \tplayer()['core']['inventory']['pack'][pitem[2]] = pitem[1]()\r\n\t   \tbreak\r\ncampaign.error('%s has identified %s' % (player.displayname(), pitem[1].displayname()))\r\n\r\n\r\n   ",
-                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                },
-                {
-                    "core": {
-                        "rounds_per_charge": 1,
-                        "size": "small",
-                        "weight": 0,
-                        "type": "other",
-                        "price": {
-                            "copper": 0,
-                            "silver": 0,
-                            "gold": 10
-                        },
-                        "current_rounds_performed": 0,
-                        "identified": true,
-                        "description": "Heals the target character for 1d6 hitpoints",
-                        "icon": "icons/health_potion.png",
-                        "name": "Health Potion",
-                        "charges": 1,
-                        "in_use": false
-                    },
-                    "events": {
-                        "onfinish": "",
-                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))",
-                        "ondrop": "",
-                        "onround": "",
-                        "onequip": "",
-                        "onpickup": ""
-                    }
-                }
-            ]
-        },
-        "lightradius": 0,
-        "personal": {
-            "sex": "female",
-            "name": {
-                "last": "Baggins",
-                "first": "Elsa"
-            },
-            "race": "halfling",
-            "alignment": {
-                "law": "chaotic",
-                "social": "neutral"
-            },
-            "backstory": "",
-            "xp": 2810
-        },
-        "type": "player",
-        "combat": {
-            "max_hp": 13,
-            "level-hitdice": 2,
-            "hitpoints": 13
-        },
-        "class": {
-            "parent": "priest",
-            "class": "cleric"
-        }
-    },
     "index": 14,
     "conditional": {
         "armor_types": 4,
         "shields": true
+    },
+    "core": {
+        "class": {
+            "parent": "priest",
+            "class": "cleric"
+        },
+        "type": "player",
+        "inventory": {
+            "equiped": {
+                "leftfinger": {},
+                "head": {
+                    "conditional": {
+                        "ac": 2,
+                        "material": "plate",
+                        "slot": "head"
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 30,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "size": "small",
+                        "weight": 10,
+                        "description": "",
+                        "in_use": false,
+                        "type": "armor",
+                        "current_rounds_performed": 0,
+                        "lightradius": 0,
+                        "identified": true,
+                        "charges": 0,
+                        "rounds_per_charge": 0,
+                        "name": "Iron Plate Helm",
+                        "icon": "icons/plate_helm.png"
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "onunequip": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "",
+                        "onequip": "",
+                        "onfinish": ""
+                    }
+                },
+                "feet": {
+                    "conditional": {
+                        "ac": 0.2,
+                        "material": "plate",
+                        "slot": "feet"
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 20,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 2,
+                        "description": "",
+                        "in_use": false,
+                        "type": "armor",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 0,
+                        "rounds_per_charge": 0,
+                        "name": "Bronze Plate Boots",
+                        "icon": "icons/plate_boots.png"
+                    },
+                    "events": {
+                        "onround": "",
+                        "onpickup": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": ""
+                    }
+                },
+                "chest": {
+                    "conditional": {
+                        "ac": 3.0,
+                        "material": "plate",
+                        "slot": "chest"
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 130,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "size": "medium",
+                        "weight": 23,
+                        "description": "",
+                        "in_use": false,
+                        "type": "armor",
+                        "current_rounds_performed": 0,
+                        "identified": true,
+                        "charges": 0,
+                        "icon": "icons/plate_armor.png",
+                        "name": "Bronze Plate Chest",
+                        "rounds_per_charge": 0
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "",
+                        "onround": "",
+                        "onequip": "",
+                        "onfinish": ""
+                    }
+                },
+                "rightfinger": {},
+                "righthand": {
+                    "conditional": {
+                        "dmg": 10,
+                        "slot": "righthand",
+                        "damage_type": "slice",
+                        "save_against": "none",
+                        "events": {
+                            "onstrike": ""
+                        },
+                        "to_hit": 1,
+                        "range": "short",
+                        "weapon_type": "melee"
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 25,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "size": "medium",
+                        "weight": 0,
+                        "description": "To use:<br> Swing vigorously.",
+                        "in_use": false,
+                        "type": "weapon",
+                        "current_rounds_performed": 0,
+                        "lightradius": 0,
+                        "identified": true,
+                        "charges": 0,
+                        "icon": "icons/morningstar2.png",
+                        "name": "Morning Star +1",
+                        "rounds_per_charge": 0
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "onunequip": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": ""
+                    }
+                },
+                "legs": {
+                    "conditional": {
+                        "ac": 0.9,
+                        "material": "plate",
+                        "slot": "legs"
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 170,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 7,
+                        "description": "",
+                        "in_use": false,
+                        "type": "armor",
+                        "size": "large",
+                        "identified": true,
+                        "charges": 0,
+                        "rounds_per_charge": 0,
+                        "name": "Bronze Plate Legs",
+                        "icon": "icons/plate_legs.png"
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "",
+                        "onround": "",
+                        "onequip": "",
+                        "onfinish": ""
+                    }
+                },
+                "wrists": {
+                    "conditional": {
+                        "ac": 0.5,
+                        "material": "plate",
+                        "slot": "wrists"
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 0,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "target": null,
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "These bracers add a small amount of extra armor but shine with shimmer that lets you see further.",
+                        "in_use": false,
+                        "type": "armor",
+                        "size": "small",
+                        "lightradius": 1,
+                        "identified": true,
+                        "charges": -1,
+                        "icon": "icons/leather_gloves.png",
+                        "name": "Bronze Plate Bracers of illumination",
+                        "rounds_per_charge": 0
+                    },
+                    "events": {
+                        "onpickup": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "onround": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "onunequip": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "ondrop": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "onuse": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "onequip": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "onfinish": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()"
+                    }
+                },
+                "hands": {
+                    "conditional": {
+                        "ac": 0.6,
+                        "material": "plate",
+                        "slot": "hands"
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 50,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 4,
+                        "description": "Cheap plate gloves made from bronze.",
+                        "in_use": false,
+                        "type": "armor",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 0,
+                        "icon": "icons/plate_gloves.png",
+                        "name": "Bronze Plate Gloves",
+                        "rounds_per_charge": 0
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onfinish": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onequip": "",
+                        "onuse": ""
+                    }
+                },
+                "lefthand": {
+                    "conditional": {
+                        "ac": 1,
+                        "material": "shield",
+                        "slot": "lefthand"
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 1,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "size": "small",
+                        "weight": 3,
+                        "description": "This \"shield\" is little more than a battered piece of bronze plate, there are some dents and suspicious looking stains on it. You think it may be second hand and you doubt the original owner\r\nwas alive when he lost it.",
+                        "in_use": false,
+                        "type": "armor",
+                        "current_rounds_performed": 0,
+                        "lightradius": 0,
+                        "identified": true,
+                        "charges": 0,
+                        "icon": "icons/shield4.png",
+                        "name": "Small Bronze Shield",
+                        "rounds_per_charge": 0
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "",
+                        "onround": "",
+                        "onequip": "",
+                        "onfinish": ""
+                    }
+                },
+                "neck": {},
+                "gloves": {}
+            },
+            "spells_memorized": [
+                0,
+                0,
+                2
+            ],
+            "money": {
+                "gold": 363,
+                "silver": 1,
+                "copper": 8
+            },
+            "pack": [
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 50,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "target": 0,
+                        "current_rounds_performed": 0,
+                        "weight": 1,
+                        "description": "This scroll is inscribed with powerful magic that can identify the hidden properties of unknown items. It will always identify the first unknown item in your pack.",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "lightradius": 0,
+                        "identified": true,
+                        "charges": 1,
+                        "rounds_per_charge": 0,
+                        "name": "Scroll of Identify",
+                        "icon": "icons/scrolloflove.png"
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onunequip": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "for pitem in player.inventory_generator(sections=['pack']):\r\n\tif not pitem[1].identified():\r\n   \t\tpitem[1].identify()\r\n\t   \tplayer()['core']['inventory']['pack'][pitem[2]] = pitem[1]()\r\n\t   \tbreak\r\ncampaign.error('%s has identified %s' % (player.displayname(), pitem[1].displayname()))\r\n\r\n\r\n   ",
+                        "onround": "",
+                        "onequip": "",
+                        "onfinish": ""
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 50,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 1,
+                        "description": "This scroll is inscribed with powerful magic that can identify the hidden properties of unknown items. It will always identify the first unknown item in your pack.",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "lightradius": 0,
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/scrolloflove.png",
+                        "name": "Scroll of Identify",
+                        "rounds_per_charge": 0
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onunequip": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "for pitem in player.inventory_generator(sections=['pack']):\r\n\tif not pitem[1].identified():\r\n   \t\tpitem[1].identify()\r\n\t   \tplayer()['core']['inventory']['pack'][pitem[2]] = pitem[1]()\r\n\t   \tbreak\r\ncampaign.error('%s has identified %s' % (player.displayname(), pitem[1].displayname()))\r\n\r\n\r\n   ",
+                        "onround": "",
+                        "onequip": "",
+                        "onfinish": ""
+                    }
+                },
+                {
+                    "core": {
+                        "price": {
+                            "gold": 10,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target character for 1d6 hitpoints",
+                        "in_use": false,
+                        "type": "other",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 1,
+                        "icon": "icons/health_potion.png",
+                        "name": "Health Potion",
+                        "rounds_per_charge": 1
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": "campaign.warning('%s is using a %s on %s' % (player.displayname(), item.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nhealth, roll_message = rolldice(numdice=1, numsides=6, modifier=0)\r\ncampaign.message(roll_message)\r\nresult = target.heal(health)\r\ncampaign.error('%s has been healed for %s, and current hitpoints are %s' % (player.displayname(), health, result))"
+                    }
+                }
+            ],
+            "equiped_by_type": {
+                "leftfinger": {},
+                "head": {
+                    "conditional": {
+                        "ac": 2,
+                        "material": "plate",
+                        "slot": "head"
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 30,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 10,
+                        "description": "",
+                        "in_use": false,
+                        "type": "armor",
+                        "size": "small",
+                        "lightradius": 0,
+                        "identified": true,
+                        "charges": 0,
+                        "icon": "icons/plate_helm.png",
+                        "name": "Iron Plate Helm",
+                        "rounds_per_charge": 0
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onfinish": "",
+                        "onunequip": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "",
+                        "onequip": "",
+                        "onround": ""
+                    }
+                },
+                "feet": {
+                    "conditional": {
+                        "ac": 0.2,
+                        "material": "plate",
+                        "slot": "feet"
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 20,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 2,
+                        "description": "",
+                        "in_use": false,
+                        "type": "armor",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 0,
+                        "icon": "icons/plate_boots.png",
+                        "name": "Bronze Plate Boots",
+                        "rounds_per_charge": 0
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onfinish": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "",
+                        "onequip": "",
+                        "onround": ""
+                    }
+                },
+                "chest": {
+                    "conditional": {
+                        "ac": 3.0,
+                        "material": "plate",
+                        "slot": "chest"
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 130,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "size": "medium",
+                        "weight": 23,
+                        "description": "",
+                        "in_use": false,
+                        "type": "armor",
+                        "current_rounds_performed": 0,
+                        "identified": true,
+                        "charges": 0,
+                        "icon": "icons/plate_armor.png",
+                        "name": "Bronze Plate Chest",
+                        "rounds_per_charge": 0
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "",
+                        "onequip": "",
+                        "onfinish": ""
+                    }
+                },
+                "rightfinger": {},
+                "righthand": {
+                    "conditional": {
+                        "dmg": 8,
+                        "damage_type": "slice",
+                        "save_against": "none",
+                        "weapon_type": "melee",
+                        "slot": "righthand",
+                        "events": {
+                            "onstrike": ""
+                        },
+                        "range": "short",
+                        "to_hit": ""
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 25,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "To use:<br> Swing vigorously.",
+                        "in_use": false,
+                        "type": "weapon",
+                        "size": "medium",
+                        "lightradius": 0,
+                        "identified": true,
+                        "charges": 0,
+                        "rounds_per_charge": 0,
+                        "name": "One Handed Bronze Mace",
+                        "icon": "icons/eveningstar1.png"
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onunequip": "",
+                        "onround": "",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": ""
+                    }
+                },
+                "legs": {
+                    "conditional": {
+                        "ac": 0.9,
+                        "material": "plate",
+                        "slot": "legs"
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 170,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 7,
+                        "description": "",
+                        "in_use": false,
+                        "type": "armor",
+                        "size": "large",
+                        "identified": true,
+                        "charges": 0,
+                        "icon": "icons/plate_legs.png",
+                        "name": "Bronze Plate Legs",
+                        "rounds_per_charge": 0
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onround": "",
+                        "onuse": "",
+                        "onequip": "",
+                        "onfinish": ""
+                    }
+                },
+                "wrists": {
+                    "conditional": {
+                        "ac": 0.5,
+                        "material": "plate",
+                        "slot": "wrists"
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 0,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "target": null,
+                        "size": "small",
+                        "weight": 0,
+                        "description": "These bracers add a small amount of extra armor but shine with shimmer that lets you see further.",
+                        "in_use": false,
+                        "type": "armor",
+                        "current_rounds_performed": 0,
+                        "lightradius": 1,
+                        "identified": true,
+                        "charges": -1,
+                        "rounds_per_charge": 0,
+                        "name": "Bronze Plate Bracers of illumination",
+                        "icon": "icons/leather_gloves.png"
+                    },
+                    "events": {
+                        "onpickup": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "onfinish": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "onunequip": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "ondrop": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "onuse": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "onequip": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()",
+                        "onround": "player.put('/core/inventory/equiped/wrists/core/in_use',True)\r\nplayer.save()"
+                    }
+                },
+                "hands": {
+                    "conditional": {
+                        "ac": 0.6,
+                        "material": "plate",
+                        "slot": "hands"
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 50,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 4,
+                        "description": "Cheap plate gloves made from bronze.",
+                        "in_use": false,
+                        "type": "armor",
+                        "size": "small",
+                        "identified": true,
+                        "charges": 0,
+                        "rounds_per_charge": 0,
+                        "name": "Bronze Plate Gloves",
+                        "icon": "icons/plate_gloves.png"
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onfinish": "",
+                        "onequip": "",
+                        "onuse": ""
+                    }
+                },
+                "lefthand": {
+                    "conditional": {
+                        "ac": 1,
+                        "material": "shield",
+                        "slot": "lefthand"
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 1,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "size": "small",
+                        "weight": 3,
+                        "description": "This \"shield\" is little more than a battered piece of bronze plate, there are some dents and suspicious looking stains on it. You think it may be second hand and you doubt the original owner\r\nwas alive when he lost it.",
+                        "in_use": false,
+                        "type": "armor",
+                        "current_rounds_performed": 0,
+                        "lightradius": 0,
+                        "identified": true,
+                        "charges": 0,
+                        "icon": "icons/shield4.png",
+                        "name": "Small Bronze Shield",
+                        "rounds_per_charge": 0
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onround": "",
+                        "ondrop": "campaign.warning('%s has dropped %s' % (player.displayname(), item.displayname()))",
+                        "onuse": "",
+                        "onequip": "",
+                        "onfinish": ""
+                    }
+                },
+                "neck": {},
+                "gloves": {}
+            },
+            "spells": [
+                {
+                    "conditional": {
+                        "spell_level": 1,
+                        "spell_school": "Invocation",
+                        "spell_type": "priest spells"
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 200,
+                            "silver": 50,
+                            "copper": 25
+                        },
+                        "target": 0,
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Heals the target for 1d6",
+                        "in_use": false,
+                        "type": "spell",
+                        "size": "small",
+                        "lightradius": 0,
+                        "identified": true,
+                        "charges": -1,
+                        "rounds_per_charge": 2,
+                        "name": "Healing Hands",
+                        "icon": "icons/magic_misile.png"
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onunequip": "",
+                        "ondrop": "",
+                        "onuse": "campaign.error('%s is casting Magic Missile at %s' % (player.displayname(), target.displayname()))",
+                        "onround": "campaign.error('%s continues to cast Magic Misile at %s' % (player.displayname(), target.displayname()))",
+                        "onequip": "",
+                        "onfinish": "campaign.warning('%s has finished casting Healing Hands at %s'  % (player.displayname(), target.displayname()))\r\nfrom ezdm_libs.util import rolldice\r\nspell_success = player.spell_success()\r\nif not spell_success[1]:\r\n\tcampaign.error(spell_success)\r\nelse:\r\n\thealed = rolldice(numdice=1, numsides=6, modifier=1)\r\n\tcampaign.error(healed[1])\r\n\ttarget.hitpoints += (healed)\r\n\tcampaign.error(target.hitpoints)\r\n"
+                    }
+                },
+                {
+                    "conditional": {
+                        "spell_level": 1,
+                        "spell_school": "Enchantment",
+                        "spell_type": "priest spells"
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 0,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "Caster charms an animal which fights alongside it as a companion. The spell takes three rounds to cast. ",
+                        "in_use": false,
+                        "type": "spell",
+                        "size": "",
+                        "lightradius": 0,
+                        "identified": true,
+                        "charges": -1,
+                        "icon": "icons/tame_beasts.png",
+                        "name": "Animal Friendship",
+                        "rounds_per_charge": 3
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onunequip": "",
+                        "ondrop": "",
+                        "onuse": "campaign.error('%s is casting Animal Friendship at %s' % (player.displayname(), target.displayname()))",
+                        "onround": "campaign.error('%s continues to cast Animal Friendship at %s' % (player.displayname(), target.displayname()))",
+                        "onequip": "",
+                        "onfinish": "campaign.error('%s has finished casting Animal Friendship at %s' % (player.displayname(), target.displayname()))"
+                    }
+                },
+                {
+                    "conditional": {
+                        "spell_level": 2,
+                        "spell_school": "Alteration",
+                        "spell_type": "priest spells"
+                    },
+                    "core": {
+                        "price": {
+                            "gold": 1000,
+                            "silver": 0,
+                            "copper": 0
+                        },
+                        "current_rounds_performed": 0,
+                        "weight": 0,
+                        "description": "A wave of healing fire heals all nearby party members for 1d8",
+                        "in_use": false,
+                        "type": "spell",
+                        "size": "",
+                        "lightradius": 0,
+                        "identified": true,
+                        "charges": 0,
+                        "icon": "icons/cloud_fire2.png",
+                        "name": "Healing Wave",
+                        "rounds_per_charge": 3
+                    },
+                    "events": {
+                        "onpickup": "",
+                        "onunequip": "",
+                        "ondrop": "",
+                        "onuse": "",
+                        "onround": "",
+                        "onequip": "",
+                        "onfinish": ""
+                    }
+                }
+            ]
+        },
+        "combat": {
+            "max_hp": 29,
+            "hitpoints": 29,
+            "level-hitdice": 3
+        },
+        "personal": {
+            "alignment": {
+                "law": "chaotic",
+                "social": "neutral"
+            },
+            "sex": "female",
+            "backstory": "",
+            "xp": 3290,
+            "race": "halfling",
+            "name": {
+                "last": "Baggins",
+                "first": "Elsa"
+            }
+        },
+        "abilities": {
+            "str": 13,
+            "wis": 15,
+            "cha": 10,
+            "con": 14,
+            "int": 13,
+            "dex": 13
+        },
+        "location": {
+            "y": 8,
+            "x": 16,
+            "map": "black_tower.json"
+        },
+        "lightradius": 0,
+        "icon": "avatars/elsa.png"
     }
 }
